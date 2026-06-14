@@ -61,7 +61,7 @@ src/mepo/api.txt
 
 src/analysis/
 src/evaluation/downstream/
-src/evaluation/embeddinggemma-300m
+# src/evaluation/embeddinggemma-300m
 src/rbpo_mepo/
 src/downstream/demo/
 src/testset/dataset_process.py
