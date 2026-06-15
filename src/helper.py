@@ -35,7 +35,7 @@ LLAMA2_7B = "meta-llama/Llama-2-7b-chat-hf"
 VICUNA_7B = "lmsys/vicuna-7b-v1.3"
 GEMMA3 = "google/gemma-3-4b-it"
 VICUNA_13B = "lmsys/vicuna-13b-v1.5"
-GENERIC_LLM_REWRITER = "Qwen/Qwen3-32B"
+GENERIC_LLM_REWRITER = "unsloth/Qwen3-32B-bnb-4bit"
 base_llm_models = [VICUNA_7B, LLAMA2_7B, GEMMA3, VICUNA_13B]
 
 DOLLY_EVAL = "instruction-following/dolly_eval.json"
@@ -169,16 +169,10 @@ def load_model_and_tokenizer(
     device_map="auto",
     cache_dir=MODEL_CACHE_PATH,
     token=HF_TOKEN,
-    inference_precision=INFERENCE_PRECISION
 ):
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
     
-    inference_precision = inference_precision.lower().strip()
-    
-    if inference_precision not in ["fp16", "4bit"]:
-        raise ValueError("precision must be either 'fp16' or '4bit'")
-
     tokenizer = AutoTokenizer.from_pretrained(
         model_path,
         cache_dir=cache_dir,
@@ -191,33 +185,14 @@ def load_model_and_tokenizer(
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     
-    if inference_precision == "fp16":
-        model = AutoModelForCausalLM.from_pretrained(
-            model_path,
-            device_map=device_map,
-            cache_dir=cache_dir,
-            token=token,
-            torch_dtype=torch.float16,
-            low_cpu_mem_usage=True,
-        )
-    elif inference_precision == "4bit":
-        from transformers import BitsAndBytesConfig
-
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_compute_dtype=torch.float16,
-            bnb_4bit_use_double_quant=True,
-        )
-
-        model = AutoModelForCausalLM.from_pretrained(
-            model_path,
-            device_map=device_map,
-            cache_dir=cache_dir,
-            token=token,
-            quantization_config=bnb_config,
-            low_cpu_mem_usage=True,
-        )
+    model = AutoModelForCausalLM.from_pretrained(
+        model_path,
+        device_map=device_map,
+        cache_dir=cache_dir,
+        token=token,
+        torch_dtype="auto",
+        low_cpu_mem_usage=True,
+    )
     
     model.config.return_dict = True
     model.config.pad_token_id = tokenizer.pad_token_id
@@ -227,7 +202,7 @@ def load_model_and_tokenizer(
     print(f"Loading base LLM")
     print("="*80)
     print(f"Loaded model: {model_path}")
-    print(f"Precision mode: {inference_precision}")
+    print(f"Precision mode: {model.dtype}")
 
     return model, tokenizer
 
