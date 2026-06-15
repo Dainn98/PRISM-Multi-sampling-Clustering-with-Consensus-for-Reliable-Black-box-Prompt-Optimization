@@ -71,7 +71,7 @@ class MePOModel:
                 device_map=device_map,
                 cache_dir=cache_dir,
                 token=token,
-                torch_dtype=torch.float16
+                torch_dtype="auto"
             )
         elif infer_precision == "4bit":
             from transformers import BitsAndBytesConfig
