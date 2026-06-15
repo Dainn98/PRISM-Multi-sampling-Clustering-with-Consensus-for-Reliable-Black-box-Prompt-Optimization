@@ -23,6 +23,8 @@ API_RETRY_TIMES = 5
 API_RETRY_BASE_DELAY = 2
 REQUEST_TIMEOUT_SECONDS = 120
 
+evaluator_models = [MODEL_NAME]
+
 client = (
     OpenAI(
         api_key=OPENAI_API_KEY,
