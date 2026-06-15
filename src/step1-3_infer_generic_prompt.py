@@ -1,19 +1,17 @@
 import gc
 import json
 import os
-import time
+import re
 from pathlib import Path
 
 import torch
-from dotenv import load_dotenv
-from openai import OpenAI
 from sentence_transformers import SentenceTransformer, util
 from sklearn.cluster import AgglomerativeClustering
 from tqdm import tqdm
 
 from config import MODEL_CACHE_PATH
 from helper import (
-    CHATGPT,
+    GENERIC_LLM_REWRITER,
     IMP_ENC,
     M,
     clean_name,
@@ -22,6 +20,7 @@ from helper import (
     embedding_models,
     eval_folder_name,
     experiment_file_name,
+    load_model_and_tokenizer,
 )
 
 
@@ -30,14 +29,10 @@ EVALUATION_DIR = BASE_DIR / eval_folder_name
 EXPERIMENT_FILE = BASE_DIR / experiment_file_name
 CHECKPOINT_DIR = EVALUATION_DIR / "generic_rewriter"
 
-load_dotenv(BASE_DIR / ".env")
-load_dotenv(BASE_DIR.parent / ".env")
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-GENERIC_REWRITER_MODEL = os.getenv("GENERIC_REWRITER_MODEL", CHATGPT)
 GENERIC_REWRITE_COUNT = int(os.getenv("GENERIC_REWRITE_COUNT", str(M)))
-API_RETRY_TIMES = 5
-API_RETRY_BASE_DELAY = 2
+GENERIC_REWRITER_MAX_NEW_TOKENS = int(
+    os.getenv("GENERIC_REWRITER_MAX_NEW_TOKENS", "512")
+)
 
 REWRITER_SYSTEM_PROMPT = """
 You are a general-purpose prompt rewriter.
@@ -65,16 +60,6 @@ VARIATION_FOCUSES = [
     "Prioritize direct language without unnecessary verbosity.",
     "Prioritize faithful reformulation with a distinct sentence structure.",
 ]
-
-
-def create_openai_client():
-    if not OPENAI_API_KEY:
-        raise RuntimeError("OPENAI_API_KEY is missing from the environment")
-    return OpenAI(
-        api_key=OPENAI_API_KEY,
-        max_retries=2,
-        timeout=120,
-    )
 
 
 def save_json_atomic(path, data):
@@ -126,6 +111,7 @@ def normalize_rewrite(text):
     if not isinstance(text, str):
         return ""
 
+    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
     text = text.strip()
     if text.startswith("```") and text.endswith("```"):
         text = text[3:-3].strip()
@@ -137,7 +123,22 @@ def normalize_rewrite(text):
     return text
 
 
-def rewrite_prompt(client, original_prompt, variation_index=None):
+def apply_rewriter_chat_template(tokenizer, messages):
+    template_kwargs = {
+        "tokenize": False,
+        "add_generation_prompt": True,
+    }
+    try:
+        return tokenizer.apply_chat_template(
+            messages,
+            enable_thinking=False,
+            **template_kwargs,
+        )
+    except TypeError:
+        return tokenizer.apply_chat_template(messages, **template_kwargs)
+
+
+def rewrite_prompt(model, tokenizer, original_prompt, variation_index=None):
     if variation_index is None:
         variation_instruction = (
             "Produce the single best faithful rewrite of the original prompt."
@@ -158,33 +159,34 @@ def rewrite_prompt(client, original_prompt, variation_index=None):
         f"<original_prompt>\n{original_prompt}\n</original_prompt>"
     )
 
-    last_error = None
-    for attempt in range(1, API_RETRY_TIMES + 1):
-        try:
-            response = client.responses.create(
-                model=GENERIC_REWRITER_MODEL,
-                instructions=REWRITER_SYSTEM_PROMPT,
-                input=user_prompt,
-            )
-            rewritten_prompt = normalize_rewrite(response.output_text)
-            if not rewritten_prompt:
-                raise ValueError("Generic rewriter returned an empty prompt")
-            return rewritten_prompt
-        except Exception as error:
-            last_error = error
-            if attempt == API_RETRY_TIMES:
-                break
+    messages = [
+        {"role": "system", "content": REWRITER_SYSTEM_PROMPT},
+        {"role": "user", "content": user_prompt},
+    ]
+    formatted_prompt = apply_rewriter_chat_template(tokenizer, messages)
+    model_device = next(model.parameters()).device
+    inputs = tokenizer(
+        formatted_prompt,
+        return_tensors="pt",
+        truncation=True,
+    ).to(model_device)
 
-            delay = API_RETRY_BASE_DELAY * (2 ** (attempt - 1))
-            print(
-                f"API attempt {attempt}/{API_RETRY_TIMES} failed: {error}. "
-                f"Retrying in {delay}s..."
-            )
-            time.sleep(delay)
+    with torch.inference_mode():
+        outputs = model.generate(
+            **inputs,
+            max_new_tokens=GENERIC_REWRITER_MAX_NEW_TOKENS,
+            do_sample=False,
+            pad_token_id=tokenizer.pad_token_id,
+            eos_token_id=tokenizer.eos_token_id,
+        )
 
-    raise RuntimeError(
-        f"Generic rewrite failed after {API_RETRY_TIMES} attempts"
-    ) from last_error
+    generated_ids = outputs[0, inputs["input_ids"].shape[1]:]
+    rewritten_prompt = normalize_rewrite(
+        tokenizer.decode(generated_ids, skip_special_tokens=True)
+    )
+    if not rewritten_prompt:
+        raise ValueError("Generic rewriter returned an empty prompt")
+    return rewritten_prompt
 
 
 def prepare_checkpoint(experiment_name):
@@ -198,7 +200,7 @@ def prepare_checkpoint(experiment_name):
     return checkpoint_path, data
 
 
-def generate_generic_prompts(client, experiment_name):
+def generate_generic_prompts(model, tokenizer, experiment_name):
     checkpoint_path, data = prepare_checkpoint(experiment_name)
     print(
         f"\nGenerating generic rewrites for {experiment_name}: "
@@ -217,7 +219,11 @@ def generate_generic_prompts(client, experiment_name):
         if not isinstance(item.get("generic_prompt"), str) or not item[
             "generic_prompt"
         ].strip():
-            item["generic_prompt"] = rewrite_prompt(client, original_prompt)
+            item["generic_prompt"] = rewrite_prompt(
+                model,
+                tokenizer,
+                original_prompt,
+            )
             save_json_atomic(checkpoint_path, data)
 
         paraphrases = item.get("generic_paraphrases")
@@ -234,7 +240,8 @@ def generate_generic_prompts(client, experiment_name):
         while len(item["generic_paraphrases"]) < GENERIC_REWRITE_COUNT:
             variation_index = len(item["generic_paraphrases"])
             rewritten_prompt = rewrite_prompt(
-                client,
+                model,
+                tokenizer,
                 original_prompt,
                 variation_index=variation_index,
             )
@@ -444,14 +451,28 @@ def run_prism_for_embedding_model(
 
 
 def main():
-    client = create_openai_client()
     experiment_names = load_experiment_names()
+    print(f"Loading generic prompt rewriter: {GENERIC_LLM_REWRITER}")
+    rewriter_model, rewriter_tokenizer = load_model_and_tokenizer(
+        model_path=GENERIC_LLM_REWRITER,
+        cache_dir=MODEL_CACHE_PATH,
+    )
 
     for experiment_name in experiment_names:
-        _, generic_data = generate_generic_prompts(
-            client,
+        generate_generic_prompts(
+            rewriter_model,
+            rewriter_tokenizer,
             experiment_name,
         )
+
+    del rewriter_model
+    del rewriter_tokenizer
+    torch.cuda.empty_cache()
+    gc.collect()
+
+    for experiment_name in experiment_names:
+        checkpoint_path = CHECKPOINT_DIR / f"{experiment_name}.json"
+        generic_data = load_json(checkpoint_path)
         for embedding_model_name in embedding_models:
             run_prism_for_embedding_model(
                 experiment_name,
