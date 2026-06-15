@@ -1,7 +1,9 @@
 tqdm
+numpy
 transformers
 torch
 sentence_transformers
+scikit-learn
 accelerate
 openai
 sentencepiece
