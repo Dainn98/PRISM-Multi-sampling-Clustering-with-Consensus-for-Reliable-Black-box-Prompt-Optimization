@@ -40,9 +40,19 @@ MODULE_COLUMNS = [
     "clustering_ms",
     "representative_selection_ms",
     "consensus_scoring_ms",
-    "total_prism_ms",
+    "prompt_optimization_ms",
     "base_llm_generation_ms",
+    "total_prism_ms",
     "end_to_end_ms",
+    "cold_start_end_to_end_ms",
+]
+PRISM_PHASE_COLUMNS = [
+    "candidate_generation_ms",
+    "embedding_ms",
+    "clustering_ms",
+    "representative_selection_ms",
+    "consensus_scoring_ms",
+    "base_llm_generation_ms",
 ]
 MODEL_LOAD_COLUMNS = [
     "optimizer_model_load_ms",
@@ -294,7 +304,7 @@ def run_pipeline(
     optimizer_inputs = [prompt_template_optimize.format(original_prompt)] * candidate_count
 
     synchronize()
-    end_to_end_start = time.perf_counter()
+    cold_start_end_to_end_start = time.perf_counter()
 
     optimizer_model = optimizer_tokenizer = None
     try:
@@ -384,15 +394,19 @@ def run_pipeline(
         base_tokenizer = None
         release_memory()
     synchronize()
-    end_to_end_ms = (time.perf_counter() - end_to_end_start) * 1000.0
+    cold_start_end_to_end_ms = (
+        time.perf_counter() - cold_start_end_to_end_start
+    ) * 1000.0
 
-    total_prism_ms = (
+    prompt_optimization_ms = (
         candidate_generation_ms
         + embedding_ms
         + clustering_ms
         + representative_selection_ms
         + consensus_scoring_ms
     )
+    total_prism_ms = prompt_optimization_ms + base_llm_generation_ms
+    end_to_end_ms = total_prism_ms
     total_model_load_ms = (
         optimizer_model_load_ms + embedding_model_load_ms + base_llm_model_load_ms
     )
@@ -410,9 +424,11 @@ def run_pipeline(
         "clustering_ms": clustering_ms,
         "representative_selection_ms": representative_selection_ms,
         "consensus_scoring_ms": consensus_scoring_ms,
-        "total_prism_ms": total_prism_ms,
+        "prompt_optimization_ms": prompt_optimization_ms,
         "base_llm_generation_ms": base_llm_generation_ms,
+        "total_prism_ms": total_prism_ms,
         "end_to_end_ms": end_to_end_ms,
+        "cold_start_end_to_end_ms": cold_start_end_to_end_ms,
         "optimizer_model_load_ms": optimizer_model_load_ms,
         "embedding_model_load_ms": embedding_model_load_ms,
         "base_llm_model_load_ms": base_llm_model_load_ms,
@@ -477,14 +493,14 @@ def summarize(rows: Sequence[dict], gpu_price: float | None, currency: str) -> l
             summary[f"{prefix}_p95_ms"] = float(np.percentile(values, 95))
 
         total = float(summary["total_prism_mean_ms"])
-        for column in MODULE_COLUMNS[:5]:
+        for column in PRISM_PHASE_COLUMNS:
             prefix = column.removesuffix("_ms")
             summary[f"{prefix}_share_pct"] = (
                 float(summary[f"{prefix}_mean_ms"]) / total * 100.0 if total else 0.0
             )
-        end_to_end_seconds = float(summary["end_to_end_mean_ms"]) / 1000.0
-        summary["gpu_seconds_per_sample"] = end_to_end_seconds
-        summary["gpu_hours_per_sample"] = end_to_end_seconds / 3600.0
+        total_prism_seconds = float(summary["total_prism_mean_ms"]) / 1000.0
+        summary["gpu_seconds_per_sample"] = total_prism_seconds
+        summary["gpu_hours_per_sample"] = total_prism_seconds / 3600.0
         summary["gpu_hours_per_dataset"] = (
             float(summary["gpu_hours_per_sample"]) * len(prompt_means)
         )
@@ -544,6 +560,20 @@ def metadata(args: argparse.Namespace, threshold: float) -> dict:
         "repetitions": args.repetitions,
         "warmup_runs": args.warmup_runs,
         "random_seed": args.random_seed,
+        "latency_unit": "milliseconds",
+        "latency_timer": "time.perf_counter with torch.cuda.synchronize around timed regions",
+        "latency_definitions": {
+            "candidate_generation_ms": "Wall-clock completion time for receiving all generated candidates.",
+            "embedding_ms": "Wall-clock completion time for encoding the original prompt and all candidates.",
+            "clustering_ms": "Wall-clock completion time for assigning all candidate cluster labels.",
+            "representative_selection_ms": "Wall-clock completion time for selecting all cluster representatives.",
+            "consensus_scoring_ms": "Wall-clock completion time for scoring representatives and selecting the final prompt.",
+            "prompt_optimization_ms": "Sum of candidate generation, embedding, clustering, representative selection, and consensus scoring.",
+            "base_llm_generation_ms": "Wall-clock completion time for generating the final answer from the selected prompt.",
+            "total_prism_ms": "PRISM completion latency excluding model loading.",
+            "end_to_end_ms": "Pipeline completion latency from input processing to final answer completion, excluding model loading and UI rendering.",
+            "cold_start_end_to_end_ms": "Wall-clock script latency including model loading, phase overhead, and memory cleanup.",
+        },
     }
 
 
