@@ -44,6 +44,14 @@ MODULE_COLUMNS = [
     "base_llm_generation_ms",
     "end_to_end_ms",
 ]
+PROMPT_FIELDS = (
+    "ori_prompt",
+    "instruction",
+    "prompt",
+    "question",
+    "input",
+    "query",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -126,6 +134,22 @@ def prepare_base_prompt(tokenizer: AutoTokenizer, prompt: str, context: str | No
     if context:
         return f"Context:\n{context}\n\nQuestion:\n{prompt}\n\nAnswer:"
     return prompt
+
+
+def get_prompt(item: dict) -> str:
+    for field in PROMPT_FIELDS:
+        value = item.get(field)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    return ""
+
+
+def get_sample_id(item: dict, fallback: int) -> str:
+    for field in ("id", "idx", "sample_id", "prompt_id"):
+        value = item.get(field)
+        if value is not None:
+            return str(value)
+    return str(fallback)
 
 
 @torch.inference_mode()
@@ -245,9 +269,9 @@ def run_pipeline(
     args: argparse.Namespace,
     threshold: float,
 ) -> dict:
-    original_prompt = str(item.get("ori_prompt", "")).strip()
+    original_prompt = get_prompt(item)
     if not original_prompt:
-        raise ValueError("Dataset item has an empty ori_prompt")
+        raise ValueError(f"Dataset item has no prompt field among {PROMPT_FIELDS}")
     context = item.get("context")
     optimizer_inputs = [prompt_template_optimize.format(original_prompt)] * candidate_count
 
@@ -485,6 +509,11 @@ def main() -> int:
     if not isinstance(dataset, list):
         print("ERROR: dataset must be a JSON list", file=sys.stderr)
         return 2
+    original_size = len(dataset)
+    dataset = [item for item in dataset if isinstance(item, dict) and get_prompt(item)]
+    skipped = original_size - len(dataset)
+    if skipped:
+        print(f"Skipped {skipped} samples without a prompt field")
     dataset = dataset[: args.max_samples] if args.max_samples else dataset
     if not dataset:
         print("ERROR: dataset is empty", file=sys.stderr)
@@ -521,7 +550,7 @@ def main() -> int:
         for candidate_count in args.candidate_counts:
             print(f"Profiling m={candidate_count}, batch_mode={batch_mode}")
             for sample_index, item in enumerate(dataset):
-                sample_id = str(item.get("id", sample_index))
+                sample_id = get_sample_id(item, sample_index)
                 for repetition in range(1, args.repetitions + 1):
                     set_global_seed(args.random_seed)
                     prefix = {

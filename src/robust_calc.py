@@ -58,6 +58,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--bootstrap-iterations", type=int, default=10_000)
     parser.add_argument("--permutation-iterations", type=int, default=100_000)
     parser.add_argument("--random-seed", type=int, default=42)
+    parser.add_argument("--embedding-label", default="embeddinggemma-300m")
     return parser.parse_args()
 
 
@@ -491,6 +492,101 @@ def failure_case_rows(prompt_rows: Sequence[dict]) -> list[dict]:
     return rows
 
 
+def parse_summary_comparison(comparison: str) -> dict[str, str] | None:
+    parts = comparison.split("_")
+    if len(parts) < 4:
+        return None
+    evaluator = parts[-1]
+    benchmark = parts[-2]
+    base_llm = parts[-3]
+    method_key = "_".join(parts[:-3])
+    method_map = {
+        "PRISM_BPO_vs_BPO": ("PRISM + BPO", "BPO"),
+        "PRISM_BPO_vs_MePO": ("PRISM + BPO", "MePO"),
+        "PRISM_MePO_vs_MePO": ("PRISM + MePO", "MePO"),
+        "PRISM_MEPO_vs_MEPO": ("PRISM + MePO", "MePO"),
+        "PRISM_Generic_vs_Generic": ("PRISM + Generic", "Generic"),
+    }
+    method_a, method_b = method_map.get(
+        method_key,
+        (method_key.replace("_vs_", " vs "), ""),
+    )
+    return {
+        "method_key": method_key,
+        "method_a": method_a,
+        "method_b": method_b,
+        "base_llm": base_llm,
+        "benchmark": benchmark,
+        "evaluator": evaluator,
+    }
+
+
+def benchmark_aggregate_rows(
+    summary_rows: Sequence[dict],
+    embedding_label: str,
+) -> list[dict]:
+    groups: dict[tuple[str, str, str, str, str], list[dict]] = defaultdict(list)
+    for row in summary_rows:
+        parsed = parse_summary_comparison(str(row["comparison"]))
+        if parsed is None:
+            continue
+        key = (
+            embedding_label,
+            parsed["base_llm"],
+            parsed["method_a"],
+            parsed["method_b"],
+            parsed["evaluator"],
+        )
+        groups[key].append({**row, **parsed})
+
+    benchmark_order = ["vicuna", "dolly", "bpo", "self"]
+    output_rows = []
+    for (embedding, base_llm, method_a, method_b, evaluator), rows in sorted(groups.items()):
+        by_benchmark = {str(row["benchmark"]): row for row in rows}
+        pref_values = [
+            float(by_benchmark[name]["pref_mean"])
+            for name in benchmark_order
+            if name in by_benchmark
+        ]
+        wr_values = [
+            float(by_benchmark[name]["delta_wr_mean"])
+            for name in benchmark_order
+            if name in by_benchmark
+        ]
+        output = {
+            "embedding": embedding,
+            "base_llm": base_llm,
+            "method_a": method_a,
+            "method_b": method_b,
+            "evaluator": evaluator,
+            "num_benchmarks": len(pref_values),
+            "pref_mean_across_benchmarks": float(np.mean(pref_values)) if pref_values else math.nan,
+            "pref_std_across_benchmarks": sample_std(pref_values),
+            "pref_mean_std": (
+                f"{float(np.mean(pref_values)):.3f} +/- {sample_std(pref_values):.3f}"
+                if pref_values
+                else ""
+            ),
+            "wr_mean_across_benchmarks": float(np.mean(wr_values)) if wr_values else math.nan,
+            "wr_std_across_benchmarks": sample_std(wr_values),
+            "wr_mean_std": (
+                f"{float(np.mean(wr_values)):.3f} +/- {sample_std(wr_values):.3f}"
+                if wr_values
+                else ""
+            ),
+        }
+        for benchmark in benchmark_order:
+            row = by_benchmark.get(benchmark)
+            prefix = f"{benchmark}_eval"
+            output[f"{prefix}_a_win"] = float(row["win_ratio_mean"]) if row else ""
+            output[f"{prefix}_tie"] = float(row["tie_ratio_mean"]) if row else ""
+            output[f"{prefix}_b_win"] = float(row["loss_ratio_mean"]) if row else ""
+            output[f"{prefix}_pref"] = float(row["pref_mean"]) if row else ""
+            output[f"{prefix}_wr"] = float(row["delta_wr_mean"]) if row else ""
+        output_rows.append(output)
+    return output_rows
+
+
 def main() -> int:
     args = parse_args()
     try:
@@ -533,6 +629,10 @@ def main() -> int:
         write_csv(output_dir / "judge_run_metrics.csv", run_rows)
         write_csv(output_dir / "prompt_level_metrics.csv", prompt_rows)
         write_csv(output_dir / "statistical_summary.csv", summaries)
+        write_csv(
+            output_dir / "benchmark_aggregate_summary.csv",
+            benchmark_aggregate_rows(summaries, args.embedding_label),
+        )
         write_csv(
             output_dir / "failure_cases.csv",
             failure_case_rows(prompt_rows),
