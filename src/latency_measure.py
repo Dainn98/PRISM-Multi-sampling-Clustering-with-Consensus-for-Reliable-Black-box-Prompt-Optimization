@@ -44,6 +44,13 @@ MODULE_COLUMNS = [
     "base_llm_generation_ms",
     "end_to_end_ms",
 ]
+MODEL_LOAD_COLUMNS = [
+    "optimizer_model_load_ms",
+    "embedding_model_load_ms",
+    "base_llm_model_load_ms",
+    "total_model_load_ms",
+]
+SUMMARY_COLUMNS = [*MODULE_COLUMNS, *MODEL_LOAD_COLUMNS]
 PROMPT_FIELDS = (
     "ori_prompt",
     "instruction",
@@ -291,7 +298,10 @@ def run_pipeline(
 
     optimizer_model = optimizer_tokenizer = None
     try:
-        optimizer_model, optimizer_tokenizer = load_causal_model(args.optimizer_model, token)
+        with timer() as elapsed:
+            optimizer_model, optimizer_tokenizer = load_causal_model(args.optimizer_model, token)
+        optimizer_model_load_ms = elapsed()
+
         with timer() as elapsed:
             candidates, candidate_input_tokens, candidate_output_tokens = generate_texts(
                 optimizer_model,
@@ -314,7 +324,10 @@ def run_pipeline(
 
     embedding_model = original_embedding = candidate_embeddings = None
     try:
-        embedding_model = load_embedding_model(args.embedding_model)
+        with timer() as elapsed:
+            embedding_model = load_embedding_model(args.embedding_model)
+        embedding_model_load_ms = elapsed()
+
         with timer() as elapsed:
             original_embedding, candidate_embeddings = embed_prompts(
                 embedding_model, original_prompt, candidates
@@ -348,7 +361,10 @@ def run_pipeline(
     final_prompt = candidates[best_index]
     base_model = base_tokenizer = None
     try:
-        base_model, base_tokenizer = load_causal_model(args.base_model, token)
+        with timer() as elapsed:
+            base_model, base_tokenizer = load_causal_model(args.base_model, token)
+        base_llm_model_load_ms = elapsed()
+
         formatted_prompt = prepare_base_prompt(base_tokenizer, final_prompt, context)
         with timer() as elapsed:
             responses, base_input_tokens, base_output_tokens = generate_texts(
@@ -377,6 +393,9 @@ def run_pipeline(
         + representative_selection_ms
         + consensus_scoring_ms
     )
+    total_model_load_ms = (
+        optimizer_model_load_ms + embedding_model_load_ms + base_llm_model_load_ms
+    )
     return {
         "num_clusters": len(clusters),
         "num_representatives": len(representatives),
@@ -394,6 +413,10 @@ def run_pipeline(
         "total_prism_ms": total_prism_ms,
         "base_llm_generation_ms": base_llm_generation_ms,
         "end_to_end_ms": end_to_end_ms,
+        "optimizer_model_load_ms": optimizer_model_load_ms,
+        "embedding_model_load_ms": embedding_model_load_ms,
+        "base_llm_model_load_ms": base_llm_model_load_ms,
+        "total_model_load_ms": total_model_load_ms,
         "candidate_generation_ms_per_output_token": (
             candidate_generation_ms / candidate_output_tokens
             if candidate_output_tokens
@@ -434,7 +457,7 @@ def summarize(rows: Sequence[dict], gpu_price: float | None, currency: str) -> l
             prompt_means.append(
                 {
                     column: float(np.mean([float(row[column]) for row in sample_rows]))
-                    for column in MODULE_COLUMNS
+                    for column in SUMMARY_COLUMNS
                 }
             )
 
@@ -444,7 +467,7 @@ def summarize(rows: Sequence[dict], gpu_price: float | None, currency: str) -> l
             "num_samples": len(prompt_means),
             "repetitions": len(group) // max(len(prompt_means), 1),
         }
-        for column in MODULE_COLUMNS:
+        for column in SUMMARY_COLUMNS:
             values = np.array([row[column] for row in prompt_means], dtype=float)
             prefix = column.removesuffix("_ms")
             summary[f"{prefix}_mean_ms"] = float(values.mean())
