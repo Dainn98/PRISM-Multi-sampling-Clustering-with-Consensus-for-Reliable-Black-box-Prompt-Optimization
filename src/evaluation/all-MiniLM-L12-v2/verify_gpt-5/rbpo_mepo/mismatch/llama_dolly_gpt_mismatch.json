@@ -1,0 +1,251 @@
+{
+  "total_items": 200,
+  "total_mismatches": 3,
+  "mismatch_rate": "1.50%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": 32,
+      "ori_prompt": "Classify each of these as extinct, not extinct, or neither: Mythosaur, Triceratops, Dumbo Octopus, Dodo, Tiger, Lion turtle, Megalodon, Dire wolf, Pegasus, Seahorse",
+      "rbpo_prompt": "Classify each of these species as extinct, not extinct, or neither: Mythosaur, Triceratops, Dumbo Octopus, Dodo, Tiger, Lion turtle, Megalodon, Dire wolf, Pegasus, Seahorse.",
+      "rbpo_response": null,
+      "mepo_prompt": "Identify the status of each species as either extinct, currently not extinct, or neither listed, specifically for the following terms: Mythosaur, Triceratops, Dumbo Octopus, Dodo, Tiger, Lion-turtle, Megalodon, Dire Wolf, Pegasus, and Seahorse.",
+      "mepo_response": "Of course! Here are the statuses of each species you mentioned:\n\n1. Mythosaur: Neither listed (Mythosaur is a fictional creature that does not exist in reality)\n2. Triceratops: Currently not extinct (Triceratops is a prehistoric dinosaur that lived during the Late Cretaceous period and went extinct around 65 million years ago)\n3. Dumbo Octopus: Currently not extinct (Dumbo octopuses are real marine animals that live in the deep waters of the Atlantic and Pacific oceans)\n4. Dodo: Extinct (Dodo birds were a species of flightless bird that lived on the island of Mauritius and went extinct in the 17th century due to habitat destruction and hunting)\n5. Tiger: Currently not extinct (Tigers are still found in the wild in various parts of Asia, although their populations are declining due to habitat loss and poaching)\n6. Lion-turtle: Neither listed (Lion-turtles are a fictional creature that does not exist in reality)\n7. Megalodon: Extinct (Megalodon was a massive prehistoric shark that lived during the Cenozoic era and went extinct around 2.6 million years ago)\n8. Dire Wolf: Extinct (Dire wolves were a species of wolf that lived in the Americas during the Pleistocene epoch and went extinct around 11,000 years ago)\n9. Pegasus: Neither listed (Pegasus is a mythical creature that does not exist in reality)\n10. Seahorse: Currently not extinct (Seahorses are real marine animals that live in the warm waters of the Atlantic, Pacific, and Indian oceans)\n\nI hope this helps! Let me know if you have any other questions.",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "ori_prompt": "Was Richard Nixon born in California?",
+      "rbpo_prompt": "Was Richard Nixon born in California? If not, where was he born?",
+      "rbpo_response": null,
+      "mepo_prompt": "Do you need to know specifically whether Richard Nixon was born in California, and are seeking a direct yes or no answer?",
+      "mepo_response": "Yes, I can provide a direct answer to your question. Richard Nixon was not born in California. He was born in Yorba Linda, California on January 9, 1913.",
+      "winners_per_run": [
+        2,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.6,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "ori_prompt": "Given this paragraph about Gheorge Hagi, tell me which were his top achievements in the Romanian football team.",
+      "rbpo_prompt": "Given the paragraph about Gheorge Hagi, please provide a list of his top achievements in the Romanian football team.",
+      "rbpo_response": null,
+      "mepo_prompt": "Identify specifically the key accomplishments of Gheorge Hagi while playing for the Romanian national football team, based on the provided paragraph.",
+      "mepo_response": "Certainly! According to the provided paragraph, some of the key accomplishments of Gheorghe Hagi while playing for the Romanian national football team include:\n\n* Scoring 35 goals in 64 appearances for the national team, making him Romania's all-time leading scorer\n* Winning the 1994 European Football Championship with Romania, where he was named the tournament's best player\n* Leading Romania to the quarter-finals of the 1990 World Cup\n* Being named the Romanian Footballer of the Year on four occasions (1987, 1989, 1990, and 1994)\n\nI hope this information helps! Let me know if you have any other questions.",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

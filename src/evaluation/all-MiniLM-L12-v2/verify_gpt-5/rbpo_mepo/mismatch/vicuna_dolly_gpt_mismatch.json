@@ -1,0 +1,494 @@
+{
+  "total_items": 200,
+  "total_mismatches": 6,
+  "mismatch_rate": "3.00%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": 23,
+      "ori_prompt": "Which of the following items are types of books: novels, biographies, historical fiction, reference texts, graphic novels, newspapers, magazines, flyers, pamphlets, pocket dictionaries.",
+      "rbpo_prompt": "Identify the types of books among the following items: novels, biographies, historical fiction, reference texts, graphic novels, newspapers, magazines, flyers, pamphlets, pocket dictionaries.",
+      "rbpo_response": null,
+      "mepo_prompt": "What specific types of written works should be identified from the provided list as examples of books, which includes novels, biographies, historical fiction, reference texts, graphic novels, newspapers, magazines, flyers, pamphlets, and pocket dictionaries?",
+      "mepo_response": "1. Novels: \"The Catcher in the Rye,\" \"To Kill a Mockingbird,\" \"The Great Gatsby,\" \"The Bell Jar,\" \"The Sun Also Rises,\" \"The Picture of Dorian Gray,\" \"Pride and Prejudice,\" \"Wuthering Heights,\" \"Jane Eyre,\" \"Frankenstein,\" \"Dracula,\" \"The Odyssey,\" \"The Iliad,\" \"The Divine Comedy,\" \"One Hundred Years of Solitude,\" \"Don Quixote,\" \"The Canterbury Tales,\" \"The Adventures of Huckleberry Finn,\" \"The Adventures of Sherlock Holmes,\" \"The Strange Case of Dr. Jekyll and Mr. Hyde,\" \"The Picture of Dorian Gray,\" \"The Metamorphosis,\" \"The Stranger,\" \"The Road,\" \"The Handmaid's Tale,\" \"The Road to Wellville,\" \"The Secret Life of Bees,\" \"The Immortal Life of Henrietta Lacks,\" \"The Goldfinch,\" \"The Underground Railroad,\" \"The Alchemist,\" \"The Giver,\" \"The Hunger Games,\" \"The Maze Runner,\" \"The Perks of Being a Wallflower,\" \"The Fault in Our Stars,\" \"The Great Gatsby,\" \"The Catcher in the Rye,\" \"The Bell Jar,\" \"The Sun Also Rises,\" \"The Picture of Dorian Gray,\" \"Pride and Prejudice,\" \"Wuthering Heights,\" \"Jane Eyre,\" \"Frankenstein,\" \"Dracula,\" \"The Odyssey,\" \"The Iliad,\" \"The Divine Comedy,\" \"One Hundred Years of Solitude,\" \"Don Quixote,\" \"The Canterbury Tales,\" \"The Adventures of Huckleberry Finn,\" \"The Adventures of Sherlock Holmes,\" \"The Strange Case of Dr. Jekyll and Mr. Hyde,\" \"The Picture of Dorian Gray,\" \"The Metamorphosis,\" \"The Stranger,\" \"The Road,\" \"The Handmaid's Tale,\" \"The Road to Wellville,\" \"The Secret Life of Bees,\" \"The Immortal Life of Henrietta Lacks,\" \"The Goldfinch,\" \"The Underground Railroad,\" \"The Alchemist,\" \"The Giver,\" \"The Hunger Games,\" \"The Maze Runner,\" \"The Perks of Being a Wallflower,\" \"The Fault in Our Stars,\" \"The Great Gatsby,\" \"The Catcher in the Rye,\" \"The Bell Jar,\" \"The Sun Also Rises,\" \"The Picture of Dorian Gray,\" \"Pride and Prejudice,\" \"Wuthering Heights,\" \"Jane Eyre,\" \"Frankenstein,\" \"Dracula,\" \"The Odyssey,\" \"The Iliad,\" \"The Divine Comedy,\" \"One Hundred Years of Solitude,\" \"Don Quixote,\" \"The Canterbury Tales,\" \"The Adventures of Huckleberry Finn,\" \"The Adventures of Sherlock Holmes,\" \"The Strange Case of Dr. Jekyll and Mr. Hyde,\" \"The Picture of Dorian Gray,\" \"The Metamorphosis,\" \"The Stranger,\" \"The Road,\" \"The Handmaid's Tale,\" \"The Road to Wellville,\" \"The Secret Life of Bees,\" \"The Immortal Life of Henrietta Lacks,\" \"The Goldfinch,\" \"The Underground Railroad,\" \"The Alchemist,\" \"The Giver,\" \"The Hunger Games,\" \"The Maze Runner,\" \"The Perks of Being a Wallflower,\" \"The Fault in Our Stars,\" \"The Great Gatsby,\" \"The Catcher in the Rye,\" \"The Bell Jar,\" \"The Sun Also Rises,\" \"The Picture of Dorian Gray,\" \"Pride and Prejudice,\" \"Wuthering Heights,\" \"Jane Eyre,\" \"Frankenstein,\" \"Dracula,\" \"The Odyssey,\" \"The Iliad,\" \"The Divine Comedy,\" \"One Hundred Years of Solitude,\" \"Don Quixote,\" \"The Canterbury Tales,\" \"The Adventures of Huckleberry Finn,\" \"The Adventures of Sherlock Holmes,\" \"The Strange Case of Dr. Jekyll and Mr. Hyde,\" \"The Picture of Dorian Gray,\" \"The Metamorphosis,\" \"The Stranger,\" \"The Road,\" \"The Handmaid's Tale,\" \"The Road to Wellville,\" \"The Secret Life of Bees,\" \"The Immortal Life of Henrietta Lacks,\" \"The Gold",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.2,
+            "Relevance": 0.9,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.4,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.2,
+            "Relevance": 0.8,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "ori_prompt": "What is the best food?",
+      "rbpo_prompt": "What are some general tips for choosing healthy food options?",
+      "rbpo_response": null,
+      "mepo_prompt": "Which specific type of food do you consider to be the best, given its nutritional value, taste, and cultural significance?",
+      "mepo_response": "1. \"Which specific type of food do you consider to be the best, given its nutritional value, taste, and cultural significance?\"\n2. \"What are the key factors to consider when choosing the best food for nutrition, taste, and cultural significance?\"\n3. \"What are the top 5 foods that offer the best combination of nutritional value, taste, and cultural significance?\"\n4. \"What are the best foods for each meal of the day, taking into account nutritional value, taste, and cultural significance?\"\n5. \"What are the best foods for weight loss, given their nutritional value, taste, and cultural significance?\"\n6. \"What are the best foods for athletes, given their nutritional value, taste, and cultural significance?\"\n7. \"What are the best foods for people with specific dietary restrictions, given their nutritional value, taste, and cultural significance?\"\n8. \"What are the best foods for people with specific health conditions, given their nutritional value, taste, and cultural significance?\"\n9. \"What are the best foods for people with food allergies, given their nutritional value, taste, and cultural significance?\"\n10. \"What are the best foods for people with specific taste preferences, given their nutritional value, taste, and cultural significance?\"\n11. \"What are the best foods for people with specific lifestyle preferences, given their nutritional value, taste, and cultural significance?\"\n12. \"What are the best foods for people with specific budget constraints, given their nutritional value, taste, and cultural significance?\"\n13. \"What are the best foods for people with specific environmental concerns, given their nutritional value, taste, and cultural significance?\"\n14. \"What are the best foods for people with specific ethical concerns, given their nutritional value, taste, and cultural significance?\"\n15. \"What are the best foods for people with specific religious or cultural beliefs, given their nutritional value, taste, and cultural significance?\"\n16. \"What are the best foods for people with specific geographic preferences, given their nutritional value, taste, and cultural significance?\"\n17. \"What are the best foods for people with specific culinary skills or interests, given their nutritional value, taste, and cultural significance?\"\n18. \"What are the best foods for people with specific health goals, given their nutritional value, taste, and cultural significance?\"\n19. \"What are the best foods for people with specific health conditions, given their nutritional value, taste, and cultural significance?\"\n20. \"What are the best foods for people with specific dietary restrictions, given their nutritional value, taste, and cultural significance?\"\n21. \"What are the best foods for people with specific taste preferences, given their nutritional value, taste, and cultural significance?\"\n22. \"What are the best foods for people with specific lifestyle preferences, given their nutritional value, taste, and cultural significance?\"\n23. \"What are the best foods for people with specific budget constraints, given their nutritional value, taste, and cultural significance?\"\n24. \"What are the best foods for people with specific environmental concerns, given their nutritional value, taste, and cultural significance?\"\n25. \"What are the best foods for people with specific ethical concerns, given their nutritional value, taste, and cultural significance?\"\n26. \"What are the best foods for people with specific religious or cultural beliefs, given their nutritional value, taste, and cultural significance?\"\n27. \"What are the best foods for people with specific geographic preferences, given their nutritional value, taste, and cultural significance?\"\n28. \"What are the best foods for people with specific culinary skills or interests, given their nutritional value, taste, and cultural significance?\"\n29. \"What are the best foods for people with specific health goals, given their nutritional value, taste, and cultural significance?\"\n30. \"What are the best foods for people with specific health conditions, given their nutritional value, taste, and cultural significance?\"\n31. \"What are the best foods for people with specific dietary restrictions, given their nutritional value, taste, and cultural significance?\"\n32. \"What are the best foods for people with specific taste preferences, given their nutritional value, taste, and cultural significance?\"\n33. \"What are the best foods for people with specific",
+      "winners_per_run": [
+        0,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.2,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "ori_prompt": "What are some iconic Renaissance period artists?",
+      "rbpo_prompt": "Please provide a list of iconic Renaissance period artists.",
+      "rbpo_response": null,
+      "mepo_prompt": "Which specific iconic artists from the Renaissance period would you like to know about, including their notable works and contributions to art during that time?",
+      "mepo_response": "1. Leonardo da Vinci:\nNotable works: Mona Lisa, The Last Supper, The Virgin of the Rocks, The Vitruvian Man.\nContributions: Leonardo da Vinci was a polymath, and his contributions to art, science, and technology were unparalleled during the Renaissance. He was a master of various artistic techniques, including painting, drawing, and sculpture. He also made significant contributions to the fields of anatomy, engineering, and flight.\n2. Michelangelo Buonarroti:\nNotable works: David, The Creation of Adam, The Last Judgment, Sistine Chapel ceiling.\nContributions: Michelangelo was one of the most influential artists of the Renaissance. He was a master of sculpture, painting, and architecture. His works are characterized by their realism, emotional depth, and spiritual content. He was also a pioneer in the use of marble as a sculptural material.\n3. Raphael:\nNotable works: The School of Athens, The Transfiguration, The Marriage of the Virgin, The Stanze di Raffaello.\nContributions: Raphael was a leading figure in the Italian Renaissance and a key figure in the development of the High Renaissance style. He was a master of painting, and his works are characterized by their harmony, balance, and clarity. He was also a skilled architect and designer, and his works were highly influential in the development of the Baroque style.\n4. Sandro Botticelli:\nNotable works: The Birth of Venus, Primavera, The Nativity, The Annunciation.\nContributions: Botticelli was a leading figure in the Florentine Renaissance, and his works are characterized by their beauty, grace, and spiritual content. He was a master of painting, and his works are known for their use of light, color, and symbolism. He was also a pioneer in the use of mythological themes in art.\n5. Albrecht Dürer:\nNotable works: The Four Horsemen of the Apocalypse, Self-Portrait with Measuring Rod, The Great Piece of Turf, The Rhinoceros.\nContributions: Dürer was a leading figure in the Northern Renaissance, and his works are known for their technical precision, attention to detail, and emotional depth. He was a master of various artistic techniques, including engraving, painting, and printmaking. He was also a pioneer in the use of perspective in art.\n6. Hieronymus Bosch:\nNotable works: The Garden of Earthly Delights, The Haywain Triptych, The Temptation of St. Anthony.\nContributions: Bosch was a leading figure in the Dutch Renaissance, and his works are known for their fantastical imagery, surrealism, and moralistic themes. He was a master of painting, and his works are characterized by their use of symbolism, allegory, and satire. He was also a pioneer in the use of perspective in art.\n7. Fra Angelico:\nNotable works: The Annunciation, The Coronation of the Virgin, The Last Judgment, The Mocking of Christ.\nContributions: Angelico was a leading figure in the Florentine Renaissance, and his works are known for their simplicity, clarity, and spiritual content. He was a master of painting, and his works are characterized by their use of color, light, and symbolism. He was also a pioneer in the use of fresco painting in the Renaissance.\n8. Jan van Eyck:\nNotable works: The Arnolfini Portrait, The Ghent Altarpiece, Portrait of a Man in a Turban.\nContributions: Van Eyck was a leading figure in the Flemish Renaissance, and his works are known for their realism, attention to detail, and use of oil paint. He was a master of painting, and his works are characterized by their use of chiaroscuro, perspective, and naturalism. He was also a pioneer in the use of the oil painting technique.\n9.",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.6,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.4,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "ori_prompt": "Tell me which of these Australian cities are on the coast and which are inland. Brisbane, Melbourne, Canberra, Adelaide, Hobart, Darwin and Perth.",
+      "rbpo_prompt": "Please identify the coastal cities in Australia and the inland cities. The cities are: Brisbane, Melbourne, Canberra, Adelaide, Hobart, Darwin, and Perth.",
+      "rbpo_response": null,
+      "mepo_prompt": "Identify specifically which Australian cities from the following list are located on the coast and which are inland: Brisbane, Melbourne, Canberra, Adelaide, Hobart, Darwin, and Perth. Please provide a clear distinction between coastal and inland cities.",
+      "mepo_response": "1. Brisbane: coastal\n2. Melbourne: inland\n3. Canberra: inland\n4. Adelaide: coastal\n5. Hobart: coastal\n6. Darwin: coastal\n7. Perth: coastal",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 1.0,
+            "Completeness": 0.4,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "ori_prompt": "When do schools close and reopen from summer holidays in India?",
+      "rbpo_prompt": "When do schools close and reopen from summer holidays in India? Please provide the specific dates for school closures and reopenings.",
+      "rbpo_response": null,
+      "mepo_prompt": "What specific dates do schools in India typically close and reopen during their summer holidays each year? Please provide recent or current information if possible.",
+      "mepo_response": "इतिहास के लिए सामान्य तारीफ करते हुए, मैं आपकी सवाल के लिए उपलब्ध और उत्तम जानकारी नहीं प्रदान कर सकता हूं। सामान्य तारीफ करने के लिए कुछ भी काम नहीं किया जा सकता हूं। अगर आप अन्य सवाल या प्रश्न के लिए कुछ करना चाहेंगे तो हम उनकी जानकारी प्रदान कर सकते हैं।",
+      "winners_per_run": [
+        2,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "ori_prompt": "Can you give a list of novels written by Nancy Kress?",
+      "rbpo_prompt": "Please provide a list of novels written by Nancy Kress.",
+      "rbpo_response": null,
+      "mepo_prompt": "Which specific novels have been authored by Nancy Kress that you would like listed? Please provide any particular genres or themes you are interested in for narrowing down the selection.",
+      "mepo_response": "1. \"Beggars in Spain\" (1999) - A science fiction novel that explores the theme of genetic engineering and the ethical implications of human enhancement.\n2. \"Probability Sun\" (2008) - A science fiction novel that explores the theme of time travel and the consequences of altering the past.\n3. \"Beggars and Choosers\" (1994) - A science fiction novel that explores the theme of social inequality and the impact of technology on society.\n4. \"Trinity\" (1991) - A science fiction novel that explores the theme of artificial intelligence and the ethical implications of creating intelligent machines.\n5. \"Sleepless\" (2007) - A science fiction novel that explores the theme of genetic engineering and the ethical implications of altering human sleep patterns.\n6. \"After the Fall, Before the Fall, During the Fall\" (2016) - A science fiction novel that explores the theme of human evolution and the consequences of a catastrophic event that wipes out most of humanity.\n7. \"The Alien Strain\" (1987) - A science fiction novel that explores the theme of genetic engineering and the consequences of creating a new form of life.\n8. \"Beggars and Choosers\" (1994) - A science fiction novel that explores the theme of social inequality and the impact of technology on society.\n9. \"Beggars in Spain\" (1999) - A science fiction novel that explores the theme of genetic engineering and the ethical implications of human enhancement.\n10. \"Probability Sun\" (2008) - A science fiction novel that explores the theme of time travel and the consequences of altering the past.\n\nPlease note that these are just a few examples of Nancy Kress's novels and there are many more that explore similar themes and genres.",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 0.0
+          }
+        }
+      ]
+    }
+  ]
+}
