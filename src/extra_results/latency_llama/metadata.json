@@ -1,0 +1,31 @@
+{
+  "execution_date_utc": "2026-06-16T06:50:53.459976+00:00",
+  "platform": "Linux-6.8.0-107-generic-x86_64-with-glibc2.35",
+  "python_version": "3.13.2",
+  "pytorch_version": "2.12.0+cu130",
+  "cuda_version": "13.0",
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "gpu_memory_bytes": 25272516608,
+  "optimizer_checkpoint": "meta-llama/Llama-2-7b-chat-hf",
+  "base_llm_checkpoint": "meta-llama/Llama-2-7b-chat-hf",
+  "embedding_model": "sentence-transformers/all-MiniLM-L12-v2",
+  "torch_dtype": "auto",
+  "quantization": null,
+  "candidate_counts": [
+    1,
+    5,
+    10
+  ],
+  "batch_modes": [
+    "full"
+  ],
+  "candidate_max_new_tokens": 512,
+  "response_max_new_tokens": 1024,
+  "temperature": 0.9,
+  "top_p": 0.9,
+  "distance_threshold": 0.05,
+  "creativity_coefficient": 0.5,
+  "repetitions": 1,
+  "warmup_runs": 1,
+  "random_seed": 42
+}
