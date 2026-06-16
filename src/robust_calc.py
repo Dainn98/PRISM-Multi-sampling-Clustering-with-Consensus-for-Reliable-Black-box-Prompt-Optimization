@@ -59,6 +59,21 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--permutation-iterations", type=int, default=100_000)
     parser.add_argument("--random-seed", type=int, default=42)
     parser.add_argument("--embedding-label", default="embeddinggemma-300m")
+    parser.add_argument(
+        "--benchmark-mode",
+        choices=["aggregate-complete", "separate"],
+        default="aggregate-complete",
+        help=(
+            "aggregate-complete combines the four instruction-following benchmarks "
+            "into one config and keeps only configs with all required benchmarks."
+        ),
+    )
+    parser.add_argument(
+        "--benchmarks",
+        nargs="+",
+        default=["vicuna", "dolly", "bpo", "self"],
+        help="Benchmark labels required when --benchmark-mode=aggregate-complete.",
+    )
     return parser.parse_args()
 
 
@@ -521,14 +536,57 @@ def parse_summary_comparison(comparison: str) -> dict[str, str] | None:
     }
 
 
+def aggregate_complete_benchmark_records(
+    records: Sequence[Record],
+    required_benchmarks: Sequence[str],
+) -> list[Record]:
+    required = set(required_benchmarks)
+    groups: dict[tuple[str, str, str], list[tuple[Record, dict[str, str]]]] = defaultdict(list)
+
+    for record in records:
+        parsed = parse_summary_comparison(record.comparison)
+        if parsed is None:
+            continue
+        key = (parsed["method_key"], parsed["base_llm"], parsed["evaluator"])
+        groups[key].append((record, parsed))
+
+    aggregated: list[Record] = []
+    for (method_key, base_llm, evaluator), group in groups.items():
+        available = {parsed["benchmark"] for _, parsed in group}
+        if not required.issubset(available):
+            continue
+
+        comparison = f"{method_key}_{base_llm}_all_{evaluator}"
+        for record, parsed in group:
+            if parsed["benchmark"] not in required:
+                continue
+            aggregated.append(
+                Record(
+                    comparison=comparison,
+                    prompt_id=f"{parsed['benchmark']}:{record.prompt_id}",
+                    judge_run=record.judge_run,
+                    result=record.result,
+                    seed=record.seed,
+                )
+            )
+
+    if not aggregated:
+        expected = ",".join(required_benchmarks)
+        raise ValueError(f"No configs contain all required benchmarks: {expected}")
+    return aggregated
+
+
 def benchmark_aggregate_rows(
     summary_rows: Sequence[dict],
     embedding_label: str,
 ) -> list[dict]:
     groups: dict[tuple[str, str, str, str, str], list[dict]] = defaultdict(list)
+    benchmark_order = ["vicuna", "dolly", "bpo", "self"]
     for row in summary_rows:
         parsed = parse_summary_comparison(str(row["comparison"]))
         if parsed is None:
+            continue
+        if parsed["benchmark"] not in benchmark_order:
             continue
         key = (
             embedding_label,
@@ -539,7 +597,6 @@ def benchmark_aggregate_rows(
         )
         groups[key].append({**row, **parsed})
 
-    benchmark_order = ["vicuna", "dolly", "bpo", "self"]
     output_rows = []
     for (embedding, base_llm, method_a, method_b, evaluator), rows in sorted(groups.items()):
         by_benchmark = {str(row["benchmark"]): row for row in rows}
@@ -614,7 +671,11 @@ def main() -> int:
             paths = expand_inputs(patterns)
             all_records.extend(load_records(paths, verify_key, comparison))
 
-        records = all_records
+        records = (
+            aggregate_complete_benchmark_records(all_records, args.benchmarks)
+            if args.benchmark_mode == "aggregate-complete"
+            else all_records
+        )
         warnings = validate_records(records, args.expected_runs)
         for warning in warnings:
             print(f"WARNING: {warning}", file=sys.stderr)

@@ -127,6 +127,21 @@ def load_causal_model(model_name: str, token: str | None) -> tuple[AutoModelForC
     return model, tokenizer
 
 
+def load_embedding_model(model_name: str) -> SentenceTransformer:
+    return SentenceTransformer(
+        model_name,
+        device="cuda" if torch.cuda.is_available() else "cpu",
+        cache_folder=MODEL_CACHE_PATH,
+    )
+
+
+def release_memory() -> None:
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+        torch.cuda.ipc_collect()
+
+
 def prepare_base_prompt(tokenizer: AutoTokenizer, prompt: str, context: str | None) -> str:
     messages = make_prompt_template(prompt, context=context)
     if getattr(tokenizer, "chat_template", None):
@@ -261,13 +276,9 @@ def run_pipeline(
     item: dict,
     candidate_count: int,
     batch_mode: str,
-    optimizer_model: AutoModelForCausalLM,
-    optimizer_tokenizer: AutoTokenizer,
-    embedding_model: SentenceTransformer,
-    base_model: AutoModelForCausalLM,
-    base_tokenizer: AutoTokenizer,
     args: argparse.Namespace,
     threshold: float,
+    token: str | None,
 ) -> dict:
     original_prompt = get_prompt(item)
     if not original_prompt:
@@ -278,56 +289,84 @@ def run_pipeline(
     synchronize()
     end_to_end_start = time.perf_counter()
 
-    with timer() as elapsed:
-        candidates, candidate_input_tokens, candidate_output_tokens = generate_texts(
-            optimizer_model,
-            optimizer_tokenizer,
-            optimizer_inputs,
-            max_new_tokens=args.candidate_max_new_tokens,
-            do_sample=True,
-            batch_mode=batch_mode,
-            temperature=args.temperature,
-            top_p=args.top_p,
+    optimizer_model = optimizer_tokenizer = None
+    try:
+        optimizer_model, optimizer_tokenizer = load_causal_model(args.optimizer_model, token)
+        with timer() as elapsed:
+            candidates, candidate_input_tokens, candidate_output_tokens = generate_texts(
+                optimizer_model,
+                optimizer_tokenizer,
+                optimizer_inputs,
+                max_new_tokens=args.candidate_max_new_tokens,
+                do_sample=True,
+                batch_mode=batch_mode,
+                temperature=args.temperature,
+                top_p=args.top_p,
+            )
+        candidate_generation_ms = elapsed()
+        original_prompt_tokens = len(
+            optimizer_tokenizer(original_prompt, add_special_tokens=False)["input_ids"]
         )
-    candidate_generation_ms = elapsed()
+    finally:
+        optimizer_model = None
+        optimizer_tokenizer = None
+        release_memory()
 
-    with timer() as elapsed:
-        original_embedding, candidate_embeddings = embed_prompts(
-            embedding_model, original_prompt, candidates
-        )
-    embedding_ms = elapsed()
+    embedding_model = original_embedding = candidate_embeddings = None
+    try:
+        embedding_model = load_embedding_model(args.embedding_model)
+        with timer() as elapsed:
+            original_embedding, candidate_embeddings = embed_prompts(
+                embedding_model, original_prompt, candidates
+            )
+        embedding_ms = elapsed()
 
-    with timer() as elapsed:
-        clusters = cluster_candidates(candidate_embeddings, threshold)
-    clustering_ms = elapsed()
+        with timer() as elapsed:
+            clusters = cluster_candidates(candidate_embeddings, threshold)
+        clustering_ms = elapsed()
 
-    with timer() as elapsed:
-        representatives = choose_representatives(
-            clusters, original_embedding, candidate_embeddings
-        )
-    representative_selection_ms = elapsed()
+        with timer() as elapsed:
+            representatives = choose_representatives(
+                clusters, original_embedding, candidate_embeddings
+            )
+        representative_selection_ms = elapsed()
 
-    with timer() as elapsed:
-        best_index, _ = select_by_consensus(
-            representatives,
-            original_embedding,
-            candidate_embeddings,
-            args.creativity_coefficient,
-        )
-    consensus_scoring_ms = elapsed()
+        with timer() as elapsed:
+            best_index, _ = select_by_consensus(
+                representatives,
+                original_embedding,
+                candidate_embeddings,
+                args.creativity_coefficient,
+            )
+        consensus_scoring_ms = elapsed()
+    finally:
+        embedding_model = None
+        original_embedding = None
+        candidate_embeddings = None
+        release_memory()
 
     final_prompt = candidates[best_index]
-    formatted_prompt = prepare_base_prompt(base_tokenizer, final_prompt, context)
-    with timer() as elapsed:
-        responses, base_input_tokens, base_output_tokens = generate_texts(
-            base_model,
-            base_tokenizer,
-            [formatted_prompt],
-            max_new_tokens=args.response_max_new_tokens,
-            do_sample=False,
-            batch_mode="full",
+    base_model = base_tokenizer = None
+    try:
+        base_model, base_tokenizer = load_causal_model(args.base_model, token)
+        formatted_prompt = prepare_base_prompt(base_tokenizer, final_prompt, context)
+        with timer() as elapsed:
+            responses, base_input_tokens, base_output_tokens = generate_texts(
+                base_model,
+                base_tokenizer,
+                [formatted_prompt],
+                max_new_tokens=args.response_max_new_tokens,
+                do_sample=False,
+                batch_mode="full",
+            )
+        base_llm_generation_ms = elapsed()
+        final_prompt_tokens = len(
+            base_tokenizer(final_prompt, add_special_tokens=False)["input_ids"]
         )
-    base_llm_generation_ms = elapsed()
+    finally:
+        base_model = None
+        base_tokenizer = None
+        release_memory()
     synchronize()
     end_to_end_ms = (time.perf_counter() - end_to_end_start) * 1000.0
 
@@ -341,14 +380,10 @@ def run_pipeline(
     return {
         "num_clusters": len(clusters),
         "num_representatives": len(representatives),
-        "original_prompt_tokens": len(
-            optimizer_tokenizer(original_prompt, add_special_tokens=False)["input_ids"]
-        ),
+        "original_prompt_tokens": original_prompt_tokens,
         "total_candidate_input_tokens": candidate_input_tokens,
         "total_candidate_output_tokens": candidate_output_tokens,
-        "final_prompt_tokens": len(
-            base_tokenizer(final_prompt, add_special_tokens=False)["input_ids"]
-        ),
+        "final_prompt_tokens": final_prompt_tokens,
         "base_llm_input_tokens": base_input_tokens,
         "base_llm_output_tokens": base_output_tokens,
         "candidate_generation_ms": candidate_generation_ms,
@@ -519,16 +554,8 @@ def main() -> int:
         print("ERROR: dataset is empty", file=sys.stderr)
         return 2
 
-    print("Loading optimizer, embedding model, and base LLM...")
-    optimizer_model, optimizer_tokenizer = load_causal_model(args.optimizer_model, token)
-    embedding_model = SentenceTransformer(
-        args.embedding_model,
-        device="cuda" if torch.cuda.is_available() else "cpu",
-        cache_folder=MODEL_CACHE_PATH,
-    )
-    base_model, base_tokenizer = load_causal_model(args.base_model, token)
-
     warmup_m = min(args.candidate_counts)
+    print("Models will be loaded lazily per pipeline phase.")
     print(f"Running {args.warmup_runs} warm-up iterations...")
     for warmup_index in range(args.warmup_runs):
         set_global_seed(args.random_seed)
@@ -536,13 +563,9 @@ def main() -> int:
             dataset[warmup_index % len(dataset)],
             warmup_m,
             args.batch_modes[0],
-            optimizer_model,
-            optimizer_tokenizer,
-            embedding_model,
-            base_model,
-            base_tokenizer,
             args,
             threshold,
+            token,
         )
 
     raw_rows: list[dict] = []
@@ -565,19 +588,14 @@ def main() -> int:
                             item,
                             candidate_count,
                             batch_mode,
-                            optimizer_model,
-                            optimizer_tokenizer,
-                            embedding_model,
-                            base_model,
-                            base_tokenizer,
                             args,
                             threshold,
+                            token,
                         )
                         raw_rows.append({**prefix, "status": "ok", "error": "", **row})
                     except torch.cuda.OutOfMemoryError as error:
                         raw_rows.append({**prefix, "status": "oom", "error": str(error)})
-                        torch.cuda.empty_cache()
-                        gc.collect()
+                        release_memory()
                         print(f"  OOM for sample={sample_id}; continuing")
                     except Exception as error:
                         raw_rows.append({**prefix, "status": "error", "error": repr(error)})
