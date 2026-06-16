@@ -31,6 +31,12 @@ VALID_RESULTS = {"win", "tie", "loss"}
 PREF_VALUE = {"win": 1.0, "tie": 0.5, "loss": 0.0}
 DELTA_VALUE = {"win": 1.0, "tie": 0.0, "loss": -1.0}
 WINNER_VALUE = {0: "win", 1: "loss", 2: "tie", "0": "win", "1": "loss", "2": "tie"}
+DEFAULT_VERIFY_JOBS = {
+    "rbpo_bpo": "PRISM_BPO_vs_BPO",
+    "rbpo_mepo": "PRISM_BPO_vs_MePO",
+    "rmepo_mepo": "PRISM_MePO_vs_MePO",
+}
+DEFAULT_VERIFY_ROOT = Path("src/evaluation/embeddinggemma-300m/verify")
 
 
 @dataclass(frozen=True)
@@ -44,8 +50,8 @@ class Record:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", nargs="+", required=True, help="CSV/JSON input files or glob patterns")
-    parser.add_argument("--output-dir", default="robustness_results")
+    parser.add_argument("--input", nargs="+", help="CSV/JSON input files or glob patterns")
+    parser.add_argument("--output-dir", default="src/extra_results/robust_all")
     parser.add_argument("--verify-key", help="Key prefix used by repository JSON judge files")
     parser.add_argument("--comparison", help="Comparison name for JSON input; defaults to --verify-key")
     parser.add_argument("--expected-runs", type=int, help="Expected judge runs per prompt")
@@ -53,6 +59,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--permutation-iterations", type=int, default=100_000)
     parser.add_argument("--random-seed", type=int, default=42)
     return parser.parse_args()
+
+
+def default_jobs() -> list[tuple[str, str, str, list[str]]]:
+    jobs = []
+    for verify_key, comparison in DEFAULT_VERIFY_JOBS.items():
+        verify_dir = DEFAULT_VERIFY_ROOT / verify_key
+        pattern = str(verify_dir / "*_eval_*.json")
+        if list(Path().glob(pattern)):
+            jobs.append((verify_key, comparison, verify_key, [pattern]))
+    return jobs
 
 
 def expand_inputs(patterns: Sequence[str]) -> list[Path]:
@@ -478,8 +494,31 @@ def failure_case_rows(prompt_rows: Sequence[dict]) -> list[dict]:
 def main() -> int:
     args = parse_args()
     try:
-        paths = expand_inputs(args.input)
-        records = load_records(paths, args.verify_key, args.comparison)
+        if args.input:
+            jobs = [
+                (
+                    args.verify_key,
+                    args.comparison,
+                    "custom",
+                    args.input,
+                )
+            ]
+        else:
+            jobs = default_jobs()
+            if not jobs:
+                raise FileNotFoundError(
+                    f"No default judge files found under {DEFAULT_VERIFY_ROOT}. "
+                    "Pass --input explicitly."
+                )
+
+        all_records = []
+        for verify_key, comparison, _, patterns in jobs:
+            if not verify_key:
+                raise ValueError("--verify-key is required for JSON judge files")
+            paths = expand_inputs(patterns)
+            all_records.extend(load_records(paths, verify_key, comparison))
+
+        records = all_records
         warnings = validate_records(records, args.expected_runs)
         for warning in warnings:
             print(f"WARNING: {warning}", file=sys.stderr)

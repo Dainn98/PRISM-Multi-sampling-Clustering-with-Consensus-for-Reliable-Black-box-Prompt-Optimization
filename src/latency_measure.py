@@ -48,13 +48,17 @@ MODULE_COLUMNS = [
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--dataset", required=True, help="JSON list containing id/ori_prompt fields")
-    parser.add_argument("--output-dir", default="latency_results")
-    parser.add_argument("--candidate-counts", nargs="+", type=int, default=[1, 5, 10, 20, 50])
+    parser.add_argument(
+        "--dataset",
+        default="src/testset/instruction-following/dolly_eval.json",
+        help="JSON list containing id/ori_prompt fields",
+    )
+    parser.add_argument("--output-dir", default="src/extra_results/latency_llama")
+    parser.add_argument("--candidate-counts", nargs="+", type=int, default=[1, 5, 10])
     parser.add_argument("--batch-modes", nargs="+", choices=["sequential", "full"], default=["full"])
-    parser.add_argument("--repetitions", type=int, default=5)
-    parser.add_argument("--warmup-runs", type=int, default=3)
-    parser.add_argument("--max-samples", type=int)
+    parser.add_argument("--repetitions", type=int, default=1)
+    parser.add_argument("--warmup-runs", type=int, default=1)
+    parser.add_argument("--max-samples", type=int, default=5)
     parser.add_argument("--random-seed", type=int, default=42)
     parser.add_argument("--optimizer-model", default=LLAMA2_7B)
     parser.add_argument("--base-model", default=LLAMA2_7B)
