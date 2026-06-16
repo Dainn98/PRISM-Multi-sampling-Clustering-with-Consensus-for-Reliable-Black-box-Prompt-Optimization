@@ -304,7 +304,7 @@ def run_pipeline(
     optimizer_inputs = [prompt_template_optimize.format(original_prompt)] * candidate_count
 
     synchronize()
-    cold_start_end_to_end_start = time.perf_counter()
+    cold_start_start = time.perf_counter()
 
     optimizer_model = optimizer_tokenizer = None
     try:
@@ -394,9 +394,7 @@ def run_pipeline(
         base_tokenizer = None
         release_memory()
     synchronize()
-    cold_start_end_to_end_ms = (
-        time.perf_counter() - cold_start_end_to_end_start
-    ) * 1000.0
+    cold_start_end_to_end_ms = (time.perf_counter() - cold_start_start) * 1000.0
 
     prompt_optimization_ms = (
         candidate_generation_ms
@@ -406,6 +404,7 @@ def run_pipeline(
         + consensus_scoring_ms
     )
     total_prism_ms = prompt_optimization_ms + base_llm_generation_ms
+    # Completion latency excludes model loading, cleanup, and any UI rendering.
     end_to_end_ms = total_prism_ms
     total_model_load_ms = (
         optimizer_model_load_ms + embedding_model_load_ms + base_llm_model_load_ms
