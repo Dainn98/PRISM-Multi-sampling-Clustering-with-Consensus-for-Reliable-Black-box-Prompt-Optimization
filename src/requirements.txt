@@ -2,13 +2,13 @@ tqdm
 numpy
 transformers
 torch
-sentence_transformers
+sentence-transformers
 scikit-learn
 accelerate
 openai
 sentencepiece
 protobuf
-dotenv
+python-dotenv
 requests
 datasets
 regex

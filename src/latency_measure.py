@@ -1,4 +1,4 @@
-"""Profile latency and GPU-time cost of the BPO-based PRISM pipeline."""
+"""Profile latency and GPU-time cost of the Llama-based PRISM pipeline."""
 
 from __future__ import annotations
 
@@ -24,7 +24,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from config import MODEL_CACHE_PATH, prompt_template_optimize
 from helper import (
-    BPO_MODEL,
     IMP_ENC,
     LLAMA2_7B,
     MINILM_EMBEDDING_MODEL,
@@ -57,7 +56,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--warmup-runs", type=int, default=3)
     parser.add_argument("--max-samples", type=int)
     parser.add_argument("--random-seed", type=int, default=42)
-    parser.add_argument("--optimizer-model", default=BPO_MODEL)
+    parser.add_argument("--optimizer-model", default=LLAMA2_7B)
     parser.add_argument("--base-model", default=LLAMA2_7B)
     parser.add_argument("--embedding-model", default=MINILM_EMBEDDING_MODEL)
     parser.add_argument("--distance-threshold", type=float)

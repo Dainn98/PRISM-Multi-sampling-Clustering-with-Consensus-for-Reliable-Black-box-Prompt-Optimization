@@ -100,6 +100,28 @@ def infer_run_number(path: Path) -> int:
     return int(match.group(1))
 
 
+def infer_experiment_name(path: Path) -> str:
+    match = re.match(r"(.+)_eval_\d+\.json$", path.name)
+    if not match:
+        raise ValueError(f"Cannot infer experiment name from JSON filename: {path.name}")
+    return match.group(1)
+
+
+def json_comparison_name(
+    path: Path,
+    verify_key: str,
+    comparison: str | None,
+    split_by_experiment: bool,
+) -> str:
+    experiment = infer_experiment_name(path)
+    if comparison and "{experiment}" in comparison:
+        return comparison.format(experiment=experiment, verify_key=verify_key)
+    if split_by_experiment:
+        prefix = comparison or verify_key
+        return f"{prefix}_{experiment}"
+    return comparison or verify_key
+
+
 def read_json_records(
     path: Path,
     verify_key: str,
@@ -135,6 +157,12 @@ def read_json_records(
 
 def load_records(paths: Sequence[Path], verify_key: str | None, comparison: str | None) -> list[Record]:
     records: list[Record] = []
+    json_experiments = {
+        infer_experiment_name(path)
+        for path in paths
+        if path.suffix.lower() == ".json"
+    }
+    split_by_experiment = len(json_experiments) > 1
     for path in paths:
         suffix = path.suffix.lower()
         if suffix == ".csv":
@@ -142,7 +170,18 @@ def load_records(paths: Sequence[Path], verify_key: str | None, comparison: str 
         elif suffix == ".json":
             if not verify_key:
                 raise ValueError("--verify-key is required for JSON judge files")
-            records.extend(read_json_records(path, verify_key, comparison or verify_key))
+            records.extend(
+                read_json_records(
+                    path,
+                    verify_key,
+                    json_comparison_name(
+                        path,
+                        verify_key,
+                        comparison,
+                        split_by_experiment,
+                    ),
+                )
+            )
         else:
             raise ValueError(f"Unsupported input format: {path}")
     return records
