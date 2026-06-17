@@ -167,8 +167,8 @@ def main():
             torch.cuda.empty_cache()
             gc.collect()
 
-    if os.path.exists(MODEL_CACHE_PATH):
-        shutil.rmtree(MODEL_CACHE_PATH, ignore_errors=True)
+        if os.path.exists(MODEL_CACHE_PATH):
+            shutil.rmtree(MODEL_CACHE_PATH, ignore_errors=True)
 
 
 if __name__ == "__main__":

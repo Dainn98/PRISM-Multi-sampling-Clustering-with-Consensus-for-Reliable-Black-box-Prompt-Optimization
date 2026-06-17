@@ -29,14 +29,14 @@ distance_thresholds = {
 
 DEEPSEEK = "deepseek-chat"
 CHATGPT = "gpt-5.4-mini"
-evaluator_models = [DEEPSEEK, CHATGPT]
+evaluator_models = [DEEPSEEK]
 
 LLAMA2_7B = "meta-llama/Llama-2-7b-chat-hf"
 VICUNA_7B = "lmsys/vicuna-7b-v1.3"
 GEMMA3 = "google/gemma-3-4b-it"
 VICUNA_13B = "lmsys/vicuna-13b-v1.5"
 GENERIC_LLM_REWRITER = "unsloth/Qwen3-32B-bnb-4bit"
-base_llm_models = [VICUNA_7B, LLAMA2_7B, GEMMA3, VICUNA_13B]
+base_llm_models = [VICUNA_7B, LLAMA2_7B, GEMMA3]
 
 DOLLY_EVAL = "instruction-following/dolly_eval.json"
 VICUNA_EVAL = "instruction-following/vicuna_eval.json"
