@@ -27,7 +27,7 @@ from helper import (
 from utils import generate_batch
 
 
-print("===== STEP 3.3: RGeneric Response Generation =====")
+print("===== STEP 3.3: Selected Prompt Response Generation =====")
 torch.cuda.empty_cache()
 gc.collect()
 
@@ -41,8 +41,13 @@ hf_token = os.getenv("HF_TOKEN")
 # embedding models configured in helper.py.
 # embedding_models = [GEMMA_EMBEDDING_MODEL, MINI]
 
-PROMPT_KEY = "rgeneric_prompt"
-RESPONSE_KEY = "rgeneric_response"
+PROMPT_RESPONSE_KEYS = [
+    ("ori_prompt", "ori_response"),
+    ("bpo_prompt", "bpo_response"),
+    ("rbpo_prompt", "rbpo_response"),
+    # ("generic_prompt", "generic_response"),
+    # ("rgeneric_prompt", "rgeneric_response"),
+]
 
 
 def save_json(path, data):
@@ -66,23 +71,33 @@ def format_prompts_for_generation(prompts, item, is_vicuna, is_need_context):
     return [prompt_template_vicuna.format(prompt) for prompt in prompts]
 
 
-def generate_rgeneric_response(
+def generate_generic_responses(
     item,
     model,
     tokenizer,
     is_vicuna,
     is_need_context,
 ):
-    prompt = item.get(PROMPT_KEY)
-    if not isinstance(prompt, str) or not prompt.strip():
-        return False
+    available_pairs = []
+    for prompt_key, response_key in PROMPT_RESPONSE_KEYS:
+        prompt = item.get(prompt_key)
+        if not isinstance(prompt, str) or not prompt.strip():
+            continue
 
-    existing_response = item.get(RESPONSE_KEY)
-    if isinstance(existing_response, str) and existing_response.strip():
-        return False
+        existing_response = item.get(response_key)
+        if isinstance(existing_response, str) and existing_response.strip():
+            continue
+
+        available_pairs.append((prompt_key, response_key, prompt))
+
+    if not available_pairs:
+        return 0
+
+    # Generate once when multiple prompt keys share the same prompt text.
+    unique_prompts = list(dict.fromkeys(prompt for _, _, prompt in available_pairs))
 
     prompts_for_generation = format_prompts_for_generation(
-        prompts=[prompt],
+        prompts=unique_prompts,
         item=item,
         is_vicuna=is_vicuna,
         is_need_context=is_need_context,
@@ -96,8 +111,12 @@ def generate_rgeneric_response(
         apply_chat_template=not is_vicuna,
         device=device,
     )
-    item[RESPONSE_KEY] = responses[0] if responses else ""
-    return True
+    prompt_to_response = dict(zip(unique_prompts, responses))
+
+    for _, response_key, prompt in available_pairs:
+        item[response_key] = prompt_to_response.get(prompt, "")
+
+    return len(available_pairs)
 
 
 def collect_available_files(model_name, base_model):
@@ -149,14 +168,12 @@ def main():
                     data,
                     desc=f"Generating {input_path.name}",
                 ):
-                    generated_count += int(
-                        generate_rgeneric_response(
-                            item=item,
-                            model=model,
-                            tokenizer=tokenizer,
-                            is_vicuna=is_vicuna,
-                            is_need_context=is_need_context,
-                        )
+                    generated_count += generate_generic_responses(
+                        item=item,
+                        model=model,
+                        tokenizer=tokenizer,
+                        is_vicuna=is_vicuna,
+                        is_need_context=is_need_context,
                     )
 
                 save_json(input_path, data)
