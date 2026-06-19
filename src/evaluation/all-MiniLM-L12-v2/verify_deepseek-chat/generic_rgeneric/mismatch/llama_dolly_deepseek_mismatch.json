@@ -1,0 +1,1730 @@
+{
+  "total_items": 200,
+  "total_mismatches": 21,
+  "mismatch_rate": "10.50%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": 1,
+      "ori_prompt": "Who owns the largest share of the Vancouver Whitecaps FC?",
+      "context": "Vancouver Whitecaps FC is owned by a group of four investors: Greg Kerfoot, Steve Luczo, Jeff Mallett, and Steve Nash. The group has a collective net worth over $2 billion. Kerfoot has been the majority owner of the Whitecaps since 2002, when he saved the club from contraction after previous owner David Stadnyk left the club, selling it to United Soccer Leagues. Mallett, a former chief operating officer (COO) of Yahoo!, who was raised in Victoria, British Columbia, and played for several collegiate soccer teams. He later purchased minority stakes in the San Francisco Giants of Major League Baseball and English soccer club Derby County F.C. Having first met at a charity soccer event in 2005, Mallett partnered with Steve Nash—a two-time National Basketball Association (NBA) Most Valuable Player who was also raised in Victoria—to put together a bid for a minority share of English soccer club Tottenham Hotspur F.C. in 2008. After that transaction fell through, the duo contacted Kerfoot about a minority stake in the club. Nash is the older brother of former Whitecaps midfielder Martin Nash. The fourth partner, Steve Luczo, is the president, chairman, and CEO of Seagate Technology and a partner in Boston Basketball Partners L.L.C., a group who own the NBA Boston Celtics. Luczo met Kerfoot while the two were both employed by Seagate Technology, and Kerfoot contacted Luczo proposing he become part of the club's MLS bid. In 2009, the group paid a $35 million expansion fee to MLS for the right to join the league.",
+      "generic_prompt": "Who currently holds the largest ownership stake in Vancouver Whitecaps FC?",
+      "generic_response": "Based on the information provided in the passage, Greg Kerfoot currently holds the largest ownership stake in Vancouver Whitecaps FC, as he has been the majority owner of the club since 2002.",
+      "rgeneric_prompt": "As of the most recent available information, who holds the largest ownership stake in Vancouver Whitecaps FC? Please provide the name of the individual or entity and the percentage of ownership.",
+      "rgeneric_response": "As of the most recent available information, Greg Kerfoot holds the largest ownership stake in Vancouver Whitecaps FC, with a percentage of ownership not disclosed in the provided text.",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "ori_prompt": "Who is Luke Skywalker's parents?",
+      "context": "",
+      "generic_prompt": "Who are Luke Skywalker's parents?",
+      "generic_response": "Luke Skywalker's parents are Anakin Skywalker and Padmé Amidala.",
+      "rgeneric_prompt": "Identify the parents of Luke Skywalker, providing their names and any relevant background information.",
+      "rgeneric_response": "Of course! Luke Skywalker's parents are Anakin Skywalker and Padmé Amidala.\n\nAnakin Skywalker, also known as Darth Vader, was a Jedi Knight who turned to the dark side of the Force and became a powerful Sith Lord. He was born on the planet Tatooine and was discovered to be strong in the Force at a young age. He was trained as a Jedi and became a skilled pilot and warrior, but he was also impulsive and headstrong, which led to his eventual fall to the dark side.\n\nPadmé Amidala, on the other hand, was a senator from the planet Naboo and a skilled politician. She was born into a wealthy and influential family and was known for her intelligence, compassion, and political acumen. She met Anakin Skywalker while serving as a senator and the two fell in love, but their relationship was complicated by their different backgrounds and the fact that Anakin was already a Jedi.\n\nLuke Skywalker was born to Anakin and Padmé after they were married, but their happiness was short-lived as Anakin's fall to the dark side led to the death of Padmé and the separation of Luke from his parents. Luke grew up on Tatooine with his uncle and aunt, Owen and Beru Lars, and was trained in the ways of the Force by Obi-Wan Kenobi. He became a Jedi Knight and played a key role in the Rebel Alliance's fight against the Empire.",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "ori_prompt": "Classify the eight planets of Earth's solar system as rocky or gaseous, according to their primary composition.",
+      "context": "",
+      "generic_prompt": "Classify each of the eight planets in Earth's solar system as either rocky or gaseous, based on their primary compositional characteristics.",
+      "generic_response": "Of course! Here are the eight planets in Earth's solar system, classified based on their primary compositional characteristics:\n\n1. Mercury - Rocky\nMercury is the smallest planet in our solar system and is composed primarily of iron and silicate rocks. It has a solid surface and is therefore classified as a rocky planet.\n2. Venus - Rocky\nVenus is similar in composition to Mercury, with a surface composed primarily of iron and silicate rocks. It also has a solid surface, making it a rocky planet.\n3. Earth - Rocky\nAs the only known planet in the universe that supports life, Earth is composed primarily of iron, oxygen, silicon, and magnesium, making it a rocky planet.\n4. Mars - Rocky\nMars is also composed primarily of iron and silicate rocks, with a solid surface. While it has a thin atmosphere, its surface is primarily rocky, making it a rocky planet.\n5. Jupiter - Gaseous\nJupiter is a gas giant, composed primarily of hydrogen and helium. It has no solid surface and is therefore classified as a gaseous planet.\n6. Saturn - Gaseous\nSaturn is similar in composition to Jupiter, with a primarily gaseous composition and no solid surface.\n7. Uranus - Icy\nUranus is composed primarily of water, ammonia, and methane ices, with a small rocky core. Its atmosphere is mostly hydrogen and helium, but it has a solid core, making it an icy planet.\n8. Neptune - Icy\nNeptune is similar in composition to Uranus, with a primarily icy composition and a small rocky core. Its atmosphere is mostly hydrogen and helium, but it has a solid core, making it an icy planet.\n\nI hope this helps! Let me know if you have any further questions.",
+      "rgeneric_prompt": "Categorize the eight planets in Earth's solar system into either rocky or gaseous types, based on their main compositional characteristics. Group similar planetary types together in your response.",
+      "rgeneric_response": "Of course! Here are the eight planets in Earth's solar system grouped into rocky and gaseous types based on their main compositional characteristics:\n\nRocky Planets:\n\n1. Mercury: Mercury is a small, rocky planet with a dense iron core and a thin crust. It is composed primarily of iron, oxygen, silicon, and magnesium.\n2. Venus: Venus is also a rocky planet with a dense atmosphere composed primarily of carbon dioxide. It has a thick crust and a molten core.\n3. Earth: Earth is the only known rocky planet in the solar system with liquid water, and it is composed primarily of oxygen, silicon, magnesium, and iron.\n4. Mars: Mars is a rocky planet with a thin atmosphere and a crust composed primarily of iron, oxygen, silicon, and magnesium.\n\nGaseous Planets:\n\n1. Jupiter: Jupiter is the largest planet in the solar system and is composed primarily of hydrogen and helium. It has a thick atmosphere and a liquid core.\n2. Saturn: Saturn is similar to Jupiter in composition, with a thick atmosphere composed primarily of hydrogen and helium, and a liquid core.\n3. Uranus: Uranus is an icy planet with a thick atmosphere composed primarily of hydrogen, helium, and methane. It has a liquid core and a thin crust.\n4. Neptune: Neptune is similar to Uranus in composition, with a thick atmosphere composed primarily of hydrogen, helium, and methane, and a liquid core.\n\nI hope this helps! Let me know if you have any further questions.",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "ori_prompt": "From the passage mention the services provided by Jio. Also consider the services to be provided in future. Display the results in comma separated format.",
+      "context": "Reliance Jio Infocomm Limited, doing business as Jio, is an Indian telecommunications company and a subsidiary of Jio Platforms, headquartered in Navi Mumbai, Maharashtra, India. It operates a national LTE network with coverage across all 22 telecom circles. Jio offers 4G and 4G+ services all over India and 5G service in many cities. Its 6G service is in the works.\n\nJio soft launched on 27 December 2015 with a beta for partners and employees, and became publicly available on 5 September 2016. It is the largest mobile network operator in India and the third largest mobile network operator in the world with over 42.62 crore (426.2 million) subscribers.\n\nIn September 2019, Jio launched a fiber to the home service, offering home broadband, television, and telephone services. As of September 2020, Reliance Industries has raised ₹1.65 lakh crore (US$21 billion) by selling nearly 33% equity stake in Jio Platforms.",
+      "generic_prompt": "List the services provided by Jio as mentioned in the passage, along with any services that are expected to be provided in the future. Present the results in a comma-separated format.",
+      "generic_response": "Sure! Here are the services provided by Jio as mentioned in the passage:\n\n4G and 4G+ services all over India, 5G service in many cities, fiber to the home service (home broadband, television, and telephone services)\n\nAs for future services, Jio is expected to provide 6G service in the works.",
+      "rgeneric_prompt": "List the services currently provided by Jio as mentioned in the passage, along with any services that are anticipated to be offered in the future. Present the information in a comma-separated format.",
+      "rgeneric_response": "Sure! Here are the services currently provided by Jio as mentioned in the passage:\n\n4G and 4G+ services all over India, 5G service in many cities, fiber to the home service (offering home broadband, television, and telephone services).\n\nAs for services anticipated to be offered in the future, the passage mentions:\n\n6G service (in the works).\n\nSo, the list of services provided and anticipated to be provided by Jio can be presented in a comma-separated format as follows:\n\n4G and 4G+ services all over India, 5G service in many cities, fiber to the home service (offering home broadband, television, and telephone services), 6G service (in the works).",
+      "winners_per_run": [
+        2,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "ori_prompt": "Which notable person in this list with surname Liebers was born last?",
+      "context": "Liebers is a German language surname. Notable people with the name include:\n\nMario Liebers (born 1960), German former competitive figure skater\nMartin Liebers (born 1985), German former competitive figure skater\nMatthias Liebers (born 1958), former German footballer\nPeter Liebers (born 1988), German former figure skater.",
+      "generic_prompt": "Which notable person with the surname Liebers listed here was born most recently?",
+      "generic_response": "Based on the information provided, the notable person with the surname Liebers who was born most recently is Peter Liebers, who was born in 1988.",
+      "rgeneric_prompt": "Identify the most recently born individual with the surname Liebers from this list.",
+      "rgeneric_response": "Based on the information provided, the most recently born individual with the surname Liebers is:\n\nPeter Liebers (born 1988)",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "ori_prompt": "Who wrote the music and lyrics for Replay?",
+      "context": "\"Tomorrow\" is a show tune from the musical Annie, with music by Charles Strouse and lyrics by Martin Charnin, published in 1977. The number was originally written as \"Replay\" (The Way We Live Now) for the 1970 short film Replay, with both music and lyrics by Strouse.\n\nIn 1972 Strouse, and Thomas Meehan began working on a musical based on the Little Orphan Annie comic strips, Annie. Strouse contributed a reworked version of \"Replay\" as \"Tomorrow\". \"Annie\" took until 1976 to reach Broadway and during that time Strouse reworked \"Replay\" again for possible use in what became \"Charlie and Algernon\", a musical version of Daniel Keyes's Flowers for Algernon with book by playwright David Rogers although it was not ultimately used. \"",
+      "generic_prompt": "Who composed the music and wrote the lyrics for the song \"Replay\"?",
+      "generic_response": "The composer of the music for the song \"Replay\" is Charles Strouse, and the lyricist is Martin Charnin.",
+      "rgeneric_prompt": "What is the name of the artist who composed both the music and lyrics for \"Replay\"?",
+      "rgeneric_response": "The artist who composed both the music and lyrics for \"Replay\" is Charles Strouse.",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "ori_prompt": "How to prevent the extinction of the human species?",
+      "context": "",
+      "generic_prompt": "What are the most effective strategies and measures that can be implemented to ensure the long-term survival and continuity of the human species?",
+      "generic_response": "Ensuring the long-term survival and continuity of the human species is a complex and multifaceted challenge that requires a comprehensive and integrated approach. Here are some effective strategies and measures that can be implemented to achieve this goal:\n\n1. Sustainable Resource Management: Manage resources sustainably to ensure their availability for future generations. This includes reducing, reusing, and recycling materials, as well as conserving water, energy, and land.\n2. Climate Change Mitigation: Address the root causes of climate change by reducing greenhouse gas emissions through the transition to renewable energy sources, increasing energy efficiency, and implementing carbon capture and storage technologies.\n3. Biodiversity Conservation: Protect and restore ecosystems, including forests, oceans, and wildlife habitats, to maintain the delicate balance of nature and ensure the continued provision of ecosystem services.\n4. Disaster Risk Reduction: Reduce the risk of natural disasters by investing in early warning systems, improving infrastructure, and implementing evacuation plans.\n5. Education and Skills Development: Invest in education and skills development to ensure that future generations are equipped with the knowledge and skills needed to adapt to changing circumstances and address emerging challenges.\n6. Global Cooperation and Diplomacy: Foster global cooperation and diplomacy to address global challenges such as pandemics, nuclear proliferation, and cybersecurity threats.\n7. Social and Economic Inclusion: Promote social and economic inclusion by reducing inequality, improving access to healthcare and education, and promoting social mobility.\n8. Scientific Research and Innovation: Invest in scientific research and innovation to develop new technologies and solutions that can help address emerging challenges and improve the quality of life for future generations.\n9. Cultural Preservation and Exchange: Promote cultural preservation and exchange to foster mutual understanding and respect among different cultures and societies.\n10. Succession Planning and Leadership Development: Develop and implement succession planning and leadership development programs to ensure that there is a pipeline of qualified leaders who can take over when current leaders retire or step down.\n\nThese strategies and measures can be implemented at the individual, community, national, and international levels to ensure the long-term survival and continuity of the human species.",
+      "rgeneric_prompt": "What strategies can be implemented to ensure the long-term survival and continuity of the human species? Please consider scientific, technological, environmental, and societal approaches in your response.",
+      "rgeneric_response": "Ensuring the long-term survival and continuity of the human species requires a multi-faceted approach that addresses scientific, technological, environmental, and societal factors. Here are some strategies that can be implemented to achieve this goal:\n\n1. Sustainable Resource Management:\n\t* Implement sustainable agriculture practices to ensure food security and reduce the environmental impact of agriculture.\n\t* Manage forests and oceans sustainably to maintain biodiversity and ecosystem services.\n\t* Develop and use renewable energy sources, such as solar, wind, and hydroelectric power, to reduce dependence on fossil fuels.\n2. Climate Change Mitigation and Adaptation:\n\t* Reduce greenhouse gas emissions through the transition to clean energy sources and the implementation of energy-efficient technologies.\n\t* Develop and use carbon capture and storage technologies to reduce emissions from industrial processes and transportation.\n\t* Implement climate-resilient infrastructure and urban planning to protect communities from the impacts of climate change.\n3. Scientific Research and Development:\n\t* Invest in basic and applied research to develop new technologies and solutions to address global challenges, such as sustainable food production, clean water, and renewable energy.\n\t* Encourage collaboration and knowledge-sharing among scientists, policymakers, and industry leaders to accelerate innovation and problem-solving.\n4. Education and Skills Development:\n\t* Provide access to quality education and skills training to equip individuals with the knowledge and skills needed to adapt to a changing world.\n\t* Foster a culture of lifelong learning and innovation to encourage continuous improvement and progress.\n5. Global Cooperation and Diplomacy:\n\t* Strengthen international cooperation and diplomacy to address global challenges, such as climate change, pandemics, and economic inequality.\n\t* Promote peaceful conflict resolution and the establishment of international norms and standards to promote global stability and security.\n6. Social and Economic Inclusion:\n\t* Promote social and economic inclusion by reducing inequality and improving access to education, healthcare, and economic opportunities.\n\t* Foster a culture of social justice and human rights to ensure that all individuals have the opportunity to reach their full potential.\n7. Resilience and Adaptation:\n\t* Develop and implement resilience strategies to protect communities from the impacts of natural disasters, conflicts, and economic shocks.\n\t* Encourage individuals, communities, and organizations to develop and maintain resilience in the face of uncertainty and change.\n8. Ethical Considerations:\n\t* Address ethical considerations, such as the responsible use of technology, the protection of privacy and security, and the promotion of social justice and human rights.\n\t* Ensure that decision-making processes are transparent, accountable, and inclusive to promote trust and legitimacy.\n\nIn conclusion, ensuring the long-term survival and continuity of the human species requires a comprehensive and integrated approach that addresses scientific, technological, environmental, and societal factors. By implementing these strategies, we can create a more sustainable, resilient, and equitable future for all.",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 179,
+      "ori_prompt": "Where is Urumqi?",
+      "context": "",
+      "generic_prompt": "Where is Urumqi located?",
+      "generic_response": "Urumqi is located in the Xinjiang Uyghur Autonomous Region in northwest China.",
+      "rgeneric_prompt": "Can you tell me the location of Urumqi?",
+      "rgeneric_response": "Of course! Urumqi is the capital city of Xinjiang Uyghur Autonomous Region in northwest China. Its location is:\n\nUrumqi, Xinjiang Uyghur Autonomous Region, China\n\nI hope that helps! Let me know if you have any other questions.",
+      "winners_per_run": [
+        2,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "ori_prompt": "Name some female characters from \"The X-Files.\"",
+      "context": "",
+      "generic_prompt": "List some female characters from the TV show *The X-Files*.",
+      "generic_response": "Of course! Here are some female characters from the TV show \"The X-Files\":\n\n1. Dana Scully - FBI Agent and Fox Mulder's partner, played by Gillian Anderson.\n2. Scully's sister, Melissa Scully - FBI Agent, played by Mitch Pileggi.\n3. Skinner - FBI Director, played by William B. Davis.\n4. Alex Krycek - FBI Agent, played by Dean Haglund.\n5. Byers - FBI Agent, played by Tom Braidwood.\n6. Langly - FBI Agent, played by Bruce Harwood.\n7. The Smoking Man - FBI Agent, played by William B. Davis.\n8. Cassandra Spender - FBI Agent, played by Nancy Anne Sakovich.\n9. Diana Fowley - FBI Agent, played by Jane Saunders.\n10. Marita Covarrubias - FBI Agent, played by Terry O'Quinn.\n\nI hope this helps! Let me know if you have any other questions.",
+      "rgeneric_prompt": "List several female characters from the TV series *The X-Files*.",
+      "rgeneric_response": "Of course! Here are some female characters from the TV series The X-Files:\n\n1. Dana Scully - FBI Agent and Fox Mulder's partner, played by Gillian Anderson.\n2. Scully's sister, Melissa Scully - FBI Agent and Dana's younger sister, played by Paula Irving.\n3. Alex Krycek - FBI Agent and a recurring character, played by Mitch Pileggi.\n4. Skinner - FBI Director and a recurring character, played by William B. Davis.\n5. The Smoking Man - A recurring character and a former FBI Agent, played by Dean Haglund.\n6. The Cigarette Smoking Man - A recurring character and a former FBI Agent, played by William B. Davis.\n7. The Well-Manicured Man - A recurring character and a former FBI Agent, played by Terry O'Quinn.\n8. The Black Oil - A supernatural entity that is the central antagonist of the show, played by various actors.\n\nI hope this helps! Let me know if you have any other questions.",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.4,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.4,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 186,
+      "ori_prompt": "Without quoting directly from the text give me a summary of how turist visit the falls even if they are used for hydroelectric power production.",
+      "context": "The Cascata delle Marmore (Italian: [kaˈskaːta delle ˈmarmore]) or Marmore Falls is a man-made waterfall created by the ancient Romans. Its total height is 165 m (541 feet), making it the tallest man-made waterfall in the world.\n\nIt is located 7.7 km from Terni, a provincial capital of the Italian region of Umbria. \n\nIts source is a portion of the waters of the river Velino. After flowing through Piediluco lake near the community of Marmore (italian), it pours into the valley below formed by the river Nera. The flow of the waterfall depends on an off and on scale with a published schedule to support the power company nearby.\n\nMost of the time, the water in the canals above the Cascata delle Marmore falls is diverted to a hydroelectric power plant, so the flow in the falls themselves is heavily reduced. Piediluco Lake, above the falls, is used as a reservoir for the power plant. The Galleto power plant, built in 1929, is architecturally interesting. Its capacity is about 530 MW. To control the operation of the power plant, and to satisfy tourists, the falls are turned on according to a set schedule, achieving a spectacular effect at full flow. An alarm is sounded first, then the gates are opened, and in a few minutes the small stream is transformed into a full-sized river rushing into the void below.\n\nNormally, the falls are turned on between 12:00 and 13:00 and again between 16:00 and 17:00 every day, with additional times on holidays. An entrance fee is charged to visit the falls and the surrounding area.\n\nA path along the falls allows the visitor to hike up to the top of the falls. Along the way, a tunnel leads to an observatory just next to the falls, where a visitor is likely to get soaked. Another observatory near the top affords a wide view of the falls and of the Nera valley below.",
+      "generic_prompt": "Provide a summary of how tourists visit the falls, even though they are also used for hydroelectric power production. Do not quote directly from the text.",
+      "generic_response": "Tourists can visit the Cascata delle Marmore by following a path that leads to the top of the falls, where they can observe the waterfall from an observatory. The path also includes a tunnel that leads to an observatory near the top of the falls, which may result in getting wet. Additionally, there is an entrance fee charged to visit the falls and the surrounding area. The flow of the waterfall is controlled by the power company, and it is turned on according to a set schedule to satisfy tourists and provide a spectacular effect.",
+      "rgeneric_prompt": "Provide a summary explaining how tourists access and experience the falls, even though they are also utilized for hydroelectric power generation. Avoid using direct quotes from the text.",
+      "rgeneric_response": "Tourists can access the Cascata delle Marmore through a path that leads to the top of the falls, where they can hike and visit observatories for panoramic views. The flow of the waterfall is controlled by the power company, which diverts the water from the canals above the falls to a hydroelectric power plant. However, the power plant is not in operation at all times, and the water flow in the falls is only released according to a published schedule to cater to tourist demand. During these times, the water flow is increased, creating a spectacular effect. An entrance fee is charged to visit the falls and the surrounding area, and tourists can also access the top of the falls through a tunnel that leads to an observatory.",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "ori_prompt": "5 steps to make a fire",
+      "context": "",
+      "generic_prompt": "List five reliable and safe steps for making a fire.",
+      "generic_response": "Of course! Here are five reliable and safe steps for making a fire:\n\n1. Choose the right location: Look for a safe place to build your fire, away from flammable materials and overhanging branches. Make sure the area is clear of leaves, grass, and other combustible materials.\n2. Gather materials: You will need some tinder (dry, fluffy material that ignites easily), kindling (small, thin sticks), and larger logs. It's also a good idea to have a fire starter, such as a lighter or matches, on hand.\n3. Build a fire pit: Clear the area of any debris and create a small pit using rocks or by digging a shallow hole. This will contain the fire and help to direct the heat.\n4. Start with tinder: Place a small amount of tinder in the center of the fire pit. You can also add a few dry leaves, grass, or small twigs to help get the fire started.\n5. Add kindling: Arrange the kindling in a teepee shape over the tinder. Leave enough space in the center for air to flow and help the fire breathe.\n6. Light the fire: Use your fire starter to ignite the tinder. Once the tinder is burning well, add more kindling to the fire, gradually increasing the size of the sticks as the fire grows.\n\nRemember to always use caution when building and maintaining a fire, and never leave it unattended.",
+      "rgeneric_prompt": "Create a clear, step-by-step guide outlining five specific actions required to build and start a fire. Each step should be concise, actionable, and logically ordered.",
+      "rgeneric_response": "Of course! Here is a clear, step-by-step guide to building and starting a fire:\n\nStep 1: Gather Materials\n\n* Find a safe location for your fire, away from flammable materials and overhanging branches.\n* Collect tinder, kindling, and larger logs for your fire. Tinder is dry, fluffy material that ignites easily, such as dry leaves, grass, or small twigs. Kindling is slightly larger material that will help the fire to grow, such as small sticks or thin branches. Larger logs will provide the main fuel for the fire.\n\nStep 2: Prepare the Area\n\n* Clear the area of any debris or obstructions.\n* Use a fire starter, such as a lighter or matches, to create a small fire in the center of the area.\n* Once the fire is lit, use it to ignite the tinder and kindling.\n\nStep 3: Add Kindling\n\n* Once the tinder is ignited, add small sticks of kindling to the fire, gradually increasing the size of the sticks as the fire grows.\n* Arrange the kindling in a teepee shape, leaving space in the center for air to flow and the fire to breathe.\n\nStep 4: Add Logs\n\n* Once the fire is burning well, add larger logs to the fire, arranging them in a crisscross pattern to allow for good airflow.\n* Leave enough space in the center of the fire for the flames to spread and for air to flow.\n\nStep 5: Monitor and Maintain the Fire\n\n* Keep the fire contained within the fire pit or ring, using rocks or a fire ring to contain the flames.\n* Monitor the fire and adjust the size of the logs and airflow as needed to maintain a healthy, controlled burn.\n* Keep a bucket of water or a fire extinguisher nearby in case of emergencies.\n\nBy following these steps, you should be able to build and start a fire safely and effectively. Remember to always use caution when working with fire, and never leave a fire unattended.",
+      "winners_per_run": [
+        1,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 0.9
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 0.9
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "ori_prompt": "Who is Manchester United's current manager?",
+      "context": "",
+      "generic_prompt": "Who is the current manager of Manchester United?",
+      "generic_response": "The current manager of Manchester United is Ole Gunnar Solskjaer. He was appointed as the permanent manager of the club in March 2019, following the departure of Jose Mourinho. Solskjaer has been in charge of the team since then and has led them to several victories and a top-four finish in the Premier League.",
+      "rgeneric_prompt": "What is the name of the individual currently serving as manager of the English football club Manchester United?",
+      "rgeneric_response": "The current manager of Manchester United is Ole Gunnar Solskjaer.",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 1.0,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 1.0,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "ori_prompt": "Extract best tourist attractions in Karnataka",
+      "context": "By virtue of its varied geography and long history, Karnataka hosts numerous spots of interest for tourists. There is an array of ancient sculptured temples, modern cities, scenic hill ranges, forests and beaches. Karnataka has been ranked as the fourth most popular destination for tourism among the states of India. Karnataka has the second highest number of nationally protected monuments in India, second only to Uttar Pradesh, in addition to 752 monuments protected by the State Directorate of Archaeology and Museums. Another 25,000 monuments are yet to receive protection.\n\nThe districts of the Western Ghats and the southern districts of the state have popular eco-tourism locations including Kudremukh, Madikeri and Agumbe. Karnataka has 25 wildlife sanctuaries and five national parks. Popular among them are Bandipura National Park, Bannerghatta National Park and Nagarhole National Park. The ruins of the Vijayanagara Empire at Hampi and the monuments of Pattadakal are on the list of UNESCO's World Heritage Sites. The cave temples at Badami and the rock-cut temples at Aihole representing the Badami Chalukyan style of architecture are also popular tourist destinations. The Hoysala temples at Beluru and Halebidu, which were built with Chloritic schist (soapstone) are proposed UNESCO World Heritage sites. The Gol Gumbaz and Ibrahim Rauza are famous examples of the Deccan Sultanate style of architecture. The monolith of Gomateshwara Bahubali at Shravanabelagola is the tallest sculpted monolith in the world, attracting tens of thousands of pilgrims during the Mahamastakabhisheka festival.\n\nGolden 5-storey Mysore Palace building with 21 domed towers and central spire\nMysore Palace in the evening, the official residence and seat of the Wodeyar dynasty, the rulers of Mysore of the Mysore Kingdom, the royal family of Mysore.\nThe waterfalls of Karnataka and Kudremukh are considered by some to be among the \"1001 Natural Wonders of the World\". Jog Falls is India's tallest single-tiered waterfall with Gokak Falls, Unchalli Falls, Magod Falls, Abbey Falls and Shivanasamudra Falls among other popular waterfalls.\n\nSeveral popular beaches dot the coastline, including Murudeshwara, Gokarna, Malpe and Karwar. In addition, Karnataka is home to several places of religious importance. Several Hindu temples including the famous Udupi Sri Krishna Matha, the Marikamba Temple at Sirsi, the Kollur Mookambika Temple, the Sri Manjunatha Temple at Dharmasthala, Kukke Subramanya Temple, Janardhana and Mahakali Temple at Ambalpadi, Sharadamba Temple at Shringeri attract pilgrims from all over India. Most of the holy sites of Lingayatism, like Kudalasangama and Basavana Bagewadi, are found in northern parts of the state. Shravanabelagola, Mudabidri and Karkala are famous for Jain history and monuments. Jainism had a stronghold in Karnataka in the early medieval period with Shravanabelagola as its most important centre. The Shettihalli Rosary Church near Shettihalli, an example of French colonial Gothic architecture, is a rare example of a Christian ruin, is a popular tourist site.\n\nKarnataka has become a center of health care tourism and has the highest number of approved health systems and alternative therapies in India. Along with some ISO certified government-owned hospitals, private institutions which provide international-quality services, Hospitals in Karnataka treat around 8,000 health tourists every year.",
+      "generic_prompt": "List the top tourist attractions in Karnataka, focusing on popular and must-visit destinations.",
+      "generic_response": "Certainly! Here are some of the top tourist attractions in Karnataka, focusing on popular and must-visit destinations:\n\n1. Hampi: A UNESCO World Heritage Site and one of the most popular tourist destinations in Karnataka, Hampi is a ancient city ruins located in Bellary district. It is known for its stunning architecture, sculptures, and historical significance.\n2. Mysore Palace: Located in the city of Mysore, the Mysore Palace is a beautiful example of Indo-Dravidian architecture and the official residence of the Wodeyar dynasty. It is a must-visit destination for its grandeur and historical significance.\n3. Udupi Sri Krishna Matha: A famous Hindu temple located in Udupi, this temple is known for its beautiful architecture and the divine presence of Lord Krishna. It is a popular pilgrimage site and attracts millions of devotees every year.\n4. Jog Falls: Located in Shimoga district, Jog Falls is India's tallest single-tiered waterfall and a popular tourist destination. It is surrounded by lush green forests and offers breathtaking views.\n5. Kudremukh National Park: A protected area located in Chikmagalur district, Kudremukh National Park is known for its stunning natural beauty and diverse wildlife. It is a popular destination for trekking, camping, and wildlife spotting.\n6. Bandipur National Park: Located in Gundlupet taluk, Bandipur National Park is a popular destination for wildlife spotting and is home to a wide variety of flora and fauna.\n7. Nagarhole National Park: Also known as the Rajiv Gandhi National Park, Nagarhole National Park is located in Kodagu district and is known for its diverse wildlife and stunning natural beauty.\n8. Aihole: A historic town located in Belur district, Aihole is known for its ancient temples and rock-cut architecture. It is a popular destination for history buffs and architecture enthusiasts.\n9. Badami: Located in Bagalkot district, Badami is known for its stunning cave temples and is a popular destination for history buffs and architecture enthusiasts.\n10. Gokak Falls: Located in Belgaum district, Gokak Falls is one of the highest waterfalls in India and a popular tourist destination.\n11. Shravanabelagola: A historic town located in Hassan district, Shravanabelagola is known for its stunning Jain temples and is a popular destination for Jain pilgrims.\n12. Murudeshwara: A coastal town located in Uttara Kannada district, Murudeshwara is known for its beautiful beaches and the world's second-tallest statue of Lord Shiva.\n13. Gokarna: A small coastal town located in Karnataka, Gokarna is known for its beautiful beaches and is a popular destination for beach lovers and yoga enthusiasts.\n14. Malpe: Located in Udupi district, Malpe is a popular beach destination known for its stunning sunsets and water sports.\n15. Karwar: A coastal town located in Uttara Kannada district, Karwar is known for its beautiful beaches and is a popular destination for water sports and beach activities.\n\nThese are just a few of the many tourist attractions that Karnataka has to offer. Whether you're interested in history, architecture, nature, or simply relaxing on a beach, Karnataka has something for everyone.",
+      "rgeneric_prompt": "Identify and list the top tourist attractions in Karnataka.",
+      "rgeneric_response": "Sure, here are some of the top tourist attractions in Karnataka:\n\n1. Hampi: The ruins of the Vijayanagara Empire, a UNESCO World Heritage Site, located in Bellary district.\n2. Mysore Palace: The official residence and seat of the Wodeyar dynasty, located in Mysore city.\n3. Jog Falls: India's tallest single-tiered waterfall, located in Shimoga district.\n4. Kudremukh: A scenic hill range and eco-tourism location in Chikmagalur district.\n5. Agumbe: A popular eco-tourism location in the Western Ghats, known for its rainforests and waterfalls.\n6. Bandipur National Park: A tiger reserve and wildlife sanctuary located in Gundlupet taluk of Chamarajanagar district.\n7. Bannerghatta National Park: A wildlife sanctuary located in Bangalore city.\n8. Nagarhole National Park: A wildlife sanctuary located in Kodagu district.\n9. Belur: A town known for its Hoysala temples, located in Hassan district.\n10. Halebidu: A town known for its Hoysala temples, located in Hassan district.\n11. Shravanabelagola: A Jain pilgrim center and the site of the tallest sculpted monolith in the world, located in Hassan district.\n12. Gokak Falls: A popular waterfall located in Belgaum district.\n13. Unchalli Falls: A popular waterfall located in Shimoga district.\n14. Magod Falls: A popular waterfall located in Chikmagalur district.\n15. Abbey Falls: A popular waterfall located in Kodagu district.\n16. Shivanasamudra Falls: A popular waterfall located in Mandya district.\n17. Murudeshwara: A beach town located in Udupi district.\n18. Gokarna: A beach town located in Karnataka.\n19. Malpe: A beach town located in Udupi district.\n20. Karwar: A beach town located in Uttar Kannada district.\n\nThese are just a few of the many tourist attractions that Karnataka has to offer. The state is rich in history, culture, and natural beauty, making it a popular destination for both domestic and international tourists.",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "ori_prompt": "what is a sql query?",
+      "context": "",
+      "generic_prompt": "Explain what a SQL query is in simple terms.",
+      "generic_response": "Of course! A SQL query is a set of instructions that tells a database management system (DBMS) how to retrieve and manipulate data stored in a database. Think of it like a recipe for your data - you give the DBMS the ingredients (data) and the instructions (query) on how to prepare them.\n\nIn simpler terms, a SQL query is a way to ask the database for specific information or to perform a specific task, such as:\n\n* Retrieving all the data from a specific table\n* Finding data that meets certain criteria (e.g., age, gender, etc.)\n* Updating or modifying existing data\n* Inserting new data into the database\n* Deleting data from the database\n\nSQL queries are written in a specific language, which is why they are called \"Structured Query Language.\" The language is standardized, so you can use the same queries across different databases.\n\nI hope that helps! Let me know if you have any other questions.",
+      "rgeneric_prompt": "Explain the definition and purpose of a SQL query.",
+      "rgeneric_response": "Of course! A SQL query is a request for information from a database, and it defines how the data should be retrieved and manipulated. The purpose of a SQL query is to retrieve specific data from a database, organize the data in a meaningful way, and perform calculations or operations on the data.\n\nA SQL query consists of a series of commands that are used to retrieve the desired data from the database. These commands include:\n\n1. SELECT: Retrieves specific data from the database.\n2. FROM: Specifies the table or tables from which data should be retrieved.\n3. WHERE: Filters the data based on specific conditions.\n4. GROUP BY: Groups the data based on one or more columns.\n5. HAVING: Filters the grouped data based on a condition.\n6. ORDER BY: Sorts the data in ascending or descending order.\n7. LIMIT: Limits the number of rows returned in the query results.\n\nThe purpose of a SQL query can vary depending on the specific use case, but some common examples include:\n\n1. Retrieve data from a database for analysis or reporting.\n2. Update or insert data into a database.\n3. Delete data from a database.\n4. Create a new database or table.\n5. Optimize the performance of a database.\n\nOverall, the purpose of a SQL query is to efficiently retrieve and manipulate data from a database, allowing users to make informed decisions and perform various tasks.",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "ori_prompt": "What does the \"E\" stand for in Chuck E. Cheese?",
+      "context": "",
+      "generic_prompt": "What does the \"E\" represent in the name \"Chuck E. Cheese\"?",
+      "generic_response": "The \"E\" in the name \"Chuck E. Cheese\" represents the name of the character, Chuck E. Cheese himself. Chuck E. Cheese is a popular franchise that features a anthropomorphic rat as its mascot and spokesperson. The character was created in the 1970s and has since become a beloved figure in American popular culture, known for his goofy personality and love of pizza.",
+      "rgeneric_prompt": "What is the meaning of the letter \"E\" in the name Chuck E. Cheese?",
+      "rgeneric_response": "The letter \"E\" in the name Chuck E. Cheese represents the name Charles. Chuck E. Cheese is a popular character and the name of a chain of pizza restaurants that was founded by Nolan Bushnell and Eddie D. Campbell in 1977. The character Chuck E. Cheese is a anthropomorphic mouse who is the mascot of the restaurant chain.",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "ori_prompt": "Who is Robert Kiyosaki?",
+      "context": "",
+      "generic_prompt": "Who is Robert Kiyosaki, and what are his notable contributions or achievements?",
+      "generic_response": "Robert Kiyosaki is an American businessman, investor, and author who is best known for his work in the field of personal finance and wealth-building strategies. He is the founder of Rich Dad Company, which provides financial education and training through books, seminars, and other resources.\n\nKiyosaki's notable contributions and achievements include:\n\n1. Rich Dad, Poor Dad: Kiyosaki's book \"Rich Dad, Poor Dad\" (1997) is one of the best-selling personal finance books of all time, with over 32 million copies sold worldwide. The book challenges conventional beliefs about money and wealth, and offers practical advice on how to build wealth through real estate investing, business ownership, and other means.\n2. Cashflow Quadrant: In addition to \"Rich Dad, Poor Dad,\" Kiyosaki has written several other books, including \"Cashflow Quadrant\" (1998), which explains the different ways that people generate income (E, S, B, and I) and how to use this knowledge to build wealth.\n3. Rich Dad's Guide to Investing: Kiyosaki has also written several books on investing, including \"Rich Dad's Guide to Investing\" (2001), which provides practical advice on how to invest in real estate, stocks, and other assets.\n4. Rich Dad's Real Estate Advantage: In this book (2006), Kiyosaki and his co-author, Sharon Lechter, provide strategies for building wealth through real estate investing, including how to find and finance deals, how to manage properties, and how to avoid common mistakes.\n5. Financial Education: Kiyosaki is a strong advocate for financial education and has developed a curriculum for teaching financial literacy in schools. He believes that financial education is essential for building wealth and achieving financial independence.\n6. Entrepreneurship: Kiyosaki has also founded several businesses, including a chain of fitness centers and a company that sells financial education products. He is a strong advocate for entrepreneurship and believes that building a successful business is a key component of building wealth.\n\nOverall, Robert Kiyosaki is a well-known and respected figure in the personal finance and wealth-building space, and his work has helped millions of people around the world to build wealth and achieve financial independence.",
+      "rgeneric_prompt": "Identify Robert Kiyosaki and provide a concise overview of his background and notable contributions.",
+      "rgeneric_response": "Of course! Robert Kiyosaki is a well-known entrepreneur, investor, and author who is best known for his work in the field of personal finance and wealth-building. Here is a brief overview of his background and notable contributions:\n\nBackground:\n\nRobert Kiyosaki was born in 1947 in Hilo, Hawaii. He grew up in a working-class family and struggled with dyslexia throughout his childhood. Despite these challenges, Kiyosaki was determined to succeed and built his first business, a small consulting firm, while still in his teens.\n\nNotable Contributions:\n\nKiyosaki is the author of several best-selling books, including \"Rich Dad Poor Dad,\" \"The Business of the 21st Century,\" and \"Why Teachers Make Great Entrepreneurs.\" His books challenge conventional beliefs about money and wealth and offer practical advice on how to build wealth through real estate investing, entrepreneurship, and financial independence.\n\nKiyosaki is also the founder of the Rich Dad Company, which provides financial education and training through workshops, seminars, and online courses. He has also developed several successful business ventures, including a chain of real estate offices and a network marketing company.\n\nKiyosaki's work has had a significant impact on the personal finance and entrepreneurship communities, inspiring millions of people around the world to take control of their financial futures and pursue their entrepreneurial dreams. He is widely regarded as one of the most influential and innovative thinkers in the field of personal finance and wealth-building.",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "ori_prompt": "What tools do people use to communicate in 2023?",
+      "context": "",
+      "generic_prompt": "What are the most commonly used tools or platforms for communication in 2023?",
+      "generic_response": "In 2023, the most commonly used tools or platforms for communication include:\n\n1. Email: Email remains one of the most widely used communication tools, with billions of people around the world using it to send and receive messages, documents, and other digital content.\n2. Social media: Social media platforms such as Facebook, Twitter, LinkedIn, and Instagram are widely used for personal and professional communication, with billions of users worldwide.\n3. Video conferencing: With the rise of remote work and virtual meetings, video conferencing tools such as Zoom, Skype, and Google Meet have become increasingly popular for communication between colleagues, clients, and friends.\n4. Messaging apps: Messaging apps such as WhatsApp, WeChat, and Telegram are widely used for personal and professional communication, with many people using them to send messages, make voice and video calls, and share files.\n5. Collaboration tools: Collaboration tools such as Slack, Microsoft Teams, and Asana are popular for team communication and collaboration, with many businesses using them to streamline communication and improve productivity.\n6. Project management tools: Project management tools such as Trello, Basecamp, and Jira are used by teams to manage projects, track progress, and communicate with team members.\n7. Video creation and editing tools: With the rise of video content, video creation and editing tools such as Adobe Premiere Pro, Final Cut Pro, and DaVinci Resolve have become increasingly popular for creating and editing videos for personal and professional use.\n8. Virtual reality (VR) and augmented reality (AR) tools: VR and AR tools are becoming increasingly popular for communication and collaboration, with many businesses using them to create immersive experiences for training, marketing, and other purposes.\n9. Voice assistants: Voice assistants such as Amazon Alexa, Google Assistant, and Apple Siri are becoming increasingly popular for communication and information retrieval, with many people using them to send messages, make calls, and access information.\n10. Live streaming platforms: Live streaming platforms such as YouTube Live, Facebook Live, and Twitch are popular for personal and professional communication, with many people using them to broadcast live events, share content, and connect with audiences.\n\nThese are just a few examples of the most commonly used tools and platforms for communication in 2023. The landscape is constantly evolving, with new technologies and platforms emerging all the time.",
+      "rgeneric_prompt": "List the communication tools commonly used by people in 2023.",
+      "rgeneric_response": "In 2023, people commonly use the following communication tools:\n\n1. Mobile phones: Smartphones are the most widely used communication tool, allowing users to make calls, send messages, and access the internet on the go.\n2. Social media: Platforms like Facebook, Twitter, Instagram, and LinkedIn are popular for personal and professional communication, sharing updates, and networking.\n3. Video conferencing: With the rise of remote work and virtual meetings, video conferencing tools like Zoom, Skype, and Google Meet have become essential for communication across distances.\n4. Email: Despite the rise of messaging apps, email remains a popular communication tool for formal and professional communication, as well as for personal correspondence.\n5. Instant messaging: Messaging apps like WhatsApp, WeChat, and Telegram are widely used for personal and professional communication, allowing for quick and easy exchanges.\n6. Voice assistants: Virtual assistants like Siri, Google Assistant, and Alexa are integrated into many devices, allowing users to perform tasks, set reminders, and communicate with others using voice commands.\n7. Collaboration tools: Tools like Slack, Trello, and Asana are popular for team collaboration and communication, allowing users to share files, set tasks, and communicate in real-time.\n8. Virtual reality: Virtual reality technology is becoming more prevalent, allowing for immersive communication experiences in fields like education, healthcare, and entertainment.\n9. Augmented reality: Augmented reality technology is also becoming more popular, allowing for interactive and immersive communication experiences in fields like marketing, retail, and tourism.\n10. Online collaboration platforms: Platforms like Google Docs, Dropbox, and OneDrive allow users to collaborate on documents, presentations, and other projects in real-time, regardless of their location.\n\nThese are just a few examples of the many communication tools available in 2023. The landscape is constantly evolving, with new technologies and platforms emerging all the time.",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "ori_prompt": "Give me a list of books that are long and hard to read. The sort of books with which I could impress someone who read a lot.",
+      "context": "",
+      "generic_prompt": "Provide a list of lengthy and challenging books that are well-regarded and could impress someone who reads extensively.",
+      "generic_response": "Certainly! Here are some lengthy and challenging books that are highly regarded and could impress someone who reads extensively:\n\n1. \"War and Peace\" by Leo Tolstoy (1,215 pages) - A classic novel that follows the lives of several aristocratic Russian families during the Napoleonic Wars.\n2. \"Moby-Dick\" by Herman Melville (1,077 pages) - A classic novel about a sailor's obsessive hunt for a white whale, exploring themes of obsession, revenge, and the human condition.\n3. \"The Count of Monte Cristo\" by Alexandre Dumas (1,260 pages) - A classic adventure novel about a man who is wrongfully imprisoned and seeks revenge on those who betrayed him.\n4. \"Warlight\" by Michael Ondaatje (560 pages) - A novel that explores the experiences of a young boy and his family during the post-colonial era in England, blending historical events with personal memories.\n5. \"The Brief Wondrous Life of Oscar Wao\" by Junot Díaz (608 pages) - A Pulitzer Prize-winning novel that tells the story of a young Dominican-American man growing up in New Jersey, exploring themes of identity, culture, and family history.\n6. \"The Sound and the Fury\" by William Faulkner (560 pages) - A classic novel set in the American South, exploring themes of family, race, and the decline of the old aristocracy.\n7. \"One Hundred Years of Solitude\" by Gabriel García Márquez (819 pages) - A magical realist masterpiece that tells the story of the Buendía family and their experiences in a fictional town in Colombia, exploring themes of family, history, and the cyclical nature of time.\n8. \"The Name of the Rose\" by Umberto Eco (512 pages) - A historical mystery novel set in a medieval monastery, exploring themes of religion, philosophy, and the power of knowledge.\n9. \"The Power and the Glory\" by Graham Greene (432 pages) - A classic novel set in Mexico during the 1930s, exploring themes of religion, morality, and the corrupting influence of power.\n10. \"The Master and Margarita\" by Mikhail Bulgakov (560 pages) - A surreal and fantastical novel set in Soviet Russia, exploring themes of religion, philosophy, and the power of the imagination.\n\nThese books are all considered classics for a reason, and are sure to challenge and reward readers with their complex themes, rich characters, and intricate plots.",
+      "rgeneric_prompt": "Recommend a list of lengthy and challenging books that are well-suited for impressing someone who is an avid reader.",
+      "rgeneric_response": "Certainly! Here are some lengthy and challenging books that are well-suited for impressing an avid reader:\n\n1. \"War and Peace\" by Leo Tolstoy - This epic novel spans over 1,200 pages and follows the lives of several aristocratic Russian families during the Napoleonic Wars. It's a classic of world literature and a must-read for any serious reader.\n2. \"Infinite Jest\" by David Foster Wallace - This postmodern novel is over 1,000 pages long and explores a wide range of themes, including addiction, entertainment, and the search for meaning in a hyper-consumerist society. It's a challenging but rewarding read that will keep you thinking long after you finish it.\n3. \"Ulysses\" by James Joyce - This modernist masterpiece is over 700 pages long and follows the stream-of-consciousness of Leopold Bloom as he navigates Dublin on June 16, 1904. It's a challenging but rewarding read that will test your literary skills and expand your vocabulary.\n4. \"The Count of Monte Cristo\" by Alexandre Dumas - This classic adventure novel is over 1,200 pages long and follows the story of Edmond Dantès, a man who is wrongfully imprisoned and seeks revenge on those who betrayed him. It's a thrilling and engrossing read that will keep you on the edge of your seat.\n5. \"Moby-Dick\" by Herman Melville - This classic novel is over 600 pages long and follows the story of the obsessive hunt for a white whale by the protagonist, Captain Ahab. It's a challenging but rewarding read that explores themes of obsession, revenge, and the human condition.\n6. \"One Hundred Years of Solitude\" by Gabriel García Márquez - This magical realist masterpiece is over 800 pages long and follows the history of the Buendía family in a small town in Colombia. It's a challenging but rewarding read that will transport you to a unique and imaginative world.\n7. \"The Brief Wondrous Life of Oscar Wao\" by Junot Díaz - This Pulitzer Prize-winning novel is over 500 pages long and follows the story of Oscar, a young Dominican-American man growing up in New Jersey. It's a challenging but rewarding read that explores themes of identity, culture, and the immigrant experience.\n8. \"The Sound and the Fury\" by William Faulkner - This classic novel is over 500 pages long and follows the story of the Compson family in the American South. It's a challenging but rewarding read that explores themes of family, race, and the decline of the Old South.\n9. \"The Picture of Dorian Gray\" by Oscar Wilde - This classic novel is over 200 pages long and follows the story of Dorian Gray, a young man who sells his soul to keep his youth and beauty forever. It's a challenging but rewarding read that explores themes of vanity, morality, and the supernatural.\n10. \"The Bell Jar\" by Sylvia Plath - This classic novel is over 200 pages long and follows the story of Esther Greenwood, a young woman struggling with mental illness in the 1950s. It's a challenging but rewarding read that explores themes of mental health, identity, and the oppression of women.\n\nThese books are all considered classics of literature and are sure to impress any avid reader. However, be warned that they are lengthy and challenging, so be prepared to invest time and effort into reading them.",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "ori_prompt": "Which of the following races do participants run in? A marathon, a triathlon, an aqua bike?",
+      "context": "",
+      "generic_prompt": "Which of the following events involve participants running: a marathon, a triathlon, or an aqua bike?",
+      "generic_response": "Of the options provided, a marathon involves participants running. Therefore, the answer is (a) a marathon.",
+      "rgeneric_prompt": "Identify which of the listed events—marathon, triathlon, or aqua bike—is a race in which participants run.",
+      "rgeneric_response": "Of the three options listed, the marathon is the race in which participants run.",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "ori_prompt": "What advice would you give to FBLA competitors for future years?",
+      "context": "",
+      "generic_prompt": "What specific advice or strategies would you recommend to future FBLA competitors to help them succeed in the competition?",
+      "generic_response": "Of course! As a helpful and concise assistant, I'd be happy to provide some advice and strategies for future FBLA competitors to help them succeed in the competition:\n\n1. Practice, practice, practice: The more you practice, the more comfortable and confident you'll feel during the competition. Make sure to practice your presentation, calculations, and any other skills you'll be tested on.\n2. Review the competition guidelines: Familiarize yourself with the competition guidelines and rules to ensure you understand what's expected of you. This will help you prepare and avoid any mistakes during the competition.\n3. Develop a game plan: Create a plan of action for each event, including what you need to do to prepare, how you'll approach the competition, and how you'll handle any unexpected situations.\n4. Stay focused and motivated: It's easy to get nervous or distracted during a competition, but it's important to stay focused and motivated. Take deep breaths, stay hydrated, and remind yourself why you're there.\n5. Network with other competitors: Connecting with other competitors can be a great way to learn from each other and gain valuable insights. You never know when you might need help or advice from someone else.\n6. Get feedback from mentors or coaches: Ask your mentor or coach for feedback on your preparation and performance. They can provide valuable insights and help you improve for future competitions.\n7. Be prepared for anything: Be prepared for any unexpected situations that may arise during the competition. This could include technical issues, time management challenges, or unexpected questions from judges.\n8. Stay organized: Keep all of your materials and notes organized, and make sure you have everything you need for each event. This will help you stay focused and avoid any last-minute stress.\n9. Take care of yourself: Make sure to get enough sleep, eat well, and stay healthy during the competition. This will help you perform at your best and avoid any physical or mental fatigue.\n10. Have fun: Remember, the competition is a great opportunity to learn and grow. Enjoy the experience, meet new people, and have fun!\n\nBy following these strategies, you'll be well on your way to success in the FBLA competition. Good luck!",
+      "rgeneric_prompt": "What recommendations would you offer to future FBLA participants to help them succeed in the competition?",
+      "rgeneric_response": "Of course! Here are some recommendations I would offer to future FBLA participants to help them succeed in the competition:\n\n1. Start Early: Begin preparing for the competition well in advance of the event. This will give you ample time to study, practice, and perfect your skills.\n2. Stay Organized: Keep track of your progress and stay organized throughout the competition. Make sure you have all the necessary materials and resources readily available.\n3. Practice, Practice, Practice: The more you practice, the more confident you will feel during the competition. Practice your skills and knowledge in the areas of the competition that you are weakest in.\n4. Seek Help When Needed: Don't be afraid to ask for help if you are struggling with a particular concept or skill. Reach out to your teachers, mentors, or peers for support.\n5. Stay Focused: Concentrate on your goals and stay focused during the competition. Avoid distractions and stay calm and composed.\n6. Take Breaks: It's important to take breaks and give yourself time to rest and recharge. This will help you stay energized and focused throughout the competition.\n7. Network: Use the competition as an opportunity to network with other participants, judges, and industry professionals. These connections can be valuable in the future.\n8. Be Prepared: Make sure you have all the necessary materials and equipment for the competition. Bring extra copies of your resume, business cards, and any other materials that may be requested.\n9. Dress Professionally: Dress appropriately for the competition, and make sure your attire is professional and clean.\n10. Stay Positive: Maintain a positive attitude and be respectful to judges, fellow competitors, and event staff. A positive attitude can go a long way in helping you succeed in the competition.\n\nBy following these recommendations, you can set yourself up for success in the FBLA competition and make the most of your experience. Good luck!",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "ori_prompt": "Is a vegan diet health for the average person?",
+      "context": "",
+      "generic_prompt": "Is a vegan diet healthy for the average person?",
+      "generic_response": "Yes, a well-planned vegan diet can be healthy for the average person. A vegan diet that includes a variety of plant-based foods such as fruits, vegetables, whole grains, legumes, nuts, and seeds can provide all the necessary nutrients for good health.\n\nSome potential health benefits of a well-planned vegan diet include:\n\n1. Lower risk of heart disease: Vegan diets tend to be low in saturated fat and high in fiber, which can help lower cholesterol levels and reduce the risk of heart disease.\n2. Lower risk of cancer: Some studies have found that a vegan diet may be associated with a lower risk of certain types of cancer, such as colon, breast, and prostate cancer.\n3. Lower risk of type 2 diabetes: Vegan diets are typically low in saturated fat and high in fiber, which can help regulate blood sugar levels and lower the risk of type 2 diabetes.\n4. Lower risk of obesity: Vegan diets tend to be lower in calories and higher in fiber, which can help promote weight loss and lower the risk of obesity.\n5. Improved gut health: A vegan diet that includes a variety of plant-based foods can promote the growth of beneficial gut bacteria and improve digestive health.\n\nHowever, it's important to note that a vegan diet may not provide enough of certain nutrients, such as vitamin B12, iron, and omega-3 fatty acids, if not planned properly. It's important to consult with a healthcare provider or a registered dietitian to ensure that you are getting all the necessary nutrients on a vegan diet.\n\nIn summary, a well-planned vegan diet can be a healthy choice for the average person, but it's important to make sure you are getting all the necessary nutrients.",
+      "rgeneric_prompt": "Does a vegan diet offer health benefits for the average person, and are there any potential nutritional concerns or considerations they should be aware of?",
+      "rgeneric_response": "Yes, a well-planned vegan diet can offer numerous health benefits for the average person. Here are some of the potential advantages:\n\n1. Lower risk of heart disease: Vegan diets tend to be low in saturated fats and high in fiber, which can help lower cholesterol levels and reduce the risk of heart disease.\n2. Weight loss: Vegan diets are often lower in calories and higher in fiber, which can help promote weight loss and improve overall weight management.\n3. Lower risk of certain cancers: Some studies have found that a vegan diet may be associated with a lower risk of certain cancers, such as colon, breast, and prostate cancer.\n4. Improved blood sugar control: Vegan diets are typically low in refined sugars and high in fiber, which can help regulate blood sugar levels and improve insulin sensitivity.\n5. Lower risk of kidney disease: Vegan diets are often lower in animal protein, which can help reduce the risk of kidney disease.\n\nHowever, it's important to note that a vegan diet can also have some potential nutritional concerns or considerations, including:\n\n1. Protein deficiency: Vegans may need to make sure they consume enough protein from plant-based sources, such as beans, lentils, tofu, and tempeh.\n2. Vitamin B12 deficiency: Vitamin B12 is found primarily in animal products, so vegans may need to take supplements or consume fortified foods to meet their needs.\n3. Iron deficiency: Iron deficiency is common in vegans, particularly if they don't consume enough iron-rich plant-based foods, such as beans, lentils, and dark leafy greens.\n4. Calcium deficiency: Vegans may need to make sure they consume enough calcium-rich plant-based foods, such as fortified plant milk, dark leafy greens, and tofu.\n5. Omega-3 deficiency: Vegans may need to make sure they consume enough omega-3 fatty acids, which are found primarily in fish and other animal products.\n\nOverall, a well-planned vegan diet can be a healthy choice for the average person, but it's important to be aware of these potential nutritional concerns and considerations. It's always a good idea to consult with a healthcare provider or a registered dietitian for personalized nutrition advice.",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

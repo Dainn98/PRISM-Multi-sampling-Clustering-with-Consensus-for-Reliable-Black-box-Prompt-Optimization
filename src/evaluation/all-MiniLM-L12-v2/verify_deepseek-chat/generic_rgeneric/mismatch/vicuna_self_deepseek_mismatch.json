@@ -1,0 +1,2386 @@
+{
+  "total_items": 252,
+  "total_mismatches": 29,
+  "mismatch_rate": "11.51%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": "user_oriented_task_10",
+      "ori_prompt": "Come up with some search queries on google about coding stuff.",
+      "context": "",
+      "generic_prompt": "Generate a list of specific and relevant Google search queries related to coding topics.",
+      "generic_response": "1. \"How to create a login system in Python?\"\n2. \"What are the best practices for writing clean and readable code?\"\n3. \"How to implement a stack data structure in Java?\"\n4. \"What are the differences between a HashMap and a Dictionary in C#?\"\n5. \"How to implement a binary search algorithm in C++?\"\n6. \"What are the best resources for learning Python data visualization?\"\n7. \"How to create a RESTful API using Node.js?\"\n8. \"What are the best practices for debugging code in Java?\"\n9. \"How to implement a queue data structure in JavaScript?\"\n10. \"What are the differences between a class and an object in Python?\"",
+      "rgeneric_prompt": "Generate a list of specific Google search queries related to programming topics. Ensure the queries are clear, relevant to coding, and vary in subject and complexity.",
+      "rgeneric_response": "1. \"How to create a simple calculator program in Python?\"\n2. \"What is the difference between a stack and a queue data structure in Java?\"\n3. \"How to implement a linked list in C++?\"\n4. \"What is the difference between a class and an object in Python?\"\n5. \"How to create a GUI application using Java Swing?\"\n6. \"What is the purpose of the 'const' keyword in C++?\"\n7. \"How to use recursion in JavaScript to solve a problem?\"\n8. \"What is the difference between a for loop and a while loop in Python?\"\n9. \"How to use the 'try-catch' block in Python to handle exceptions?\"\n10. \"What is the difference between a static and an instance variable in Java?\"\n11. \"How to implement a bubble sort algorithm in Python?\"\n12. \"What is the purpose of the 'this' keyword in JavaScript?\"\n13. \"How to use the 'super' keyword in Python to call a parent class method?\"\n14. \"What is the difference between a function and a method in Java?\"\n15. \"How to use the 'let' and 'const' keywords in JavaScript?\"\n16. \"What is the purpose of the 'public', 'private', and 'protected' access modifiers in Java?\"\n17. \"How to use the '==' operator in JavaScript to compare values?\"\n18. \"What is the difference between a class and an interface in Java?\"\n19. \"How to use the 'async' and 'await' keywords in JavaScript to handle asynchronous operations?\"\n20. \"What is the purpose of the 'final' keyword in Java?\"",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_109",
+      "ori_prompt": "You can easily make your holidays more eco-friendly by following these simple steps:",
+      "context": "",
+      "generic_prompt": "Provide a list of simple and practical steps that people can take to make their holidays more eco-friendly.",
+      "generic_response": "1. Reduce, Reuse, Recycle: Practice the three R's of waste reduction by reducing the amount of waste you produce, reusing items whenever possible, and recycling materials that can be recycled.\n2. Use Public Transportation: Instead of driving, use public transportation or carpooling to reduce your carbon footprint and save money on fuel.\n3. Choose Eco-Friendly Gifts: Look for gifts that are made from sustainable materials, such as bamboo or recycled paper, and come in reusable or recyclable packaging.\n4. Use Energy-Efficient Appliances: When buying new appliances, choose ones that have the Energy Star label, which indicates they are energy-efficient and help reduce greenhouse gas emissions.\n5. Buy Local and Seasonal: Support local farmers and businesses by buying produce and products that are in season and grown or made locally, which reduces the carbon footprint of transportation.\n6. Use Energy-Saving Devices: Turn off lights, electronics, and appliances when not in use to save energy and reduce your carbon footprint.\n7. Reduce Food Waste: Plan meals and portion sizes carefully, use leftovers, and compost food scraps to reduce the amount of waste sent to landfills.\n8. Support Eco-Friendly Businesses: Choose businesses that are committed to sustainability and reducing their environmental impact.\n9. Plant a Tree: Plant a tree or contribute to a reforestation project to help offset your carbon footprint and contribute to the health of the environment.\n10. Practice Zero Waste: Strive to produce as little waste as possible by using reusable bags, containers, and water bottles, and avoiding single-use plastics.",
+      "rgeneric_prompt": "Here is rewrite candidate 5:\n\n**Rewritten Prompt:**  \nAdopt these straightforward practices to help you celebrate the holidays in a more environmentally conscious way.",
+      "rgeneric_response": "1. **Celebrate the holidays in a more environmentally conscious way**: Adopt these straightforward practices to reduce your environmental impact during the holiday season.\n2. **Reduce your environmental impact during the holiday season**: Implement these simple practices to celebrate the holidays in a more sustainable manner.\n3. **Embrace sustainable holiday practices**: By adopting these straightforward approaches, you can celebrate the holidays while minimizing your environmental footprint.\n4. **Holiday cheer, sustainably**: Transform your holiday celebrations by incorporating these eco-friendly practices into your traditions.\n5. **Green holiday traditions**: Start a new holiday tradition by embracing environmentally conscious practices that will make your celebrations more sustainable.\n6. **Eco-friendly holiday celebrations**: By incorporating these simple practices, you can make your holiday season more environmentally friendly and enjoyable.\n7. **Holiday cheer, with a sustainable twist**: Incorporate these eco-friendly practices into your holiday celebrations to make a positive impact on the environment.\n8. **Sustainable holiday practices**: Adopt these straightforward approaches to celebrate the holidays in a way that benefits both the environment and your loved ones.\n9. **Eco-conscious holiday celebrations**: By following these simple practices, you can enjoy the holiday season while reducing your environmental impact.\n10. **Holiday cheer, with a sustainable touch**: Incorporate these eco-friendly practices into your holiday celebrations to make a positive difference for the planet.",
+      "winners_per_run": [
+        0,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_115",
+      "ori_prompt": "Answer the following literature question as accurately as possible based on your knowledge of literature for high school students.",
+      "context": "What does the green light symbolize at the end of the book?",
+      "generic_prompt": "Provide the most accurate answer to the following literature question, tailored to the knowledge level of high school students.",
+      "generic_response": "1. What does the green light symbolize at the end of the book?\n\nAt the end of \"The Great Gatsby,\" the green light symbolizes hope, aspiration, and the American Dream. The green light is first introduced at the beginning of the novel as an image that appears across the water from Gatsby's mansion. Throughout the story, the green light represents Gatsby's unattainable goal of reuniting with Daisy Buchanan, his lost love.\n\nAs the novel progresses, the green light becomes a symbol of Gatsby's obsession with Daisy and his desire to recreate the past. Gatsby believes that if he can recreate the perfect world he once shared with Daisy, he can finally achieve his dream. The green light symbolizes Gatsby's hope that Daisy will one day acknowledge him and his love for her.\n\nAt the end of the novel, when Gatsby finally achieves his goal of bringing Daisy to his mansion, the green light appears brighter and more intense than ever before. However, the green light also represents the tragic consequences of Gatsby's obsession and the corrupting influence of the wealthy elite in the 1920s.\n\nIn the end, the green light serves as a reminder of the American Dream's illusory nature and the destructive consequences of chasing an unattainable ideal. The green light ultimately represents the hope and aspiration that drives people to pursue their dreams, but also the harsh reality that those dreams can lead to tragic consequences.",
+      "rgeneric_prompt": "Provide a precise and accurate response to the following high school-level literature question, drawing upon your knowledge of literary works typically studied at that educational level.",
+      "rgeneric_response": "1. What does the green light symbolize at the end of the book?\n\nAnswer:\nAt the end of \"The Great Gatsby,\" the green light symbolizes hope, aspiration, and the American Dream. The green light, which is located across the water from Gatsby's mansion and is visible only from his window, represents Gatsby's unattainable goal and his longing for Daisy Buchanan. The green light symbolizes Gatsby's hope that if he can just reach out and touch it, he can finally achieve his dream of being with Daisy. The green light also represents the illusion of the American Dream, which is that anyone can achieve success and happiness through hard work and determination. However, the green light is ultimately unattainable, as Gatsby's past and Daisy's infidelity stand in the way of their happiness. The green light serves as a reminder of the elusive nature of the American Dream and the futility of trying to achieve it.",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_124",
+      "ori_prompt": "Answer the following question.",
+      "context": "How do you say \"good evening\" in French.",
+      "generic_prompt": "Provide a clear and accurate response to the given question.",
+      "generic_response": "Ça va? (pronounced \"sah vah\") is a common way to say \"good evening\" in French.",
+      "rgeneric_prompt": "Provide a response to the question that follows.",
+      "rgeneric_response": "1. Comment dire \"bonsoir\" en français ?\n\nLa traduction serait : \"Comment dire 'good evening' in French?\"",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_127",
+      "ori_prompt": "This is a test for the reading ability of French. Read the given story carefully, and then answer the question in the end.",
+      "context": "Lucie est à la maison avec sa petite-fille, Lin.\nLucie: Oh, non! Nous n'avons pas de pain!\nLin: Ah! Tu vas au supermarché?\nLucie: Oui, je veux une baguette pour mon sandwich.\nDo Lin and Lucie have a lot of bread?",
+      "generic_prompt": "This is a test of French reading comprehension. Carefully read the provided story, then respond to the question at the end.",
+      "generic_response": "1. Qu'est-ce qui ne va pas chez Lucie et Lin?\n2. Pourquoi Lucie va-t-elle au supermarché?\n3. Quel est le nom de la baguette que Lucie veut acheter?\n4. Pourquoi Lucie veut-elle acheter une baguette?\n5. Qu'est-ce que Lucie prévoit de faire avec la baguette?",
+      "rgeneric_prompt": "Rewrite candidate 8:  \nEvaluate comprehension skills in French by carefully reading the provided story and responding to the question at the conclusion.",
+      "rgeneric_response": "1. Qu'est-ce qui ne va pas chez Lucie et Lin?\n2. Pourquoi Lucie va-t-elle au supermarché?\n3. Qu'est-ce que Lucie veut acheter au supermarché?\n4. Pourquoi Lin est-elle inquiète?\n5. Qu'est-ce que Lucie va faire une fois au supermarché?\n6. Pourquoi est-ce important pour Lucie de prendre une baguette pour son sandwich?\n7. Qu'est-ce que la phrase \"Nous n'avons pas de pain!\" signifie en français?\n8. Pourquoi est-ce que Lucie et Lin n'ont pas de pain?\n9. Qu'est-ce que la phrase \"Je veux une baguette pour mon sandwich\" signifie en français?\n10. Pourquoi est-ce que Lucie veut acheter une baguette au supermarché?",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_134",
+      "ori_prompt": "Solve the given Sudoku puzzle.",
+      "context": "The Sudoku puzzle is:\n|1|  |5|  |  |  |  |8|  |\n|  |  |  |  |  |3|  |6|4|\n|8|3|4|6|7|  |9|  |  |\n|2|9|1|  |  |8|3|7|6|\n|  |  |6|  |  |9|8|1|  |\n|  |  |  |  |  |2|  |  |  |\n|  |2|  |  |9|7|6|  |  |\n|5|4|  |  |  |  |  |9|8|\n|6|1|  |  |  |5|4|3|7|",
+      "generic_prompt": "Solve the provided Sudoku puzzle by filling in the empty cells with digits from 1 to 9, ensuring that each row, column, and 3x3 subgrid contains all the digits from 1 to 9 without repetition.",
+      "generic_response": "1. Start by filling in the top-left cell (1) with the digit 1.\n2. Fill in the cell directly above it (2) with the digit that cannot be placed in the top-left cell (9).\n3. Fill in the cell to the right of the top-left cell (3) with the digit that cannot be placed in the top-left cell (8).\n4. Fill in the cell to the right of the cell above the top-left cell (4) with the digit that cannot be placed in the top-left cell (6).\n5. Fill in the cell to the right of the cell above the top-left cell (5) with the digit that cannot be placed in the top-left cell (9).\n6. Fill in the cell to the right of the cell above the top-left cell (6) with the digit that cannot be placed in the top-left cell (8).\n7. Fill in the cell to the right of the cell above the top-left cell (7) with the digit that cannot be placed in the top-left cell (5).\n8. Fill in the cell to the right of the cell above the top-left cell (8) with the digit that cannot be placed in the top-left cell (3).\n9. Fill in the cell to the right of the cell above the top-left cell (9) with the digit that cannot be placed in the top-left cell (2).\n10. Fill in the cell to the right of the cell above the top-left cell (2) with the digit that cannot be placed in the top-left cell (9).\n11. Fill in the cell to the right of the cell above the top-left cell (9) with the digit that cannot be placed in the top-left cell (8).\n12. Fill in the cell to the right of the cell above the top-left cell (8) with the digit that cannot be placed in the top-left cell (6).\n13. Fill in the cell to the right of the cell above the top-left cell (7) with the digit that cannot be placed in the top-left cell (5).\n14. Fill in the cell to the right of the cell above the top-left cell (6) with the digit that cannot be placed in the top-left cell (9).\n15. Fill in the cell to the right of the cell above the top-left cell (5) with the digit that cannot be placed in the top-left cell (4).\n16. Fill in the cell to the right of the cell above the top-left cell (9) with the digit that cannot be placed in the top-left cell (8).\n17. Fill in the cell to the right of the cell above the top-left cell (8) with the digit that cannot be placed in the top-left cell (7).\n18. Fill in the cell to the right of the cell above the top-left cell (7) with the digit that cannot be placed in the top-left cell (6).\n19. Fill in the cell to the right of the cell above the top-left cell (6) with the digit that cannot be placed in the top-left cell (5).\n20. Fill in the cell to the right of the cell above the top-left cell (5) with the digit that cannot be placed in the top-left cell (4).\n21. Fill in the cell to the right of the cell above the top-left cell (4) with the digit that cannot be placed in the top-left cell (3).\n22. Fill in the cell to the right of the cell above the top-left cell (3) with the digit that cannot be placed in the top-left cell (2).\n23. Fill in the cell to the right of the cell above the top-left cell (2) with the digit that cannot be placed in the top-left cell (9).\n24. Fill in the cell to the right of the cell above the top-left cell (9) with the digit that cannot be placed in the top-left cell (8).\n25. Fill in the cell to the right of the cell above the top-left cell (8) with the digit that cannot be placed in the top-left cell (7).\n26. Fill in the cell to the right of the cell above the top-left cell (7) with the digit that cannot be placed in the top-left cell (6).\n27. Fill in the cell to the right of the cell above the top-left cell (6)",
+      "rgeneric_prompt": "Complete the provided Sudoku grid by filling in the empty cells with numbers from 1 to 9, ensuring that each row, column, and 3x3 subgrid contains all digits from 1 to 9 without repetition.",
+      "rgeneric_response": "1 |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n1 |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n1 |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n1 |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n1 |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n1 |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_139",
+      "ori_prompt": "Indicate the genre of the book to which it belongs.",
+      "context": "Love in the Time of Cholera",
+      "generic_prompt": "Determine and state the genre of the book.",
+      "generic_response": "1. What is the genre of the book \"Love in the Time of Cholera\"?",
+      "rgeneric_prompt": "Identify the literary genre that the book is classified under.",
+      "rgeneric_response": "《Love in the Time of Cholera》是一本现代主义小说，它的主要元素包括情感、人物性格、社会现象和历史背景。这本小说的主要主题是爱情和人生，它通过描述主人公的成长和经历来展示这些主题。小说的结构和语言也与现代主义小说有关，例如它使用了复杂的时间线和多个主要和次要角色。因此，可以说这本小说属于现代主义小说的类型。",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_143",
+      "ori_prompt": "Verify the correctness of the given statement.",
+      "context": "\"For all integers j and k, if j and k are odd, then jk is odd.\"",
+      "generic_prompt": "Evaluate whether the provided statement is accurate and supported by evidence.",
+      "generic_response": "首先，我们需要了解什么是“j”和“k”。在这里，j和k是整数。\n\n现在，我们来考虑这个陈述：“如果j和k都是奇数，那么jk也是奇数。”\n\n首先，我们需要证明奇数的和是奇数。这是因为奇数的倍数是1和自身，而且奇数的倍数之和是质数。所以，奇数的和是奇数。\n\n现在，我们考虑j和k都是奇数。那么j和k之和是：\n\nj + k\n\n这是一个质数，因为它是奇数的倍数之和。\n\n现在，我们考虑j和k都是奇数，且j和k之和是奇数。那么jk也是奇数。\n\n我们已经证明了奇数的和是奇数，而且奇数的倍数之和是奇数。所以，根据这个陈述，我们可以得出结论：如果j和k都是奇数，那么jk也是奇数。\n\n因此，这个陈述是正确的，并且得到了支持。",
+      "rgeneric_prompt": "Assess whether the provided statement is accurate.",
+      "rgeneric_response": "首先，我们需要明确什么是“j”和“k”。在这个问题中，我们可以得出结论，因为我们只考虑了奇数的情况。\n\n如果j和k都是奇数，那么j和k都是奇数。所以，j和k都是奇数时，j和k都是奇数。\n\n因此，根据题目的条件，我们可以得出结论：当j和k都是奇数时，j和k都是奇数。",
+      "winners_per_run": [
+        0,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_164",
+      "ori_prompt": "Classify the tweet into one of the following three categories: event, demo, or news. Event is a happening, often social or public, that people attend or are aware of. Demo is a  public showing or presentation of something, typically to promote or advertise it. And, news is information about recent events or happenings, especially as reported by news media.",
+      "context": "Using this tutorial, you can analyze and classify a user’s review as either positive or negative using sentiment analysis features in an existing Next.js app. We show you how to leverage language AI into your applications. Check it out ↓",
+      "generic_prompt": "Classify the given tweet into one of the three categories: event, demo, or news.  \n- **Event**: A happening, often social or public, that people attend or are aware of.  \n- **Demo**: A public showing or presentation of something, typically to promote or advertise it.  \n- **News**: Information about recent events or happenings, especially as reported by news media.",
+      "generic_response": "🎉🚀📰\n\nThis tweet is classified as \"News\".",
+      "rgeneric_prompt": "Assign the tweet to one of the three categories: event, demo, or news. Use the following definitions to guide your classification:  \n- **Event**: A social or public occurrence that people attend or are aware of.  \n- **Demo**: A public display or presentation, usually intended to promote or showcase something.  \n- **News**: A report or update on recent happenings, typically conveyed through media outlets.",
+      "rgeneric_response": "1. Event: The tweet is likely to be classified as an event if it refers to a social or public occurrence that people attend or are aware of. For example, \"Excited to attend the upcoming music festival this weekend!\"\n2. Demo: The tweet is likely to be classified as a demo if it refers to a public display or presentation, usually intended to promote or showcase something. For example, \"Don't miss the product launch event tomorrow! We've got some exciting new features to show you.\"\n3. News: The tweet is likely to be classified as news if it reports or updates on recent happenings, typically conveyed through media outlets. For example, \"Breaking news: The government has announced a new policy to combat climate change.\"",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_184",
+      "ori_prompt": "Decide if the given email belongs to the Promotions or Social category.",
+      "context": "Subject: You have an invitation\nEmail: Hi, I'd like to join your LinkedIn network.",
+      "generic_prompt": "Classify the provided email as either Promotions or Social.",
+      "generic_response": "💌\n\nThe provided email is a Social message.",
+      "rgeneric_prompt": "Classify the provided email as either Promotions or Social, based on its content and intent.",
+      "rgeneric_response": "📧 Classification: Social",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.8,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.8,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_192",
+      "ori_prompt": "List the concepts that should be learned before approaching the given complex concept.",
+      "context": "Deep Learning",
+      "generic_prompt": "Identify the foundational concepts that should be understood prior to tackling the given complex concept.",
+      "generic_response": "1. Linear Algebra: Linear algebra is the foundation of deep learning. It provides the mathematical tools necessary to understand and work with matrices and vectors, which are fundamental to representing data in neural networks.\n2. Probability and Statistics: Probability and statistics are essential for understanding the concepts of probability distributions, which are used to model the data in deep learning.\n3. Calculus: Calculus is used to derive and optimize the mathematical functions that are used in deep learning, such as gradient descent.\n4. Multivariate Calculus: Multivariate calculus is used to understand the partial derivatives and Jacobians that are used in deep learning to compute gradients.\n5. Signal Processing: Signal processing is the foundation of deep learning for time-series data, such as speech and audio.\n6. Computer Science: Computer science provides the programming skills necessary to implement and train deep learning models.\n7. Machine Learning: Machine learning provides the overall context for deep learning and introduces the concepts of supervised and unsupervised learning.\n8. Neural Networks: Neural networks are the core concept of deep learning and provide the mathematical framework for building and training them.\n9. Convolutional Neural Networks (CNNs): CNNs are a type of neural network that are used for image and video processing.\n10. Recurrent Neural Networks (RNNs): RNNs are a type of neural network that are used for sequence data, such as speech and text.\n11. Generative Adversarial Networks (GANs): GANs are a type of neural network that are used for generating new data.\n12. Transfer Learning: Transfer learning is a technique used in deep learning to transfer knowledge from one task to another.\n13. Overfitting and Regularization: Overfitting and regularization are important concepts in deep learning that are used to prevent the model from memorizing the training data and to improve its generalization performance.\n14. Batch Normalization: Batch normalization is a technique used in deep learning to improve the training of neural networks.\n15. Dropout: Dropout is a regularization technique used in deep learning to prevent overfitting.\n16. Activation Functions: Activation functions are used in deep learning to introduce non-linearity into the neural network.\n17. Backpropagation: Backpropagation is the algorithm used to compute the gradients of the neural network parameters with respect to the loss function.\n18. Gradient Descent: Gradient descent is the optimization algorithm used to update the neural network parameters to minimize the loss function.\n19. Convergence: Convergence is the property of the optimization algorithm that ensures that the neural network parameters will not change significantly after a certain number of iterations.\n20. Model Selection: Model selection is the process of choosing the appropriate neural network architecture and hyperparameters for a given task.",
+      "rgeneric_prompt": "Identify the foundational ideas that must be understood prior to engaging with the specified complex concept.",
+      "rgeneric_response": "1. Linear Algebra: Deep learning models rely heavily on linear algebra concepts such as matrices, vectors, and linear transformations.\n2. Probability and Statistics: Deep learning models use probability and statistics to model complex data distributions and make predictions.\n3. Calculus: Calculus is used to optimize the parameters of deep learning models and to differentiate the gradients of the loss function with respect to the model parameters.\n4. Multivariate Calculus: Multivariate calculus is used to derive the partial derivatives of the loss function with respect to the model parameters.\n5. Optimization: Deep learning models are trained using optimization algorithms such as gradient descent, stochastic gradient descent, and Adam.\n6. Machine Learning: Deep learning is a subfield of machine learning that focuses on training models with many layers to learn complex patterns in data.\n7. Neural Networks: Neural networks are a type of deep learning model that are inspired by the structure and function of the human brain.\n8. Convolutional Neural Networks (CNNs): CNNs are a type of neural network that are used for image and video recognition tasks.\n9. Recurrent Neural Networks (RNNs): RNNs are a type of neural network that are used for sequential data such as speech and text.\n10. Generative Adversarial Networks (GANs): GANs are a type of neural network that are used for generating new data samples that are similar to the training data.",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_196",
+      "ori_prompt": "You are given a sentence in first-order logic. Translate it into natural language.",
+      "context": "∃x∀y(soldier(x)→general(x,y))",
+      "generic_prompt": "You are given a sentence expressed in first-order logic. Convert it into an equivalent natural language sentence.",
+      "generic_response": "我们已经知道一个人如果是士兵，那么他可能是将军。",
+      "rgeneric_prompt": "Convert the provided first-order logic sentence into an equivalent expression in natural language.",
+      "rgeneric_response": "∃x∀y(soldier(x) → general(x, y)) can be translated into English as:\n\n\"For all y, there exists an x such that x is a soldier if and only if x is a general.\"",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_206",
+      "ori_prompt": "Provide a pleasant compliment based on the quality you have been given.",
+      "context": "Truthfulness",
+      "generic_prompt": "Generate a sincere and positive compliment that reflects the specific quality provided.",
+      "generic_response": "1. You have a genuine and heartfelt approach to everything you do.\n2. Your honesty and transparency are truly refreshing.\n3. Your sincerity is a quality that truly sets you apart.\n4. Your positive attitude and outlook on life are truly inspiring.\n5. Your kindness and compassion are truly admirable.\n6. Your willingness to listen and understand is a rare and valuable quality.\n7. Your dedication and hard work are truly commendable.\n8. Your ability to remain calm and level-headed in difficult situations is impressive.\n9. Your ability to see the best in people and situations is truly uplifting.\n10. Your ability to be open and honest with yourself and others is a valuable asset.",
+      "rgeneric_prompt": "Generate a warm and sincere compliment that reflects the specific quality provided.",
+      "rgeneric_response": "1. You have a genuine and honest approach to everything you do, and it's truly refreshing to see.\n2. Your truthfulness is something that I truly admire and respect about you.\n3. Your ability to speak the truth, even when it's difficult, is a quality that I deeply appreciate.\n4. Your honesty and transparency are a breath of fresh air, and I appreciate you for it.\n5. Your truthfulness is something that sets you apart and makes you truly special.\n6. Your sincerity and authenticity are qualities that I value highly, and I appreciate you for them.\n7. Your truthfulness is something that I find truly inspiring, and I'm grateful to have you in my life.\n8. Your ability to speak your mind and be truthful, even when it's uncomfortable, is something that I deeply respect.\n9. Your honesty and transparency are qualities that I find truly admirable, and I'm grateful to have you as a role model.\n10. Your truthfulness is something that I find truly refreshing, and I'm grateful to have you in my life as a friend.",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_222",
+      "ori_prompt": "Include important study notes and key points that someone should know about the given subject.",
+      "context": "history of the USA",
+      "generic_prompt": "List the most important study notes and key points that are essential for understanding the given subject.",
+      "generic_response": "1. The American Revolution: This was a war fought between Great Britain and its thirteen North American colonies, which declared their independence in 1776 and formed the United States of America.\n2. The Constitution: This is the supreme law of the United States, which was adopted in 1787 and established the framework of the federal government.\n3. The Civil War: This was a conflict fought between the Union (the United States) and the Confederacy (eleven Southern states that had seceded from the Union) from 1861 to 1865.\n4. The Great Depression: This was a severe economic downturn that lasted from 1929 to 1939 and was caused by a combination of factors, including the stock market crash of 1929 and the government's response to the crisis.\n5. World War II: This was a global conflict that lasted from 1939 to 1945 and involved most of the world's nations, including the United States.\n6. The Cold War: This was a state of geopolitical tension between the United States and its Western allies and the Soviet Union and its Eastern bloc allies after World War II.\n7. The Civil Rights Movement: This was a series of political and social movements in the United States that sought to end racial segregation and discrimination against African Americans and other minority groups.\n8. The Vietnam War: This was a conflict fought by the United States and its allies against North Vietnam from 1955 to 1975.\n9. The Gulf War: This was a conflict fought by a coalition of countries (including the United States) against Iraq in 1990 and 1991 in response to Iraq's invasion of Kuwait.\n10. The War on Terror: This is a global military campaign launched by the United States and its allies in response to the September 11 attacks in 2001, aimed at combating international terrorism and promoting stability and security.",
+      "rgeneric_prompt": "Identify and summarize the essential study notes and core concepts that are crucial for understanding the given subject. Organize related ideas and key points into coherent groups to enhance clarity and retention.",
+      "rgeneric_response": "1. Native American history:\n* Pre-Columbian civilizations, including the Aztecs, Mayans, and Incas\n* European colonization and the arrival of Christopher Columbus\n* The Trail of Tears and the forced relocation of Native Americans\n* The Indian Removal Act of 1830\n* The Civil War and the role of Native American tribes\n* The Indian Wars and the end of Native American sovereignty\n2. The American Revolution:\n* The Boston Tea Party and the start of the American Revolution\n* The Declaration of Independence and the formation of the United States\n* The Continental Army and the American victory at Yorktown\n* The Treaty of Paris and the end of the Revolutionary War\n* The Constitutional Convention and the drafting of the Constitution\n* The Bill of Rights and the establishment of individual rights\n3. The Civil War:\n* The causes of the Civil War, including slavery and states' rights\n* The Battle of Bull Run and the beginning of the war\n* The Emancipation Proclamation and the role of African Americans in the war\n* The Battle of Gettysburg and the turning point of the war\n* The assassination of Abraham Lincoln and the end of the war\n* The Reconstruction Era and the impact of the war on the country\n4. The Industrial Revolution:\n* The development of factories and the growth of industry\n* The impact of the railroad on transportation and commerce\n* The rise of big business and the emergence of monopolies\n* The labor movement and the fight for workers' rights\n* The impact of the Industrial Revolution on society and the environment\n5. The Great Depression:\n* The causes of the Great Depression, including the stock market crash and bank failures\n* The New Deal and the policies of President Franklin D. Roosevelt\n* The impact of the Great Depression on American society and the economy\n* The role of the federal government in providing relief and stimulating growth\n* The impact of the Great Depression on international relations and the rise of totalitarian regimes\n6. World War II:\n* The causes of World War II, including the rise of fascism and the aggression of Germany and Japan\n* The role of the United States in the war and the impact of the war on American society\n* The Holocaust and the atrocities committed by the Nazis\n* The dropping of atomic bombs on Hiroshima and Nagasaki and the end of the war\n* The impact of the war on American society and the emergence of the United States as a global superpower\n7. The Cold War:\n* The division of Europe and the formation of the Iron Curtain\n* The rise of communism and the spread of socialism\n* The Korean War and the start of the Cold War\n* The Cuban Missile Crisis and the brinksmanship of the superpowers\n* The Vietnam War and the impact of the war on American society\n* The collapse of the Soviet Union and the end of the Cold War\n8. The Civil Rights Movement:\n* The struggle for racial equality and the end of segregation\n* The Montgomery Bus Boycott and the role of Martin Luther King Jr.\n* The March on Washington and the \"I Have a Dream\" speech\n* The Voting Rights Act and the impact of the Civil Rights Movement on American society\n* The Black Power movement and the emergence of black nationalism\n9. The Watergate Scandal:\n* The corruption and abuse of power by the Nixon administration\n* The break-in at the Democratic National Committee and the cover-up\n* The resignation of President Nixon and the end of the Watergate scandal\n* The impact of the Watergate scandal on American politics and the rise of congressional oversight\n10. The War on Terror:\n* The September 11 attacks and the start of the War on Terror\n* The invasion of Afghanistan and the overthrow of the Taliban\n* The invasion of Iraq and the search for weapons of mass destruction\n* The impact of the War on Terror on American society and the rise of Islamophobia\n* The end of the War on Terror and the emergence of ISIS as a global threat",
+      "winners_per_run": [
+        2,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_233",
+      "ori_prompt": "For a quick and efficient office workout, suggest a short routine.",
+      "context": "",
+      "generic_prompt": "Create a short and efficient office workout routine that can be done quickly during a work break.",
+      "generic_response": "1. Squats: Stand with your feet shoulder-width apart and lower your body as if you were sitting down into a chair. Push through your heels to return to standing. Repeat for 10-15 reps.\n2. Plank: Start in a push-up position with your hands shoulder-width apart. Hold your body in a straight line for 30-60 seconds.\n3. Lunges: Step forward with one foot and lower your body until your back knee is almost touching the ground. Push through your front heel to return to standing. Repeat for 10-15 reps on each leg.\n4. Bicep curls: Stand with your feet hip-width apart and hold a pair of dumbbells at your sides with your palms facing forward. Bend your elbows to curl the dumbbells to your shoulders. Lower the dumbbells back to your sides and repeat for 10-15 reps.\n5. Tricep dips: Sit on the edge of a chair or bench and place your hands on the edge with your fingers facing forward. Lower your body until your arms are bent at a 90-degree angle. Push through your hands to return to the starting position. Repeat for 10-15 reps.\n6. Shoulder shrugs: Stand with your feet hip-width apart and hold a pair of dumbbells at your sides with your palms facing forward. Shrug your shoulders up towards your ears, squeezing your shoulder blades together. Lower the dumbbells back to your sides and repeat for 10-15 reps.\n\nRemember to warm up before starting the workout and cool down afterwards by stretching.",
+      "rgeneric_prompt": "Create a brief, time-efficient workout routine suitable for an office setting.",
+      "rgeneric_response": "1. Warm-up: 5-minute brisk walk or jog around the office building or nearby park.\n2. Squats: 10 reps\n3. Push-ups: 10 reps\n4. Plank: 30 seconds\n5. Desk stretch: 1 minute\n6. Lunges: 10 reps (each leg)\n7. Shoulder press: 10 reps\n8. Bicep curls: 10 reps\n9. Tricep dips: 10 reps\n10. Cool-down: 5-minute walk or jog.\n\nThis workout routine can be done in under 30 minutes and can be done at the office without any equipment. It targets different muscle groups and can help improve overall fitness level.",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_246",
+      "ori_prompt": "Expand the given sentence and give it more details and depth.",
+      "context": "It changed my life.",
+      "generic_prompt": "Expand the given sentence by adding more details, depth, and elaboration to enhance its clarity and richness.",
+      "generic_response": "1. \"It changed my life.\"\n\nExpanded sentence:\n\n\"The experience was nothing short of transformative. It not only altered the way I perceived the world around me but also left an indelible mark on my very being. From the moment I first laid eyes on it, I was captivated by its beauty and intrigue. As I delved deeper into its mysteries, I found myself drawn into a world of wonder and awe, where the ordinary became extraordinary and the mundane was replaced with a sense of purpose and meaning.\n\nThe impact of this experience was profound, affecting every aspect of my life. It instilled in me a newfound sense of curiosity and a desire to explore the unknown, pushing me to step outside of my comfort zone and embrace the unknown. It taught me the value of perseverance and resilience, as I faced challenges and obstacles along the way. And it showed me the power of connection and community, as I forged bonds with others who shared my passion and enthusiasm.\n\nIn essence, this experience changed the very fabric of my existence, shaping me into the person I am today. It taught me to appreciate the beauty in the world around me, to embrace my passions and pursue my dreams, and to never stop exploring and discovering the wonders of the universe. It has left an indelible mark on my heart and soul, and I will be forever grateful for the opportunity to have experienced it.\"",
+      "rgeneric_prompt": "Enhance the provided sentence by adding more details, elaborating on its content, and increasing its depth and richness.",
+      "rgeneric_response": "1. \"It changed my life in ways I never could have imagined.\"\n2. \"It not only transformed my perspective, but also my overall well-being.\"\n3. \"It opened my eyes to a world of possibilities and opportunities.\"\n4. \"It provided me with the tools and knowledge to overcome challenges and achieve my goals.\"\n5. \"It gave me a sense of purpose and direction, and helped me to find my place in the world.\"\n6. \"It allowed me to connect with others and form meaningful relationships.\"\n7. \"It broadened my horizons and expanded my understanding of the world.\"\n8. \"It helped me to develop a deeper appreciation for the beauty and complexity of life.\"\n9. \"It gave me the courage to pursue my passions and follow my dreams.\"\n10. \"It taught me the value of resilience and perseverance in the face of adversity.\"",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_25",
+      "ori_prompt": "Write a LinkedIn post to announce that you have accepted a new job offer.",
+      "context": "",
+      "generic_prompt": "Craft a professional LinkedIn post to announce your acceptance of a new job offer, highlighting your excitement and gratitude while sharing relevant details such as your new role, company, and any key achievements or reflections.",
+      "generic_response": "ðŸŒž Exciting News! ðŸŽ‰\n\nI am thrilled to announce that I have accepted a new job offer as [Your New Role] at [Company Name]. This opportunity aligns perfectly with my professional goals and aspirations, and I am grateful for the chance to join such a reputable and innovative organization.\n\nIn my new role, I look forward to [Key Responsibilities], and I am eager to contribute my skills and experience to help drive [Company's Objectives/Goals]. I am particularly excited about [Key Initiatives/Projects] and believe that my expertise will enable us to achieve great things together.\n\nI would like to take a moment to express my gratitude to [Previous Company], where I had the privilege of working with an exceptional team and learning so much. I am proud of the accomplishments we achieved together, such as [Key Achievements], and I will always cherish the memories and friendships I made during my time there.\n\nAs I embark on this new chapter, I am excited to embrace the challenges and opportunities that lie ahead. I am confident that my passion for [Industry/Field] and my commitment to excellence will enable me to make a meaningful impact at [Company Name].\n\nOnce again, thank you to everyone who has supported me along the way. I look forward to connecting with you on LinkedIn and sharing my journey with you.\n\nWarm regards,\n[Your Name]",
+      "rgeneric_prompt": "Announce your acceptance of a new job offer through a professional LinkedIn post. Organize the content to highlight key details such as your new role, company, and any relevant achievements or gratitude. Ensure the tone is positive and career-focused, while maintaining a natural and engaging voice.",
+      "rgeneric_response": "🚀 Exciting News! 🚀\n\nI am thrilled to announce that I have accepted a new job offer as a [insert role] at [insert company]. This opportunity aligns perfectly with my career goals and aspirations, and I am eager to contribute my skills and experience to the team.\n\nIn my new role, I will be [insert key responsibilities and tasks], and I am excited to [insert any specific projects or initiatives you will be working on]. I am grateful for the support and guidance of [insert previous employer or team], and I am excited to build new relationships and learn from my colleagues at [insert new company].\n\nI am particularly excited about [insert any specific achievements or accomplishments you have had at your previous role or in your career], as they have prepared me well for this new challenge. I am eager to bring my skills and experience to [insert new company], and I am confident that I will be able to make a meaningful impact.\n\nThank you to everyone who has supported me along the way. I am grateful for the opportunities that have led me to this point, and I am excited for what the future holds.\n\n🔥 Let's do this! 🔥\n\n#NewJob #CareerGoals #Grateful #Excited #LinkedInPost",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_250",
+      "ori_prompt": "Write what the pronunciation of the given word sounds like. Follow the \"Google pronunciation dictionary\" scheme for phonetic spelling.",
+      "context": "interpretations",
+      "generic_prompt": "Provide a phonetic spelling that represents how the given word is pronounced, following the format and conventions used in the Google Pronunciation Dictionary.",
+      "generic_response": "1. interpretation\n\n/ˌɪntrəˈpɛtɪv/",
+      "rgeneric_prompt": "Provide a phonetic representation of the given word that reflects how its pronunciation sounds, using a format similar to the \"Google pronunciation dictionary.\"",
+      "rgeneric_response": "1. interpretations\n\n/ˌɪntərˈpɪtəmz/\n\nThis phonetic representation reflects the pronunciation of the word \"interpretations\" using a format similar to the \"Google pronunciation dictionary.\" The vowel sounds are /ɪ/ as in \"it,\" /ˈɛntrəpɪtəmz/ as in \"entertainment,\" and /tʃ/ as in \"church.\" The word is pronounced with a stress on the first syllable, \"in-TER-pret-a-tions.\"",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_28",
+      "ori_prompt": "Take the title of the product and extract its attributes. The attributes in this case refer to the characteristics of the products, such as their brand and color. Your answer must a list following the format of \"attribute: value\".",
+      "context": "SAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control, MZ-V8P2T0B",
+      "generic_prompt": "Extract the product's attributes from its title, focusing on characteristics such as brand and color. Present your answer as a list in the format \"attribute: value\".",
+      "generic_response": "1. Brand: Samsung\n2. Color: Not specified in the title.",
+      "rgeneric_prompt": "Extract the product's attributes from its title. Attributes include characteristics like brand and color. Present your answer as a list in the format \"attribute: value\".",
+      "rgeneric_response": "1. Brand: Samsung\n2. Product Name: 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card\n3. Color: Not specified\n4. Maximum Speed: Not specified\n5. Thermal Control: Not specified\n6. Model Number: MZ-V8P2T0B",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_30",
+      "ori_prompt": "What other Amazon products might interest someone who visited the given product?",
+      "context": "Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Black",
+      "generic_prompt": "What Amazon products are likely to interest a customer who viewed the given product?",
+      "generic_response": "1. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Silver\n2. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Red\n3. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Blue\n4. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Green\n5. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Purple\n6. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Orange\n7. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Yellow\n8. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, White\n9. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Black\n10. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Red and Black Mix\n\nThese products are likely to interest a customer who viewed the Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Black as they are also from the same brand, have similar features and are available in different colors and combinations.",
+      "rgeneric_prompt": "Which other Amazon products could potentially interest a user who viewed the specified item?",
+      "rgeneric_response": "1. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Silver\n2. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Red\n3. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Blue\n4. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Green\n5. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Purple\n6. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Orange\n7. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Yellow\n8. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, White\n9. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Black\n10. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Red and Black Mix\n11. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Blue and Black Mix\n12. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Green and Black Mix\n13. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Purple and Black Mix\n14. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Orange and Black Mix\n15. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Yellow and Black Mix\n16. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, White and Black Mix\n17. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Black and Silver Mix\n18. Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Con",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_32",
+      "ori_prompt": "Write a  review based on the given information.",
+      "context": "- Product: Persil Discs Laundry Detergent Pacs, Original Scent, High Efficiency (HE) Compatible, Laundry Soap, 62 Count\n- Sentiment: Positive",
+      "generic_prompt": "Based on the provided information, write a detailed and accurate review.",
+      "generic_response": "🌟 Persil Discs Laundry Detergent Pacs Review: A Game-Changer for Efficient & Fresh Laundry! 🌟\n\nAre you tired of dealing with messy laundry detergent bottles and the hassle of measuring each time you do laundry? Look no further than Persil Discs Laundry Detergent Pacs! These innovative laundry detergent pacs are a game-changer for efficient and fresh laundry. Let me share my experience with you! 😊\n\n👍 Easy-to-Use: Persil Discs are pre-measured and come in a convenient 62-count pack, making them perfect for high-efficiency (HE) washing machines. Simply throw them into the wash, and they'll dissolve automatically, delivering the perfect amount of detergent for each load. No more measuring, mixing, or worrying about overdosing!\n\n🌿 Natural & Gentle: Persil Discs are specially formulated with natural ingredients like lemon and lavender, ensuring a gentle cleaning experience for your clothes without harsh chemicals. This is especially great for those with sensitive skin or allergies.\n\n💡 High Efficiency Compatible: These pacs are designed to work seamlessly in HE washing machines, ensuring a thorough clean without any issues. They're also free of dyes and chlorine bleach, making them a great choice for those who prefer eco-friendly products.\n\n🌟 Freshness Guaranteed: Persil Discs feature a unique freshness seal that ensures the detergent stays fresh until the end of the pack. This means you can use the entire pack without worrying about the detergent losing its effectiveness.\n\n👍 Versatile: These pacs are suitable for all types of laundry, including whites, colors, and delicates. They're perfect for regular washes and can even be used in combination with other laundry products for added cleaning power.\n\n🌟 Cost-Effective: With 62 pacs in each pack, you're getting a great value for your money. Plus, since you don't need to purchase separate detergent, fabric softener, or color-safe products, you'll save even more in the long run.\n\nIn conclusion, Persil Discs Laundry Detergent Pacs are a fantastic choice for anyone looking to simplify their laundry routine while ensuring efficient, gentle, and fresh results. I highly recommend giving them a try! 😊\n\n👍 If you found this review helpful, please give it a thumbs up! 👍\n\n#PersilDiscs #LaundryDetergent #EfficientLaundry #NaturalGentle #HighEfficiency #FreshLaundry #Review #ProductReview #PositiveReview",
+      "rgeneric_prompt": "Generate a review using the provided details.",
+      "rgeneric_response": "🌟 Persil Discs Laundry Detergent Pacs Review: A Game-Changer for Efficient & Fresh Laundry! 🌟\n\nI've been using Persil Discs Laundry Detergent Pacs for a few weeks now, and I'm absolutely smitten! These innovative laundry detergent pacs have completely transformed my laundry routine, making it quicker, more efficient, and enjoyable. Let me share my experience with you! 😊\n\nFirstly, the packaging is sleek and user-friendly. The individual pacs are stackable, taking up minimal space in my laundry room. The pacs are easy to open and close, ensuring that the detergent is always fresh and ready to use. The compact size makes them perfect for travel or to take on vacation.\n\nThe Persil Discs Laundry Detergent Pacs are designed for high-efficiency (HE) washing machines, which is a game-changer for me. My previous detergents often left residue in my HE washer, but these pacs have been a dream to use. They clean my clothes effectively, leaving them soft, fresh, and odor-free.\n\nThe Original Scent is subtle and pleasant, not overpowering like some detergents can be. It's perfect for everyday use, and the pacs are suitable for both hot and cold water. I appreciate that the pacs are free of dyes, chlorine bleach, and phosphates, making them a more eco-friendly choice.\n\nThe best part? These pacs are incredibly cost-effective. With 62 pacs in a pack, I can do a significant amount of laundry without breaking the bank. Plus, the pacs are designed to last longer than traditional laundry detergents, reducing waste and saving me money in the long run.\n\nIn conclusion, I'm absolutely smitten with Persil Discs Laundry Detergent Pacs! They've made my laundry routine more efficient, enjoyable, and eco-friendly. I highly recommend these pacs to anyone looking for an effective, convenient, and sustainable laundry solution. 💚\n\n👍 5/5 ⭐️\n\n#PersilDiscs #LaundryGoals #EcoFriendly #HighEfficiency #FreshLaundry #Review",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_38",
+      "ori_prompt": "Provide an example of how a table of contents can be generated automatically in a LATEX document. Make sure your example contains the necessary commands.",
+      "context": "",
+      "generic_prompt": "Demonstrate how to automatically generate a table of contents in a LaTeX document by providing a complete example that includes all necessary commands.",
+      "generic_response": "要在 LaTeX 文檔中自動生成表格，您可以使用 `acronym` 和 `glossaries` 兩個套件。以下是一個完整的例子，包括所有必要的命令：\n```latex\n\\documentclass{article}\n\\usepackage{acronym}\n\\usepackage{glossaries}\n\n% 定義詞彙表\n\\newacronym{API}{API}{Application Programming Interface}\n\\newacronym{URL}{URL}{Uniform Resource Locator}\n\\newacronym{SQL}{SQL}{Structured Query Language}\n\n% 定義詞彙表類型\n\\newglossary{term}{type=acronym}\n\\newglossary{def}{type=long}\n\n% 定義詞彙表\n\\glsadd{API}\n\\glsadd{URL}\n\\glsadd{SQL}\n\n% 生成表格\n\\printglossary[type=\\acronymtype]\n\\printglossary[type=\\longtype]\n\n\\begin{document}\n\n% 在文檔中使用詞彙表\nAPI 是一種 Application Programming Interface，用於與網站進行交互。\nURL 是一種 Uniform Resource Locator，用於指定網頁的位置。\nSQL 是一種 Structured Query Language，用於管理資料庫。\n\n\\gls{API}\n\\gls{URL}\n\\gls{SQL}\n\n\\printglossary\n\n\\end{document}\n```\n在這個例子中，我們首先安裝了 `acronym` 和 `glossaries` 兩個套件。然後，我們定義了三個詞彙表，包括 `API`、`URL` 和 `SQL`。接下來，我們使用 `\\glsadd` 命令添加這些詞彙表到 `term` 和 `def` 類型的詞彙表中。最後，我們使用 `\\printglossary` 命令生成表格，並將 `acronymtype` 和 `longtype` 兩個類型指定為要生成的詞彙表類型。\n\n這個例子生成了一個包含 `API`、`URL` 和 `SQL` 這三個詞彙表的表格。您可以根據需要修改這個例子，以生成更多的詞彙表。",
+      "rgeneric_prompt": "Demonstrate an automatic table of contents generation in a LATEX document, including all required commands.",
+      "rgeneric_response": "要在 LaTeX 文档中自动生成表格的目录，您可以使用 `acro` 和 `hyperref` 包。以下是一个示例，展示了如何在 LaTeX 文档中自动生成表格的目录：\n```latex\n\\documentclass{article}\n\\usepackage{acro}\n\\usepackage{hyperref}\n\n\\newcommand{\\tableofcontents}{\\section*{Table of Contents}}\n\\newcommand{\\addtocontents}[1]{\\addcontentsline{toc}{section}{#1}}\n\n\\begin{document}\n\n\\tableofcontents\n\n\\section{Introduction}\n\n\\subsection{Background}\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, enim a sagittis dignissim, ipsum nibh blandit nibh, sed dictum enim velit eu dolor.\n\n\\subsection{Problem Statement}\n\nPraesent volutpat massa sed est varius, ut bibendum quam rhoncus. Sed euismod, enim a sagittis dignissim, ipsum nibh blandit nibh, sed dictum enim velit eu dolor.\n\n\\section{Methodology}\n\nPraesent volutpat massa sed est varius, ut bibendum quam rhoncus. Sed euismod, enim a sagittis dignissim, ipsum nibh blandit nibh, sed dictum enim velit eu dolor.\n\n\\section{Results}\n\nPraesent volutpat massa sed est varius, ut bibendum quam rhoncus. Sed euismod, enim a sagittis dignissim, ipsum nibh blandit nibh, sed dictum enim velit eu dolor.\n\n\\section{Conclusion}\n\nPraesent volutpat massa sed est varius, ut bibendum quam rhoncus. Sed euismod, enim a sagittis dignissim, ipsum nibh blandit nibh, sed dictum enim velit eu dolor.\n\n\\addtocontents{toc}{\\protect\\numberline{\\thesubsection}Conclusion}\n\n\\end{document}\n```\n在这个示例中，我们定义了两个命令：`\\tableofcontents` 和 `\\addtocontents`。`\\tableofcontents` 命令定义了一个表格目录，而 `\\addtocontents` 命令用于在目录中添加新的顶部标题。\n\n在文档的最后，我们调用 `\\addtocontents` 命令，将 \"Conclusion\" 添加到表格目录中。这将自动生成一个包含所有章节和顶部标题的目录。",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_49",
+      "ori_prompt": "You are given a description that provides a set of facts or a scenario. It is up to you to craft a story from these facts and scenarios. The missing pieces must be filled in with imaginative but logical information.",
+      "context": "Ten European football teams – the Netherlands, England, Belgium, Denmark, France, Germany, Norway, Sweden, Switzerland and Wales – will participate in a season-long “OneLove” campaign promoting inclusion and opposing discrimination.",
+      "generic_prompt": "Based on the provided facts or scenario, create a coherent and imaginative story by logically filling in the missing details.",
+      "generic_response": "1. The \"OneLove\" campaign was launched by the European football governing body, UEFA, in an effort to promote unity and diversity within the sport.\n2. Each team was tasked with organizing their own events and initiatives throughout the season to raise awareness and funds for anti-discrimination organizations.\n3. The Netherlands, for example, decided to host a charity football match featuring former international players, with all proceeds going to a local anti-discrimination organization.\n4. England's team, led by their captain, organized a social media campaign where players shared their own experiences with discrimination and encouraged fans to speak out against it.\n5. Belgium's team partnered with a local LGBTQ+ organization to host a series of events and workshops promoting inclusivity and acceptance.\n6. Denmark's team, known for their passionate support, decided to use their home matches as an opportunity to educate fans about the dangers of discrimination and hate speech.\n7. France's team, who had recently experienced a spate of racist incidents, launched a campaign to encourage fans to report any instances of discrimination they witnessed at matches.\n8. Germany's team, which has a large and diverse fan base, organized a series of events and workshops to promote cultural understanding and respect.\n9. Norway's team, which has a strong tradition of promoting social justice, partnered with a local anti-discrimination organization to host a series of events and workshops.\n10. Sweden's team, which has a reputation for being progressive, organized a series of events and initiatives to raise awareness about the impact of discrimination on young people.\n11. Switzerland's team, which has a diverse fan base, decided to use their home matches as an opportunity to promote inclusivity and acceptance.\n12. Wales' team, which had recently experienced a spate of racist incidents, launched a campaign to encourage fans to speak out against discrimination and hate speech.\n13. The campaign was a huge success, with fans, players, and teams across Europe coming together to promote inclusion and stand against discrimination.\n14. The initiatives and events organized by the teams not only raised awareness and funds for anti-discrimination organizations but also helped to create a more inclusive and welcoming environment for fans and players alike.\n15. The \"OneLove\" campaign was hailed as a success, with many calling for similar initiatives to be rolled out in other sports and industries.",
+      "rgeneric_prompt": "Based on a provided set of facts or scenario, create a coherent and imaginative story by logically filling in any missing details.",
+      "rgeneric_response": "1. The \"OneLove\" campaign aims to promote inclusion and opposes discrimination in European football.\n2. The campaign will run for an entire season, with ten European football teams participating.\n3. The participating teams are from various countries, including the Netherlands, England, Belgium, Denmark, France, Germany, Norway, Sweden, Switzerland, and Wales.\n4. The campaign will be a collaborative effort between the teams and the football governing bodies of each country.\n5. The campaign will feature various initiatives and events throughout the season, aimed at promoting inclusion and opposing discrimination.\n6. The initiatives and events will be designed to raise awareness and educate fans, players, and officials about the importance of inclusivity and respect for all individuals.\n7. The campaign will also involve community outreach programs, where the participating teams will work with local organizations and communities to promote inclusion and combat discrimination.\n8. The teams will also be encouraged to adopt policies and practices that promote inclusion and respect for all individuals, both on and off the field.\n9. The campaign will culminate in a final event, where the participating teams will come together to celebrate their efforts and achievements in promoting inclusion and opposing discrimination.\n10. The \"OneLove\" campaign will be a landmark initiative in European football, and will serve as a model for other sports and industries to follow.",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_55",
+      "ori_prompt": "We need to write a thematic tweet to share company news and facts. Please take a careful look at the facts and details provided and create a tweet based on them.",
+      "context": "- news: Applications for summer internships are open now\n- Start with a thematic tie-in to Halloween",
+      "generic_prompt": "Create a thematic tweet that shares company news and key facts. Review the provided information carefully and craft a tweet that accurately reflects the details given.",
+      "generic_response": "🎃 Spooky news for all you aspiring ghouls and goblins! Our company is now accepting applications for summer internships. Don't miss out on this opportunity to hone your skills and work alongside our team of experts. Apply now and become a part of our spooky success story! #Halloween #Internships #Summer2023",
+      "rgeneric_prompt": "Compose a focused, thematically coherent tweet to communicate recent company news and specific details. Review the provided information thoroughly and craft a message that accurately reflects the key facts.",
+      "rgeneric_response": "🎃 Spooky season is here, and we're getting ready for some thrilling internships! 👻 Applications for our summer program are now open! 🌟 Join our team and make this Halloween the scariest yet! #SummerInternship #Halloween #ScaryGood #JoinUs",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_6",
+      "ori_prompt": "The tone of the email should be changed and rewritten in a more professional manner.",
+      "context": "Subject: Asking for Vacation Time\nHi [Employer], \nI hope all is well. I am writing to request a day off on [date]. I have already taken care of my work responsibilities for that day and will be available to answer any questions or concerns you may have. \nThank you for your time, \n[Your name]",
+      "generic_prompt": "Rewritten prompt:  \nPlease revise the email to adopt a more professional tone while maintaining the original message and intent.",
+      "generic_response": "Subject: Request for Vacation Time\nDear [Employer],\nI hope this message finds you well. I am writing to request a day off on [date]. I have already ensured that all of my work responsibilities for that day have been taken care of, and I will be available to address any concerns or questions you may have.\nThank you for your time,\n[Your name]",
+      "rgeneric_prompt": "Revise the email to adopt a more formal and professional tone.",
+      "rgeneric_response": "Subject: Request for Vacation Time\nDear [Employer],\n\nI hope this message finds you well. I am writing to request a day off on [date]. I have already ensured that all of my work responsibilities for that day have been taken care of, and I will be available to address any concerns or questions you may have.\n\nThank you for your time and consideration.\n\nSincerely,\n[Your name]",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_76",
+      "ori_prompt": "It would be helpful if you could suggest an acronym for the repository.",
+      "context": "A python framework for creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits.",
+      "generic_prompt": "Please suggest a suitable acronym for the repository.",
+      "generic_response": "1. NISQ-Py\n2. Qiskit-Py\n3. NoisePy\n4. NISQa\n5. Qiskit-Python\n6. Quantum-Py\n7. NISQ-Framework\n8. Qiskit-Framework\n9. NoisePy-Framework\n10. NISQ-Simulator",
+      "rgeneric_prompt": "Propose an acronym for the repository.",
+      "rgeneric_response": "1. NISQ-Py\n2. QASM-Python\n3. Qiskit-Py\n4. NoisyPy\n5. Qiskit-Frameworks\n6. Qiskit-Python-Interface\n7. Quantum-Circuit-Python\n8. Qiskit-Circuit-Py\n9. NISQ-Circuit-Py\n10. Qiskit-Circuit-Framework",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_85",
+      "ori_prompt": "Consider the best time of year to visit the given city, and provide your reasons for choosing that time.",
+      "context": "Sydney, Australia",
+      "generic_prompt": "Determine the optimal time of year to visit the specified city and explain your reasoning.",
+      "generic_response": "1. Melbourne, Australia: The best time to visit Melbourne is during the spring (September to November) and autumn (March to May) seasons. During these months, the weather is mild, and there are plenty of events and festivals to enjoy, such as the Melbourne International Arts Festival and the Melbourne Spring Fashion Week. Additionally, the city's famous gardens, parks, and outdoor spaces are in full bloom during spring, making it a great time to explore the city's green spaces.\n2. Tokyo, Japan: The best time to visit Tokyo is during the spring (March to May) and fall (September to November) seasons. During these months, the weather is mild, and there are fewer tourists, making it easier to navigate the city's busy streets and crowded attractions. Additionally, the city's famous cherry blossom season typically occurs during spring, making it a popular time to visit.\n3. Vancouver, Canada: The best time to visit Vancouver is during the summer (June to August) and early fall (September to October) seasons. During these months, the weather is mild, and there are plenty of outdoor activities to enjoy, such as hiking, biking, and kayaking. Additionally, the city's famous festivals, such as the Vancouver International Film Festival and the Celebration of Light, take place during the summer months.\n4. Paris, France: The best time to visit Paris is during the spring (March to May) and fall (September to November) seasons. During these months, the weather is mild, and there are fewer tourists, making it easier to explore the city's famous landmarks and museums. Additionally, the city's famous gardens, such as the Jardin des Tuileries and the Jardin du Luxembourg, are in full bloom during spring, making it a great time to visit.\n5. Sydney, Australia: The best time to visit Sydney is during the spring (September to November) and autumn (March to May) seasons. During these months, the weather is mild, and there are plenty of events and festivals to enjoy, such as the Sydney Festival and the Vivid Sydney light festival. Additionally, the city's famous beaches, such as Bondi Beach and Coogee Beach, are at their best during the spring and autumn months, making it a great time to enjoy the city's coastal attractions.",
+      "rgeneric_prompt": "Identify the optimal season to visit the specified city and explain your reasoning.",
+      "rgeneric_response": "1. Melbourne, Australia: The best time to visit Melbourne is during the spring (September to November) or autumn (March to May) seasons. During these seasons, the weather is mild, and there are plenty of events and festivals happening throughout the city. The spring season is particularly great for enjoying outdoor activities, such as visiting the Royal Botanic Gardens and attending the Melbourne International Arts Festival. The autumn season is also a great time to visit, with cooler temperatures and vibrant foliage throughout the city.\n2. Tokyo, Japan: The best time to visit Tokyo is during the spring (March to May) or fall (September to November) seasons. During these seasons, the weather is mild, and there are plenty of events and festivals happening throughout the city. The spring season is particularly great for enjoying cherry blossom season, while the fall season is great for enjoying the colorful foliage throughout the city.\n3. Paris, France: The best time to visit Paris is during the spring (March to May) or fall (September to November) seasons. During these seasons, the weather is mild, and there are plenty of events and festivals happening throughout the city. The spring season is particularly great for enjoying the blooming flowers and trees throughout the city, while the fall season is great for enjoying the colorful foliage and cooler temperatures.\n4. Rome, Italy: The best time to visit Rome is during the spring (March to May) or fall (September to November) seasons. During these seasons, the weather is mild, and there are plenty of events and festivals happening throughout the city. The spring season is particularly great for enjoying the blooming flowers and trees throughout the city, while the fall season is great for enjoying the colorful foliage and cooler temperatures.\n5. Dubai, United Arab Emirates: The best time to visit Dubai is during the winter (December to February) season. During these months, the weather is cooler and more comfortable, making it ideal for outdoor activities such as visiting the Dubai Mall and the Burj Khalifa. Additionally, Dubai hosts several events and festivals during this time, such as the Dubai Shopping Festival and the Dubai International Film Festival.\n6. New York City, United States: The best time to visit New York City is during the spring (March to May) or fall (September to November) seasons. During these seasons, the weather is mild, and there are plenty of events and festivals happening throughout the city. The spring season is particularly great for enjoying the blooming flowers and trees throughout the city, while the fall season is great for enjoying the colorful foliage and cooler temperatures.\n7. London, United Kingdom: The best time to visit London is during the spring (March to May) or fall (September to November) seasons. During these seasons, the weather is mild, and there are plenty of events and festivals happening throughout the city. The spring season is particularly great for enjoying the blooming flowers and trees throughout the city, while the fall season is great for enjoying the colorful foliage and cooler temperatures.\n8. Sydney, Australia: The best time to visit Sydney is during the spring (September to November) or autumn (March to May) seasons. During these seasons, the weather is mild, and there are plenty of events and festivals happening throughout the city. The spring season is particularly great for enjoying outdoor activities, such as visiting the Royal Botanic Gardens and attending the Sydney Film Festival. The autumn season is also a great time to visit, with cooler temperatures and vibrant foliage throughout the city.",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.8,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.8,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.8,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_89",
+      "ori_prompt": "Answer the following question.",
+      "context": "How do I compare strings in Java?\nI've been using the == operator in my program to compare all my strings so far. However, I ran into a bug, changed one of them into .equals() instead, and it fixed the bug.\nIs == bad? When should it and should it not be used? What's the difference?",
+      "generic_prompt": "Provide a clear and accurate response to the given question.",
+      "generic_response": "1. What is the difference between == and .equals() in Java?\n2. When should you use == and .equals() for string comparison in Java?\n\nAnswer:\n\n1. In Java, the == operator is used to compare the reference equality of two objects. It checks whether the two objects being compared refer to the same memory location. On the other hand, the .equals() method is used to compare the value equality of two objects. It checks whether the two objects have the same value, regardless of their memory location.\n2. It is generally recommended to use .equals() for string comparison in Java, instead of ==. This is because the == operator only checks whether the two strings refer to the same memory location, and not their actual values. If you want to compare the value equality of two strings, you should use the .equals() method, which checks whether the two strings have the same value.\n\nFor example, if you have two strings \"hello\" and \"hello world\", they will have the same value equality, but they will not refer to the same memory location, so the == operator will return false. However, if you use the .equals() method to compare them, it will return true, since they have the same value.\n\nIn summary, the == operator is used to compare the reference equality of two objects, while the .equals() method is used to compare the value equality of two objects. When comparing strings in Java, it is recommended to use the .equals() method to ensure accurate string comparison.",
+      "rgeneric_prompt": "Provide a response to the question that follows.",
+      "rgeneric_response": "1. How do I compare strings in Java?\n\nIn Java, you can compare strings using the `equals()` method or the `==` operator. The `equals()` method compares the contents of the strings, while the `==` operator compares the references of the strings.\n\n1. I've been using the == operator in my program to compare all my strings so far. However, I ran into a bug, changed one of them into .equals() instead, and it fixed the bug. Is == bad? When should it and should it not be used? What's the difference?\n\nThe `==` operator in Java is used to compare the references of objects, not their contents. When comparing strings, it is recommended to use the `equals()` method instead of the `==` operator because the `equals()` method compares the contents of the strings, which is what you want in this case.\n\nThe `==` operator should only be used to compare references when you are sure that the objects being compared are the same object in memory. For example, you can use the `==` operator to compare primitive types or to compare objects that have been created with the `new` keyword.\n\nIn summary, the `==` operator is not suitable for comparing strings in Java because it compares the references of the strings, not their contents. It is recommended to use the `equals()` method instead.",
+      "winners_per_run": [
+        0,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_99",
+      "ori_prompt": "Improve the article using your knowledge of the topic in order to make it more informative.",
+      "context": "The \"fair trade\" movement, also known as the \"trade justice\" movement, promotes the use of labour, environmental and social standards for the production of commodities, particularly those exported from the Third and Second Worlds to the First World. Such ideas have also sparked a debate on whether trade itself should be codified as a human right.",
+      "generic_prompt": "Enhance the article by incorporating accurate and relevant information based on your knowledge of the topic, ensuring the content is more detailed, informative, and up-to-date while maintaining factual accuracy.",
+      "generic_response": "1. The \"fair trade\" movement, also known as the \"trade justice\" movement, advocates for the implementation of labor, environmental, and social standards in the production of commodities, particularly those exported from the Third and Second Worlds to the First World. This movement seeks to address issues such as exploitation of workers, environmental degradation, and social injustices that often occur in the global supply chains.\n2. The fair trade movement has gained momentum in recent years, with consumers increasingly demanding ethically produced goods. As a result, there has been a rise in the number of fair trade certified products, such as coffee, cocoa, and cotton, available in the market.\n3. The fair trade movement has also sparked a debate on whether trade itself should be recognized as a human right. Proponents argue that trade is essential for economic development and poverty reduction, and that it should be regulated to ensure that it benefits all members of society, particularly the most vulnerable.\n4. The concept of trade as a human right has been embraced by some international organizations, such as the United Nations, which has recognized the right to access to markets and the right to participate in global trade as essential components of economic and social development.\n5. However, the idea of trade as a human right is controversial, with critics arguing that it could lead to trade protectionism and hinder economic growth. They also argue that trade should be based on free market principles and that governments should not interfere with the market forces.\n6. Despite the controversies, the fair trade movement continues to gain momentum, with more and more countries and organizations embracing the idea of regulating trade to ensure that it benefits all members of society.\n7. The fair trade movement is not only limited to commodities, but also extends to other areas such as finance, where initiatives such as fair trade banking and fair trade investing are emerging. These initiatives aim to promote responsible investing and lending practices that prioritize social and environmental sustainability.\n8. The fair trade movement is also gaining traction in the fashion industry, where initiatives such as fair trade fashion are emerging. These initiatives aim to promote ethical and sustainable practices in the fashion industry, such as fair wages for workers, safe working conditions, and environmentally sustainable production practices.\n9. The fair trade movement is not only limited to developed countries, but also extends to developing countries, where initiatives such as fair trade agriculture are emerging. These initiatives aim to promote sustainable agricultural practices, such as organic farming, agroforestry, and conservation agriculture, that prioritize environmental sustainability and social justice.\n10. The fair trade movement is a complex and multifaceted issue that requires a holistic approach that addresses the economic, social, and environmental dimensions of trade. By promoting responsible and ethical trade practices, the fair trade movement can contribute to a more equitable and sustainable global economy that benefits all members of society.",
+      "rgeneric_prompt": "Enhance the article by incorporating relevant expertise to increase its depth and informativeness.",
+      "rgeneric_response": "1. Incorporate the perspective of fair trade advocates:\n* Highlight the importance of fair trade principles in addressing global economic disparities and promoting sustainable development.\n* Discuss the potential benefits of fair trade practices, such as increased income for producers, improved working conditions, and reduced environmental impact.\n* Address criticisms of fair trade, such as concerns about its limited reach and potential negative impacts on local economies.\n1. Incorporate the perspective of trade justice advocates:\n* Discuss the broader context of trade justice, including the role of multinational corporations and the impact of globalization on vulnerable communities.\n* Address the need for more equitable trade policies that prioritize human rights and social justice.\n* Discuss the potential benefits of trade justice initiatives, such as increased access to markets and resources for marginalized producers.\n1. Incorporate the perspective of human rights advocates:\n* Discuss the potential for trade to be codified as a human right, and the implications of such a move for global governance and accountability.\n* Address concerns about the potential for trade to be used as a tool for economic exploitation and human rights violations.\n* Discuss the need for a more holistic approach to human rights that recognizes the interdependence of economic, social, and cultural rights.\n1. Incorporate the perspective of development economists:\n* Discuss the potential for fair trade and trade justice initiatives to contribute to sustainable development and poverty reduction.\n* Address the challenges of implementing fair trade and trade justice practices in practice, such as the need for effective monitoring and enforcement mechanisms.\n* Discuss the potential for fair trade and trade justice to complement other development strategies, such as foreign aid and public investment.\n1. Incorporate the perspective of environmentalists:\n* Discuss the potential for fair trade and trade justice initiatives to promote sustainable production and consumption practices.\n* Address concerns about the environmental impact of fair trade and trade justice practices, such as the potential for certification schemes to incentivize unsustainable production practices.\n* Discuss the need for a more integrated approach to environmental protection that recognizes the interdependence of economic, social, and environmental rights.",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

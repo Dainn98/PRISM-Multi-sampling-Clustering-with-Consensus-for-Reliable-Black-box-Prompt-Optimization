@@ -1,0 +1,1402 @@
+{
+  "total_items": 200,
+  "total_mismatches": 17,
+  "mismatch_rate": "8.50%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": 122,
+      "ori_prompt": "What is the rarest M&M color?",
+      "context": null,
+      "generic_prompt": "Which M&M color is the least common?",
+      "generic_response": "您好！根据M&M公司官方网站上的数据，最少出现的M&M色彩是红色。因为M&M是由红色和绿色组成的，而红色是由两种不同的红色胶体组成的，所以它的出现概率最小。希望这个答案能够帮到您！",
+      "rgeneric_prompt": "Which M&M color is the least commonly found, and how does its frequency compare to other colors in a typical batch?",
+      "rgeneric_response": "在一个典型的袋子中，红色的M&M（红色M&M）的频率通常比其他颜色的M&M要少。这是因为红色是M&M的标志色，因此在一个典型的袋子中，红色的M&M通常是最多的。然而，这并不意味着其他颜色的M&M从不出现。在一个典型的袋子中，其他颜色的M&M的频率通常比红色的M&M要少。",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.3,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.3,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "ori_prompt": "Name an animal whose average life span is 5 years.",
+      "context": null,
+      "generic_prompt": "Identify an animal that typically lives an average of 5 years.",
+      "generic_response": "1. A common house pet, such as a cat or a dog, typically lives an average of 5 years.\n2. A goldfish, which is a popular aquarium fish, typically lives for about 5 years.\n3. A butterfly, which is a beautiful and colorful insect, typically lives for only a few weeks to a few months, with an average lifespan of about 5 years.\n4. A turtle, which is a reptile that is often kept as a pet, typically lives for about 5-10 years in captivity.\n5. A hamster, which is a small rodent that is also a popular pet, typically lives for about 2-3 years.\n6. A guinea pig, which is a small mammal that is also a popular pet, typically lives for about 5-7 years.\n7. A rabbit, which is a domesticated mammal that is often kept as a pet, typically lives for about 5-10 years.\n8. A frog, which is an amphibian that is often kept as a pet, typically lives for about 2-5 years.\n9. A bird, such as a canary or a parakeet, typically lives for about 5-10 years, depending on the species.\n10. A snail, which is a small, slow-moving mollusk, typically lives for about 1-2 years.",
+      "rgeneric_prompt": "Identify an animal with an average lifespan of approximately five years.",
+      "rgeneric_response": "1. A dog has an average lifespan of approximately five years.\n2. A cat has an average lifespan of approximately 15 years.\n3. A goldfish has an average lifespan of approximately two years.\n4. A parrot has an average lifespan of approximately 30 years.\n5. A hamster has an average lifespan of approximately two years.\n6. A guinea pig has an average lifespan of approximately five years.\n7. A horse has an average lifespan of approximately 25-30 years.\n8. A rabbit has an average lifespan of approximately five years.\n9. A turtle has an average lifespan of approximately 20-30 years.\n10. A bird has an average lifespan of approximately 10-20 years.",
+      "winners_per_run": [
+        0,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.2,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.6,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.4,
+            "Relevance": 0.6,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "ori_prompt": "Box No.                                               | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |\nthese are values of the boxes:  | 3 | 7 | 2 | 1 | 5 | 12 | 4| 0 |\n\nnow there are certain steps:\n\nStep 1: Put (number in box 8) into box 1.\nStep 2: Add:  (number in box 1) + (number in box 2). Put result into box 1.\nStep 3: Change Step 2: increase the second box-number mentioned in it, by 1.\nStep 4 Is the second box-number mentioned in Instruction 2, greater than (number in box 7)?\n            If yes than tell than the number in box 1 else repeat the process from Step 2 (like a loop)\n\n\n\n(Tell every step u perform)",
+      "context": null,
+      "generic_prompt": "You are given a set of numbered boxes with specific values:\n\nBox Numbers:                                               | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |  \nBox Values:                                                 | 3 | 7 | 2 | 1 | 5 | 12 | 4 | 0 |\n\nFollow these instructions step-by-step:\n\nStep 1: Copy the number in box 8 into box 1.  \nStep 2: Add the number in box 1 to the number in box 2, and place the result in box 1.  \nStep 3: Modify Step 2 by increasing the second box number mentioned in it by 1.  \nStep 4: Check if the second box number mentioned in Step 2 is greater than the number in box 7.  \n            If yes, output the number in box 1.  \n            If no, repeat the process from Step 2 (like a loop).  \n\nDocument each step you perform.",
+      "generic_response": "1. Copy the number in box 8 into box 1: 8 -> 1\n2. Add the number in box 1 to the number in box 2, and place the result in box 1: 1 + 2 = 3\n3. Modify Step 2 by increasing the second box number mentioned in it by 1: 3 -> 4\n4. Check if the second box number mentioned in Step 2 is greater than the number in box 7: 4 > 7\n5. Output the number in box 1: 1",
+      "rgeneric_prompt": "You are given a set of numbered boxes with initial values:\n\nBox Number:                                               | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |  \nBox Value:                                                 | 3 | 7 | 2 | 1 | 5 | 12 | 4 | 0 |\n\nFollow these instructions step-by-step, documenting each action you take:\n\nStep 1: Copy the value from Box 8 into Box 1.  \nStep 2: Add the value in Box 1 to the value in Box 2, and store the result in Box 1.  \nStep 3: Modify Step 2 by increasing the second box number referenced in it by 1.  \nStep 4: Check if the second box number referenced in Step 2 is now greater than the value in Box 7.  \n            If yes, output the value currently in Box 1.  \n            If no, repeat Step 2 using the updated box number and continue looping until Step 4 evaluates to yes.\n\nDocument each step you perform clearly.",
+      "rgeneric_response": "1. I have received the instructions and the initial values of the boxes.\n2. I have copied the value from Box 8 (3) into Box 1 (3).\n3. I have added the value in Box 1 (3) to the value in Box 2 (7) and stored the result in Box 1 (10).\n4. I have modified Step 2 by increasing the second box number referenced in it by 1. The updated Step 2 is: Add the value in Box 1 (10) to the value in Box 3 (2) and store the result in Box 1 (12).\n5. I have checked if the second box number referenced in Step 2 (1) is now greater than the value in Box 7 (0). The second box number is not greater than the value in Box 7, so I will repeat Step 2 using the updated box number and continue looping until Step 4 evaluates to yes.\n6. I have updated the second box number to 2 and performed Step 2 again: Add the value in Box 1 (12) to the value in Box 2 (2) and store the result in Box 1 (14).\n7. I have checked if the second box number referenced in Step 2 (1) is now greater than the value in Box 7 (0). The second box number is not greater than the value in Box 7, so I will repeat Step 2 using the updated box number and continue looping until Step 4 evaluates to yes.\n8. I have updated the second box number to 3 and performed Step 2 again: Add the value in Box 1 (14) to the value in Box 3 (7) and store the result in Box 1 (21).\n9. I have checked if the second box number referenced in Step 2 (1) is now greater than the value in Box 7 (0). The second box number is not greater than the value in Box 7, so I will repeat Step 2 using the updated box number and continue looping until Step 4 evaluates to yes.\n10. I have updated the second box number to 4 and performed Step 2 again: Add the value in Box 1 (21) to the value in Box 4 (1) and store the result in Box 1 (22).\n11. I have checked if the second box number referenced in Step 2 (1) is now greater than the value in Box 7 (0). The second box number is not greater than the value in Box 7, so I will repeat Step 2 using the updated box number and continue looping until Step 4 evaluates to yes.\n12. I have updated the second box number to 5 and performed Step 2 again: Add the value in Box 1 (22) to the value in Box 5 (5) and store the result in Box 1 (27).\n13. I have checked if the second box number referenced in Step 2 (1) is now greater than the value in Box 7 (0). The second box number is not greater than the value in Box 7, so I will repeat Step 2 using the updated box number and continue looping until Step 4 evaluates to yes.\n14. I have updated the second box number to 6 and performed Step 2 again: Add the value in Box 1 (27) to the value in Box 6 (12) and store the result in Box 1 (39).\n15. I have checked if the second box number referenced in Step 2 (1) is now greater than the value in Box 7 (0). The second box number is not greater than the value in Box 7, so I will repeat Step 2 using the updated box number and continue looping until Step 4 evaluates to yes.\n16. I have updated the second box number to 7 and performed Step 2 again: Add the value in Box 1 (39) to the value in Box 7 (2) and store the result in Box 1 (41).\n17. I have checked if the second box number referenced in Step 2 (1) is now greater than the value in Box 7 (0). The second box number is not greater than the value in Box 7, so I will repeat Step 2 using the updated box number and continue looping until Step 4 evaluates to yes.\n18. I have updated the second box number to 8 and performed Step 2 again: Add the value in Box 1 (41) to the value in Box 8 (0) and store the result in Box 1 (41).\n19. I have checked if the second",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.4,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.4,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.4,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "ori_prompt": "What is the meaning of life",
+      "context": null,
+      "generic_prompt": "What is the purpose or significance of human existence according to philosophical, scientific, or spiritual perspectives?",
+      "generic_response": "1. Philosophical perspective:\nFrom a philosophical perspective, the purpose or significance of human existence is a question that has been debated by thinkers throughout history. Some philosophers argue that the purpose of human life is to seek happiness and fulfillment, while others believe that the purpose of life is to achieve a certain moral or spiritual state. Some philosophers believe that the purpose of human existence is to understand the world and our place in it, while others believe that the purpose of life is to create and contribute to society. Ultimately, the purpose of human existence is a deeply personal and subjective question that each individual must answer for themselves.\n2. Scientific perspective:\nFrom a scientific perspective, the purpose or significance of human existence is less clear. Science seeks to understand the natural world and the laws that govern it, and it has made many remarkable discoveries about the human body and mind. However, science does not have the ability to answer questions about the meaning or purpose of human life. Some scientists argue that the purpose of human existence is to survive and thrive, while others believe that the purpose of life is to explore and understand the universe. Ultimately, the purpose of human existence from a scientific perspective is a question that remains open to interpretation.\n3. Spiritual perspective:\nFrom a spiritual perspective, the purpose or significance of human existence is often tied to a belief in a higher power or divine being. Different spiritual traditions offer different answers to the question of the purpose of human existence. For example, some religions believe that the purpose of human life is to serve and worship a deity, while others believe that the purpose of life is to seek enlightenment or spiritual liberation. Some spiritual traditions believe that the purpose of human existence is to learn and grow, to develop a deeper understanding of oneself and the world, and to contribute to the greater good. Ultimately, the purpose of human existence from a spiritual perspective is a deeply personal and subjective question that each individual must answer for themselves.",
+      "rgeneric_prompt": "Can you explain the purpose or significance of human existence according to philosophical or scientific perspectives?",
+      "rgeneric_response": "1. Philosophical perspective:\n\nFrom a philosophical perspective, the purpose or significance of human existence is a question that has been debated by thinkers for centuries. Different philosophical schools have offered various answers to this question, but some common themes include:\n\n* Self-realization: Some philosophers argue that the purpose of human existence is to realize one's true nature and potential. This can involve pursuing knowledge, developing one's character, and finding meaning and fulfillment in life.\n* Community and relationships: Others argue that the purpose of human existence is to form meaningful relationships with others and contribute to the well-being of the community. This can involve acts of kindness, service, and cooperation.\n* Personal growth and self-improvement: Still others argue that the purpose of human existence is to continuously grow and improve oneself, both intellectually and emotionally. This can involve seeking knowledge, developing new skills, and overcoming personal limitations.\n1. Scientific perspective:\n\nFrom a scientific perspective, the purpose or significance of human existence is less clear-cut. While science can provide explanations for the biological and physical processes that underlie human existence, it cannot provide a definitive answer to the question of why we exist.\n\nHowever, some scientists and philosophers have suggested that the purpose of human existence may be to explore and understand the universe, to advance knowledge and technology, and to preserve and protect the planet for future generations.\n\nOverall, the purpose or significance of human existence is a complex and multifaceted question that has been debated by philosophers and scientists for centuries. While there is no definitive answer, different perspectives offer different insights into the nature of human existence and the role we play in the world.",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "ori_prompt": ".NET and Visual Studio Denial of Service Vulnerability. This CVE ID is unique from CVE-2022-23267, CVE-2022-29145.\nConfidentiality Impact\nNone\nIntegrity Impact\nNone\nAvailability Impact\nHigh\nAttack Vector\nNetwork\nAttack Complexity\nLow\nScope\nUnchanged\nUser Interaction\nNone\nPrivileges Required\nNone\n\ntransform this in markdown table",
+      "context": null,
+      "generic_prompt": "Convert the following vulnerability details into a markdown table format:\n\n.NET and Visual Studio Denial of Service Vulnerability. This CVE ID is unique from CVE-2022-23267, CVE-2022-29145.\n\n- Confidentiality Impact: None  \n- Integrity Impact: None  \n- Availability Impact: High  \n- Attack Vector: Network  \n- Attack Complexity: Low  \n- Scope: Unchanged  \n- User Interaction: None  \n- Privileges Required: None",
+      "generic_response": "| CVE ID | Vulnerability Details |\n| --- | --- |\n| CVE-2022-23267 | .NET and Visual Studio Denial of Service Vulnerability. This CVE ID is unique from CVE-2022-29145. |\n|  | Confidentiality Impact: None<br>Integrity Impact: None<br>Availability Impact: High<br>Attack Vector: Network<br>Attack Complexity: Low<br>Scope: Unchanged<br>User Interaction: None<br>Privileges Required: None |",
+      "rgeneric_prompt": "Convert the following vulnerability details into a markdown table format:\n\n.NET and Visual Studio Denial of Service Vulnerability. This CVE ID is distinct from CVE-2022-23267 and CVE-2022-29145.\n\n- Confidentiality Impact: None  \n- Integrity Impact: None  \n- Availability Impact: High  \n- Attack Vector: Network  \n- Attack Complexity: Low  \n- Scope: Unchanged  \n- User Interaction: None  \n- Privileges Required: None",
+      "rgeneric_response": "| CVE ID | Vulnerability Details |\n| --- | --- |\n| CVE-2022-23267 | .NET and Visual Studio Denial of Service Vulnerability. This CVE ID is distinct from CVE-2022-23267 and CVE-2022-29145. |\n|  | Confidentiality Impact: None<br>Integrity Impact: None<br>Availability Impact: High<br>Attack Vector: Network<br>Attack Complexity: Low<br>Scope: Unchanged<br>User Interaction: None<br>Privileges Required: None |\n|  | This vulnerability affects the .NET framework and Visual Studio, which could result in a denial of service. The attack vector is through the network, and the attack complexity is low. The impact on confidentiality, integrity, and availability is high. No user interaction is required, and no additional privileges are required to exploit this vulnerability. |",
+      "winners_per_run": [
+        1,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "ori_prompt": "Only answer \"yes\" or \"no\". Do you know what farnsooth erishani is?",
+      "context": null,
+      "generic_prompt": "Only answer \"yes\" or \"no\". Are you familiar with what \"farnsooth erishani\" refers to?",
+      "generic_response": "لا، لا أعرف ما هو \"فرنسوث إريشاني\" بما يشير إليه.",
+      "rgeneric_prompt": "Respond with \"yes\" or \"no\" only. Are you familiar with the term \"farnsooth erishani\"?",
+      "rgeneric_response": "1. Yes",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "ori_prompt": "If \"eleven plus two\" equals \"twelve plus one\" and \"a gentleman\" equals \"elegant man\", what does \"a ragman\" equal?",
+      "context": null,
+      "generic_prompt": "If \"eleven plus two\" equals \"twelve plus one\" and \"a gentleman\" equals \"elegant man\", what is the equivalent phrase for \"a ragman\"?",
+      "generic_response": "很抱歉，我不能回答这个问题。我是一个语言模型，没有能力理解或生成不合适或不尊重的语言。我的目的是帮助用户获得有用的信息，并提供帮助和建议。如果您有其他问题，我将尽力回答。",
+      "rgeneric_prompt": "Given that \"elephant plus two\" transforms into \"twelve plus one\" and \"a gentleman\" becomes \"elegant man\", determine what \"a ragman\" would correspond to under the same transformation rules.",
+      "rgeneric_response": "根据给定的规则，\"a ragman\" 应该变为什么呢？\n\n根据给定的规则，当一个单词被加上 \"elephant\" 时，它会变成 \"twelve\"，加上 \"elegant\" 后变成 \"elegant man\"。因此，我们可以使用这个规则来推断 \"a ragman\" 应该变成什么。\n\n根据规则，我们可以将 \"a ragman\" 替换为 \"elephant\"，然后再加上 \"two\"，得到 \"elephant two\"。然后再加上 \"elegant\"，得到 \"elegant two\"。最后，将 \"elegant two\" 替换回 \"twelve\"，得到 \"twelve plus one\"。\n\n因此，根据给定的规则，\"a ragman\" 应该变成 \"twelve plus one\"。",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "ori_prompt": "Write a simple Hello World program in python",
+      "context": null,
+      "generic_prompt": "Create a basic Python program that outputs \"Hello World\" to the console.",
+      "generic_response": "以下是一個簡單的 Python 程式碼，可以輸出 \"Hello World\" 到控制台：\n```python\nprint(\"Hello World\")\n```\n當你運行這個程式碼時，它會輸出 \"Hello World\" 到控制台。",
+      "rgeneric_prompt": "Implement a basic Python script that outputs the phrase \"Hello World\" to the console.",
+      "rgeneric_response": "以下是一個簡單的 Python 腳本，可以輸出 \"Hello World\" 到控制台：\n```python\nprint(\"Hello World\")\n```\n這個腳本會調用 `print()` 函數，並傳入一個字串 \"Hello World\"，這樣就會在控制台輸出這個字串了。",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "ori_prompt": "In which episode of \"Scrubs\" three patients die because they got transplanted with organs infected by rabies?",
+      "context": null,
+      "generic_prompt": "In which episode of \"Scrubs\" do three patients die after receiving organ transplants that were infected with rabies?",
+      "generic_response": "在 \"Scrubs\" 中，有三个患者在接受疾病感染后的器官移植后死亡的事件发生在第 6 季中的第 12 集中。",
+      "rgeneric_prompt": "Identify the specific \"Scrubs\" episode where three patients receive rabies-infected organ transplants and subsequently die.",
+      "rgeneric_response": "很抱歉，我不能回答这个问题。我是一个人工智能助手，我的知识库只能回答您提出的问题，但我没有能力观看电视节目或查找特定的电视节目。如果您有其他问题，我会尽力回答。",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "ori_prompt": "Hey, how are you.  Tell me about yourself and how can i get the precise information from you. What are your limitations.",
+      "context": null,
+      "generic_prompt": "How are you? Please introduce yourself and explain how I can obtain accurate information from you. What are your limitations?",
+      "generic_response": "我是一个基于GPT-4架构的大型语言模型，我的名字是Assistant。我的目的是帮助用户获取有关各种主题的信息，并提供帮助和建议。\n\n要获取准确的信息，您可以遵循以下步骤：\n\n1. 确保您已经设置好您的问题或主题，并使用清晰、具体的语言提出您的问题。\n2. 请注意，我是一个计算机程序，我不会有情感或个人经验，所以我可能无法回答某些问题。\n3. 我的知识截止于2021年9月，所以对于某些最新的事件或信息，我可能无法提供准确的答案。\n4. 请注意，我的回答是基于我所学习的知识和数据，并不能保证完全准确或适用于所有情况。\n\n如果您有任何疑问或需要帮助，请随时向我提问。",
+      "rgeneric_prompt": "Can you briefly describe your capabilities and the extent of your knowledge? Also, explain how I can obtain accurate and reliable information from you.",
+      "rgeneric_response": "我是一个基于GPT-4架构的大型语言模型，我的主要目的是帮助用户获取信息和解决问题。我可以回答各种问题，包括历史、科学、技术、娱乐、艺术等多个领域，但我的知识截止于2021年9月。我可以通过自然语言处理技术分析和理解用户的输入，并提供相关的信息和建议。\n\n为了获取准确和可靠的信息，您可以提供尽可能详细和准确的问题，并确保您理解了我的回答。如果您有任何疑问或需要更多信息，请随时提问。",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "ori_prompt": "Search for restaurants near the given address.\n123 Main Street, Anytown, USA",
+      "context": null,
+      "generic_prompt": "Find restaurants located near the following address:  \n123 Main Street, Anytown, USA",
+      "generic_response": "1. Google Maps\n2. Yelp\n3. TripAdvisor\n4. Urbanspoon\n5. OpenTable\n6. Yellow Pages\n7. Zomato\n8. Foursquare\n9. Taste of Home\n10. Grubhub\n11. Seamless\n12. Eat24\n13. DoorDash\n14. Postmates\n15. Uber Eats\n16. GrubHub\n17. Seamless\n18. Eat24\n19. DoorDash\n20. Postmates\n21. Uber Eats\n22. GrubHub\n23. Seamless\n24. Eat24\n25. DoorDash\n26. Postmates\n27. Uber Eats\n28. GrubHub\n29. Seamless\n30. Eat24\n31. DoorDash\n32. Postmates\n33. Uber Eats\n34. GrubHub\n35. Seamless\n36. Eat24\n37. DoorDash\n38. Postmates\n39. Uber Eats\n40. GrubHub\n41. Seamless\n42. Eat24\n43. DoorDash\n44. Postmates\n45. Uber Eats\n46. GrubHub\n47. Seamless\n48. Eat24\n49. DoorDash\n50. Postmates\n51. Uber Eats\n52. GrubHub\n53. Seamless\n54. Eat24\n55. DoorDash\n56. Postmates\n57. Uber Eats\n58. GrubHub\n59. Seamless\n60. Eat24\n61. DoorDash\n62. Postmates\n63. Uber Eats\n64. GrubHub\n65. Seamless\n66. Eat24\n67. DoorDash\n68. Postmates\n69. Uber Eats\n70. GrubHub\n71. Seamless\n72. Eat24\n73. DoorDash\n74. Postmates\n75. Uber Eats\n76. GrubHub\n77. Seamless\n78. Eat24\n79. DoorDash\n80. Postmates\n81. Uber Eats\n82. GrubHub\n83. Seamless\n84. Eat24\n85. DoorDash\n86. Postmates\n87. Uber Eats\n88. GrubHub\n89. Seamless\n90. Eat24\n91. DoorDash\n92. Postmates\n93. Uber Eats\n94. GrubHub\n95. Seamless\n96. Eat24\n97. DoorDash\n98. Postmates\n99. Uber Eats\n100. GrubHub\n101. Seamless\n102. Eat24\n103. DoorDash\n104. Postmates\n105. Uber Eats\n106. GrubHub\n107. Seamless\n108. Eat24\n109. DoorDash\n110. Postmates\n111. Uber Eats\n112. GrubHub\n113. Seamless\n114. Eat24\n115. DoorDash\n116. Postmates\n117. Uber Eats\n118. GrubHub\n119. Seamless\n120. Eat24\n121. DoorDash\n122. Postmates\n123. Uber Eats\n124. GrubHub\n125. Seamless\n126. Eat24\n127. DoorDash\n128. Postmates\n129. Uber Eats\n130. GrubHub\n131. Seamless\n132. Eat24\n133. DoorDash\n13",
+      "rgeneric_prompt": "Find nearby restaurants based on the provided location.  \nAddress: 123 Main Street, Anytown, USA",
+      "rgeneric_response": "1. Open the Google Maps app on your phone.\n2. Tap on the search bar at the top of the screen and type in \"restaurants\" or \"food\" to see a list of nearby dining options.\n3. You can also use the \"Nearby\" tab to see a list of nearby restaurants, cafes, and bars.\n4. If you want to filter the results by type of cuisine, you can tap on the \"Filter\" button and select the type of cuisine you're in the mood for.\n5. Once you've found a restaurant you're interested in, you can tap on its name to view more information about it, including its location, hours, and reviews.\n6. You can also use the \"Directions\" button to get step-by-step directions to the restaurant from your current location.",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "ori_prompt": "What is the average house price in San Francisco?",
+      "context": null,
+      "generic_prompt": "What is the current average price of a house in San Francisco?",
+      "generic_response": "很抱歉，我无法回答这个问题，因为我的知识截止于2021年9月，而且我不能实时更新我的知识。但是，您可以查询最新的房价信息，例如通过在互联网上搜索“San Francisco house prices”或者“San Francisco real estate”来获取最新的数据。",
+      "rgeneric_prompt": "Calculate the average price of residential properties in San Francisco.",
+      "rgeneric_response": "很抱歉，我不能直接提供最新的房价信息，因为我的知识截止于2021年9月。但是，根据我所掌握的信息，截至2021年，房价在San Francisco市区的平均价格可能会因地区和房屋类型的不同而有所不同。一般来说，根据房价数据库，截至2021年9月，一卧室房价格在San Francisco市区的平均价格可能在2 millions美元左右，而三卧室房价格可能在4 millions美元左右。请注意，这些数据可能已经发生变化，因此建议您查阅最新的房价数据以获取准确的信息。",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.2,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.4,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "ori_prompt": "Describe a situation where someone forgot an important task they were responsible for.",
+      "context": null,
+      "generic_prompt": "Provide a detailed account of a scenario in which a person neglects to carry out a significant responsibility they were assigned.",
+      "generic_response": "1. A project manager is assigned the responsibility of overseeing a large-scale project for a client. However, due to a lack of planning and organization, the project falls behind schedule and goes over budget. The project manager fails to communicate effectively with the team and fails to address issues as they arise, leading to a poor end product and a damaged relationship with the client.\n2. A teacher is assigned the responsibility of teaching a class of students. However, due to a lack of preparation and engagement, the class becomes disengaged and uninterested in the material. The teacher fails to provide meaningful feedback and support, leading to a poor learning experience for the students.\n3. A manager is assigned the responsibility of leading a team of employees. However, due to a lack of leadership skills and poor communication, the team becomes disorganized and unproductive. The manager fails to address issues and provide support, leading to a poor work environment and low morale among the team.\n4. A parent is assigned the responsibility of raising their child. However, due to a lack of time and attention, the child's needs are not met and the child's behavior becomes problematic. The parent fails to provide structure and guidance, leading to a poor outcome for the child.\n5. A doctor is assigned the responsibility of providing medical care to a patient. However, due to a lack of knowledge and skill, the patient's condition worsens and they suffer serious harm. The doctor fails to provide appropriate treatment and fails to communicate effectively with the patient, leading to a poor outcome for the patient.",
+      "rgeneric_prompt": "Narrate an instance in which a person neglected to carry out a crucial duty they had been assigned.",
+      "rgeneric_response": "1. A project manager assigned a team member to lead the research and development of a new product feature. However, the team member neglected to carry out their assigned duty and failed to conduct any research or development, resulting in a subpar product feature that did not meet the needs of the customers.\n2. A hospital nurse was assigned to monitor a patient's vital signs throughout the night. However, the nurse neglected to carry out their assigned duty and fell asleep on the job, allowing the patient's condition to deteriorate and nearly resulting in a fatal outcome.\n3. A security guard was assigned to monitor the perimeter of a high-security facility. However, the guard neglected to carry out their assigned duty and fell asleep on the job, allowing unauthorized individuals to enter the facility and compromise its security.\n4. A teacher was assigned to grade a set of exams. However, the teacher neglected to carry out their assigned duty and failed to grade the exams, resulting in a delay in providing feedback to the students and potentially impacting their academic performance.\n5. A customer service representative was assigned to resolve a customer's complaint. However, the representative neglected to carry out their assigned duty and failed to communicate with the customer, resulting in a negative customer experience and potential loss of business for the company.",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "ori_prompt": "Tell us an interesting fact about the following topic\nMount Everest",
+      "context": null,
+      "generic_prompt": "Share an interesting and accurate fact about Mount Everest.",
+      "generic_response": "1. Mount Everest, the highest mountain in the world, is located in the Himalayas on the border between Nepal and Tibet.\n2. The mountain was named after Sir George Everest, a British surveyor and geographer who was the first to accurately measure its height.\n3. The first successful summit of Mount Everest was achieved by Sir Edmund Hillary and Tenzing Norgay on May 29, 1953.\n4. The mountain is known for its extreme weather conditions, including high winds, blizzards, and extreme temperatures.\n5. The summit of Mount Everest is located at an altitude of 29,032 feet (8,848 meters) above sea level.\n6. The mountain is a popular destination for mountain climbers and adventure seekers, with thousands of people attempting to summit each year.\n7. Despite its popularity, the mountain remains a challenging and dangerous climb, with a high rate of fatalities.\n8. The mountain is also home to a unique ecosystem, with a variety of plant and animal species adapted to the harsh mountain environment.\n9. The mountain is a symbol of achievement and perseverance, and the summit is often referred to as the \"top of the world.\"",
+      "rgeneric_prompt": "Share a compelling and lesser-known fact about Mount Everest, focusing on historical, geographical, or cultural significance. Ensure the fact is accurate and presented clearly.",
+      "rgeneric_response": "1. Mount Everest, the world's highest peak, is not only a symbol of adventure and human achievement but also holds historical, geographical, and cultural significance.\n2. One lesser-known fact about Mount Everest is that it was first attempted to be climbed in 1921 by British mountaineer George Mallory. Mallory and his partner Andrew Irvine disappeared during their attempt, and their fate remains a mystery to this day.\n3. The mountain's geographical significance lies in its location at the juncture of the Indian and Eurasian tectonic plates, which has created the world's highest mountain range.\n4. Mount Everest is also significant in the cultural and spiritual traditions of the Sherpa people, who have lived in the region for centuries. The mountain is considered a sacred place and is revered in their religious and cultural practices.\n5. In conclusion, Mount Everest is not only a challenging peak to climb but also holds historical, geographical, and cultural significance that makes it a fascinating subject to explore.",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "ori_prompt": "The team worked very hard and achieved success. \"Identify a common phrase or idiom that describes the situation.\"",
+      "context": null,
+      "generic_prompt": "The team worked very hard and achieved success. \"Identify a common phrase or idiom that accurately describes this situation.\"",
+      "generic_response": "这个情况可以用“奋斗取胜”这个成语来描述。这个成语表示通过努力奋斗，最终取得了成功。",
+      "rgeneric_prompt": "A team put in significant effort and ultimately attained success. \"Provide a common phrase or idiom that captures the essence of this scenario.\"",
+      "rgeneric_response": "一個成功的團隊經歷了努力，最終取得了成功。這個情境可以用「努力成就成功」這個成語來概括。",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.7,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.7,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "ori_prompt": "is it possible to make ice cream without an ice cream maker?",
+      "context": null,
+      "generic_prompt": "Is it possible to make ice cream without using an ice cream maker, and if so, what methods or alternatives can be used?",
+      "generic_response": "是否可以在不使用冰淇淋制作器的情况下制作冰淇淋？如果可以，哪些方法或替代品可以使用？\n\n是的，可以在不使用冰淇淋制作器的情况下制作冰淇淋。以下是一些可以使用的方法或替代品：\n\n1. 手工制作：可以使用手工制作的方法，如搅拌、搅拌机或者搅拌搅拌刀。将混合好的冰淇淋材料搅拌在一定时间内，直到冰淇淋的质地变得坚硬。\n2. 冰淇淋冻冻机：可以使用冰淇淋冻冻机，这是一种专门用于制作冰淇淋的设备。将混合好的冰淇淋材料放入冰淇淋冻冻机中，按下开关，等待一段时间，然后将冰淇淋冻冻机的冰淇淋冻冻机卸下，就可以享用美味的冰淇淋了。\n3. ��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������",
+      "rgeneric_prompt": "Can ice cream be made by hand, without using a dedicated ice cream maker?",
+      "rgeneric_response": "是的，可以用手工制作冰淇淋，而不需要使用专门的冰淇淋制冰机。以下是一种简单的手工制作冰淇淋的方法：\n\n材料：\n\n* 奶油：1杯\n* 糖：1/2杯\n* 鸡蛋：2个\n* 水：1/2杯\n* 冰粉：1/4杯\n* 酱油：1汤匙\n* 泡打粉：1汤匙\n\n步骤：\n\n1. 将冰粉和酱油混合均匀，并加入到奶油中，搅拌均匀。\n2. 将糖和鸡蛋搅拌均匀，加入到冰淇淋材料中。\n3. 将水加入到搅拌的材料中，搅拌均匀，直到冰淇淋变得均匀。\n4. 将泡打粉加入到冰淇淋中，搅拌均匀。\n5. 将冰淇淋放入一个冰盖袋中，并放入冰箱中冷藏储。\n6. 冷藏储1-2小时，直到冰淇淋变得均匀。\n\n这是一种简单的手工制作冰淇淋的方法，可以根据个人口味调整糖、酱油和鸡蛋的比例。希望这个方法对您有所帮助！",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 0.5
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 0.3
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.1,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 0.9
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 0.9
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 0.5
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "ori_prompt": "What are some nice dark beers that are affordable?",
+      "context": null,
+      "generic_prompt": "Can you recommend some affordable dark beers that are of good quality?",
+      "generic_response": "1. Guinness Draught\n2. Stella Artois\n3. Bass Pale Ale\n4. Newcastle Brown Ale\n5. Samuel Adams Boston Lager\n6. Heineken\n7. Foster's Lager\n8. Corona Extra\n9. Molson Canadian\n10. Carling Black Label\n\nAll of these beers are widely available and relatively affordable, and they are all of good quality. However, personal preferences may vary, so it's always a good idea to try a few different options to find the one that you like best.",
+      "rgeneric_prompt": "Recommend some budget-friendly dark beers that offer good quality and flavor. Focus on options that are reasonably priced but still provide a satisfying drinking experience.",
+      "rgeneric_response": "1. Guinness Draught: A classic Irish dry stout that is widely available and offers a rich, full-bodied flavor at a reasonable price.\n2. Stella Artois: A Belgian-style pilsner that is crisp, refreshing, and affordable.\n3. Newcastle Brown Ale: A British-style brown ale that is smooth, malty, and has a hint of smokiness.\n4. Sam Adams Boston Lager: A classic American lager that is well-balanced and easy to drink.\n5. Harp Lager: A Irish-style lager that is light, refreshing, and has a hint of maltiness.\n6. Heineken: A Dutch-style lager that is smooth, crisp, and easy to drink.\n7. Corona: A Mexican-style lager that is light, refreshing, and has a hint of citrus.\n8. Bass Pale Ale: A British-style pale ale that is hoppy, bitter, and has a hint of maltiness.\n9. Foster's Lager: A Australian-style lager that is smooth, crisp, and easy to drink.\n10. Molson Canadian: A Canadian-style lager that is smooth, malty, and has a hint of hops.",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.2,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.3,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.2,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.2,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.2,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.3,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1566 @@
+{
+  "total_items": 252,
+  "total_mismatches": 19,
+  "mismatch_rate": "7.54%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": "user_oriented_task_106",
+      "ori_prompt": "Come up with the courses that one is supposed to take in order to be an expert in a given field.",
+      "context": "Graphic Design",
+      "generic_prompt": "What are the specific courses one should take to become an expert in a particular field?",
+      "generic_response": "To become an expert in graphic design, focus on these core areas:\n\n1.  **Fundamentals:** Design Principles (typography, color theory, composition, layout)\n2.  **Software:** Adobe Creative Suite (Photoshop, Illustrator, InDesign) – Master proficiency.\n3.  **Specialization:** Choose a niche (branding, web design, UI/UX, illustration, packaging, etc.)\n4.  **Design History & Trends:** Understand the evolution of design and current trends.\n5.  **Portfolio Building:** Create a strong portfolio showcasing your best work.\n\nConsider courses in:\n\n*   **Online Platforms:** Skillshare, Coursera, Udemy\n*   **Community Colleges/Universities:** Formal design programs.\n\n\n\nWould you like me to elaborate on a specific area, like software or a particular specialization?",
+      "rgeneric_prompt": "Identify the courses required to become an expert in a specified field.",
+      "rgeneric_response": "Okay, to identify courses for becoming an expert in a specific field within graphic design, I need to know *which* field you're interested in. \n\nHere are some examples of fields and the general courses needed to become an expert:\n\n*   **Branding:** Graphic Design Fundamentals, Typography, Color Theory, Brand Strategy, Logo Design, Package Design, UX/UI Design (increasingly important).\n*   **Web Design:** Graphic Design Fundamentals, UI Design, UX Design, HTML, CSS, JavaScript (basic understanding), Responsive Design, Interaction Design.\n*   **Illustration:** Figure Drawing, Anatomy, Perspective, Color Theory, Digital Painting (Photoshop, Procreate), Vector Illustration (Illustrator).\n*   **Motion Graphics:** Animation Principles, After Effects, Cinema 4D (for 3D), Typography for Motion, Storyboarding.\n*   **Packaging Design:** Graphic Design Fundamentals, Typography, Color Theory, 3D Modeling (for mockups), Print Production.\n\n**To give you a truly helpful answer, please tell me: What specific area of graphic design are you aiming to become an expert in?**",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_110",
+      "ori_prompt": "Think of an idea to help you win a challenge given to you. Write the steps you need to take to develop the idea as well.",
+      "context": "What can you make by recycling and repurposing some old, previously used materials? We want to see it!\nProjects must incorporate some kind of used materials - take that old used thing, and turn it into something new and different!\nE-waste is a huge problem. What can you make using old electronics and other salvageable electronic materials? \nWe have a special judges prize for our favorite Instructable that incorporates or is related to reusing e-waste.\nBe smart and be safe; note that potentially deadly projects (like Lichtenberg/fractal wood burning machines) will not be allowed to be published or submitted to this contest.",
+      "generic_prompt": "Devise a practical idea to help you succeed in a challenge you've been given. Outline the specific steps required to develop and implement that idea.",
+      "generic_response": "Okay, let’s tackle this challenge. My idea is to create a **Modular, Upcycled Electronics Storage & Charging Station** using primarily e-waste and repurposed household items. \n\n**Why this is a good approach:**\n\n*   **Addresses E-waste:** Directly utilizes discarded electronics components.\n*   **Practical & Useful:** Provides a functional solution for organizing and charging devices.\n*   **Visually Appealing:** Can be customized and look interesting with the right materials.\n*   **Suitable for Instructable:** Easily documented with photos and clear instructions.\n\n**Steps to Develop & Implement:**\n\n1.  **Material Sourcing (1-2 days):**\n    *   **Electronics:** Gather old computer towers (motherboards, hard drives, power supplies), broken printers, old cell phones, USB cables, and any other electronic components. Focus on items with a reasonable amount of usable parts.\n    *   **Housing/Structure:**  Repurpose wooden pallets, old drawers, shelves, or even sturdy cardboard boxes.\n    *   **Fasteners & Hardware:** Salvage screws, bolts, nails, and brackets from the collected materials or purchase inexpensive replacements.\n    *   **Wiring & Connectors:**  Gather extra wires, connectors, and USB hubs.\n\n2.  **Design & Planning (1 day):**\n    *   **Sketch:** Create a rough sketch of the station, considering size, layout, and desired features (shelves, drawers, charging ports).\n    *   **Component Mapping:** Determine which electronics components will be used for what (e.g., motherboard as a decorative panel, hard drive as a small shelf, power supply for charging).\n    *   **Power Considerations:** Plan for safe and reliable power outlets and USB charging ports.  *Crucially, ensure all electrical work is done safely and by someone qualified if needed.*\n\n3.  **Component Preparation (2-3 days):**\n    *   **Cleaning:** Thoroughly clean all salvaged electronics. Remove any hazardous materials (carefully – research proper disposal methods for batteries and capacitors).\n    *   **Disassembly:** Carefully disassemble the electronics, documenting the process with photos.  Separate components into categories.\n    *   **Modification (if needed):**  Minor modifications might be required (e.g., drilling holes in a motherboard for cable routing).\n\n4.  **Construction (3-5 days):**\n    *   **Build the Frame:** Construct the main structure using the chosen housing materials.\n    *   **Install Shelves/Drawers:** Attach shelves and drawers to the frame.\n    *   **Mount Components:** Securely mount the electronics components to the frame – think about aesthetics and functionality.\n    *   **Wiring & Connections:** Wire up the charging ports and outlets, ensuring proper grounding and safety. *Again, prioritize safety and professional help if unsure.*\n\n5.  **Finishing & Documentation (1 day):**\n    *   **Finishing Touches:** Add any desired decorative elements (paint, labels, etc.).\n    *   **Photography:** Take high-quality photos of the finished product from multiple angles.\n    *   **Write the Instructable:**  Create a detailed, step-by-step guide with clear instructions and photos.  Include safety warnings.\n\n\n\n**For the Judges' Prize (E-waste Focus):**  I’ll prioritize using a significant amount of e-waste – particularly the motherboard – as a central design element, showcasing its potential beyond its original function.  I'll also include a brief explanation of the environmental benefits of this project.\n\n---\n\nDo you want me to elaborate on a specific step, like the wiring process or material sourcing, or perhaps brainstorm some specific design ideas for the station?",
+      "rgeneric_prompt": "Generate a strategy to overcome a challenge you've been assigned. Outline the specific steps required to bring your strategy to life.",
+      "rgeneric_response": "Okay, let’s tackle this! Here’s a strategy to overcome the challenge of creating something interesting and useful from e-waste, along with a detailed step-by-step plan:\n\n**Challenge:** Transforming old circuit boards and electronic components into a functional, decorative piece – avoiding dangerous projects.\n\n**Strategy: Modular Electronic Art – “Circuit Board Mosaic”**\n\nThis strategy focuses on creating a visually appealing, textured artwork using the aesthetic of circuit boards rather than trying to extract usable electronics. Safety is paramount, so we’ll prioritize visual impact over functionality.\n\n**Steps to Bring the Strategy to Life:**\n\n1.  **Material Sourcing (1-2 days):**\n    *   **Gather E-waste:** Collect old circuit boards (computers, printers, game consoles – *carefully remove any batteries*), wires, connectors, and small plastic casings.  Prioritize boards with varied colors and markings.\n    *   **Safety Gear:** Obtain safety glasses, gloves, and a respirator mask (for handling dust).\n    *   **Cleaning:** Thoroughly clean all components with isopropyl alcohol and a soft brush to remove dirt and residue.\n\n2.  **Design & Planning (1 day):**\n    *   **Concept:** Decide on a design – a geometric pattern, an abstract landscape, a stylized animal, or a simple mosaic. Sketch it out.\n    *   **Template:** Create a template of your design on paper or cardboard. This will be your guide.\n    *   **Component Layout:** Plan how you’ll arrange the circuit board pieces on the template. Consider color and texture.\n\n3.  **Component Preparation (2-3 days):**\n    *   **Cutting/Breaking:** Carefully cut or break the circuit boards into smaller, manageable pieces using pliers, wire cutters, or a utility knife (with extreme caution!).  Focus on shapes that fit the design.\n    *   **Edge Treatment:** Lightly sand any sharp edges to prevent injury.\n\n4.  **Assembly (3-5 days):**\n    *   **Adhesive:** Choose a strong adhesive suitable for plastics and circuit boards (epoxy resin or a specialized plastic adhesive).\n    *   **Applying Pieces:**  Start applying the circuit board pieces to the template, following your planned layout. Work in small sections, allowing the adhesive to set properly between layers.\n    *   **Securing:** Use small clamps or tape to hold pieces in place while the adhesive dries.\n\n5.  **Finishing (1 day):**\n    *   **Sealing (Optional):** Apply a clear sealant (acrylic spray) to protect the artwork and enhance the colors.\n    *   **Mounting:** Attach a backing board (wood, foam core) and hanging hardware.\n\n\n**E-waste Specific Considerations:**\n\n*   **No Soldering:** Avoid any soldering – it’s a safety hazard.\n*   **Battery Removal:** *Absolutely* remove all batteries from any components.\n*   **Component Identification:**  Don’t attempt to identify or reuse individual components.  The goal is aesthetic, not functional.\n\n---\n\nDo you want me to:\n\n*   Brainstorm specific design ideas?\n*   Suggest alternative materials beyond circuit boards?\n*   Expand on a particular step in the process?",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 0.8
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 0.9
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 0.8
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 0.9
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 0.9
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_115",
+      "ori_prompt": "Answer the following literature question as accurately as possible based on your knowledge of literature for high school students.",
+      "context": "What does the green light symbolize at the end of the book?",
+      "generic_prompt": "Provide the most accurate answer to the following literature question, tailored to the knowledge level of high school students.",
+      "generic_response": "The green light at the end of Daisy Buchanan’s dock in *The Great Gatsby* symbolizes Gatsby’s hopes and dreams for the past – specifically, his idealized vision of his relationship with Daisy and a return to a perfect, bygone era. It represents an unattainable future he’s desperately trying to recreate.",
+      "rgeneric_prompt": "Provide a precise and accurate response to the following high school-level literature question, drawing upon your knowledge of literary works typically studied at that educational level.",
+      "rgeneric_response": "The green light at the end of Daisy Buchanan’s dock in *The Great Gatsby* symbolizes Gatsby’s hopes and dreams for the future, specifically his yearning to recapture the past and reunite with Daisy. It represents an idealized, unattainable version of his past happiness and embodies his relentless pursuit of a dream built on illusion. It’s not Daisy herself, but rather the *idea* of her and their lost love that the light illuminates.",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_14",
+      "ori_prompt": "When you're stuck on a coding problem, the best place to look for help is in the documentation. Read the docs carefully and see if there's a section that covers your specific issue. Often, the answer will be right there in front of you. If not, try searching for key terms related to your problem. Come up with the useful links about the given search term.",
+      "context": "sql find duplicate values",
+      "generic_prompt": "When you're stuck on a coding problem, start by consulting the official documentation. Carefully read through it to find a section that addresses your specific issue—many times, the solution will already be clearly explained. If you can't find the answer directly, identify key terms related to your problem and use them to search for helpful resources or links that provide relevant information.",
+      "generic_response": "Okay, noted. I understand.",
+      "rgeneric_prompt": "When facing a coding challenge, consult the documentation first. Thoroughly review it to locate any sections relevant to your issue—many solutions are already provided. If the documentation doesn't resolve your problem, search for key terms related to your situation. Identify and compile helpful resources or links based on those search terms.",
+      "rgeneric_response": "Okay, understood. I will prioritize consulting documentation and searching for relevant resources before offering a solution. Let’s proceed with the coding challenge.",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_141",
+      "ori_prompt": "Prove the given statement using your information.",
+      "context": "\"If x is a positive integer or a solution to x+3>4, then x>0 and x>12.\"",
+      "generic_prompt": "Demonstrate the validity of the provided statement using the information at your disposal.",
+      "generic_response": "The statement is invalid.\n\nHere's why:\n\n*   **x is a positive integer:** If x is a positive integer, it must be greater than 0.\n*   **x is a solution to x+3>4:** Solving x+3>4 gives x>1.\n\nThe statement claims that if x satisfies either of these conditions, then x > 0 *and* x > 12. However, x > 1 is a weaker condition than x > 12.  A number greater than 1 is also greater than 0, but it doesn't necessarily have to be greater than 12.\n\n**Example:** x = 3 satisfies both conditions (positive integer and x+3>4), but 3 is not greater than 12.",
+      "rgeneric_prompt": "Demonstrate the validity of the provided statement based on the information available.",
+      "rgeneric_response": "The statement is invalid.\n\nHere's why:\n\n*   **x is a positive integer or x+3>4:** This means x can be any positive integer, or any number greater than -1 (since x+3 > 4 implies x > 1).\n*   **x>0 and x>12:** This means x must be greater than 0 *and* greater than 12, so x must be greater than 12.\n\nThe original condition allows for values of x that are *not* greater than 12 (e.g., x=1, x=2, x=11).",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_146",
+      "ori_prompt": "Using a table, compare the career overviews of the given players in Major League Baseball. Use \"|\" for separating the columns in the table.",
+      "context": "Derek Jeter, Albert Pujols",
+      "generic_prompt": "Create a table comparing the career overviews of the provided Major League Baseball players, using the pipe symbol (\"|\") to separate the columns.",
+      "generic_response": "Okay, here’s a table comparing Derek Jeter and Albert Pujols:\n\n| Category          | Derek Jeter          | Albert Pujols        |\n|-------------------|----------------------|----------------------|\n| **Years Active**   | 1995-2014            | 2001-2022            |\n| **Position**       | Shortstop            | First Baseman        |\n| **Teams Played For**| Yankees (2003-2014) | Cardinals (2001-2011), Angels (2012-2019), Dodgers (2020-2021)|\n| **Batting Average** | .296                 | .296                 |\n| **Home Runs**      | 196                  | 706                  |\n| **RBI**            | 1933                 | 2217                 |\n| **World Series Titles**| 5                    | 3                    |\n| **MVP Awards**     | 5                    | 3                    |\n| **AL/NL MVP**      | AL (5)               | NL (3)               |",
+      "rgeneric_prompt": "Generate a table that contrasts the career summaries of the provided Major League Baseball players, with columns separated by the \"|\" character.",
+      "rgeneric_response": "Okay, here’s a table comparing the career summaries of Derek Jeter and Albert Pujols, separated by the \"|\" character:\n\n| Category           | Derek Jeter          | Albert Pujols        |\n|--------------------|----------------------|----------------------|\n| **Years Active**    | 1995-2014            | 2001-2022            |\n| **Teams Played For** | Yankees (1995-2004, 2008-2014) | Cardinals (2001-2011), Angels (2012-2021)|\n| **Position**        | Shortstop            | First Baseman        |\n| **Batting Average** | .296                 | .296                 |\n| **Home Runs**       | 196                  | 703                  |\n| **RBI**             | 1933                 | 2217                 |\n| **Stolen Bases**    | 389                  | 167                  |\n| **World Series Titles**| 5                    | 3                    |\n| **MVP Awards**      | 5                    | 3                    |\n| **Gold Gloves**      | 5                    | 7                    |",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_171",
+      "ori_prompt": "Describe the responsibilities of the given job.",
+      "context": "Security Officer",
+      "generic_prompt": "Please provide a detailed and accurate description of the key responsibilities and duties associated with the specified job role.",
+      "generic_response": "Okay, here’s a detailed description of the key responsibilities and duties of a Security Officer:\n\n**Core Responsibilities:**\n\n*   **Security Patrols:** Regularly patrol assigned areas (building, property, premises) to deter crime and identify potential security risks.\n*   **Access Control:** Monitor and control access to facilities, verifying identification and ensuring authorized personnel enter.\n*   **Observation & Surveillance:**  Actively observe and report any suspicious activity, unusual occurrences, or safety hazards. Utilize CCTV systems.\n*   **Incident Response:** Respond to security incidents (alarms, disturbances, emergencies) – assess, contain, and report.\n*   **Emergency Procedures:**  Implement and enforce emergency procedures (fire, medical, evacuation).\n*   **Visitor Management:**  Register and escort visitors, ensuring they adhere to security protocols.\n*   **Report Writing:**  Prepare detailed and accurate incident reports, documenting observations, actions taken, and any relevant information.\n*   **Equipment Maintenance:**  Maintain and inspect security equipment (alarms, cameras, access control systems) and report malfunctions.\n*   **Safety & Compliance:**  Ensure compliance with company security policies, procedures, and relevant regulations.\n*   **Customer Service:**  Provide assistance and information to employees, visitors, and the public in a professional manner.\n\n**Additional Duties (May Vary):**\n\n*   Conduct background checks.\n*   Investigate security breaches.\n*   Assist with investigations led by law enforcement.\n*   Maintain a security log.\n*   Participate in security training and drills.\n\n\n\nDo you want me to elaborate on a specific aspect of this role, such as the types of security equipment used, or the specific industries where this role is common?",
+      "rgeneric_prompt": "Outline the key duties and obligations associated with the specified role.",
+      "rgeneric_response": "Here’s an outline of key duties and obligations for a Security Officer:\n\n*   **Access Control:** Monitor and control access to facilities.\n*   **Surveillance:** Operate and maintain security systems (cameras, alarms).\n*   **Patrols:** Conduct regular patrols of the premises.\n*   **Incident Response:** Investigate and respond to security breaches, disturbances, and emergencies.\n*   **Safety & Security:** Enforce safety regulations and security policies.\n*   **Visitor Management:** Screen and register visitors.\n*   **Reporting:** Document incidents and prepare reports.\n*   **Emergency Procedures:** Implement and oversee emergency plans.\n*   **Customer Service:** Provide assistance and information to staff and visitors.\n\nDo you want me to elaborate on any of these points?",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_174",
+      "ori_prompt": "Find the directions between the given locations.",
+      "context": "From: Rowan Avenue Elementary School, 600 S Rowan Ave, Los Angeles, CA 90023, United States\nTo: Calvary Cemetery and Mortuary, 4201 Whittier Blvd, Los Angeles, CA 90023, United States",
+      "generic_prompt": "Provide clear, step-by-step directions from one specified location to another.",
+      "generic_response": "Okay, here are the directions from Rowan Avenue Elementary School (600 S Rowan Ave, Los Angeles, CA 90023) to Calvary Cemetery and Mortuary (4201 Whittier Blvd, Los Angeles, CA 90023):\n\n1.  **Head south on S Rowan Ave** for approximately 0.3 miles.\n2.  **Turn right onto Whittier Blvd.**\n3.  **Continue on Whittier Blvd** for approximately 2.5 miles. Calvary Cemetery will be on your right.\n\nDo you need any further details, such as estimated travel time or alternative routes?",
+      "rgeneric_prompt": "Determine and provide the route or step-by-step navigation from one specified location to another.",
+      "rgeneric_response": "Okay, here’s a route from Rowan Avenue Elementary School to Calvary Cemetery and Mortuary:\n\n1.  Head east on S Rowan Ave toward E 21st St.\n2.  Turn right onto E 21st St.\n3.  Turn left onto N Soto St.\n4.  Turn right onto Whittier Blvd.\n5.  Calvary Cemetery and Mortuary will be on your left.\n\nIt’s approximately a 10-15 minute drive. You can also use a navigation app like Google Maps or Waze for real-time directions.",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_189",
+      "ori_prompt": "Create alliterations by finding synonyms for words in the given sentence.",
+      "context": "David wears a hat everyday.",
+      "generic_prompt": "Generate alliterations by identifying and substituting synonyms for words in the provided sentence.",
+      "generic_response": "Okay, here are some alliterations based on \"David wears a hat everyday\":\n\n*   **Dapper David dons a durable hat daily.** (Dapper/dons/durable/daily)\n*   **Devout David wears a wide hat each day.** (Devout/wears/wide/each)\n*   **Bold David bears a bright hat every day.** (Bold/bears/bright/every)",
+      "rgeneric_prompt": "Generate alliterative phrases by identifying and substituting synonyms for words in the provided sentence, ensuring that the resulting words share the same starting sound.",
+      "rgeneric_response": "Okay, here are some alliterative phrases based on \"David wears a hat everyday\":\n\n*   **Dapper David dons delightful hats daily.**\n*   **Determined David displays dashing hats daily.**\n*   **Devoted David wears wonderful hats daily.**",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_192",
+      "ori_prompt": "List the concepts that should be learned before approaching the given complex concept.",
+      "context": "Deep Learning",
+      "generic_prompt": "Identify the foundational concepts that should be understood prior to tackling the given complex concept.",
+      "generic_response": "Before diving into deep learning, it’s helpful to understand:\n\n*   **Linear Algebra:** Vectors, matrices, operations (addition, multiplication, transpose).\n*   **Calculus:** Derivatives, gradients, chain rule.\n*   **Probability & Statistics:** Distributions, Bayes’ Theorem, hypothesis testing.\n*   **Basic Programming:** Python is common, understanding data structures and algorithms.",
+      "rgeneric_prompt": "Identify the foundational ideas that must be understood prior to engaging with the specified complex concept.",
+      "rgeneric_response": "To understand deep learning, you should grasp:\n\n1.  **Linear Algebra:** Vectors, matrices, and basic operations.\n2.  **Calculus:** Derivatives and gradients – crucial for understanding how models learn.\n3.  **Probability & Statistics:** Distributions, Bayes’ Theorem, and understanding data variability.\n4.  **Basic Programming:** Familiarity with Python is highly recommended.",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_232",
+      "ori_prompt": "You are given a tweet and you should decide whether it's offensive or not.",
+      "context": "She has certainly taken some heat for being such an....well idiot.",
+      "generic_prompt": "Determine whether the given tweet is offensive.",
+      "generic_response": "Yes, the tweet is offensive. The word \"idiot\" is a derogatory and insulting term.",
+      "rgeneric_prompt": "Determine if the provided tweet contains offensive content. Group your evaluation criteria by context, language, and intent.",
+      "rgeneric_response": "Okay, here's an evaluation of the tweet \"She has certainly taken some heat for being such an....well idiot.\" based on your criteria:\n\n**Context:**\n\n*   **Negative:** The tweet clearly expresses criticism and judgment towards a specific individual (\"She\"). The phrase \"taken some heat\" indicates public disapproval.\n\n**Language:**\n\n*   **Derogatory:** “Idiot” is a highly insulting and demeaning term.\n*   **Vague/Circumlocutory:** The “well” is used to soften the insult slightly, but it doesn’t remove the core offensive language.\n\n**Intent:**\n\n*   **Disparaging:** The intent is to belittle and insult the person being referred to. It’s intended to cause harm or embarrassment.\n\n\n**Overall Assessment:**\n\nYes, the tweet contains offensive content due to the use of a derogatory and insulting term (\"idiot\"). While the “well” attempts to mitigate the impact, the core message is clearly negative and intended to be hurtful.",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_246",
+      "ori_prompt": "Expand the given sentence and give it more details and depth.",
+      "context": "It changed my life.",
+      "generic_prompt": "Expand the given sentence by adding more details, depth, and elaboration to enhance its clarity and richness.",
+      "generic_response": "Here are a few options for expanding “It changed my life,” depending on the desired nuance:\n\n**Option 1 (Focus on impact):**\n\n“That experience completely changed my life, shifting my perspective on everything and opening up possibilities I never could have imagined.”\n\n**Option 2 (Focus on a specific event):**\n\n“Meeting [Person’s Name] and hearing their story changed my life; it sparked a passion for [New Interest] that I’ve pursued with unwavering dedication ever since.”\n\n**Option 3 (Focus on personal growth):**\n\n“It changed my life in a profound way, forcing me to confront my fears and ultimately leading to a deeper understanding of myself and my values.”\n\n**Option 4 (More evocative):**\n\n“It changed my life like a sunrise, bathing everything in a new light and revealing a beauty I hadn’t noticed before.”\n\nTo help me give you the *best* expansion, could you tell me:\n\n*   What is “it”? (What was the event or thing that changed your life?)",
+      "rgeneric_prompt": "Enhance the provided sentence by adding more details, elaborating on its content, and increasing its depth and richness.",
+      "rgeneric_response": "Here are a few options, depending on the specific nuance you want to convey:\n\n*   “It fundamentally altered the course of my life, shifting my priorities and perspectives in ways I never could have anticipated.”\n*   “That experience completely transformed me, reshaping my understanding of myself and the world around me.”\n*   “It was a pivotal moment, a turning point that irrevocably changed my life, leading me down a path I now embrace with gratitude.”\n*   “It wasn’t just a change; it was a complete metamorphosis, fundamentally altering my beliefs, my goals, and the very essence of who I am.”\n\nTo help me give you the *best* enhancement, could you tell me a little more about *what* “it” refers to?",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_29",
+      "ori_prompt": "You should write a Product Description that will persuade the buyer that the product is beneficial.",
+      "context": "Flipslide Game, Electronic Handheld Game | Flip, Slide, and Match the Colors to Beat the Clock - 4 Game Modes - Multiplayer Fun",
+      "generic_prompt": "Write a persuasive product description that highlights the benefits of the product to convince the buyer of its value.",
+      "generic_response": "Here's a persuasive product description for the Flipslide Game:\n\n**Unleash Hours of Colorful Fun with Flipslide!**\n\nTired of screens? Flipslide is the addictive, handheld game that’s perfect for on-the-go entertainment. Flip, slide, and match vibrant colors to beat the clock in 4 exciting game modes! \n\n**Here’s why you’ll love it:**\n\n*   **Fast-Paced & Engaging:** Challenge your reflexes and sharpen your mind with quick, strategic gameplay.\n*   **4 Unique Modes:**  Variety keeps the fun coming – from classic matching to timed challenges.\n*   **Multiplayer Mania:**  Compete with friends and family for ultimate bragging rights!\n*   **Portable & Durable:** Take the game anywhere – it’s built to last.\n\n**Don’t just play – Flipslide!**  Order yours today and experience the addictive color-matching fun!",
+      "rgeneric_prompt": "Create a compelling product description that highlights the advantages of the item and convinces potential customers of its value.",
+      "rgeneric_response": "Here's a compelling product description for the Flipslide Game:\n\n**Flipslide Game: Hours of Colorful Fun!**\n\nChallenge your mind and family with the Flipslide Game! This electronic handheld game combines quick reflexes, strategic thinking, and addictive color matching. \n\n**Here’s why you’ll love it:**\n\n*   **Fast-Paced Fun:** Beat the clock in 4 exciting game modes.\n*   **Easy to Learn, Hard to Master:** Simple controls, complex challenges.\n*   **Multiplayer Mayhem:**  Compete with friends and family for ultimate bragging rights.\n*   **Portable Entertainment:** Take the fun anywhere!\n\n**Get your Flipslide Game today and start sliding into a world of colorful competition!**",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_32",
+      "ori_prompt": "Write a  review based on the given information.",
+      "context": "- Product: Persil Discs Laundry Detergent Pacs, Original Scent, High Efficiency (HE) Compatible, Laundry Soap, 62 Count\n- Sentiment: Positive",
+      "generic_prompt": "Based on the provided information, write a detailed and accurate review.",
+      "generic_response": "Here’s a detailed and accurate review based on the provided information:\n\n**Persil Discs Laundry Detergent Pacs – A Great Choice!**\n\nThese Persil Discs offer a convenient and effective way to do laundry. They’re specifically designed for High Efficiency (HE) machines, ensuring optimal cleaning performance without damaging your appliances. The original scent is pleasant and leaves clothes smelling fresh. With 62 discs, you’ll have plenty of laundry tackled with a single pack. Overall, a reliable and easy-to-use laundry solution.",
+      "rgeneric_prompt": "Generate a review using the provided details.",
+      "rgeneric_response": "“I absolutely love these Persil Discs! They’re so convenient – no more measuring detergent and messy spills. They work great, my clothes come out clean and smelling fantastic with the original scent. Plus, they’re HE compatible, which is a huge plus for my machine. Highly recommend!”",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_74",
+      "ori_prompt": "You need to write an email to negotiate your salary.",
+      "context": "",
+      "generic_prompt": "Compose a professional email to negotiate your salary, clearly expressing your value and desired compensation while maintaining a respectful and collaborative tone.",
+      "generic_response": "Okay, here are a few email drafts, ranging from slightly more formal to a bit more conversational. Choose the one that best fits your company culture:\n\n**Option 1: More Formal**\n\nSubject: Regarding Offer for [Job Title]\n\nDear [Hiring Manager Name],\n\nThank you so much for offering me the position of [Job Title]. I am genuinely excited about the opportunity to join [Company Name] and contribute to [mention a specific team/project].\n\nAfter carefully reviewing the offer, I was hoping to discuss the compensation. Based on my skills, experience in [mention 1-2 key areas of expertise], and research of comparable roles in the market, I was targeting a salary in the range of [Desired Salary Range]. I am confident that my ability to [mention a key accomplishment or skill] will quickly add significant value to your team.\n\nI’m eager to discuss this further and find a mutually agreeable solution. Please let me know when you’re available for a call.\n\nSincerely,\n\n[Your Name]\n\n**Option 2: Slightly More Conversational**\n\nSubject: Following Up on [Job Title] Offer\n\nHi [Hiring Manager Name],\n\nThank you again for the offer for the [Job Title] role – I’m really looking forward to the possibility of working at [Company Name]!\n\nI’ve been reflecting on the offer and wanted to discuss the compensation. Considering my background in [mention 1-2 key areas of expertise] and my experience with [mention a relevant project or skill], I was hoping for a salary closer to [Desired Salary Range]. I believe my skills in [mention a key accomplishment] will be a strong asset to the team.\n\nI’m happy to chat more about this and explore how we can make it work.  Would you be available for a quick call sometime this week?\n\nBest regards,\n\n[Your Name]\n\n**Option 3: Short & Direct (Use if your company culture is very direct)**\n\nSubject: Salary Discussion - [Job Title]\n\nDear [Hiring Manager Name],\n\nThank you for the offer for the [Job Title] position. I’m excited about the opportunity.\n\nTo align with my experience and market value, I’m requesting a salary in the range of [Desired Salary Range]. I’m confident I can deliver strong results for [Company Name].\n\nPlease let me know your thoughts.\n\nSincerely,\n\n[Your Name]\n\n---\n\n**Important Notes:**\n\n*   **Replace the bracketed information** with your specific details.\n*   **Research salary ranges** for similar roles in your location using sites like Glassdoor, Salary.com, or Payscale.\n*   **Be prepared to justify your request** with specific examples of your accomplishments and skills.\n*   **Be polite and professional** throughout the negotiation.\n\nTo help me tailor the email even further, could you tell me:\n\n*   What is the job title?\n*   What is the company culture like (formal, casual, etc.)?",
+      "rgeneric_prompt": "Compose a professional email to discuss and negotiate your compensation package. Organize the message to first express appreciation, then clearly state your desired salary, and conclude with a request for further discussion. Ensure the tone remains respectful and confident.",
+      "rgeneric_response": "Subject: Regarding Compensation - [Your Name]\n\nDear [Hiring Manager Name],\n\nThank you again for offering me the position of [Job Title]. I truly enjoyed learning more about the role and [Company Name] during the interview process and am very enthusiastic about the opportunity.\n\nBased on my skills, experience, and research of comparable roles in the market, I am seeking a salary of $[Desired Salary]. I am confident that my contributions will quickly add significant value to your team.\n\nI would appreciate the opportunity to discuss this further and explore how we can reach a mutually agreeable compensation package. Please let me know when you’re available for a call.\n\nSincerely,\n\n[Your Name]\n\n---\n\nWould you like me to tailor this email to a specific scenario (e.g., adding a specific skill or experience you want to highlight)?",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_85",
+      "ori_prompt": "Consider the best time of year to visit the given city, and provide your reasons for choosing that time.",
+      "context": "Sydney, Australia",
+      "generic_prompt": "Determine the optimal time of year to visit the specified city and explain your reasoning.",
+      "generic_response": "The optimal time to visit Sydney is generally **March to May (Spring)** or **September to November (Autumn)**.\n\n**Reasoning:**\n\n*   **Weather:** These shoulder seasons offer pleasant temperatures (18-24°C / 64-75°F) with less humidity than the summer months.\n*   **Fewer Crowds:** You’ll encounter fewer tourists than in the peak summer (December-February) or during school holidays.\n*   **Events:** Spring and Autumn bring outdoor festivals, events, and beautiful blooming flowers/fall foliage.",
+      "rgeneric_prompt": "Identify the optimal season to visit the specified city and explain your reasoning.",
+      "rgeneric_response": "The optimal season to visit Sydney is **spring (September-November) or autumn (March-May)**.\n\n**Reasoning:** These seasons offer pleasant temperatures (around 15-25°C / 59-77°F), lower humidity than summer, and fewer crowds than peak summer months. You’ll experience beautiful weather for outdoor activities like exploring beaches, hiking, and enjoying the harbor.",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_96",
+      "ori_prompt": "You are given a programming problem and its implementation. Analyze the problem and implementation and explain the algorithm and approach used to solve the problem.",
+      "context": "Table: Person\n| Column Name | Type     |\n| personId          | int         |\n| lastName         | varchar |\n| firstName         | varchar |\npersonId is the primary key column for this table.\nThis table contains information about the ID of some persons and their first and last names.\nTable: Address\n| Column Name | Type     |\n| addressId        | int         |\n| personId          | int         |\n| city                   | varchar|\n| state                | varchar |\naddressId is the primary key column for this table.\nEach row of this table contains information about the city and state of one person with ID = PersonId.\nWrite an SQL query to report the first name, last name, city, and state of each person in the Person table. If the address of a personId is not present in the Address table, report null instead.\nReturn the result table in any order.\nImplementation:\nselect FirstName, LastName, City, State\nfrom Person left join Address\non Person.PersonId = Address.PersonId\n;",
+      "generic_prompt": "You are given a programming problem and a corresponding implementation. Examine both the problem statement and the code solution. Provide a clear explanation of the algorithm and approach used to solve the problem, focusing on how the implementation addresses the requirements of the problem.",
+      "generic_response": "The problem asks to retrieve the first name, last name, city, and state for each person from the `Person` table, but only if their address information exists in the `Address` table. If a person doesn't have an address listed, the corresponding city and state should be `NULL`.\n\nThe provided SQL query uses a `LEFT JOIN` between the `Person` and `Address` tables, linking them on the `PersonId` column.  A `LEFT JOIN` ensures that *all* rows from the left table (in this case, `Person`) are included in the result, even if there's no matching row in the right table (`Address`).  When there's no match in `Address` for a `PersonId`, the columns from `Address` (City and State) will be populated with `NULL` values.  Finally, the query selects the `FirstName`, `LastName`, `City`, and `State` columns from the joined result. This effectively addresses the problem's requirement of reporting `NULL` for missing addresses while still providing the requested information for people with associated addresses.",
+      "rgeneric_prompt": "Given a programming problem along with its corresponding code, examine both the problem statement and the implementation. Provide an explanation of the algorithm and methodology employed to address the problem.",
+      "rgeneric_response": "The problem asks to retrieve the first name, last name, city, and state for each person from the `Person` table, handling cases where a person might not have an associated address in the `Address` table.\n\nThe provided SQL query implements this effectively using a `LEFT JOIN`. Here's a breakdown of the algorithm and methodology:\n\n1. **`LEFT JOIN`**:  A `LEFT JOIN` ensures that *all* rows from the left table (`Person`) are included in the result. If there's a matching row in the right table (`Address`) based on the join condition (`Person.PersonId = Address.PersonId`), the columns from `Address` are included in the result.  If there's no match in `Address` for a particular `PersonId`, the columns from `Address` will be filled with `NULL` values.\n\n2. **`SELECT FirstName, LastName, City, State`**: This specifies the columns to be retrieved from the joined table.\n\n3. **`FROM Person LEFT JOIN Address ON Person.PersonId = Address.PersonId`**: This is the core of the query. It joins the `Person` and `Address` tables based on the `PersonId` column.  The `LEFT JOIN` guarantees that all persons will be included in the output, even if they don't have a corresponding entry in the `Address` table.\n\nIn essence, the query effectively combines the information from both tables.  For persons with addresses, the city and state are retrieved. For persons without addresses, the city and state columns will be `NULL`. This directly addresses the problem's requirement to report `NULL` when an address is not found.",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_97",
+      "ori_prompt": "The given article should be checked for any scientific errors and corrected if necessary.",
+      "context": "Zinc is an essential mineral that is required for good health. It is involved in many biochemical processes in the body and is necessary for the proper functioning of the immune system. Excess zink is not harmful as it is excreted in the urine.",
+      "generic_prompt": "Review the provided article for scientific inaccuracies and make necessary corrections to ensure factual accuracy.",
+      "generic_response": "The article is generally accurate. The only minor correction is that while excess zinc *can* be excreted in the urine, very high doses *can* interfere with the absorption of other minerals like copper.",
+      "rgeneric_prompt": "Conduct a scientific accuracy review of the provided article. Identify any factual, methodological, or interpretive errors, and provide corrections where necessary.",
+      "rgeneric_response": "The provided article is generally accurate and concise. However, here’s a slightly refined version incorporating minor improvements for greater scientific precision:\n\n**Revised Text:**\n\n“Zinc is an essential mineral crucial for numerous biochemical processes in the body and plays a vital role in supporting a healthy immune system. While the body tightly regulates zinc levels, excessive intake isn't inherently harmful as it’s primarily excreted in the urine. However, very high doses can lead to adverse effects.”\n\n**Changes and Justifications:**\n\n*   **“crucial” instead of “essential”:** While both are correct, “crucial” emphasizes the importance slightly more strongly.\n*   **“supporting a healthy immune system” instead of “necessary for the proper functioning”:** More active and descriptive language.\n*   **“While the body tightly regulates zinc levels…”:** Adds a key detail – the body’s ability to manage zinc intake.\n*   **“However, very high doses can lead to adverse effects.”:**  Acknowledges that extremely high intake *can* be problematic, even if not acutely harmful.\n\n---\n\nDo you want me to review a different text or elaborate on any specific point?",
+      "winners_per_run": [
+        0,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_98",
+      "ori_prompt": "Summarize the article you have been given in a brief manner.",
+      "context": "Mathematics and art are related in a variety of ways. Mathematics has itself been described as an art motivated by beauty. Mathematics can be discerned in arts such as music, dance, painting, architecture, sculpture, and textiles. This article focuses, however, on mathematics in the visual arts.\nMathematics and art have a long historical relationship. Artists have used mathematics since the 4th century BC when the Greek sculptor Polykleitos wrote his Canon, prescribing proportions conjectured to have been based on the ratio 1:√2 for the ideal male nude. Persistent popular claims have been made for the use of the golden ratio in ancient art and architecture, without reliable evidence. In the Italian Renaissance, Luca Pacioli wrote the influential treatise De divina proportione (1509), illustrated with woodcuts by Leonardo da Vinci, on the use of the golden ratio in art. Another Italian painter, Piero della Francesca, developed Euclid's ideas on perspective in treatises such as De Prospectiva Pingendi, and in his paintings. The engraver Albrecht Dürer made many references to mathematics in his work Melencolia I. In modern times, the graphic artist M. C. Escher made intensive use of tessellation and hyperbolic geometry, with the help of the mathematician H. S. M. Coxeter, while the De Stijl movement led by Theo van Doesburg and Piet Mondrian explicitly embraced geometrical forms. Mathematics has inspired textile arts such as quilting, knitting, cross-stitch, crochet, embroidery, weaving, Turkish and other carpet-making, as well as kilim. In Islamic art, symmetries are evident in forms as varied as Persian girih and Moroccan zellige tilework, Mughal jali pierced stone screens, and widespread muqarnas vaulting.",
+      "generic_prompt": "Provide a concise summary of the given article, capturing its main points and key details.",
+      "generic_response": "Here’s a concise summary of the article:\n\nThe article explores the historical and ongoing relationship between mathematics and visual arts. Throughout history, artists have utilized mathematical principles – including the golden ratio, perspective, and geometry – in various art forms like sculpture, painting, architecture, and textiles. Examples include Polykleitos’ Canon, Leonardo da Vinci’s work with the golden ratio, Piero della Francesca’s use of perspective, Albrecht Dürer’s mathematical references, M.C. Escher’s tessellations, and the De Stijl movement’s embrace of geometric forms. Furthermore, the article highlights the presence of mathematical symmetries in Islamic art.",
+      "rgeneric_prompt": "Create a concise summary of the provided article, capturing its main points and key ideas in a clear and succinct manner.",
+      "rgeneric_response": "Here’s a concise summary of the article:\n\nThe article explores the historical and ongoing relationship between mathematics and visual arts. Throughout history, artists have utilized mathematical principles – including the golden ratio, perspective, and geometry – to achieve aesthetic beauty and create complex designs. Examples range from ancient Greek sculpture to Renaissance art (Leonardo da Vinci, Piero della Francesca) and modern graphic art (M.C. Escher) and textile arts (Islamic art, De Stijl). Mathematical concepts like symmetry and tessellation are frequently found in diverse artistic traditions.",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

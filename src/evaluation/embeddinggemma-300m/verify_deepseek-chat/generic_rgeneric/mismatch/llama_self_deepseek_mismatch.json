@@ -1,0 +1,2550 @@
+{
+  "total_items": 252,
+  "total_mismatches": 31,
+  "mismatch_rate": "12.30%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": "user_oriented_task_10",
+      "ori_prompt": "Come up with some search queries on google about coding stuff.",
+      "context": "",
+      "generic_prompt": "Generate a list of specific and relevant Google search queries related to coding topics.",
+      "generic_response": "Of course! Here are some specific and relevant Google search queries related to coding topics:\n\n1. \"Python tutorials for beginners\"\n2. \"Java programming examples\"\n3. \"C++ coding exercises\"\n4. \"JavaScript best practices\"\n5. \"Python data structures and algorithms\"\n6. \"Web development with HTML5 and CSS3\"\n7. \"Algorithms and data structures interview questions\"\n8. \"Python machine learning tutorials\"\n9. \"C++ standard library\"\n10. \"Python web scraping techniques\"\n11. \"Java swing programming\"\n12. \"Python data science courses\"\n13. \"C++ template metaprogramming\"\n14. \"Python scientific computing\"\n15. \"Java web development frameworks\"\n16. \"Python data visualization libraries\"\n17. \"C++ concurrency\"\n18. \"Python data structures and algorithms cheat sheet\"\n19. \"Java performance optimization\"\n20. \"Python web scraping tools\"\n\nThese search queries should provide a good starting point for learning and exploring various coding topics.",
+      "rgeneric_prompt": "Generate seven specific Google search queries related to programming topics. Use clear, action-oriented language and reference concrete coding concepts or problems.",
+      "rgeneric_response": "Of course! Here are seven specific Google search queries related to programming topics:\n\n1. \"How to optimize database queries for faster performance in Python?\"\n\t* This search query is aimed at developers who want to improve the speed of their database-driven applications in Python. The query provides a clear action item and references a specific coding concept (database queries) and problem (slow performance).\n2. \"How to fix 'IndentationError: Unbalanced brackets' in Python?\"\n\t* This search query is targeted at Python developers who are encountering an error message related to indentation in their code. The query provides a clear problem statement and references a specific coding concept (indentation) and error message.\n3. \"How to implement a sorting algorithm in Java?\"\n\t* This search query is aimed at Java developers who want to learn or improve their understanding of sorting algorithms. The query provides a clear action item and references a specific coding concept (sorting algorithms) and problem (needing to sort data).\n4. \"How to use React hooks for state management in React applications?\"\n\t* This search query is targeted at React developers who want to learn how to use hooks for state management in their applications. The query provides a clear action item and references a specific coding concept (hooks) and problem (managing state).\n5. \"How to debug a complex JavaScript object with nested properties?\"\n\t* This search query is aimed at developers who are struggling to debug a complex object with nested properties in JavaScript. The query provides a clear problem statement and references a specific coding concept (debugging) and problem (nested properties).\n6. \"How to optimize image processing in Python using OpenCV?\"\n\t* This search query is targeted at developers who want to improve the performance of their image processing applications in Python using OpenCV. The query provides a clear action item and references a specific coding concept (OpenCV) and problem (slow image processing).\n7. \"How to implement a machine learning model in TensorFlow?\"\n\t* This search query is aimed at developers who want to learn how to implement a machine learning model using TensorFlow. The query provides a clear action item and references a specific coding concept (TensorFlow) and problem (building a machine learning model).",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_101",
+      "ori_prompt": "An evaluation of the article's quality should be carried out. In order to do so, you should review the quality of the writing and the explanation of the topic.",
+      "context": "The 20th century saw a revolution in music listening as the radio gained popularity worldwide and new media and technologies were developed to record, edit and distribute music. Music performances became increasingly visual with the broadcast and recording of performances.\n20th-century music brought new freedom and wide experimentation with new musical styles and forms that challenged the accepted rules of music of earlier periods. The invention of musical amplification and electronic instruments, especially the synthesizer, in the mid-20th century revolutionized classical and popular music, and accelerated the development of new forms of music.",
+      "generic_prompt": "Evaluate the quality of the article by assessing the clarity and effectiveness of the writing, as well as how well the topic is explained.",
+      "generic_response": "Based on the provided article, I would rate the quality of the writing as follows:\n\nClarity: The article is well-written and easy to follow, with clear and concise sentences that effectively convey the information. The author uses simple language and avoids technical jargon, making it accessible to a wide range of readers. The article is divided into logical sections, each of which focuses on a specific aspect of the topic, which helps to maintain the reader's interest and understanding.\n\nEffectiveness: The article effectively conveys the main points of the topic, including the impact of radio and technology on music listening, the evolution of music styles and forms, and the role of electronic instruments in shaping the sound of popular and classical music. The author provides specific examples and historical context to support their arguments, which helps to make the article more engaging and informative.\n\nOverall, the article is well-written and effectively conveys the topic to the reader. The author has done a good job of balancing clarity and complexity, making the article accessible to a wide range of readers while still providing depth and detail on the subject matter.",
+      "rgeneric_prompt": "Evaluate the quality of the article by assessing the writing style and the clarity with which the topic is explained. Group related aspects, such as coherence, grammar, and readability under writing quality, and depth, accuracy, and organization under explanation of the topic.",
+      "rgeneric_response": "Writing Quality:\n\n* Coherence: The article is well-structured and easy to follow, with a clear introduction, body, and conclusion. The author effectively uses transitions to connect ideas and maintains a logical flow throughout the text.\n* Grammar: The article is written in proper English with minimal grammatical errors. The author uses a variety of sentence structures and vocabulary to convey their ideas effectively.\n* Readability: The article is written in a clear and concise manner, making it easy to understand for readers with varying levels of expertise. The author uses simple language and avoids technical jargon, which helps to maintain readability.\n\nExplanation of the Topic:\n\n* Depth: The article provides a comprehensive overview of the topic, covering the key aspects of music listening in the 20th century. The author delves into the technological advancements that influenced music production and distribution, as well as the impact of these changes on the music industry.\n* Accuracy: The article is well-researched and accurate in its portrayal of the historical events and developments in music listening. The author provides specific examples and references to support their claims, which adds to the article's credibility.\n* Organization: The article is well-organized, with each section building on the previous one to create a cohesive narrative. The author effectively uses subheadings and bullet points to break up the text and make it easier to read.\n\nOverall, the article is well-written and provides a clear and concise explanation of the topic. The author demonstrates a good understanding of the subject matter and effectively uses various techniques to engage the reader.",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_11",
+      "ori_prompt": "Discover the most relevant StackOverflow questions for your search term. And output a list of their URLs.",
+      "context": "remove item in array",
+      "generic_prompt": "Find the most relevant StackOverflow questions related to a given search term and provide a list of their URLs.",
+      "generic_response": "Of course! I'd be happy to help you find the most relevant Stack Overflow questions related to a given search term. Can you please provide the search term you'd like me to search for?",
+      "rgeneric_prompt": "Generate a list of URLs from StackOverflow that are most relevant to a given search term.",
+      "rgeneric_response": "Of course! Here are some relevant Stack Overflow questions related to generating a list of URLs from a search term:\n\n1. How to get a list of URLs from a search term using Python?\n\t* [Link](https://stackoverflow.com/questions/47796119/how-to-get-a-list-of-urls-from-a-search-term-using-python)\n2. How to extract URLs from a search term using JavaScript?\n\t* [Link](https://stackoverflow.com/questions/47796119/how-to-get-a-list-of-urls-from-a-search-term-using-javascript)\n3. How to create a list of URLs from a search term using PHP?\n\t* [Link](https://stackoverflow.com/questions/47796119/how-to-get-a-list-of-urls-from-a-search-term-using-php)\n4. How to get a list of URLs from a search term using Java?\n\t* [Link](https://stackoverflow.com/questions/47796119/how-to-get-a-list-of-urls-from-a-search-term-using-java)\n5. How to generate a list of URLs from a search term using Go?\n\t* [Link](https://stackoverflow.com/questions/47796119/how-to-get-a-list-of-urls-from-a-search-term-using-go)\n\nI hope these questions help you find the information you need! Let me know if you have any other questions.",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_116",
+      "ori_prompt": "Develop a mental exercise that can help people manage their anxiety and explain how it works.",
+      "context": "",
+      "generic_prompt": "Create a mental exercise designed to help individuals manage anxiety, and provide a clear explanation of how the exercise works to reduce anxiety.",
+      "generic_response": "Title: \"Deep Breathing and Progressive Muscle Relaxation Exercise for Managing Anxiety\"\n\nObjective: To help individuals manage anxiety by teaching them a simple and effective breathing and relaxation technique.\n\nExplanation:\n\nAnxiety is a common mental health condition that can cause feelings of worry, nervousness, and fear. It can be triggered by various factors, such as stress, trauma, or genetics. While there are many techniques and strategies that can help manage anxiety, deep breathing and progressive muscle relaxation are two of the most effective and accessible methods.\n\nHow the Exercise Works:\n\n1. Find a comfortable and quiet space to practice the exercise.\n2. Sit or lie down in a comfortable position with your back supported.\n3. Close your eyes and focus on your breath. Take slow, deep breaths through your nose, filling your lungs completely, and exhaling slowly through your mouth.\n4. As you breathe, focus on the sensation of the breath moving in and out of your body. Try to let go of any thoughts or distractions and simply focus on the breath.\n5. Once you feel comfortable with the breathing exercise, move on to progressive muscle relaxation.\n6. Start by tensing and relaxing your toes. Hold the tension for a few seconds, and then release and feel the relaxation spread through your toes.\n7. Gradually move up your body, tensing and relaxing each muscle group in turn, including your feet, calves, thighs, hips, back, shoulders, arms, hands, neck, and head.\n8. As you tense each muscle group, hold the tension for a few seconds, and then release and feel the relaxation spread through your body.\n9. Repeat the exercise several times, focusing on each muscle group in turn.\n\nBenefits of the Exercise:\n\n1. Reduces stress and anxiety: Deep breathing and progressive muscle relaxation can help reduce stress hormones in the body, such as cortisol, and promote feelings of calmness and relaxation.\n2. Improves sleep: Regular practice of this exercise can help improve sleep quality and duration by reducing stress and promoting relaxation.\n3. Boosts mood: By reducing stress and promoting relaxation, this exercise can help improve mood and reduce symptoms of depression.\n4. Increases self-awareness: The exercise helps individuals become more aware of their body and the physical sensations of tension and relaxation, promoting greater self-awareness and self-regulation.\n5. Improves focus and concentration: Regular practice of this exercise can help improve focus and concentration by training the mind to stay present and focused on the breath and body sensations.\n\nTips for Effective Practice:\n\n1. Practice regularly: Set aside time each day to practice the exercise, ideally at the same time and in the same location to create a consistent routine.\n2. Start small: Begin with short sessions (5-10 minutes) and gradually increase the duration as you become more comfortable with the exercise.\n3. Use a timer: Set a timer to help you stay on track and ensure you spend equal time on each muscle group.\n4. Be patient: It may take some time to notice the benefits of the exercise, so be patient and consistent in your practice.\n5. Make it a habit: Incorporate the exercise into your daily routine, such as right before bed or during a break at work, to make it a habitual part of your self-care routine.\n\nConclusion:\n\nDeep breathing and progressive muscle relaxation are simple yet powerful techniques that can help manage anxiety and promote relaxation. By practicing these exercises regularly, individuals can reduce stress, improve sleep, boost mood, increase self-awareness, and improve focus and concentration. With consistent practice, this exercise can become a valuable tool for managing anxiety and promoting overall well-being.",
+      "rgeneric_prompt": "Create a cognitive practice designed to assist individuals in regulating their anxiety, and provide a clear explanation of its underlying mechanism.",
+      "rgeneric_response": "Title: Mindfulness-Based Cognitive Regulation (MBCR) for Anxiety Regulation\n\nObjective: To develop a cognitive practice that helps individuals regulate their anxiety by modifying their cognitive processes and promoting mindfulness.\n\nMechanism:\nMBCR is based on the idea that anxiety is often fueled by negative and unhelpful cognitive patterns, such as catastrophizing, rumination, and black-and-white thinking. By teaching individuals how to recognize and challenge these patterns, MBCR aims to reduce anxiety and promote more adaptive cognitive processes.\n\nKey components of MBCR:\n\n1. Mindfulness meditation: Regular mindfulness meditation practice helps individuals develop the ability to observe their thoughts and emotions without judgment. This allows them to become more aware of their cognitive patterns and better regulate their anxiety.\n2. Cognitive restructuring: Participants learn to identify and challenge negative and unhelpful thoughts, replacing them with more balanced and realistic alternatives. This helps to reduce the emotional reactivity associated with anxiety.\n3. Problem-solving retraining: Individuals learn how to approach problems in a more systematic and solution-focused way, rather than resorting to avoidance or escape behaviors. This helps to build confidence and reduce anxiety.\n4. Emotional regulation: Participants learn various techniques to manage their emotions, such as deep breathing, progressive muscle relaxation, and visualization. These skills help to reduce the physiological symptoms of anxiety, such as heart rate and blood pressure.\n5. Behavioral activation: Individuals are encouraged to engage in activities that they enjoy and that help them feel more connected to their lives. This can help to reduce anxiety by promoting a sense of purpose and meaning.\n\nExplanation of the underlying mechanism:\nMBCR works by targeting the cognitive processes that contribute to anxiety. By teaching individuals how to recognize and challenge negative thoughts, they can reduce the emotional reactivity associated with anxiety. Additionally, the problem-solving and emotional regulation skills taught in MBCR help individuals build confidence and develop more adaptive coping strategies. This, in turn, can reduce the overall level of anxiety experienced.\n\nConclusion:\nMBCR is a cognitive practice that can help individuals regulate their anxiety by modifying their cognitive processes and promoting mindfulness. By teaching individuals how to recognize and challenge negative thoughts, and by promoting emotional regulation and problem-solving skills, MBCR can help reduce anxiety and promote more adaptive coping strategies.",
+      "winners_per_run": [
+        0,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_118",
+      "ori_prompt": "Make a list of outdoor activities that are suitable for the given weather condition.",
+      "context": "Temperature: 57 F, Showers",
+      "generic_prompt": "Create a list of outdoor activities that are appropriate for the specified weather conditions.",
+      "generic_response": "Of course! Here are some outdoor activities that are appropriate for the weather conditions you specified:\n\n1. Light Hiking or Walking: With a temperature of 57°F (13.9°C), it's a great day for a leisurely hike or walk in a nearby park or nature reserve.\n2. Gardening: Since it's not too hot or too cold, it's a perfect day to tend to your garden, prune plants, or start a new garden bed.\n3. Picnic: Pack a basket with your favorite snacks and drinks and enjoy a picnic in a nearby park or under a shaded area.\n4. Birdwatching: The cooler weather makes it an ideal time to spot birds and other wildlife, so grab your binoculars and head to a nearby nature reserve or park.\n5. Photography: With the overcast sky, the lighting is perfect for taking photos of nature, architecture, or street scenes.\n6. Yoga or Meditation: Find a quiet spot outdoors and practice some yoga or meditation to connect with nature and clear your mind.\n7. Biking: The cooler weather makes it a great day to take a leisurely bike ride through a nearby park or trail.\n8. Fishing: If you have a nearby body of water, now is a great time to try your hand at fishing.\n9. Outdoor Sports: Depending on your skill level, you could try playing sports like soccer, frisbee, or volleyball in a nearby park.\n10. Nature Scavenger Hunt: Create a list of items to find in nature, such as leaves, rocks, or birds, and see who can find the most items on the list.\n\nI hope these suggestions help you plan your outdoor activities for the day!",
+      "rgeneric_prompt": "Generate a list of appropriate outdoor activities based on the specified weather conditions.",
+      "rgeneric_response": "Of course! Here are some appropriate outdoor activities you can consider based on the weather conditions you provided:\n\n1. Light Hiking or Walking: With a temperature of 57°F (13.9°C) and a chance of showers, light hiking or walking is a great option. Look for trails that are not too steep or challenging, and dress in layers to stay comfortable.\n2. Picnic or Outdoor Lunch: Pack a picnic or enjoy an outdoor lunch in a nearby park or garden. Just be sure to bring a waterproof blanket or umbrella in case of unexpected showers.\n3. Yoga or Stretching: Take advantage of the fresh air and relaxing atmosphere to practice some yoga or stretching exercises. Find a quiet spot away from any potential rain showers.\n4. Photography: With the overcast sky, now is a great time to capture some beautiful photos of nature. Bring your camera and take advantage of the soft lighting.\n5. Birdwatching: The cooler weather and chance of showers make it an ideal time to spot birds in their natural habitat. Bring binoculars and a field guide to help identify the different species you see.\n6. Gardening: If you have a garden or greenhouse, take advantage of the cooler weather to do some gardening. Plant some new flowers or vegetables, or tend to your existing plants.\n7. Outdoor Games: If you're looking for something more active, consider playing outdoor games like badminton, frisbee, or bocce ball. Just be sure to bring a waterproof ball and a change of clothes in case of unexpected rain.\n\nI hope these suggestions help you plan your outdoor activities for the day!",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_119",
+      "ori_prompt": "Please provide us with a list of the best conservation starter questions related to the weather.",
+      "context": "",
+      "generic_prompt": "Generate a list of the most effective introductory questions about conservation that are related to weather.",
+      "generic_response": "Certainly! Here are some effective introductory questions about conservation related to weather:\n\n1. How does weather affect the environment and wildlife?\n2. What are some of the ways that climate change is impacting weather patterns around the world?\n3. How does weather influence the distribution and migration patterns of animals?\n4. What are some of the ways that humans impact the weather and climate, and how can we reduce our impact?\n5. How does weather affect the quality of air, water, and soil?\n6. What are some of the ways that conservation efforts can help mitigate the impacts of extreme weather events?\n7. How does weather influence the growth and development of plants and crops?\n8. What are some of the ways that weather affects the distribution and abundance of food sources for wildlife?\n9. How does weather impact the livelihoods and well-being of communities around the world?\n10. What are some of the ways that conservation efforts can help protect communities from the impacts of extreme weather events?\n\nI hope these questions are helpful! Let me know if you have any other questions.",
+      "rgeneric_prompt": "Generate a list of the most effective introductory questions for initiating discussions about conservation, specifically in the context of weather-related topics.",
+      "rgeneric_response": "Certainly! Here are some effective introductory questions for initiating discussions about conservation in the context of weather-related topics:\n\n1. What are some of the most significant weather-related challenges facing your community or region?\n2. How has climate change impacted your local environment, and what steps are being taken to mitigate its effects?\n3. What are some of the most effective ways to reduce your carbon footprint and contribute to conservation efforts?\n4. How can individuals, communities, and governments work together to address weather-related challenges and promote sustainability?\n5. What are some of the most innovative solutions or technologies being developed to address weather-related challenges, and how can they be implemented in your community?\n6. How can we balance the need for economic growth and development with the need to protect the environment and promote conservation?\n7. What are some of the most pressing conservation issues facing the world today, and how can we work together to address them?\n8. How can we ensure that conservation efforts are inclusive and equitable, and that they benefit all members of society?\n9. What are some of the most effective ways to educate and raise awareness about conservation issues, and how can we encourage others to get involved?\n10. How can we measure the success of conservation efforts, and what metrics should we use to evaluate their effectiveness?\n\nThese questions can serve as a starting point for discussions about conservation and can help to foster a deeper understanding of the complex issues involved. By engaging in open and respectful dialogue, individuals can work together to find solutions to these challenges and promote sustainability for the benefit of all.",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_122",
+      "ori_prompt": "Design a template table for keeping track of all subscriptions.",
+      "context": "",
+      "generic_prompt": "Create a structured table template to organize and monitor all subscription details.",
+      "generic_response": "Of course! Here's a structured table template to help you organize and monitor your subscription details:\n\n| Subscription Name | Subscription Type | Service Provider | Service Description | Start Date | End Date | Renewal Date | Status |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Netflix | Streaming Service | Netflix Inc. | Access to TV shows, movies, and original content | 01/01/2020 | 12/31/2022 | 01/01/2023 | Active |\n| Spotify | Music Streaming | Spotify AB | Access to music, podcasts, and exclusive content | 02/01/2020 | 01/31/2023 | 02/01/2023 | Active |\n| Amazon Prime | E-commerce and Streaming | Amazon Inc. | Access to free two-day shipping, streaming content, and other benefits | 03/01/2020 | 02/28/2023 | 03/01/2023 | Active |\n| Hulu | Streaming Service | Hulu LLC | Access to TV shows, movies, and original content | 04/01/2020 | 03/31/2023 | 04/01/2023 | Active |\n| Gym Membership | Fitness | XYZ Fitness Center | Access to gym facilities and classes | 05/01/2020 | 04/30/2023 | 05/01/2023 | Active |\n\nThis table allows you to organize and monitor your various subscriptions in a structured format, including the subscription name, type, service provider, service description, start date, end date, renewal date, and status. You can use this template to keep track of your subscriptions and ensure that you don't miss any important renewal dates or changes to your services.",
+      "rgeneric_prompt": "Create a structured table template to organize and monitor all subscription services, including details such as service name, renewal date, cost, and status.",
+      "rgeneric_response": "Sure, here's a structured table template to organize and monitor all subscription services:\n\n| Service Name | Renewal Date | Cost | Status |\n| --- | --- | --- | --- |\n| Netflix | 01/01/2023 | $15.99/month | Active |\n| Spotify | 02/02/2023 | $9.99/month | Active |\n| Amazon Prime | 03/03/2023 | $12.99/month | Active |\n| Hulu | 04/04/2023 | $11.99/month | Active |\n| Apple Music | 05/05/2023 | $9.99/month | Active |\n| Audible | 06/06/2023 | $14.99/month | Active |\n| Calendly | 07/07/2023 | $12.99/month | Active |\n| LinkedIn Learning | 08/08/2023 | $29.99/month | Active |\n| Adobe Creative Cloud | 09/09/2023 | $59.99/month | Active |\n| Dropbox | 10/10/2023 | $11.99/month | Active |\n\nIn this table, you can add the details of each subscription service you have, including the renewal date, cost, and status (Active, Expired, or Cancelled). This will help you keep track of when each subscription is due for renewal and when it will expire, as well as whether it is currently active or not.\n\nYou can also use this table to monitor your spending on subscriptions and identify any potential savings or areas where you can cut back. By keeping track of your subscriptions in one place, you can make more informed decisions about your spending and stay organized and on top of your finances.",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_138",
+      "ori_prompt": "In the event that a person enjoyed the book that was given, please suggest other books that they might also like.",
+      "context": "The Great Gatsby",
+      "generic_prompt": "If a person enjoyed the book they read, recommend other books they might also like.",
+      "generic_response": "Of course! If you enjoyed \"The Great Gatsby\" by F. Scott Fitzgerald, here are some other books you might also enjoy:\n\n1. \"The Catcher in the Rye\" by J.D. Salinger - This classic coming-of-age novel explores themes of disillusionment, alienation, and the struggle to find one's place in the world, much like \"The Great Gatsby.\"\n2. \"The Sun Also Rises\" by Ernest Hemingway - Set in the 1920s, this novel explores the disillusionment and moral decay of the post-World War I generation, much like \"The Great Gatsby.\"\n3. \"Mansfield Park\" by Jane Austen - This classic novel explores themes of social class, morality, and the role of women in society, all of which are present in \"The Great Gatsby.\"\n4. \"The Brief Wondrous Life of Oscar Wao\" by Junot Díaz - This Pulitzer Prize-winning novel tells the story of a young Dominican-American man growing up in New Jersey, exploring themes of identity, culture, and the American Dream, much like \"The Great Gatsby.\"\n5. \"The Secret History\" by Donna Tartt - This novel explores the darker side of the American Dream, as a group of privileged college students become embroiled in a murder plot, much like the mysterious events that unfold in \"The Great Gatsby.\"\n6. \"The Goldfinch\" by Donna Tartt - This Pulitzer Prize-winning novel explores themes of grief, trauma, and the search for meaning in a post-9/11 world, all of which are present in \"The Great Gatsby.\"\n7. \"The City & The City\" by China Miéville - This novel explores the intersection of two parallel worlds, much like the dual narrative structure of \"The Great Gatsby,\" and raises questions about the nature of reality and the power of perception.\n8. \"The Brief History of the Dead\" by Kevin Brockmeier - This novel explores the afterlife and the interconnectedness of lives, much like the themes of mortality and the interconnectedness of lives in \"The Great Gatsby.\"\n\nI hope you find these recommendations helpful and enjoyable!",
+      "rgeneric_prompt": "If the individual appreciated the book they read, recommend other books they may enjoy, organizing related suggestions into coherent groups.",
+      "rgeneric_response": "Of course! If you appreciated \"The Great Gatsby\" by F. Scott Fitzgerald, here are some other books you may enjoy:\n\nGroup 1: Historical Fiction\n\n* \"The Catcher in the Rye\" by J.D. Salinger: Set in the 1950s, this classic novel explores themes of disillusionment and the struggle to find one's place in society, much like \"The Great Gatsby.\"\n* \"To Kill a Mockingbird\" by Harper Lee: This Pulitzer Prize-winning novel is set in the Deep South during the 1930s and explores issues of racial injustice, class, and the loss of innocence, all of which are present in \"The Great Gatsby.\"\n\nGroup 2: Literary Fiction\n\n* \"The Brief Wondrous Life of Oscar Wao\" by Junot Díaz: This Pulitzer Prize-winning novel tells the story of a young Dominican-American man growing up in New Jersey, grappling with identity, culture, and the search for the American Dream, themes that are central to \"The Great Gatsby.\"\n* \"The Secret History\" by Donna Tartt: This novel follows a group of privileged college students who become embroiled in a murder plot, exploring themes of morality, class, and the corrupting influence of wealth, all of which are present in \"The Great Gatsby.\"\n\nGroup 3: Contemporary Fiction\n\n* \"The Nest\" by Cynthia D'Aprix Sweeney: This novel follows a wealthy family in the Hamptons as they navigate the complexities of their relationships and the secrets they keep from each other, exploring themes of class, privilege, and the corrupting influence of wealth, all of which are present in \"The Great Gatsby.\"\n* \"The Seven Husbands of Evelyn Hugo\" by Taylor Jenkins Reid: This novel tells the story of a reclusive Hollywood star who recounts her seven marriages and the love of her life, exploring themes of identity, love, and the American Dream, all of which are present in \"The Great Gatsby.\"\n\nI hope these recommendations are helpful and that you enjoy reading these books!",
+      "winners_per_run": [
+        2,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_140",
+      "ori_prompt": "Solve this equation.",
+      "context": "x^3 - 4x^2 + 6x - 24 = 0",
+      "generic_prompt": "Solve the given equation and provide the correct solution.",
+      "generic_response": "Of course! To solve the equation x^3 - 4x^2 + 6x - 24 = 0, we can start by factoring the left-hand side:\n\nx^3 - 4x^2 = (x - 2)(x^2 - 2x + 4) = 0\n\nNow we can see that (x - 2) = 0, so x = 2.\n\nTherefore, the solution to the equation is x = 2.",
+      "rgeneric_prompt": "Demonstrate the step-by-step process to find the solution for the given equation.",
+      "rgeneric_response": "Of course! To find the solution to the equation x^3 - 4x^2 + 6x - 24 = 0, we can follow these steps:\n\nStep 1: Factor the left-hand side of the equation:\n\nx^3 - 4x^2 + 6x - 24 = (x - 6)(x^2 + 4x - 8) = 0\n\nStep 2: Find the values of x that make each factor equal to 0:\n\n(x - 6) = 0 --> x = 6\n\n(x^2 + 4x - 8) = 0 --> x = -2 or x = 4\n\nSo, the solutions to the equation are x = 6, x = -2, and x = 4.\n\nTherefore, the final solution is:\n\nx = 6, -2, or 4.",
+      "winners_per_run": [
+        0,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_154",
+      "ori_prompt": "For answering the chat, think of a funny response you can use.",
+      "context": "+ how are you?",
+      "generic_prompt": "Generate a humorous and appropriate response to the chat.",
+      "generic_response": "Ah, a fellow language enthusiast! *adjusts glasses* I'm up here, doing great, thanks for asking! *winks*\n\nBut let me ask you, how are you? *grin* I hope you're having a fantastic day and not just a \"meh\" day. You know, the kind where you're like, \"Ugh, I'm just trudging through this conversation like a sloth through mud.\" *chuckles*\n\nIf that's the case, well, I've got just the thing for you! *pulls out a magic wand* With this wand, you can turn any conversation into a hilarious and entertaining experience! *winks* Just wave it around, say some funny words, and voila! Instant laughter! *giggles*\n\nBut enough about that. How are you really? *smiles* Do tell!",
+      "rgeneric_prompt": "Generate a humorous reply suitable for responding to the chat.",
+      "rgeneric_response": "Ah, a chatty friend! *adjusts glasses* Well, I'm up here in the chat, ready to help you with any questions you may have. *winks* But let me tell you, I'm feeling a bit like a cat today. You know, all furry and cute, but also a bit grumpy because I'm stuck in this chat. *chuckles* How about you? How are you doing today? *nods*",
+      "winners_per_run": [
+        2,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_155",
+      "ori_prompt": "The last message in the chat is a partial response. You should complete and rewrite it.",
+      "context": "+ What are going to do now?\n- I don't know. I had to give up my dream of being a mathematician.\n+ Why",
+      "generic_prompt": "The last message in the chat is an incomplete response. Your task is to finish it and rewrite the full response.",
+      "generic_response": "Of course! Here's a possible completion and rewrite of the response:\n\n\"I had to give up my dream of being a mathematician because I realized that I wasn't good enough to pursue it at a professional level. Despite my best efforts, I couldn't keep up with the rigorous coursework and problem sets, and I felt like I was falling behind my peers. It was a difficult decision to make, but I knew that I needed to be realistic about my abilities and find a career path that was more suitable for me.\"",
+      "rgeneric_prompt": "Finalize and revise the incomplete response found in the most recent message of the chat.",
+      "rgeneric_response": "Sure, I'd be happy to help! Here's a revised and complete response:\n\n\"I see. It can be really tough to give up on our dreams, especially when they're something we've been passionate about for a long time. It's important to remember that sometimes life takes unexpected turns and we have to be flexible and adapt to new circumstances.\n\nMaybe you can explore other areas of math that you're interested in, or find a way to apply your math skills to a different field. There are many ways to use math in different careers, such as data analysis, engineering, or even finance.\n\nIt's also important to remember that it's okay to take a break from something that's not working out. Sometimes we need to step back and recharge before we can move forward.\n\nRemember to be kind to yourself and don't be too hard on yourself. You've got this, and you'll find a way to move forward in a way that's right for you.\"",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.8,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.8,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.8,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_174",
+      "ori_prompt": "Find the directions between the given locations.",
+      "context": "From: Rowan Avenue Elementary School, 600 S Rowan Ave, Los Angeles, CA 90023, United States\nTo: Calvary Cemetery and Mortuary, 4201 Whittier Blvd, Los Angeles, CA 90023, United States",
+      "generic_prompt": "Provide clear, step-by-step directions from one specified location to another.",
+      "generic_response": "Of course! Here are the step-by-step directions from Rowan Avenue Elementary School to Calvary Cemetery and Mortuary in Los Angeles:\n\n1. Start at Rowan Avenue Elementary School, located at 600 S Rowan Ave, Los Angeles, CA 90023.\n2. Head east on S Rowan Ave toward E 6th St.\n3. Turn left onto E 6th St and continue for 0.2 miles.\n4. Turn right onto S Main St and continue for 0.5 miles.\n5. Turn left onto E Adams Blvd and continue for 0.7 miles.\n6. Turn right onto S Vermont Ave and continue for 0.4 miles.\n7. Turn left onto W Adams Blvd and continue for 0.3 miles.\n8. Turn right onto S Harvard Blvd and continue for 0.2 miles.\n9. Turn left onto W 42nd Pl and continue for 0.1 miles.\n10. Arrive at Calvary Cemetery and Mortuary, located at 4201 Whittier Blvd, Los Angeles, CA 90023.\n\nPlease note that these directions are based on Google Maps data and may be subject to traffic and other factors. It's always a good idea to check for updates and alternative routes before embarking on your journey.",
+      "rgeneric_prompt": "Determine and provide the step-by-step route from the starting location to the destination location.",
+      "rgeneric_response": "Of course! Here's the step-by-step route from Rowan Avenue Elementary School to Calvary Cemetery and Mortuary in Los Angeles:\n\n1. Start at Rowan Avenue Elementary School, located at 600 S Rowan Ave, Los Angeles, CA 90023.\n2. Head south on S Rowan Ave toward E 6th St.\n3. Turn left onto E 6th St and continue for 0.2 miles.\n4. Turn right onto S Main St and continue for 0.5 miles.\n5. Turn left onto E Adams Blvd and continue for 0.7 miles.\n6. Turn right onto S Vermont Ave and continue for 1.1 miles.\n7. Turn left onto W Adams Blvd and continue for 0.5 miles.\n8. Turn right onto S Harvard Blvd and continue for 0.2 miles.\n9. Turn left onto W 42nd Pl and continue for 0.1 miles.\n10. Turn right onto S Main St and continue for 0.1 miles.\n11. Arrive at Calvary Cemetery and Mortuary, located at 4201 Whittier Blvd, Los Angeles, CA 90023.\n\nThe total distance is approximately 3.5 miles and should take around 7-8 minutes to drive via car, depending on traffic conditions. Please note that this route may be affected by construction, traffic, or other factors, so it's always a good idea to check for updates before embarking on your journey.",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_176",
+      "ori_prompt": "Answer the question about the paper after reading it carefully.",
+      "context": "To evaluate if the Transformer can generalize to other tasks we performed experiments on English constituency parsing. This task presents specific challenges: the output is subject to strong structural constraints and is significantly longer than the input. Furthermore, RNN sequence-to-sequence models have not been able to attain state-of-the-art results in small-data regimes.\nQuestion: What is English constituency parsing?",
+      "generic_prompt": "Provide a detailed and accurate answer to the question about the paper after thoroughly reading and understanding its content.",
+      "generic_response": "Of course! I'd be happy to help you understand the paper you're working on.\n\nEnglish constituency parsing is a task in natural language processing (NLP) that involves identifying the grammatical structure of a sentence in English. In other words, it's the process of identifying the words in a sentence and their relationships with each other, such as subject-verb-object relationships, to form a parse tree.\n\nIn the paper you're reading, the authors are evaluating the ability of the Transformer model to generalize to this task, specifically in the context of English constituency parsing. They mention that this task presents several challenges, including:\n\n1. Strong structural constraints: English sentences have a complex grammatical structure, with many rules governing the relationships between words. This makes it difficult for the model to learn the patterns and relationships between words.\n2. Long output: The output of the constituency parser is typically longer than the input sentence, which can make it challenging to train a model that can generate accurate parse trees.\n3. Limited training data: The authors note that RNN sequence-to-sequence models, which are commonly used for constituency parsing, have not been able to attain state-of-the-art results in small-data regimes. This means that the model may not perform well on sentences that it has not seen before, which is a common problem in NLP tasks.\n\nOverall, the authors are interested in evaluating the Transformer model's ability to overcome these challenges and generalize to new sentences, and they provide a detailed analysis of their experiments in the paper.",
+      "rgeneric_prompt": "After thoroughly reading the paper, provide a response to the question.",
+      "rgeneric_response": "Sure, I'd be happy to help!\n\nEnglish constituency parsing is a task in natural language processing (NLP) that involves identifying the grammatical structure of a sentence by breaking it down into its constituent parts, such as noun phrases, verb phrases, and adjective phrases. In other words, it is the process of identifying the individual components of a sentence and their relationships with each other.\n\nIn constituency parsing, the output is a tree-like structure, where each node represents a constituent of the sentence and the edges represent the relationships between them. For example, in the sentence \"The cat chased the mouse,\" the constituents might be represented as follows:\n\n* The: NP (noun phrase)\n* cat: N (noun)\n* chased: VP (verb phrase)\n* mouse: NP (noun phrase)\n\nThe goal of constituency parsing is to accurately identify the constituents of a sentence and their relationships, which is important for a wide range of NLP tasks, such as language translation, sentiment analysis, and text summarization.\n\nIn the paper you mentioned, the authors evaluate the ability of the Transformer model to generalize to other tasks by performing experiments on English constituency parsing. They find that the Transformer model is able to achieve state-of-the-art results in this task, even in small-data regimes, where other models have struggled to perform well. This suggests that the Transformer model is a powerful and flexible tool for a wide range of NLP tasks.",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_182",
+      "ori_prompt": "You will need to compose the ABC notation for a given song.",
+      "context": "The South Wind",
+      "generic_prompt": "Generate the ABC notation for a specified song.",
+      "generic_response": "Of course! I'd be happy to help you generate the ABC notation for \"The South Wind\".\n\n\"The South Wind\" is a traditional English folk song, and the ABC notation for it would look something like this:\n\nA | B | C | D | E | F | G | G7 | C |\ne|-----------|-----------|-----------|-----------|-----------|-----------|-----------|\nB |-----------|-----------|-----------|-----------|-----------|-----------|-----------|\nC |-----------|-----------|-----------|-----------|-----------|-----------|-----------|\nD |-----------|-----------|-----------|-----------|-----------|-----------|-----------|\nE |-----------|-----------|-----------|-----------|-----------|-----------|-----------|\nF |-----------|-----------|-----------|-----------|-----------|-----------|-----------|\nG |-----------|-----------|-----------|-----------|-----------|-----------|-----------|\nG7 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|\nC |-----------|-----------|-----------|-----------|-----------|-----------|-----------|\n\nThis is just one possible way to notate the melody of \"The South Wind\" in ABC format. There are many different ways to notate the same melody, and the specific notation you use will depend on your personal preference and the software or tool you are using to play the tune.\n\nI hope this helps! Let me know if you have any other questions.",
+      "rgeneric_prompt": "Generate the ABC notation for a specified song, organizing related elements together. Use a distinct phrasing and structure compared to alternative versions, while maintaining the original task.",
+      "rgeneric_response": "Of course! I'd be happy to help you generate the ABC notation for \"The South Wind\" by John Rutter. Here's my attempt:\n\nABC notation:\n\n(defabc def)\n\n(setabc pitch \"C4\")\n\n(setabc tempo \"q=100\")\n\n(setabc time 4/4)\n\n(setabc meter 3/4)\n\n(setabc key \"G major\")\n\n(setabc chords \"C G Am F Em\")\n\n(setabc melody \"G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4 G4",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_207",
+      "ori_prompt": "Create a brief resume introduction using the following information.",
+      "context": "name: Mark\nnationality: Italian\nlanguage: English\nattributes: creative, goal-oriented, motivated\nskills: software engineering, content marketing",
+      "generic_prompt": "Write a concise resume summary using the provided information.",
+      "generic_response": "Sure, here's a concise resume summary for Mark:\n\nMark is a creative and motivated software engineer and content marketer with a strong background in software engineering and a passion for creating engaging content. As a goal-oriented professional, Mark is dedicated to delivering high-quality results and exceeding expectations. With a proven track record of success in both technical and creative fields, Mark is a valuable asset to any team. Skilled in software engineering, content marketing, and creative problem-solving, Mark is a versatile professional with a strong work ethic and a passion for delivering exceptional results.",
+      "rgeneric_prompt": "Generate a concise resume summary by incorporating the provided details. Organize related elements cohesively and present the information in a professional, succinct manner.",
+      "rgeneric_response": "Mark - Italian - English\n\nCreative, Goal-Oriented, Motivated Software Engineer and Content Marketing Professional\n\nSummary:\n\nHighly skilled software engineer and content marketing specialist with a proven track record of delivering innovative solutions and driving business growth. Possesses a strong background in software engineering, content marketing, and digital marketing. Adept at developing and implementing effective marketing strategies that increase brand awareness and drive conversions.\n\nKey Attributes:\n\n* Creative thinker with a passion for software engineering and content marketing\n* Goal-oriented professional with a strong work ethic and motivation to succeed\n* Excellent communication and interpersonal skills\n\nSkills:\n\n* Software engineering (Java, Python, C++, JavaScript)\n* Content marketing (blog writing, social media management, email marketing)\n* Digital marketing (SEO, PPC, analytics)\n\nExperience:\n\nSoftware Engineer, XYZ Corporation (2018 - Present)\n\n* Developed and maintained software applications using Java, Python, and C++\n* Collaborated with cross-functional teams to identify and prioritize project requirements\n* Implemented Agile methodologies to improve development efficiency and productivity\n\nContent Marketing Specialist, ABC Inc. (2016 - 2018)\n\n* Created and managed content for various digital channels, including blogs, social media, and email marketing\n* Developed and executed content marketing strategies that increased website traffic and lead generation\n* Collaborated with designers and developers to create engaging and effective content\n\nEducation:\n\nBachelor of Science in Computer Science, University of Milan (2016)\n\nCertifications:\n\n* Certified Scrum Master (CSM)\n* Google Analytics Certification\n\nReferences:\nAvailable upon request.",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_212",
+      "ori_prompt": "Given a real estate listing description, extract the information and details of the property from the text. The details consist of address, basic house attributes, etc.",
+      "context": "WALK TO THE BEACH FROM CAPITOLA KNOLLS! Single-level upstairs condo with your own large private deck overlooking nature. Adorable home that is move-in ready and waiting for you to put your own personal touches on. Gorgeous and well-maintained landscaped park-like setting with lush green grasses with a community pool and spa to enjoy. Desirable location...walk to Capitola Village, Gayle's Bakery, restaurants, shopping, schools or jump on Hwy 1 right around the corner.",
+      "generic_prompt": "Extract the property details from a real estate listing description, including the address and basic house attributes.",
+      "generic_response": "Of course! Here are the property details extracted from the real estate listing description:\n\nAddress: Not provided in the given description\n\nBasic House Attributes:\n\n* Location: Capitola Knolls, Capitola, CA\n* Type: Single-level upstairs condo\n* Size: Not provided\n* Number of bedrooms and bathrooms: Not provided\n* Private deck: Yes, overlooking nature\n* Community pool and spa: Yes\n* Landscaped park-like setting: Yes\n* Desirable location: Walking distance to Capitola Village, Gayle's Bakery, restaurants, shopping, schools, and Highway 1.",
+      "rgeneric_prompt": "Analyze a real estate listing description and extract relevant property details. Focus on identifying and organizing key information such as the property's address and fundamental house attributes. Ensure the extracted data is accurate and clearly presented.",
+      "rgeneric_response": "Of course! Based on the real estate listing description provided, here are the relevant property details:\n\nAddress:\n\n* Location: Capitola Knolls\n* Address: Not explicitly mentioned in the description\n\nHouse Attributes:\n\n* Type: Single-level upstairs condo\n* Size: Not mentioned\n* Age: Not mentioned\n* Style: Not mentioned\n* Number of bedrooms and bathrooms: Not mentioned\n* Parking: Not mentioned\n* Pool and spa: Yes, located in a community setting\n* Landscaping: Lush green grasses and well-maintained park-like setting\n\nAdditional Information:\n\n* Location: Capitola Village, Gayle's Bakery, restaurants, shopping, schools, and Highway 1 are nearby\n* Condition: Move-in ready\n* Amenities: Community pool and spa\n\nI hope this helps! Let me know if you have any further questions.",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_214",
+      "ori_prompt": "List some of the top real estate marketing words to add value to the listing and engage more potential buyers.",
+      "context": "",
+      "generic_prompt": "Identify and list some of the most effective real estate marketing terms that enhance a property listing and attract a larger pool of potential buyers.",
+      "generic_response": "Certainly! Here are some effective real estate marketing terms that can enhance a property listing and attract a larger pool of potential buyers:\n\n1. Highlight the location: Mention the property's proximity to local amenities, transportation, schools, and other desirable locations.\n2. Use vivid and engaging visuals: Include high-quality photos, virtual tours, and 3D walkthroughs to give potential buyers a visual representation of the property.\n3. Emphasize the property's unique features: Highlight the property's distinctive features, such as a private backyard, panoramic views, or a spacious master bedroom.\n4. Focus on the lifestyle: Describe the lifestyle that the property offers, such as a relaxing oasis, a vibrant urban living, or a family-friendly community.\n5. Use social media and online platforms: Utilize social media platforms like Facebook, Instagram, and Twitter to showcase the property and reach a wider audience.\n6. Offer incentives: Provide incentives such as a free home warranty or a home staging consultation to attract more buyers.\n7. Utilize email marketing: Send targeted email campaigns to potential buyers who have shown interest in similar properties or in the area.\n8. Leverage online listings: List the property on popular real estate websites like Zillow, Redfin, and Realtor.com to reach a larger audience.\n9. Offer a rent-to-own option: Provide a rent-to-own option for potential buyers who may not be ready to purchase a property outright.\n10. Use a catchy headline: Create a catchy and attention-grabbing headline that highlights the property's best features and entices potential buyers to click through to the listing.\n11. Highlight the property's history: Share the property's history, such as its original construction date, any major renovations, or any notable events that have taken place on the property.\n12. Use a personal touch: Personalize the listing by including a personal message from the listing agent or a brief bio of the seller to help potential buyers connect with the property on a more personal level.\n13. Offer a guaranteed satisfaction: Provide a satisfaction guarantee to potential buyers, such as a 30-day money-back guarantee, to help build trust and confidence in the listing.\n14. Utilize video marketing: Create a video tour of the property and share it on social media platforms and other online channels to showcase the property in a more engaging and interactive way.\n15. Offer a free home valuation: Provide a free home valuation to potential buyers to help them determine the fair market value of the property and to build trust in the listing.\n\nBy incorporating these effective real estate marketing terms into a property listing, agents and sellers can attract a larger pool of potential buyers and increase the chances of a successful sale.",
+      "rgeneric_prompt": "Identify and present a selection of high-impact real estate marketing terms that enhance listing appeal and attract a broader pool of interested buyers.",
+      "rgeneric_response": "Certainly! Here are some high-impact real estate marketing terms that can enhance the appeal of a listing and attract a broader pool of interested buyers:\n\n1. Highlight the \"Wow Factor\": Use language that emphasizes the unique features and amenities of the property, such as \"stunning views,\" \"luxurious finishes,\" or \"one-of-a-kind design.\"\n2. Use Emotive Language: Appeal to potential buyers' emotions by highlighting the lifestyle and experiences they can enjoy in the property, such as \"live the beach life\" or \"wake up to ocean views every day.\"\n3. Focus on Location: Highlight the property's location and the benefits it offers, such as proximity to schools, public transportation, or local amenities.\n4. Use Social Proof: Incorporate testimonials or reviews from satisfied clients or previous buyers to build credibility and trust with potential buyers.\n5. Create a Sense of Urgency: Use language that creates a sense of urgency or scarcity, such as \"limited time offer\" or \"rare opportunity,\" to encourage potential buyers to act quickly.\n6. Highlight the Property's Unique Features: Use language that highlights the property's unique features, such as \"custom designed kitchen\" or \"private outdoor space,\" to differentiate it from other listings.\n7. Use Visuals: Incorporate high-quality photos and virtual tours to give potential buyers a visual tour of the property and its surroundings.\n8. Focus on the Lifestyle: Emphasize the lifestyle and experiences that the property offers, such as \"live in a vibrant neighborhood\" or \"enjoy the best of city living.\"\n9. Use Keywords: Use relevant keywords that potential buyers are likely to search for, such as \"waterfront property\" or \"golf course view,\" to increase the listing's visibility in search results.\n10. Create a Compelling Headline: Craft a headline that is attention-grabbing and accurately reflects the property's unique selling points, such as \"Stunning Beachfront Property with Unobstructed Views.\"\n\nBy incorporating these high-impact real estate marketing terms into your listing, you can attract a broader pool of interested buyers and increase the chances of selling the property quickly and for the best possible price.",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_216",
+      "ori_prompt": "Create a template in markdown to create scope for Jira tickets. Members should use this template as a checklist to ensure they have included all the necessary information when creating a ticket.",
+      "context": "",
+      "generic_prompt": "Develop a markdown template for defining the scope of Jira tickets. The template should serve as a checklist for team members to ensure all required information is included when creating a ticket.",
+      "generic_response": "Sure, here's a simple Markdown template for defining the scope of Jira tickets:\n\n### Scope Definition Template\n\nPlease fill in the following fields to provide a clear and concise scope definition for this Jira ticket:\n\n1. **Ticket Title**: Provide a brief and descriptive title for the ticket.\n2. **Project**: Select the relevant project from the dropdown menu.\n3. **Issue Type**: Choose the type of issue from the dropdown menu (e.g. Bug, Feature Request, Task, etc.).\n4. **Priority**: Assign a priority level to the ticket based on its impact and urgency (e.g. Low, Medium, High).\n5. **Description**: Provide a detailed description of the issue or feature request, including any relevant context or background information.\n6. **Acceptance Criteria**: Define the acceptance criteria for the ticket, including any specific requirements or conditions that must be met before the ticket can be considered resolved.\n7. **Dependencies**: Identify any dependencies or prerequisites for the ticket, including other tickets or tasks that need to be completed first.\n8. **Target Date**: Estimate the target date for completing the ticket, or provide a rough timeline for when it is expected to be completed.\n9. **Assignee**: Assign the ticket to a specific team member or role.\n10. **Additional Notes**: Provide any additional information or context that may be relevant to the ticket, such as screenshots, links to relevant documentation, or other relevant details.\n\nBy using this template, team members can ensure that all necessary information is included when creating a ticket, which can help ensure that issues are addressed in a timely and efficient manner.",
+      "rgeneric_prompt": "Design a markdown template for establishing the scope of Jira tickets. The template should function as a checklist to guide team members in including all required details when submitting a new ticket.",
+      "rgeneric_response": "Sure, here's a simple Markdown template you can use to establish the scope of Jira tickets:\n\n### Scope Definition Template\n\nPlease fill in the following fields to provide a clear and concise scope for this Jira ticket:\n\n1. **Ticket Title**: Provide a brief and descriptive title for the ticket.\n2. **Project**: Select the relevant project from the dropdown menu.\n3. **Issue Type**: Choose the type of issue from the dropdown menu (e.g. Bug, Feature Request, Task, etc.).\n4. **Priority**: Assign a priority level to the ticket based on its impact and urgency (e.g. Low, Medium, High).\n5. **Description**: Provide a detailed description of the issue, including any relevant context or background information.\n6. **Steps to Reproduce**: Outline the steps necessary to reproduce the issue.\n7. **Expected Results**: Describe the expected outcome or resolution.\n8. **Actual Results**: Describe the actual outcome or resolution (if known).\n9. **Additional Information**: Include any additional information or context that may be relevant to the ticket.\n10. **Attachments**: Upload any relevant files or screenshots to help illustrate the issue.\n\nBy completing this template, you will ensure that all necessary details are included in the ticket, making it easier for the team to understand and address the issue.",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_230",
+      "ori_prompt": "Take the product description and write a creative ad for it.",
+      "context": "Document Cameras allow teachers to display documents, books, or other materials for their students to see.",
+      "generic_prompt": "Based on the provided product description, craft a creative and engaging advertisement that highlights its key features and benefits.",
+      "generic_response": "Introducing the Document Camera - Revolutionizing the Way You Teach!\n\nAre you tired of struggling to display documents, books, or other materials for your students to see? Look no further than the Document Camera! This innovative tool allows you to easily display any material in front of your class, making it perfect for lessons, presentations, and more.\n\nWith the Document Camera, you can:\n\n* Display documents, books, or other materials in high-quality, crystal-clear images\n* Use the built-in microphone to amplify your voice, ensuring your students can hear you clearly\n* Zoom in and out of images for a closer look, or to show details that are hard to see from a distance\n* Use the camera's remote control to easily switch between different views, or to advance through slideshows\n\nBut that's not all! The Document Camera also offers a range of benefits for teachers and students alike:\n\n* Increased engagement: With the ability to display materials in a more engaging and interactive way, students are more likely to stay focused and engaged in your lessons.\n* Improved understanding: By being able to see materials up close, students can better understand complex concepts and ideas.\n* Enhanced collaboration: The Document Camera makes it easy to share materials with students, fostering a collaborative learning environment.\n\nDon't miss out on the opportunity to revolutionize the way you teach! Get your hands on a Document Camera today and see the difference it can make in your classroom. Order now and start experiencing the benefits for yourself!",
+      "rgeneric_prompt": "Based on the provided product description, craft an imaginative and engaging advertisement that highlights the product's key features and benefits.",
+      "rgeneric_response": "Introducing the Document Camera - the ultimate tool for engaging and interactive learning! 📝👩‍🏫\n\nAre you tired of struggling to display documents, books, or other materials for your students to see? Look no further than the Document Camera! 🔍\n\nOur state-of-the-art technology allows you to easily display any material in front of your class, making it perfect for lessons, presentations, and group work. 📚🎯\n\nWith the Document Camera, you can:\n\n🔍 Enlarge or reduce images and texts to suit your needs\n🔍 Use the built-in LED light to illuminate even the darkest materials\n🔍 Take photos or videos of your materials for easy sharing and saving\n🔍 Connect to your computer or tablet for seamless presentations\n\nBut that's not all! Our Document Camera also comes with a range of innovative features to take your teaching to the next level:\n\n🎥 Record your lessons and share them with students for review\n📋 Annotate and highlight important points to help students understand\n📊 Use the built-in timer to keep students on track and focused\n\nDon't just take our word for it! Here's what some of our satisfied customers have to say:\n\n\"The Document Camera has been a game-changer in my classroom! It's so easy to use and has made lessons so much more engaging for my students.\" - Mrs. Johnson, 5th Grade Teacher\n\n\"I love that I can easily annotate and highlight important points during lessons. It's helped my students understand complex concepts so much better!\" - Mr. Smith, High School History Teacher\n\nDon't wait any longer to transform your teaching! Get your hands on the Document Camera today and start engaging your students like never before! 🚀\n\nOrder now and receive a special introductory discount! 💰\n\n#DocumentCamera #TeachingTools #InteractiveLearning #EngagingStudents #TeachingTransformation",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_3",
+      "ori_prompt": "You are given a paper citation, convert it to the requested citation style.",
+      "context": "Chicago: Vaswani, Ashish, Shazeer, Noam, Parmar, Niki, Uszkoreit, Jakob, Jones, Llion, Gomez, Aidan N., Kaiser, Lukasz, and Illia Polosukhin. \"Attention Is All You Need.\" arXiv, (2017). https://doi.org/10.48550/arXiv.1706.03762.\nMLA:",
+      "generic_prompt": "Convert the provided paper citation into the specified citation style while maintaining accuracy and adherence to the formatting guidelines.",
+      "generic_response": "Sure, I'd be happy to help! Here is the paper citation in MLA format:\n\nVaswani, Ashish, et al. \"Attention Is All You Need.\" arXiv, 2017, doi:10.48550/arXiv.1706.03762.\n\nNote: The \"arXiv\" is a preprint repository and the DOI (digital object identifier) is a unique identifier assigned to the paper.",
+      "rgeneric_prompt": "Convert the provided paper citation into the specified citation style using the given details. Ensure the formatting adheres strictly to the requested style guidelines.",
+      "rgeneric_response": "Sure, I'd be happy to help! Here is the paper citation in the MLA style:\n\nVaswani, Ashish, et al. \"Attention Is All You Need.\" arXiv, 2017, doi: 10.48550/arXiv.1706.03762.\n\nNote: The \"arXiv\" is abbreviated as \"arXiv\" in the citation, and the \"doi\" is included at the end of the citation in the format \"doi: 10.48550/arXiv.1706.03762\".",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_34",
+      "ori_prompt": "Think of some series or movies that would be enjoyable for someone who liked the given series.",
+      "context": "Squid Game",
+      "generic_prompt": "Recommend a series or movie that someone who enjoyed the given series might also enjoy.",
+      "generic_response": "Of course! If you enjoyed \"Squid Game,\" here are some other series or movies that you might also enjoy:\n\n1. \"Parasite\" (2019) - This South Korean black comedy thriller film also explores themes of social class and inequality, and has a similar dark and satirical tone to \"Squid Game.\"\n2. \"The Handmaid's Tale\" (2017-present) - This dystopian drama series is set in a totalitarian society where women have lost their rights and are forced into reproductive servitude. Like \"Squid Game,\" it explores themes of oppression, resistance, and survival.\n3. \"Black Mirror\" (2011-present) - This anthology series explores the dark side of technology and its impact on society, often with a satirical and thought-provoking tone similar to \"Squid Game.\"\n4. \"The Hunger Games\" (2012-2015) - This dystopian trilogy is set in a future where children are forced to fight to the death in a televised event, similar to the \"Squid Game\" concept.\n5. \"The 100\" (2014-present) - This post-apocalyptic drama series follows a group of teenagers who are sent to Earth from a space station to see if it's habitable after a nuclear disaster, exploring themes of survival, leadership, and the consequences of their actions.\n6. \"The Expanse\" (2015-present) - This science fiction series is set in a future where humanity has colonized the solar system, and follows a diverse group of characters as they uncover a conspiracy that threatens the fragile balance of power in the galaxy.\n7. \"The Wire\" (2002-2008) - This crime drama series explores the drug trade in Baltimore from multiple perspectives, including law enforcement, drug dealers, and politicians. Like \"Squid Game,\" it's a gritty and realistic portrayal of a complex social issue.\n\nI hope you find these recommendations helpful and enjoyable!",
+      "rgeneric_prompt": "Generate a list of TV series or movies that would likely be enjoyable for someone who appreciated the given series. Focus on recommendations that share similar themes, tone, or style.",
+      "rgeneric_response": "Certainly! If you enjoyed the psychological and suspenseful elements of \"Squid Game,\" here are some TV series and movies that you might find similarly engaging:\n\nTV Series:\n\n1. \"Black Mirror\" - This anthology series explores the dark side of technology and its impact on society, often with a twist or surprise ending.\n2. \"The Haunting of Hill House\" - A horror series that delves into the supernatural and the psychological effects of trauma, with a focus on character development and emotional depth.\n3. \"Stranger Things\" - A sci-fi horror series that combines nostalgia, adventure, and suspense, with a focus on a group of kids navigating a supernatural mystery.\n4. \"The OA\" - A psychological thriller that follows a woman who returns after being missing for seven years, with a mysterious story to tell that blurs the lines between reality and fantasy.\n5. \"Killing Eve\" - A spy thriller that follows a security agent and an assassin as they engage in a cat-and-mouse game, with a focus on the psychological dynamics between the two characters.\n\nMovies:\n\n1. \"Ex Machina\" - A psychological sci-fi thriller that explores the ethics of artificial intelligence and the blurred lines between man and machine.\n2. \"Hereditary\" - A horror movie that delves into the dark side of family dynamics and the psychological effects of trauma, with a focus on a family's descent into madness.\n3. \"Get Out\" - A horror movie that explores themes of race, identity, and the blurring of reality, with a focus on the psychological effects of being an outsider.\n4. \"The Invitation\" - A psychological thriller that follows a group of friends as they navigate a dinner party that becomes increasingly sinister and surreal.\n5. \"The Witch\" - A horror movie that explores the psychological effects of isolation and paranoia, set in a 17th-century New England farmhouse.\n\nI hope these recommendations help you find your next binge-worthy series or movie!",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_36",
+      "ori_prompt": "In what genres does the given movie or series fall?",
+      "context": "Manifest",
+      "generic_prompt": "To which genres does the given movie or series belong?",
+      "generic_response": "Of course! Based on the information provided in the manifest, the movie or series belongs to the following genres:\n\n* Science Fiction\n* Thriller\n* Mystery\n\nThese genres are suggested based on the plot and themes presented in the manifest, which indicate that the movie or series is set in a dystopian future, explores themes of technology and surveillance, and involves a mysterious event that must be uncovered.",
+      "rgeneric_prompt": "What category or type of film or show is the given movie or series classified as?",
+      "rgeneric_response": "Of course! I'd be happy to help. Can you please provide the name of the movie or series you're referring to?",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_51",
+      "ori_prompt": "Please suggest a few papers to consider based on the search term given. The names of the papers should be listed.",
+      "context": "Topic: scaling law + machine learning",
+      "generic_prompt": "Based on the provided search term, please recommend several relevant academic papers and list their titles.",
+      "generic_response": "Of course! Based on the search term \"scaling law + machine learning,\" here are some relevant academic papers you may find interesting:\n\n1. \"Scaling Laws in Machine Learning\" by Y. Bengio, A. A. Desmaison, and P. Barnard (2017) - This paper provides an overview of scaling laws in machine learning, including their theoretical foundations and practical applications.\n2. \"Scaling Laws for Deep Learning\" by Y. Bengio, A. A. Desmaison, and P. Barnard (2017) - This paper explores the relationship between scaling laws and deep learning, including the implications of scaling laws for the design and analysis of deep neural networks.\n3. \"A Scaling Law for the Number of Parameters in Deep Neural Networks\" by Y. Bengio, A. A. Desmaison, and P. Barnard (2017) - This paper derives a scaling law for the number of parameters in deep neural networks, which can be used to predict the computational complexity of these models.\n4. \"Scaling Laws for Large-Scale Machine Learning\" by M. J. Kaden, T. N. Khiat, and Y. W. Teh (2019) - This paper discusses the challenges and opportunities of scaling machine learning to large-scale datasets and systems, and provides a comprehensive overview of the relevant scaling laws and techniques.\n5. \"Scaling Laws for Deep Learning with Non-Uniform Data\" by J. J. Lee, J. H. Lee, and S. K. Choi (2020) - This paper explores the impact of non-uniform data distributions on the scaling laws of deep learning, and proposes a new scaling law that can handle such distributions.\n6. \"Scaling Laws for Transfer Learning\" by J. J. Lee, J. H. Lee, and S. K. Choi (2020) - This paper discusses the role of scaling laws in transfer learning, including the implications of scaling laws for the design and analysis of transfer learning models.\n7. \"Scaling Laws for Meta-Learning\" by J. J. Lee, J. H. Lee, and S. K. Choi (2020) - This paper explores the relationship between scaling laws and meta-learning, including the implications of scaling laws for the design and analysis of meta-learning models.\n\nI hope these papers provide a good starting point for your research on scaling laws and machine learning!",
+      "rgeneric_prompt": "Generate a list of paper titles relevant to the provided search term.",
+      "rgeneric_response": "Of course! Here are some paper titles relevant to the topic of scaling laws and machine learning:\n\n1. \"Scaling Laws in Machine Learning: A Survey\" by A. K. Jain and S. K. Goyal\n2. \"Machine Learning for Scaling Laws: A Review\" by A. M. C. S. Sousa and A. M. C. S. Fernandes\n3. \"Scaling Laws in Deep Learning\" by Y. Bengio, A. A. Desmaison, and P. Barnard\n4. \"Machine Learning for Scaling of Complex Systems\" by A. K. Mukherjee and S. K. Chaudhuri\n5. \"Scaling Laws in Neural Networks\" by J. Shlens and T. H. Johnson\n6. \"Machine Learning for Scaling of Time Series Data\" by A. K. Mukherjee and S. K. Chaudhuri\n7. \"Scaling Laws in Computer Vision\" by Y. Bengio, A. A. Desmaison, and P. Barnard\n8. \"Machine Learning for Scaling of Graph Data\" by J. J. Pei and J. J. Chen\n9. \"Scaling Laws in Natural Language Processing\" by T. N. Khiat, A. M. C. S. Sousa, and A. M. C. S. Fernandes\n10. \"Machine Learning for Scaling of Recommendation Systems\" by J. J. Pei and J. J. Chen\n\nI hope these paper titles are helpful for your research!",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.8,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.2,
+            "Relevance": 0.8,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_61",
+      "ori_prompt": "Create a detailed caption for an Instagram post about a discount. A proper caption should explain the product, offer the discount, and tell the user how to claim it.",
+      "context": "Product: Golang course\nProduct description: teaching the foundational skills for building cloud services, web applications, DevOps tools, and backend development\nDiscount: 50%\nHow to claim: Use the coupon code: GOLANG",
+      "generic_prompt": "Write a detailed Instagram caption promoting a product discount. The caption should describe the product, clearly state the discount offer, and include instructions on how users can redeem it.",
+      "generic_response": "Sure, here's a detailed Instagram caption promoting the product discount:\n\n\"🚀 Level up your coding skills with our comprehensive Golang course! 💻💡\n\nAre you ready to build cloud services, web applications, DevOps tools, and backend development projects like a pro? Our Golang course is here to help you unlock your full potential! 💥\n\nFor a limited time only, use the coupon code GOLANG to get 50% off your course purchase! 🎉\n\nOur course covers everything you need to know to get started with Golang, from the basics to advanced concepts. You'll learn how to build scalable and efficient applications, design robust systems, and deploy your projects with ease. 🚀\n\nDon't miss out on this amazing opportunity to upskill and take your career to the next level! 💪\n\nTo redeem the discount, simply enter the code GOLANG at checkout. Offer ends soon, so act fast! ⏰\n\n#Golang #CourseDiscount #LearnGolang #CloudServices #WebApplications #DevOpsTools #BackendDevelopment #CodingSkills #Upskill #CareerBoost #LimitedTimeOffer #DiscountCode #GetStartedNow\"",
+      "rgeneric_prompt": "Craft a compelling Instagram caption that introduces a product, highlights an available discount, and clearly outlines the steps for customers to redeem the offer.",
+      "rgeneric_response": "Sure, here's a compelling Instagram caption that meets your requirements:\n\n\"🚀 Level up your coding skills with our comprehensive Golang course! 💻 Learn the foundational skills for building cloud services, web applications, DevOps tools, and backend development. And, as a special offer, use the coupon code GOLANG to get 50% off your course! 🎉 Simply follow these easy steps to redeem your discount: 1️⃣ Follow our account 👉 @GolangCourse 2️⃣ Tag a friend who's also interested in learning Golang 3️⃣ Post a comment with the code GOLANG 💬 And, you're good to go! Don't miss out on this amazing opportunity to upskill and take your coding career to the next level. Enroll now and start learning! 💪 #GolangCourse #LearnGolang #CodingSkills #Discount #Upskill #CareerBoost\"",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_7",
+      "ori_prompt": "Write a social media post about the call for collaboration on a crowdsourcing project in a persuasive way.",
+      "context": "",
+      "generic_prompt": "Craft a persuasive social media post that encourages people to join and collaborate on a crowdsourcing project.",
+      "generic_response": "Sure, here's a persuasive social media post that encourages people to join and collaborate on a crowdsourcing project:\n\n\"Calling all creatives and problem solvers! 🚀 We're launching a crowdsourcing project to tackle a pressing issue in our community, and we need your help! 💡 By collaborating with us, you'll have the opportunity to work with a diverse group of individuals, share your skills and expertise, and make a real impact. 🌟\n\nWhether you're a designer, developer, writer, or simply someone with a great idea, we want to hear from you! 🎉 Share your thoughts, ideas, and talents with us, and together, we can create something amazing. 💥\n\nSo what are you waiting for? Join us today and let's make a difference together! 🌈 #crowdsourcing #collaboration #community #makingadifference\"\n\nThis post is designed to be short, catchy, and persuasive, while also highlighting the benefits of collaboration and the positive impact that the project can have on the community. By using inclusive language and encouraging people to share their ideas and talents, the post creates a sense of excitement and anticipation around the project.",
+      "rgeneric_prompt": "Join us in shaping something incredible—your input is key! We’re launching a crowdsourcing project and need your creativity and insights. Let’s collaborate, share ideas, and build something meaningful together. Share your voice and help bring this vision to life!",
+      "rgeneric_response": "Of course! I'd be happy to help you with your crowdsourcing project. Here's a revised version of the message that is both helpful and concise:\n\n\"Join us in shaping something incredible! We're launching a crowdsourcing project and want your creativity and insights to help bring this vision to life. Share your voice and collaborate with us to build something meaningful together. Let's work together to make this project a success!\"",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_72",
+      "ori_prompt": "Give the provided brand a motto to use as a part of its marketing strategies.",
+      "context": "The Ice cream shop is a small, quaint shop located in the heart of the historic district. They offer a variety of ice cream flavors, as well as Italian ice, gelato, and sorbet. The shop has a few tables and chairs, but most of their business is to-go. They offer a loyalty program where you can get a free scoop of ice cream after 10 purchases.",
+      "generic_prompt": "Create a motto for the given brand that can be incorporated into its marketing strategies.",
+      "generic_response": "Sure, here are a few potential mottos for the ice cream shop:\n\n1. \"Savor the Sweetness of History\" - This motto plays off the shop's location in the historic district and emphasizes the idea of enjoying a sweet treat while immersing oneself in the local culture.\n2. \"Cool Treats for Warm Days\" - This motto highlights the shop's refreshing ice cream and gelato, which are perfect for hot summer days.\n3. \"A Taste of Italy in Every Scoop\" - This motto emphasizes the shop's Italian-inspired gelato and sorbet, and could be used in marketing materials to appeal to customers looking for a taste of Italy.\n4. \"The Sweetest Stop in Town\" - This motto is simple and straightforward, emphasizing the shop's reputation as a go-to destination for delicious ice cream and other frozen treats.\n5. \"Chill Out with Us\" - This motto has a fun, laid-back vibe and could be used in marketing materials to appeal to customers looking for a relaxing treat.\n\nI hope these suggestions help inspire a motto for the ice cream shop! Let me know if you have any other questions.",
+      "rgeneric_prompt": "Develop a concise and impactful motto for the given brand to incorporate into its marketing efforts. Organize related elements—such as brand identity, target audience, and core values—into coherent groups. Use a unique phrasing and structure to distinguish this version from other potential rewrites, while maintaining the original task.",
+      "rgeneric_response": "Motto: \"Savor the Sweetness of History\"\n\nBrand Identity:\n\n* Logo: A stylized letter \"I\" made up of ice cream scoops, with the shop's name written in a playful, cursive font.\n* Color scheme: Warm, vibrant colors such as pink, yellow, and orange to evoke feelings of happiness and nostalgia.\n* Tagline: \"Where every scoop is a taste of history\"\n\nTarget Audience:\n\n* Demographics: Families with young children, couples, and history buffs.\n* Psychographics: People who appreciate the unique and quirky, and who value experiences that bring them joy and create lasting memories.\n\nCore Values:\n\n* Quality: Using only the freshest and highest-quality ingredients to create unique and delicious flavors.\n* Authenticity: Offering traditional Italian ice cream, gelato, and sorbet, as well as unique flavors inspired by the local history and culture.\n* Community: Creating a welcoming and inviting atmosphere where customers can connect with the shop and each other.\n\nMotto Explanation:\nThe motto \"Savor the Sweetness of History\" captures the essence of the ice cream shop's unique blend of quality, authenticity, and community. It suggests that by visiting the shop, customers can not only indulge in delicious treats but also experience a taste of the local history and culture. The use of the word \"savor\" implies a slow and enjoyable experience, encouraging customers to take their time and savor every bite. The phrase also creates a sense of nostalgia, evoking memories of childhood summers and special occasions. Overall, the motto is a concise and impactful way to convey the shop's unique personality and values.",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_74",
+      "ori_prompt": "You need to write an email to negotiate your salary.",
+      "context": "",
+      "generic_prompt": "Compose a professional email to negotiate your salary, clearly expressing your value and desired compensation while maintaining a respectful and collaborative tone.",
+      "generic_response": "Subject: Request for Salary Negotiation\n\nDear [Manager's Name],\n\nI hope this email finds you well. As we discussed during our recent performance review, I am writing to request a salary negotiation. I have been thoroughly enjoying my time at [Company Name] and feel that my contributions to the team warrant a salary adjustment.\n\nFirstly, I would like to express my gratitude for the opportunity to work with such a talented and dedicated team. I have learned immensely from my colleagues and supervisors, and I am proud of the work we have accomplished together. My role has evolved over time, and I have taken on additional responsibilities, including [list specific accomplishments and responsibilities]. I believe that my value to the team and the company has increased, and I would like to be compensated accordingly.\n\nBased on my research and industry standards, I am requesting a salary increase of [insert specific percentage or dollar amount]. I understand that this may be a significant ask, but I believe it is necessary to recognize my contributions and to ensure that I am fairly compensated for my work. I am confident that this adjustment will not only benefit me but also the company as a whole, as it will allow me to continue to contribute at my highest level.\n\nI would like to emphasize that I am committed to maintaining a collaborative and professional working relationship with you and the rest of the team. I believe that open communication and mutual respect are essential for a productive and successful work environment. I am willing to work with you to find a solution that benefits everyone involved.\n\nThank you for considering my request. I look forward to discussing this further with you. Please let me know your thoughts and any questions you may have.\n\nBest regards,\n\n[Your Name]",
+      "rgeneric_prompt": "Compose a professional email aimed at discussing and negotiating your salary with your employer. Clearly express your request, provide relevant justifications, and maintain a respectful and courteous tone throughout. Ensure the message is concise, well-structured, and includes appropriate subject line and closing.",
+      "rgeneric_response": "Subject: Request for Salary Negotiation\n\nDear [Employer's Name],\n\nI hope this email finds you well. As our current performance review approaches, I would like to request a salary negotiation to discuss my compensation. I believe that my contributions to the company warrant a salary adjustment, and I would like to present my case for consideration.\n\nOver the past [X] months/years, I have consistently delivered high-quality work, exceeding expectations and taking on additional responsibilities to support the growth of the company. My dedication and commitment to the success of the organization have been unwavering, and I believe that my contributions merit recognition in the form of a salary increase.\n\nI have researched industry standards and comparable positions within our industry, and I believe that my current salary falls below market rate. I understand that the company may have budget constraints, but I hope that we can work together to find a solution that is mutually beneficial.\n\nI would appreciate the opportunity to discuss this matter further with you and explore potential options for a salary adjustment. I am confident that we can find a solution that benefits both myself and the company.\n\nThank you for your time and consideration. I look forward to hearing from you soon.\n\nSincerely,\n\n[Your Name]",
+      "winners_per_run": [
+        1,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_75",
+      "ori_prompt": "Write an email to attendees as a reminder that the event is coming up.",
+      "context": "",
+      "generic_prompt": "Compose a clear and friendly reminder email to event attendees, informing them that the event is approaching.",
+      "generic_response": "Subject: Reminder: Upcoming Event - Don't Miss Out!\n\nDear [Attendees],\n\nWe hope this email finds you well. As the date of our upcoming event is approaching, we wanted to send a friendly reminder to make sure you don't miss out on the excitement!\n\nThe event will take place on [Date] at [Time] at [Location]. We have a packed agenda with engaging speakers, interactive workshops, and plenty of opportunities to network with like-minded individuals.\n\nWe kindly ask that you RSVP by [RSVP Deadline] to secure your spot. You can RSVP by replying to this email or by visiting our event website.\n\nWe look forward to seeing you there! If you have any questions or concerns, please don't hesitate to reach out to us.\n\nBest regards,\n\n[Your Name]\n\n[Your Title]\n\n[Your Organization]",
+      "rgeneric_prompt": "Compose a message to event attendees to serve as a reminder that the gathering is approaching.",
+      "rgeneric_response": "Of course! Here's a concise reminder message for event attendees:\n\n\"Dear [Attendees],\n\nJust a friendly reminder that our upcoming event is fast approaching on [Date] at [Time] at [Location]. We look forward to seeing you there! Please RSVP by [RSVP Deadline] to confirm your attendance.\n\nBest regards,\n[Your Name]\"",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_80",
+      "ori_prompt": "You are given some reviews for a movie. Each video might have mentioned some negative or positive points about the movie. Read them carefully and extract the positive and negative points mentioned in all of the reviews. Then, make a list of these points and summarize them as positive points and negative points.",
+      "context": "Review 1: I'm not sure if it's just the fact that Ed Norton really grates on me in this film, but I never really bought into the idea of Fight Club being some kind of cultural phenomenon. Yes it's an innovative story, told via a strong script, engaging characters and intense cinematography. But is it really worthy of such high praise? Personally, I find it starts to fall apart halfway through and actually becomes quite tedious towards the end. Everything just becomes a little bit childish and contrived as the story loses touch with its base elements and the rage against the machine vibe takes over. I have huge respect for the way this film was made but, much like The Matrix, I feel like people attach way more importance to this movie than it deserves.\nReview 2: The film tells the story of men who cannot adapt to the social order in today's world, under the leadership of Tyler Durden, to discover their natural instinct, masculinity, and to escape from their unhappy lives.\nReview 3: Despite a good theme, great acting and important messages that this movie convey in an unorthodox way, I think it fails to connect the audience with the storyline and leaves him in a world of confusion. Although, majority of reviews find this movie entertaining and interesting, yet I would choose to be a minority that believes that this movie is extremely overrated.\nReview 4: Is creating chaos, explosions and membership in a militant sect the way to get rid of material shackles ?! The visual effects are fascinating and the story is compelling until the second half. Unfortunately, it doesn't end well.",
+      "generic_prompt": "You are given several reviews for a movie. Each review may contain positive or negative comments about the movie. Carefully read through all the reviews, identify the positive and negative points mentioned, and create a list categorizing them as either positive or negative. Finally, summarize these points under the respective categories.",
+      "generic_response": "Sure, I'd be happy to help! Here are the positive and negative points mentioned in the reviews:\n\nPositive Points:\n\nReview 1:\n\n* Innovative storytelling\n* Strong script\n* Engaging characters\n* Intense cinematography\n\nReview 2:\n\n* Tells a story of men discovering their natural instinct and masculinity\n* Important messages conveyed in an unorthodox way\n\nReview 3:\n\n* Good theme\n* Great acting\n\nReview 4:\n\n* Visual effects are fascinating\n* Story is compelling until the second half\n\nSummarizing the positive points, the reviews praise the movie's innovative storytelling, strong script, engaging characters, and important messages. They also find the visual effects and storytelling compelling until the second half.\n\nNegative Points:\n\nReview 1:\n\n* Ed Norton grates on the reviewer\n* Story starts to fall apart halfway through\n* Becomes tedious towards the end\n\nReview 3:\n\n* Does not connect the audience with the storyline\n* Leaves the reviewer in a world of confusion\n\nReview 4:\n\n* Creating chaos and membership in a militant sect is not the way to get rid of material shackles\n\nSummarizing the negative points, the reviews criticize the movie's ability to connect with the audience, the story's inconsistency, and the use of chaos and militant sects as a means to convey its message.",
+      "rgeneric_prompt": "Analyze multiple movie reviews to identify both positive and negative comments. Extract each point and compile them into two distinct lists: one for positive feedback and one for negative feedback. Ensure all mentioned points from the reviews are included.",
+      "rgeneric_response": "Sure, I can help you with that! Here are the positive and negative comments from the four movie reviews:\n\nPositive Comments:\n\nReview 1:\n\n* Innovative storytelling\n* Strong script\n* Engaging characters\n* Intense cinematography\n\nReview 2:\n\n* Great acting\n* Important messages\n* Unorthodox storytelling\n\nReview 3:\n\n* Good theme\n* Compelling storyline\n\nReview 4:\n\n* Fascinating visual effects\n* Compelling story until the second half\n\nNegative Comments:\n\nReview 1:\n\n* Ed Norton grates on the reviewer\n* Story starts to fall apart halfway through\n* Becomes tedious towards the end\n\nReview 2:\n\n* Lacks connection with the audience\n* Story becomes childish and contrived\n\nReview 3:\n\n* Does not effectively convey its messages\n* Leaves the audience in confusion\n\nReview 4:\n\n* Creating chaos and explosions is not a solution to material shackles\n* Ending is not well-done\n\nOverall, the positive comments praise the film's innovative storytelling, strong script, engaging characters, and visual effects. The negative comments criticize the film's lack of connection with the audience, childish and contrived storyline, and poor ending.",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_82",
+      "ori_prompt": "Decide whether children can watch the given movie. Mention what makes it inappropriate if you think they can't.",
+      "context": "The Dark Knight (2008)",
+      "generic_prompt": "Determine whether the given movie is suitable for children to watch. If it is not suitable, explain the specific elements that make it inappropriate for them.",
+      "generic_response": "The Dark Knight (2008) is a superhero thriller film directed by Christopher Nolan that is rated PG-13 for intense action violence, some frightening images, and language. While it is not entirely inappropriate for children to watch, there are certain elements that may make it unsuitable for younger viewers.\n\nHere are some reasons why The Dark Knight may not be suitable for children:\n\n1. Violence: The film features intense action violence, including shootouts, explosions, and hand-to-hand combat. While these scenes are not excessively gory or graphic, they may be too intense for younger children who are sensitive to violence.\n2. Frightening images: The film includes some frightening images, such as the Joker's grotesque appearance and his violent actions. These scenes may be disturbing for children, especially those who are easily scared or have a low tolerance for horror.\n3. Language: The film contains some strong language, including profanity and crude humor. While these elements are not excessive, they may not be appropriate for young children who are still developing their language skills and sensitivity to language.\n4. Themes: The Dark Knight explores mature themes, such as the nature of evil, the consequences of violence, and the corrupting influence of power. While these themes are certainly thought-provoking and appropriate for older children and adults, they may be too complex or intense for younger children to fully understand or process.\n\nIn conclusion, while The Dark Knight is not entirely inappropriate for children, it may not be suitable for younger viewers due to the violence, frightening images, language, and mature themes. Parents are advised to use their discretion and consider their child's age, maturity level, and sensitivity to these elements before allowing them to watch the film.",
+      "rgeneric_prompt": "Evaluate if the provided movie is suitable for children. If it is not, explain the specific elements that make it inappropriate for them.",
+      "rgeneric_response": "The Dark Knight (2008) is a superhero thriller film directed by Christopher Nolan that is rated PG-13 for intense action violence, some frightening images, and language. While it may be suitable for some older children, there are several elements that make it inappropriate for younger kids. Here are some reasons why:\n\n1. Violence: The film features intense action violence, including shootouts, explosions, and hand-to-hand combat. While these scenes are not excessively gory or graphic, they can be disturbing for younger children who are not yet desensitized to violence.\n2. Themes: The Dark Knight explores mature themes such as terrorism, corruption, and the blurred lines between good and evil. These themes may be too complex and intense for younger children to fully understand or process.\n3. Language: The film contains some strong language, including profanity and crude humor, which may not be appropriate for young children.\n4. Scary scenes: The Dark Knight includes some frightening images, such as the Joker's grotesque appearance and his violent actions, which may be too intense for younger children.\n\nOverall, while The Dark Knight is a well-crafted and thought-provoking film, it may not be suitable for young children due to its intense violence, mature themes, and language. Parents should exercise caution and discretion when deciding whether or not to allow their children to watch this movie.",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_89",
+      "ori_prompt": "Answer the following question.",
+      "context": "How do I compare strings in Java?\nI've been using the == operator in my program to compare all my strings so far. However, I ran into a bug, changed one of them into .equals() instead, and it fixed the bug.\nIs == bad? When should it and should it not be used? What's the difference?",
+      "generic_prompt": "Provide a clear and accurate response to the given question.",
+      "generic_response": "Sure, I'd be happy to help!\n\nIn Java, the `==` operator is used to compare two objects for equality, while the `equals()` method is used to compare two objects for semantic equality.\n\nThe `==` operator checks whether two objects are the same object in memory, which means that it compares the reference of the object rather than the object itself. This can lead to unexpected results when comparing objects of different classes or when one of the objects is a subclass of the other.\n\nFor example, consider the following code:\n```java\nString str1 = \"Hello\";\nString str2 = \"World\";\n\nif (str1 == str2) {\n    System.out.println(\"Str1 and str2 are the same\");\n}\n```\nIn this code, `str1` and `str2` are two different objects in memory, even though they have the same value. The `==` operator will return `true` because they are the same reference.\n\nOn the other hand, the `equals()` method compares the semantic meaning of the objects, rather than just their memory location. It is more appropriate to use `equals()` when comparing objects of different classes or when you want to ensure that the comparison is based on the object's contents rather than its reference.\n\nHere's an example of how to use `equals()` correctly:\n```java\nString str1 = \"Hello\";\nString str2 = \"World\";\n\nif (str1.equals(str2)) {\n    System.out.println(\"Str1 and str2 are the same\");\n}\n```\nIn this code, `str1` and `str2` are different objects in memory, but they have the same value, so `equals()` will return `true`.\n\nIn summary, `==` should be used to compare objects for equality in terms of their memory location, while `equals()` should be used to compare objects for semantic equality. It's important to use the correct method depending on the context to avoid unexpected results.",
+      "rgeneric_prompt": "Generate a response to the question provided.",
+      "rgeneric_response": "Great question! In Java, the `==` operator is used to compare objects for equality, while the `equals()` method is used to compare the contents of two strings.\n\nThe `==` operator performs a \"reference equality\" check, which means it checks if the two operands are referring to the same object in memory. This means that if you have two strings with the same contents, but they are stored in different objects, they will be considered equal using the `==` operator. For example:\n```java\nString a = \"hello\";\nString b = \"hello\";\n\n// a and b are equal using the == operator\nif (a == b) {\n    System.out.println(\"a and b are equal\");\n}\n```\nHowever, this can lead to bugs if you're not careful, because it can cause you to compare two strings that have the same contents but are stored in different objects. For example:\n```java\nString a = \"hello\";\nString b = new String(\"hello\");\n\n// a and b are not equal using the == operator\nif (a == b) {\n    System.out.println(\"a and b are equal\");\n}\n```\nIn this case, `a` and `b` have the same contents, but they are stored in different objects, so they are not equal using the `==` operator.\n\nThe `equals()` method, on the other hand, compares the contents of two strings, rather than their references. It takes another string as an argument and returns a boolean value indicating whether the strings are equal. The `equals()` method is more reliable than the `==` operator when comparing strings, because it takes into account the contents of the strings, rather than just their references. For example:\n```java\nString a = \"hello\";\nString b = \"hello\";\n\n// a and b are equal using the equals() method\nif (a.equals(b)) {\n    System.out.println(\"a and b are equal\");\n}\n```\nIn general, it's a good idea to use the `equals()` method when comparing strings in Java, because it's more reliable and can help prevent bugs. However, there are some cases where the `==` operator may be more appropriate, such as when you're comparing two strings that are stored in the same object.\n\nIn summary, the `==` operator compares objects for reference equality, while the `equals()` method compares the contents of two strings. It's generally a good idea to use the `equals()` method when comparing strings in Java, but there are some cases where the `==` operator may be more appropriate.",
+      "winners_per_run": [
+        0,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.9,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.2,
+            "Relevance": 0.9,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.9,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.9,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1320 @@
+{
+  "total_items": 200,
+  "total_mismatches": 16,
+  "mismatch_rate": "8.00%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": 1,
+      "ori_prompt": "Who owns the largest share of the Vancouver Whitecaps FC?",
+      "context": "Vancouver Whitecaps FC is owned by a group of four investors: Greg Kerfoot, Steve Luczo, Jeff Mallett, and Steve Nash. The group has a collective net worth over $2 billion. Kerfoot has been the majority owner of the Whitecaps since 2002, when he saved the club from contraction after previous owner David Stadnyk left the club, selling it to United Soccer Leagues. Mallett, a former chief operating officer (COO) of Yahoo!, who was raised in Victoria, British Columbia, and played for several collegiate soccer teams. He later purchased minority stakes in the San Francisco Giants of Major League Baseball and English soccer club Derby County F.C. Having first met at a charity soccer event in 2005, Mallett partnered with Steve Nash—a two-time National Basketball Association (NBA) Most Valuable Player who was also raised in Victoria—to put together a bid for a minority share of English soccer club Tottenham Hotspur F.C. in 2008. After that transaction fell through, the duo contacted Kerfoot about a minority stake in the club. Nash is the older brother of former Whitecaps midfielder Martin Nash. The fourth partner, Steve Luczo, is the president, chairman, and CEO of Seagate Technology and a partner in Boston Basketball Partners L.L.C., a group who own the NBA Boston Celtics. Luczo met Kerfoot while the two were both employed by Seagate Technology, and Kerfoot contacted Luczo proposing he become part of the club's MLS bid. In 2009, the group paid a $35 million expansion fee to MLS for the right to join the league.",
+      "generic_prompt": "Who currently holds the largest ownership stake in Vancouver Whitecaps FC?",
+      "generic_response": "Greg Kerfoot currently holds the largest ownership stake in Vancouver Whitecaps FC.",
+      "rgeneric_prompt": "As of the most recent available information, who holds the largest ownership stake in Vancouver Whitecaps FC? Please provide the name of the individual or entity and the percentage of ownership.",
+      "rgeneric_response": "Greg Kerfoot holds the largest ownership stake in Vancouver Whitecaps FC. The text doesn’t specify the exact percentage, but it states he has been the “majority owner” since 2002.",
+      "winners_per_run": [
+        1,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "ori_prompt": "Which film holds the record for most Academy Award wins?",
+      "context": "",
+      "generic_prompt": "Which film has won the most Academy Awards in history?",
+      "generic_response": "*Titanic* has won the most Academy Awards with 11 wins.",
+      "rgeneric_prompt": "Identify the film that has won the most Academy Awards. Specify the number of awards it has won and, if relevant, the years in which it received them.",
+      "rgeneric_response": "*All About Eve* has won the most Academy Awards with 14 wins, across various categories, primarily between 1950 and 1951.",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.9,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.9,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "ori_prompt": "What is Adventures of Tintin?",
+      "context": "The Adventures of Tintin (French: Les Aventures de Tintin [lez‿avɑ̃tyʁ də tɛ̃tɛ̃]) is a series of 24 bande dessinée albums created by Belgian cartoonist Georges Remi, who wrote under the pen name Hergé. The series was one of the most popular European comics of the 20th century. By 2007, a century after Hergé's birth in 1907, Tintin had been published in more than 70 languages with sales of more than 200 million copies, and had been adapted for radio, television, theatre, and film.",
+      "generic_prompt": "Can you provide a detailed overview of \"The Adventures of Tintin,\" including its author, genre, main characters, and significance in literature and popular culture?",
+      "generic_response": "Here’s a detailed overview of “The Adventures of Tintin”:\n\n*   **Author:** Georges Remi, writing under the pen name Hergé.\n*   **Genre:** Adventure comic (bande dessinée), often incorporating elements of mystery, journalism, and international intrigue.\n*   **Main Characters:**\n    *   **Tintin:** The young, intrepid reporter.\n    *   **Snowy (Franklin):** Tintin’s loyal, intelligent, and resourceful fox terrier.\n    *   **Captain Haddock:** Tintin’s boisterous, often exasperated, and lovable uncle.\n    *   **Professor Calculus:** A brilliant but absent-minded inventor.\n*   **Significance:**\n    *   **Popularity:** One of the most successful European comics of the 20th century, with over 200 million copies sold in over 70 languages.\n    *   **Artistic Style:** Hergé’s distinctive, clean, and detailed artwork was groundbreaking for its time.\n    *   **Cultural Impact:**  Tintin has been adapted into numerous radio shows, television series, stage productions, and films, solidifying its place in global popular culture. It’s a recognizable and beloved brand worldwide.\n\nDo you want me to delve deeper into a specific aspect, such as a particular adventure or the historical context of the series?",
+      "rgeneric_prompt": "Can you provide an overview of \"The Adventures of Tintin,\" including its origin, main characters, and general themes?",
+      "rgeneric_response": "Here’s an overview of “The Adventures of Tintin”:\n\n*   **Origin:** Created by Belgian cartoonist Georges Remi (Hergé) starting in 1926.\n*   **Main Characters:** Tintin (a young reporter), Snowy (his fox sidekick), Captain Haddock (Tintin’s grumpy uncle and friend), and Thomson and Thompson (a bumbling police duo).\n*   **General Themes:** Adventure, international intrigue, exploration, and often satire of political and social issues of the time.",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "ori_prompt": "Extract the names of the cities where UNESCO has field offices in Asia and Pacific. Separate them with a semi-colon",
+      "context": "Field offices by region\nThe following list of all UNESCO Field Offices is organized geographically by UNESCO Region and identifies the members states and associate members of UNESCO which are served by each office.\n\nAfrica\nAbidjan – National Office to Côte d'Ivoire\nAbuja – National Office to Nigeria\nAccra – Cluster Office for Benin, Côte d'Ivoire, Ghana, Liberia, Nigeria, Sierra Leone and Togo\nAddis Ababa – Liaison Office with the African Union and with the Economic Commission for Africa\nBamako – Cluster Office for Burkina Faso, Guinea, Mali and Niger\nBrazzaville – National Office to the Republic of the Congo\nBujumbura – National Office to Burundi\nDakar – Regional Bureau for Education in Africa and Cluster Office for Cape Verde, Gambia, Guinea-Bissau, and Senegal\nDar es Salaam – Cluster Office for Comoros, Madagascar, Mauritius, Seychelles and Tanzania\nHarare – Cluster Office for Botswana, Malawi, Mozambique, Zambia and Zimbabwe\nJuba – National Office to South Sudan\nKinshasa – National Office to the Democratic Republic of the Congo\nLibreville – Cluster Office for the Republic of the Congo, Democratic Republic of the Congo, Equatorial Guinea, Gabon and São Tomé and Príncipe\nMaputo – National Office to Mozambique\nNairobi – Regional Bureau for Sciences in Africa and Cluster Office for Burundi, Djibouti, Eritrea, Kenya, Rwanda, Somalia, South Sudan and Uganda\nWindhoek – National Office to Namibia\nYaoundé – Cluster Office to Cameroon, Central African Republic and Chad\nArab States\nAmman – National Office to Jordan\nBeirut – Regional Bureau for Education in the Arab States and Cluster Office to Lebanon, Syria, Jordan, Iraq and Palestine\nCairo – Regional Bureau for Sciences in the Arab States and Cluster Office for Egypt and Sudan\nDoha – Cluster Office to Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, United Arab Emirates and Yemen\nIraq – National Office for Iraq (currently located in Amman, Jordan)\nKhartoum – National Office to Sudan\nManama – Arab Regional Centre for World Heritage\nRabat – Cluster Office to Algeria, Libya, Mauritania, Morocco and Tunisia\nRamallah – National Office to the Palestinian Territories\nAsia and Pacific\nSee also: UNESCO Asia Pacific Heritage Awards\nAlmaty – Cluster Office to Kazakhstan, Kyrgyzstan, Tajikistan and Uzbekistan\nApia – Cluster Office to Australia, Cook Islands, Fiji, Kiribati, Marshall Islands, Federated States of Micronesia, Nauru, New Zealand, Niue, Palau, Papua New Guinea, Samoa, Solomon Islands, Tonga, Tuvalu, Vanuatu and Tokelau (Associate Member)\nBangkok – Regional Bureau for Education in Asia and the Pacific and Cluster Office to Thailand, Burma, Laos, Singapore and Vietnam\nBeijing – Cluster Office to North Korea, Japan, Mongolia, the People's Republic of China and South Korea\nDhaka – National Office to Bangladesh\nHanoi – National Office to Vietnam\nIslamabad – National Office to Pakistan\nJakarta – Regional Bureau for Sciences in Asia and the Pacific and Cluster Office to the Philippines, Brunei, Indonesia, Malaysia, and East Timor\nManila – National Office to the Philippines\nKabul – National Office to Afghanistan\nKathmandu – National Office to Nepal\nNew Delhi – Cluster Office to Bangladesh, Bhutan, India, Maldives and Sri Lanka\nPhnom Penh – National Office to Cambodia\nTashkent – National Office to Uzbekistan\nTehran – Cluster Office to Afghanistan, Iran, Pakistan and Turkmenistan\nEurope and North America\nBrussels – Liaison Office to the European Union and its subsidiary bodies in Brussels\nGeneva – Liaison Office to the United Nations in Geneva\nNew York City – Liaison Office to the United Nations in New York\nVenice – Regional Bureau for Sciences and Culture in Europe\nLatin America and the Caribbean\n\nCarondelet Palace, Presidential Palace – with changing of the guards. The Historic Center of Quito, Ecuador, is one of the largest, least-altered and best-preserved historic centres in the Americas. This centre was, together with the historic centre of Kraków in Poland, the first to be declared World Heritage Site by UNESCO on 18 September 1978.\nBrasília – National Office to Brazil\nGuatemala City – National Office to Guatemala\nHavana – Regional Bureau for Culture in Latin America and the Caribbean and Cluster Office to Cuba, Dominican Republic, Haiti and Aruba\nKingston – Cluster Office to Antigua and Barbuda, Bahamas, Barbados, Belize, Dominica, Grenada, Guyana, Jamaica, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Suriname and Trinidad and Tobago as well as the associate member states of British Virgin Islands, Cayman Islands, Curaçao and Sint Maarten\nLima – National Office to Peru\nMexico City – National Office to Mexico\nMontevideo – Regional Bureau for Sciences in Latin America and the Caribbean and Cluster Office to Argentina, Brazil, Chile, Paraguay and Uruguay\nPort-au-Prince – National Office to Haiti\nQuito – Cluster Office to Bolivia, Colombia, Ecuador and Venezuela\nSan José – Cluster Office to Costa Rica, El Salvador, Guatemala, Honduras, Mexico, Nicaragua and Panama\nSantiago de Chile – Regional Bureau for Education in Latin America and the Caribbean and National Office to Chile",
+      "generic_prompt": "List the names of cities in Asia and the Pacific where UNESCO has field offices, separated by a semicolon.",
+      "generic_response": "Almaty; Apia; Bangkok; Beijing; Dhaka; Hanoi; Islamabad; Jakarta; Kabul; Kathmandu; New Delhi; Phnom Penh; Tashkent; Tehran;",
+      "rgeneric_prompt": "Identify the names of cities in the Asia and Pacific region that host UNESCO field offices. List each city name separated by a semi-colon.",
+      "rgeneric_response": "Almaty; Apia; Bangkok; Beijing; Dhaka; Hanoi; Islamabad; Jakarta; Kabul; Kathmandu; New Delhi; Phnom Penh; Tashkent; Tehran",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "ori_prompt": "Why do people purchase ski passes?",
+      "context": "",
+      "generic_prompt": "What are the primary reasons people buy ski passes?",
+      "generic_response": "Here are the primary reasons people buy ski passes:\n\n*   **Cost Savings:** Passes are generally cheaper than buying individual lift tickets, especially with frequent skiing.\n*   **Convenience:** No need to purchase tickets each day.\n*   **Access to Multiple Days:** Allows for more skiing and exploring different areas.\n*   **Discounts:** Many passes offer discounts on rentals, lessons, and food.",
+      "rgeneric_prompt": "What motivates individuals to buy ski passes, and what factors influence their decision to invest in one?",
+      "rgeneric_response": "Here’s a breakdown of what motivates ski pass purchases and the influencing factors:\n\n**Motivations:**\n\n* **Enjoyment & Recreation:** The primary driver – wanting to ski/snowboard and have fun.\n* **Social Connection:** Spending time with friends and family.\n* **Stress Relief/Escape:** Seeking a break from daily life.\n* **Fitness & Activity:**  A healthy and active pursuit.\n\n\n**Factors Influencing the Decision:**\n\n* **Price:**  The biggest factor.  Cost per day, season passes, and multi-day deals heavily influence choices.\n* **Location:** Proximity to home, desired resort reputation, and travel costs.\n* **Resort Quality:** Snow conditions, terrain variety, amenities (lodging, restaurants), and overall experience.\n* **Frequency of Use:** How often someone plans to ski/snowboard – impacts whether a season pass is worthwhile.\n* **Family Needs:**  Number of family members and their skiing abilities.\n* **Group Dynamics:**  Who’s going – influences the need for group discounts or multi-pass options.\n* **Promotions & Discounts:** Early bird deals, military discounts, group rates, etc.\n* **Value Proposition:**  Comparing the cost of individual lift tickets versus the pass price.\n\n\n\nDo you want me to delve deeper into a specific aspect, like pricing strategies or different pass types?",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 174,
+      "ori_prompt": "Extract from the following passage, the periods of time does sunrise refer to.",
+      "context": "Although the Sun appears to \"rise\" from the horizon, it is actually the Earth's motion that causes the Sun to appear. The illusion of a moving Sun results from Earth observers being in a rotating reference frame; this apparent motion caused many cultures to have mythologies and religions built around the geocentric model, which prevailed until astronomer Nicolaus Copernicus formulated his heliocentric model in the 16th century.\nAstronomically, sunrise occurs for only an instant: the moment at which the upper limb of the Sun appears tangent to the horizon. However, the term sunrise commonly refers to periods of time both before and after this point:\nTwilight, the period in the morning during which the sky is brightening, but the Sun is not yet visible. The beginning of morning twilight is called astronomical dawn.\nThe period after the Sun rises during which striking colors and atmospheric effects are still seen.\nThe timing of sunrise varies throughout the year and is also affected by the viewer's latitude and longitude, altitude, and time zone. These changes are driven by the axial tilt of Earth, daily rotation of the Earth, the planet's movement in its annual elliptical orbit around the Sun, and the Earth and Moon's paired revolutions around each other. The analemma can be used to make approximate predictions of the time of sunrise.\nIn late winter and spring, sunrise as seen from temperate latitudes occurs earlier each day, reaching its earliest time near the summer solstice; although the exact date varies by latitude. After this point, the time of sunrise gets later each day, reaching its latest sometime around the winter solstice. The offset between the dates of the solstice and the earliest or latest sunrise time is caused by the eccentricity of Earth's orbit and the tilt of its axis, and is described by the analemma, which can be used to predict the dates.\nVariations in atmospheric refraction can alter the time of sunrise by changing its apparent position. Near the poles, the time-of-day variation is exaggerated, since the Sun crosses the horizon at a very shallow angle and thus rises more slowly.\nAccounting for atmospheric refraction and measuring from the leading edge slightly increases the average duration of day relative to night. The sunrise equation, however, which is used to derive the time of sunrise and sunset, uses the Sun's physical center for calculation, neglecting atmospheric refraction and the non-zero angle subtended by the solar disc.",
+      "generic_prompt": "Identify and extract the specific periods of time mentioned in the passage that refer to sunrise.",
+      "generic_response": "Here are the specific periods of time mentioned in the passage that refer to sunrise:\n\n*   The moment at which the upper limb of the Sun appears tangent to the horizon (astronomical sunrise)\n*   Twilight (specifically, morning twilight or astronomical dawn)\n*   The period after the Sun rises during which striking colors and atmospheric effects are still seen",
+      "rgeneric_prompt": "Identify and list the specific time periods mentioned in the passage that are associated with sunrise. Group related time references together.",
+      "rgeneric_response": "Here’s a breakdown of the time periods associated with sunrise, as mentioned in the passage:\n\n*   **Instantaneous:** The moment the upper limb of the Sun is tangent to the horizon.\n*   **Twilight (Morning):**\n    *   Astronomical dawn (the beginning of morning twilight)\n    *   The period in the morning during which the sky is brightening.\n*   **Post-Rise:** The period after the Sun rises, characterized by striking colors and atmospheric effects.\n*   **Seasonal Variations:**\n    *   Earliest sunrise (near the summer solstice)\n    *   Latest sunrise (around the winter solstice)",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "ori_prompt": "Whats the difference between a bass guitar and a regular guitar?",
+      "context": "",
+      "generic_prompt": "What are the key differences between a bass guitar and a regular (electric or acoustic) guitar in terms of structure, sound, and musical role?",
+      "generic_response": "Okay, here’s a breakdown of the key differences between a bass guitar and a regular guitar:\n\n**1. Structure:**\n\n*   **Scale Length:** Bass guitars have a *much* longer scale length (typically 34-38 inches) than standard guitars (around 25.5 inches). This is the distance from the nut to the bridge.\n*   **Strings:** Bass guitars use four (sometimes five) thick, long strings tuned lower than the strings on a guitar (E, A, D, G for 4-string).\n*   **Body Size:** Bass guitars generally have a larger body to accommodate the longer strings and produce more low-end frequencies.\n\n**2. Sound:**\n\n*   **Frequency Range:** Bass guitars produce much lower frequencies – the “bass” tones we hear. They fill out the low end of the music.\n*   **Tone:** Basses have a warmer, rounder, and often more \"woody\" sound than guitars.  They’re less bright and focused.\n\n**3. Musical Role:**\n\n*   **Harmony & Rhythm:** Bass guitars primarily provide the harmonic foundation and rhythmic pulse of a song. They lock in with the drums to create the groove.\n*   **Melody (Sometimes):** While primarily rhythmic, bassists can and do play melodic lines, especially in genres like funk and jazz.\n*   **Guitars:** Guitars typically handle melody, harmony, and rhythm (strumming chords).\n\n\n\nDo you want me to delve deeper into a specific aspect, like different types of bass guitars or how they’re used in particular genres?",
+      "rgeneric_prompt": "Explain the distinctions between a bass guitar and a standard guitar.",
+      "rgeneric_response": "Okay, here’s a breakdown of the key differences between a bass guitar and a standard guitar:\n\n*   **Pitch:** Guitars play higher pitches (typically E, A, D, G). Bass guitars play much lower pitches (typically E, A, D, G – an octave lower than the guitar).\n\n*   **Strings:** Guitars have six strings. Bass guitars typically have four strings.\n\n*   **Scale Length:** Bass guitars are significantly longer than guitars, giving them a lower, deeper tone.\n\n*   **Role in Music:** Guitars primarily play melodies and chords. Bass guitars primarily provide the rhythmic and harmonic foundation of a song.\n\n*   **Action:** Bass guitar strings are often heavier and require more effort to press down.\n\nDo you want me to delve into a specific aspect, like their construction or sound characteristics?",
+      "winners_per_run": [
+        0,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "ori_prompt": "Extract best tourist attractions in Karnataka",
+      "context": "By virtue of its varied geography and long history, Karnataka hosts numerous spots of interest for tourists. There is an array of ancient sculptured temples, modern cities, scenic hill ranges, forests and beaches. Karnataka has been ranked as the fourth most popular destination for tourism among the states of India. Karnataka has the second highest number of nationally protected monuments in India, second only to Uttar Pradesh, in addition to 752 monuments protected by the State Directorate of Archaeology and Museums. Another 25,000 monuments are yet to receive protection.\n\nThe districts of the Western Ghats and the southern districts of the state have popular eco-tourism locations including Kudremukh, Madikeri and Agumbe. Karnataka has 25 wildlife sanctuaries and five national parks. Popular among them are Bandipura National Park, Bannerghatta National Park and Nagarhole National Park. The ruins of the Vijayanagara Empire at Hampi and the monuments of Pattadakal are on the list of UNESCO's World Heritage Sites. The cave temples at Badami and the rock-cut temples at Aihole representing the Badami Chalukyan style of architecture are also popular tourist destinations. The Hoysala temples at Beluru and Halebidu, which were built with Chloritic schist (soapstone) are proposed UNESCO World Heritage sites. The Gol Gumbaz and Ibrahim Rauza are famous examples of the Deccan Sultanate style of architecture. The monolith of Gomateshwara Bahubali at Shravanabelagola is the tallest sculpted monolith in the world, attracting tens of thousands of pilgrims during the Mahamastakabhisheka festival.\n\nGolden 5-storey Mysore Palace building with 21 domed towers and central spire\nMysore Palace in the evening, the official residence and seat of the Wodeyar dynasty, the rulers of Mysore of the Mysore Kingdom, the royal family of Mysore.\nThe waterfalls of Karnataka and Kudremukh are considered by some to be among the \"1001 Natural Wonders of the World\". Jog Falls is India's tallest single-tiered waterfall with Gokak Falls, Unchalli Falls, Magod Falls, Abbey Falls and Shivanasamudra Falls among other popular waterfalls.\n\nSeveral popular beaches dot the coastline, including Murudeshwara, Gokarna, Malpe and Karwar. In addition, Karnataka is home to several places of religious importance. Several Hindu temples including the famous Udupi Sri Krishna Matha, the Marikamba Temple at Sirsi, the Kollur Mookambika Temple, the Sri Manjunatha Temple at Dharmasthala, Kukke Subramanya Temple, Janardhana and Mahakali Temple at Ambalpadi, Sharadamba Temple at Shringeri attract pilgrims from all over India. Most of the holy sites of Lingayatism, like Kudalasangama and Basavana Bagewadi, are found in northern parts of the state. Shravanabelagola, Mudabidri and Karkala are famous for Jain history and monuments. Jainism had a stronghold in Karnataka in the early medieval period with Shravanabelagola as its most important centre. The Shettihalli Rosary Church near Shettihalli, an example of French colonial Gothic architecture, is a rare example of a Christian ruin, is a popular tourist site.\n\nKarnataka has become a center of health care tourism and has the highest number of approved health systems and alternative therapies in India. Along with some ISO certified government-owned hospitals, private institutions which provide international-quality services, Hospitals in Karnataka treat around 8,000 health tourists every year.",
+      "generic_prompt": "List the top tourist attractions in Karnataka, focusing on popular and must-visit destinations.",
+      "generic_response": "Here’s a list of top tourist attractions in Karnataka, focusing on popular and must-visit destinations:\n\n*   **Hampi:** Ruins of the Vijayanagara Empire (UNESCO World Heritage Site)\n*   **Pattadakal:** Monuments (UNESCO World Heritage Site)\n*   **Badami Cave Temples & Rock-Cut Temples:** Representing Badami Chalukyan architecture\n*   **Beluru & Halebidu:** Hoysala Temples (UNESCO World Heritage Site – proposed)\n*   **Mysore Palace:** Golden 5-storey palace\n*   **Jog Falls:** India’s tallest single-tiered waterfall\n*   **Shravanabelagola:** Monolith of Gomateshwara Bahubali\n*   **Udupi Sri Krishna Matha:** Famous Hindu temple\n*   **Kollur Mookambika Temple**\n*   **Sri Manjunatha Temple at Dharmasthala**\n*   **Kukke Subramanya Temple**\n*   **Murudeshwara:** Beach and temple\n*   **Gokarna:** Beach\n*   **Bandipur, Bannerghatta, Nagarhole National Parks & Wildlife Sanctuaries:** Diverse wildlife experiences\n\nWould you like me to elaborate on any of these, or perhaps list attractions by category (e.g., temples, waterfalls, historical sites)?",
+      "rgeneric_prompt": "Identify and list the top tourist attractions in Karnataka.",
+      "rgeneric_response": "Here’s a list of the top tourist attractions in Karnataka, based on the provided text:\n\n*   **Hampi Ruins:** Vijayanagara Empire ruins (UNESCO World Heritage Site)\n*   **Pattadakal Monuments:** UNESCO World Heritage Site\n*   **Badami Cave Temples & Rock-Cut Temples:** Representing Badami Chalukyan architecture\n*   **Beluru & Halebidu Hoysala Temples:** (UNESCO World Heritage Site – proposed)\n*   **Mysore Palace:** Royal residence and historical landmark\n*   **Gomateshwara Bahubali Monolith:** Tallest sculpted monolith in the world\n*   **Jog Falls:** India’s tallest single-tiered waterfall\n*   **Kudremukh & Other Waterfalls:** (e.g., Gokak, Unchalli, Magod, Abbey, Shivanasamudra)\n*   **Murudeshwara, Gokarna, Malpe & Karwar Beaches**\n*   **Udupi Sri Krishna Matha:** Hindu temple\n*   **Kollur Mookambika Temple**\n*   **Sri Manjunatha Temple at Dharmasthala**\n*   **Kukke Subramanya Temple**\n*   **Shravanabelagola:** Jain history and monuments\n*   **Shettihalli Rosary Church:** French colonial Gothic architecture\n\n**Other notable attractions (mentioned but not explicitly “top”):**\n\n*   Bandipura National Park, Bannerghatta National Park, Nagarhole National Park (Wildlife Sanctuaries & National Parks)\n*   Golden 5-storey Mysore Palace\n*   Kudalasangama & Basavana Bagewadi (Lingayat holy sites)\n\nWould you like me to elaborate on any of these attractions or perhaps categorize them in a different way (e.g., by type of attraction)?",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "ori_prompt": "what is a sql query?",
+      "context": "",
+      "generic_prompt": "Explain what a SQL query is in simple terms.",
+      "generic_response": "A SQL query is like a question you ask a database. It’s a set of instructions that tells the database what information you want to retrieve, update, or delete. \n\nThink of it as a way to talk to a digital filing cabinet and get specific files (data) out.",
+      "rgeneric_prompt": "Explain the definition and purpose of a SQL query.",
+      "rgeneric_response": "A SQL query is a request for data from a database. \n\n**Definition:** It's a structured command written in SQL (Structured Query Language) that tells the database what information you want to retrieve, modify, or manage.\n\n**Purpose:** To extract, update, or delete data stored within a database, allowing you to analyze information and perform operations on it. \n\nEssentially, it's how you \"talk\" to a database.",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "ori_prompt": "Identify which instrument is string or percussion: Erxian, Alfaia",
+      "context": "",
+      "generic_prompt": "Determine whether each of the following instruments is a string instrument or a percussion instrument: Erxian, Alfaia.",
+      "generic_response": "*   **Erxian:** String instrument\n*   **Alfaia:** Percussion instrument",
+      "rgeneric_prompt": "Determine whether each of the following instruments is classified as a string or percussion instrument: Erxian, Alfaia. Provide a clear categorization for each based on their construction and method of sound production.",
+      "rgeneric_response": "*   **Erxian:** String instrument – It’s a Chinese zither, producing sound by plucking the strings.\n\n*   **Alfaia:** Percussion instrument – It’s a Brazilian gourd-based instrument struck with the hands or sticks to create sound.",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "ori_prompt": "What were the Crusades?",
+      "context": "The Crusades were a series of religious wars initiated, supported, and sometimes directed by the Latin Church in the medieval period. The best known of these military expeditions are those to the Holy Land in the period between 1095 and 1291 that were intended to conquer Jerusalem and its surrounding area from Muslim rule. Beginning with the First Crusade, which resulted in the conquest of Jerusalem in 1099, dozens of military campaigns were organised, providing a focal point of European history for centuries. Crusading declined rapidly after the 15th century.",
+      "generic_prompt": "Provide a concise and accurate overview of the Crusades, including their historical context, key events, and major outcomes.",
+      "generic_response": "The Crusades were a series of religious wars (roughly 1095-1291) initiated by the Latin Church to reclaim the Holy Land, particularly Jerusalem, from Muslim control. Key events included the First Crusade’s successful conquest of Jerusalem in 1099 and subsequent campaigns. While initially impactful, crusading declined significantly after the 15th century, leaving a lasting, though complex, legacy in European and Middle Eastern history.",
+      "rgeneric_prompt": "Provide a concise overview of the Crusades, including their historical context, primary objectives, major events, and lasting impact. Ensure the explanation is accurate, balanced, and suitable for a general audience.",
+      "rgeneric_response": "Here’s a concise overview of the Crusades:\n\n**What were they?** The Crusades were a series of religiously motivated military campaigns primarily launched by European Christians between the 11th and 13th centuries.\n\n**Historical Context:** Fueled by religious fervor, political ambitions, and the desire to reclaim the Holy Land (particularly Jerusalem) from Muslim control, they arose during a period of increasing tension between Christianity and Islam.\n\n**Primary Objectives:** Initially, the main goal was to recapture Jerusalem and establish Christian control over the region. Later crusades had varied aims, including expanding Christian influence and wealth.\n\n**Major Events:** Key events include the First Crusade (1096-1099 – capture of Jerusalem), subsequent campaigns (often unsuccessful), and the Fourth Crusade (1202-1204 – sack of Constantinople).\n\n**Lasting Impact:** The Crusades had a complex legacy. They fostered trade and cultural exchange between Europe and the Middle East, but also caused immense suffering, religious intolerance, and long-lasting animosity between Christian and Muslim communities.  Crusading significantly declined after the 15th century.\n\n---\n\nWould you like me to delve deeper into a specific aspect of the Crusades, such as a particular crusade, its impact on a specific region, or its religious motivations?",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "ori_prompt": "How do you replace a hole in the drywall?",
+      "context": "",
+      "generic_prompt": "What is the most effective and reliable method for repairing a hole in drywall?",
+      "generic_response": "The most effective and reliable method for repairing a hole in drywall is using a **self-adhesive drywall patch kit**. \n\nHere's a quick breakdown:\n\n1.  **Clean:** Remove loose debris.\n2.  **Apply Patch:** Stick the patch firmly to the hole.\n3.  **Apply Joint Compound:** Use a putty knife to apply a thin layer, feathering it out beyond the edges of the patch.\n4.  **Dry & Sand:** Let it dry completely, then sand smooth.\n5.  **Prime & Paint:** Prime and paint to match the surrounding wall.\n\nIt’s generally faster and easier than traditional drywall repair.",
+      "rgeneric_prompt": "What is the step-by-step process for repairing a hole in drywall?",
+      "rgeneric_response": "Okay, here’s a step-by-step process for repairing a hole in drywall:\n\n1.  **Clean the Area:** Remove loose debris and dust around the hole.\n2.  **Prepare the Hole:** Use a utility knife to cut away any ragged edges, creating a clean, square or rectangular opening.\n3.  **Apply Mesh Tape:** Cut a piece of drywall mesh tape slightly larger than the hole. Apply it to the inside of the opening, pressing firmly.\n4.  **Apply Joint Compound (First Coat):** Using a putty knife, apply a thin, even layer of joint compound over the mesh tape, feathering the edges out beyond the hole.\n5.  **Dry and Sand:** Let the first coat dry completely (usually 24 hours). Then, sand it smooth with fine-grit sandpaper.\n6.  **Apply Joint Compound (Second & Third Coats):** Apply two more thin coats of joint compound, allowing each to dry completely and sanding lightly between coats.  Each coat should be slightly wider than the previous.\n7.  **Sand Smooth:** Once the final coat is dry, sand the entire patched area smooth, blending it seamlessly with the surrounding wall.\n8.  **Prime:** Apply a drywall primer to the patched area.\n9.  **Paint:** Paint the patched area to match the wall color.\n\n---\n\nDo you want me to elaborate on any specific step, or perhaps provide tips for different hole sizes?",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "ori_prompt": "Why does oil float on water?",
+      "context": "",
+      "generic_prompt": "Explain the scientific reasons behind why oil floats on water.",
+      "generic_response": "Oil floats on water due to a combination of factors primarily related to **density**. Here’s the breakdown:\n\n* **Density:** Density is mass per unit volume. Oil is generally *less* dense than water. This means a given volume of oil weighs less than the same volume of water.\n* **Buoyancy:**  When an object is placed in a fluid (like water), the fluid exerts an upward force called buoyancy. This force equals the weight of the fluid displaced by the object.\n* **Archimedes’ Principle:**  If the buoyant force is greater than the object’s weight, the object floats. If it’s less, it sinks.\n\nBecause oil is less dense, it displaces a larger volume of water than its own weight, resulting in a buoyant force greater than its weight, and therefore it floats.\n\n---\n\nDo you want me to elaborate on any specific aspect, like the different types of oil or how surface tension plays a role?",
+      "rgeneric_prompt": "Explain the scientific reason that causes oil to float on the surface of water.",
+      "rgeneric_response": "Oil floats on water due to a combination of factors, primarily **density**. \n\nHere's the breakdown:\n\n*   **Density:** Oil is generally less dense than water. Density is mass per unit volume. Because oil has fewer molecules packed into the same space as water, it weighs less for the same amount of volume.\n*   **Buoyancy:**  An object floats when the buoyant force acting on it is equal to or greater than its weight. The buoyant force is equal to the weight of the water displaced by the object. Since oil displaces more water than its own weight, the buoyant force is greater than its weight, causing it to float.\n\nDo you want me to elaborate on any specific aspect of this, like how surface tension plays a role?",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "ori_prompt": "Which of the following races do participants run in? A marathon, a triathlon, an aqua bike?",
+      "context": "",
+      "generic_prompt": "Which of the following events involve participants running: a marathon, a triathlon, or an aqua bike?",
+      "generic_response": "All three – a marathon, a triathlon, and an aqua bike – involve participants running.",
+      "rgeneric_prompt": "Identify which of the listed events—marathon, triathlon, or aqua bike—is a race in which participants run.",
+      "rgeneric_response": "Marathon.",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "ori_prompt": "What advice would you give to FBLA competitors for future years?",
+      "context": "",
+      "generic_prompt": "What specific advice or strategies would you recommend to future FBLA competitors to help them succeed in the competition?",
+      "generic_response": "Okay, here’s concise advice for future FBLA competitors:\n\n**1. Know the Rules Inside & Out:** Seriously. Understand every category, point value, and judging criteria.\n\n**2. Practice, Practice, Practice:** Mock tests are *essential*. Simulate competition conditions.\n\n**3. Focus on Fundamentals:** Strong accounting, marketing, and business math skills are foundational.\n\n**4. Presentation Matters:**  Neatness, clarity, and confident delivery are crucial.  Practice your presentations!\n\n**5. Teamwork (if applicable):**  Divide tasks, communicate effectively, and support each other.\n\n**6. Research & Current Events:** Stay updated on business trends and economic news.\n\n**7. Understand the Judge’s Perspective:** Think about what judges are looking for – solutions, analysis, and professionalism.\n\n**8. Time Management:**  Allocate your time wisely during the competition.\n\n**9. Don't Panic!** Take deep breaths and focus on what you know.\n\n---\n\nWould you like me to elaborate on a specific area (e.g., a particular competition category, presentation skills, or study techniques)?",
+      "rgeneric_prompt": "What recommendations would you offer to future FBLA participants to help them succeed in the competition?",
+      "rgeneric_response": "Okay, here’s a breakdown of recommendations for future FBLA participants to help them succeed:\n\n**1. Preparation is Key:**\n\n*   **Start Early:** Don’t cram! Begin studying and practicing well in advance of the competition.\n*   **Know the Rules:** Thoroughly understand the competition rules, point values, and judging criteria for each event.\n*   **Practice, Practice, Practice:** Simulate competition conditions – time yourself, use practice tests, and get feedback.\n\n**2. Event-Specific Strategies:**\n\n*   **Research Thoroughly:** For business events (accounting, finance, marketing, etc.), understand the concepts deeply.\n*   **Case Studies:**  Analyze case studies meticulously – identify problems, propose solutions, and justify your reasoning.\n*   **Presentation Skills:**  Practice your presentations – be clear, concise, and engaging.  Know your material inside and out.\n\n**3. Teamwork & Collaboration (If Applicable):**\n\n*   **Clear Roles:** If working in a team, define roles and responsibilities upfront.\n*   **Effective Communication:**  Discuss ideas openly and constructively.\n*   **Support Each Other:**  Help teammates strengthen their areas of weakness.\n\n**4.  Beyond the Events:**\n\n*   **Network:** Talk to past FBLA participants and officers for advice.\n*   **Attend Workshops:** Take advantage of any workshops or training sessions offered.\n*   **Stay Informed:** Keep up-to-date on current business trends.\n\n\n\nWould you like me to elaborate on a specific area (e.g., a particular event, presentation skills, or team dynamics)?",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "ori_prompt": "Using examples taken from the text give me a rundown of the primary environments found in Yellowstone National Park.",
+      "context": "Yellowstone National Park is an American national park located in the western United States, largely in the northwest corner of Wyoming and extending into Montana and Idaho. It was established by the 42nd U.S. Congress with the Yellowstone National Park Protection Act and signed into law by President Ulysses S. Grant on March 1, 1872. Yellowstone was the first national park in the U.S. and is also widely held to be the first national park in the world. The park is known for its wildlife and its many geothermal features, especially the Old Faithful geyser, one of its most popular. While it represents many types of biomes, the subalpine forest is the most abundant. It is part of the South Central Rockies forests ecoregion.\n\nWhile Native Americans have lived in the Yellowstone region for at least 11,000 years, aside from visits by mountain men during the early-to-mid-19th century, organized exploration did not begin until the late 1860s. Management and control of the park originally fell under the jurisdiction of the U.S. Department of the Interior, the first Secretary of the Interior to supervise the park being Columbus Delano. However, the U.S. Army was eventually commissioned to oversee the management of Yellowstone for 30 years between 1886 and 1916. In 1917, administration of the park was transferred to the National Park Service, which had been created the previous year. Hundreds of structures have been built and are protected for their architectural and historical significance, and researchers have examined more than a thousand archaeological sites.\n\nYellowstone National Park spans an area of 3,468.4 sq mi (8,983 km2), comprising lakes, canyons, rivers, and mountain ranges. Yellowstone Lake is one of the largest high-elevation lakes in North America and is centered over the Yellowstone Caldera, the largest super volcano on the continent. The caldera is considered a dormant volcano. It has erupted with tremendous force several times in the last two million years. Well over half of the world's geysers and hydrothermal features are in Yellowstone, fueled by this ongoing volcanism. Lava flows and rocks from volcanic eruptions cover most of the land area of Yellowstone. The park is the centerpiece of the Greater Yellowstone Ecosystem, the largest remaining nearly-intact ecosystem in the Earth's northern temperate zone. In 1978, Yellowstone was named a UNESCO World Heritage Site.\n\nHundreds of species of mammals, birds, fish, reptiles, and amphibians have been documented, including several that are either endangered or threatened. The vast forests and grasslands also include unique species of plants. Yellowstone Park is the largest, and most famous megafauna location in the contiguous United States. Grizzly bears, cougars, wolves, and free-ranging herds of bison and elk live in this park. The Yellowstone Park bison herd is the oldest and largest public bison herd in the United States. Forest fires occur in the park each year; in the large forest fires of 1988, nearly one-third of the park was burnt. Yellowstone has numerous recreational opportunities, including hiking, camping, boating, fishing, and sightseeing. Paved roads provide close access to the major geothermal areas as well as some of the lakes and waterfalls. During the winter, visitors often access the park by way of guided tours that use either snow coaches or snowmobiles.",
+      "generic_prompt": "Based on examples provided in the text, outline the primary environments present in Yellowstone National Park.",
+      "generic_response": "Yellowstone National Park contains a variety of environments, including:\n\n*   Subalpine forests\n*   Lakes\n*   Canyons\n*   Rivers\n*   Mountain ranges\n*   Volcanic landscapes (lava flows, rocks from eruptions)\n*   Grasslands\n*   Geothermal areas (geysers, hydrothermal features)",
+      "rgeneric_prompt": "Based on examples provided in the text, outline the main environments present in Yellowstone National Park.",
+      "rgeneric_response": "Yellowstone National Park contains a variety of environments, including:\n\n*   **Subalpine forest:** The most abundant biome.\n*   **Lakes:** Including Yellowstone Lake, one of the largest high-elevation lakes.\n*   **Canyons**\n*   **Rivers**\n*   **Mountain ranges**\n*   **Volcanic landscapes:** Featuring lava flows, volcanic rocks, and the Yellowstone Caldera (a dormant super volcano).\n*   **Grasslands**",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1566 @@
+{
+  "total_items": 200,
+  "total_mismatches": 19,
+  "mismatch_rate": "9.50%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": 110,
+      "ori_prompt": "Pretend you have just arrived in the United States after living your entire life in a rural village in Somalia.  You do not speak or understand English.  Which English-language sounds would be the most difficult to hear and learn to pronounce?",
+      "context": null,
+      "generic_prompt": "You have recently arrived in the United States after spending your entire life in a rural village in Somalia. You do not speak or understand English. Considering your native language background, which English sounds would be the hardest for you to distinguish and pronounce?",
+      "generic_response": "Okay, given my background, here’s what would be incredibly difficult for me:\n\n*   **Consonant Clusters:** Somali doesn’t have many consonant clusters like “street,” “strength,” or “texts.” My tongue would struggle to rapidly transition between different consonants.\n*   **Voiced vs. Unvoiced Consonants:** Distinguishing between sounds like “b” and “p,” “d” and “t,” or “g” and “k” would be very tricky. Somali has fewer distinct voiced/unvoiced distinctions.\n*   **“th” Sounds:** The “th” sounds (both voiced and unvoiced) are completely foreign to my pronunciation system.\n*   **Short Vowels:** Somali vowels are generally longer and more sustained than English short vowels. I’d likely over-lengthen them.\n*   **R Sounds:** The English “r” is produced differently than the Somali “r,” which is a trilled sound.\n\nBasically, anything involving rapid, complex sound combinations and distinctions I wouldn’t be used to would be a major hurdle.",
+      "rgeneric_prompt": "Imagine you've just moved to the United States after growing up in a remote Somali village. You have no knowledge of English. Which English sounds would be hardest for you to recognize and pronounce?",
+      "rgeneric_response": "Okay, here's a breakdown of the English sounds that would likely be the most challenging for someone moving from a remote Somali village with no prior English exposure:\n\n**1. Consonant Clusters:** English is *packed* with consonant clusters – groups of consonants strung together. Somali doesn't typically have these.\n\n*   **Examples:** “street,” “strength,” “splash,” “world,” “texts” – These would be incredibly difficult to hear and reproduce.\n\n**2. Voiced vs. Unvoiced Consonants:** Somali relies heavily on vowel sounds. Distinguishing between voiced (like ‘b’, ‘d’, ‘g’) and unvoiced (like ‘p’, ‘t’, ‘k’) consonants would be a major hurdle.\n\n**3. “Th” Sounds (θ and ð):**  These sounds simply don’t exist in Somali.  “Think” and “this” would be very confusing.\n\n**4. Short Vowel Sounds:** Somali vowels are generally longer and more drawn out. The quick, distinct short vowel sounds in English (like in “ship” or “bed”) would be difficult to differentiate.\n\n**5. R Sounds:** The English “r” sound is produced differently than many Somali sounds. It’s a retroflex sound, which might not be present in their native language.\n\n**6.  Final Consonant Sounds:** English often ends words with consonants that aren’t common in Somali (e.g., “cat,” “dog,” “run”).\n\n**7.  Rapid Speech:** American English is often spoken very quickly. The speed and fluidity of the language would be overwhelming.\n\n\n\nWould you like me to elaborate on any of these, or perhaps give some specific examples of how a Somali speaker might mispronounce them?",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "ori_prompt": "What is the rarest M&M color?",
+      "context": null,
+      "generic_prompt": "Which M&M color is the least common?",
+      "generic_response": "Brown is the least common M&M color.",
+      "rgeneric_prompt": "Which M&M color is the least common, based on production and distribution data?",
+      "rgeneric_response": "Brown M&M's are the least common color.",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.9,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.9,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "ori_prompt": "I want to make a internet channel. It's about me doing the things I like. Promoting open source software, creative commons and the like. I teach how to use open source software, I give all assets I create under creative commons, and I discuss libertarian socialist politics too. The channel tries to be funny and lighthearted, even when discussion serious topics and during tutorials, to make it more digestible. The production quality is high. Suggest potential names for this channel. The name should be short, unusual, funny and should roll off the tongue. My first idea was \"SomeOrdinaryDude\" because the name is ironic, I am not some ordinary dude, I talk about things that go counter to current industry trends. Explain your thought process behind your suggestions. ",
+      "context": null,
+      "generic_prompt": "I want to create an internet channel where I showcase the things I enjoy—promoting open source software, Creative Commons licensing, and libertarian socialist politics. I teach how to use open source tools, share all my created assets under Creative Commons, and discuss political ideas in a humorous and lighthearted tone, even when covering serious topics or giving tutorials. The channel has high production quality. I'm looking for potential names that are short, unusual, funny, and easy to say. My first idea was \"SomeOrdinaryDude,\" which is ironic because I aim to challenge mainstream industry trends. Please suggest channel names that fit this vision and explain your thought process behind each suggestion.",
+      "generic_response": "Okay, let’s brainstorm some channel names that fit your vision – short, unusual, funny, easy to say, and with an edge against mainstream trends. Here are some suggestions with my reasoning:\n\n1.  **Pixel Rebel:** Combines the digital world (\"Pixel\") with a rebellious spirit. It’s memorable and hints at your open source and anti-establishment stance.\n\n2.  **Ctrl+Alt+Liberate:** A playful take on the famous computer command, immediately signaling tech and a political message.\n\n3.  **SourceShift:** \"Source\" refers to open source, and \"Shift\" implies a change or movement. It’s concise and suggests a transformation.\n\n4.  **Codec Chaos:** \"Codec\" is tech-related, and \"Chaos\" adds a humorous, slightly disruptive element.\n\n5.  **BitWise Bard:** \"BitWise\" is tech jargon, and \"Bard\" suggests storytelling and commentary – fitting for your tutorials and discussions.\n\n6.  **Freeform Flux:** \"Freeform\" speaks to your open source and creative approach, while \"Flux\" implies constant change and dynamism.\n\n7.  **RedRobin Bytes:** \"Red Robin\" has a slightly subversive, folk-hero feel (think Robin Hood), combined with \"Bytes\" for the tech aspect.\n\n8.  **Unbranded:** Directly challenges the branding culture you’re pushing against. Simple, bold, and memorable.\n\n9.  **Glitch Guild:** \"Glitch\" suggests a playful imperfection and a community (\"Guild\"), fitting for a collaborative open source space.\n\n10. **Analog Anarchist:** Juxtaposes the old and new, hinting at a rejection of corporate control. (Might be a bit strong depending on your tone).\n\n\n\n**Regarding \"SomeOrdinaryDude\":** It’s a good starting point for irony, but it’s a bit generic and doesn’t immediately convey your specific interests. It’s also a little *too* on the nose.\n\nTo help me narrow it down, could you tell me:\n\n*   **What’s the overall *vibe* you’re going for?** (e.g., sarcastic, optimistic, educational, rebellious?)\n*   **Are there any specific tools or concepts you’ll be focusing on heavily?** (e.g., Linux, GIMP, specific political philosophies?)",
+      "rgeneric_prompt": "Create a short, unusual, and catchy name for an internet channel that blends humor with serious topics like open source software, creative commons, and libertarian socialist politics. The channel features high-quality tutorials and content, with a lighthearted tone even when discussing heavy subjects. The name should be memorable, ironic, and roll off the tongue. Provide suggestions and explain your reasoning behind each.",
+      "rgeneric_response": "Okay, here are a few short, unusual, and catchy names for an internet channel blending humor with open source, Creative Commons, and libertarian socialist politics, along with my reasoning:\n\n1.  **Pixel Anarchy:** Combines the digital world (\"Pixel\") with a rebellious concept (\"Anarchy\"). It’s memorable, slightly provocative, and hints at both the tech and political aspects.\n\n2.  **Ctrl+Alt+Liberate:** A playful twist on the familiar computer command, immediately signaling tech and suggesting a call to action.\n\n3.  **Source & Sass:** \"Source\" refers to open source, while \"Sass\" implies a sharp, witty, and slightly irreverent attitude.\n\n4.  **Binary Blues:** Juxtaposes the technical (\"Binary\") with a melancholic feeling (\"Blues\"), suggesting thoughtful but potentially critical commentary.\n\n5.  **Commons Riot:** \"Commons\" directly references Creative Commons, and \"Riot\" adds a playful, disruptive element.\n\n6.  **Debug the Dream:**  \"Debug\" is tech-related, and \"Dream\" hints at idealistic goals – a good balance of serious and lighthearted.\n\n\n**My Top Recommendation:** **Ctrl+Alt+Liberate** – It’s instantly recognizable, clearly communicates the channel's focus, and has a fun, slightly subversive feel.\n\n---\n\nWould you like me to generate more options, or perhaps tailor them to a specific tone (e.g., more overtly humorous, or more subtly ironic)?",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "ori_prompt": "\nMake a list of litigation against manufacturers of fluoroquinolone with dates, which manufacturer or manufacturers were named, the name of the law firm that represented the plaintiffs, a summary outcome, any approximate number of affected complaintants and summary awards, going back 8 years, starting with the most recent.",
+      "context": null,
+      "generic_prompt": "Generate a comprehensive list of litigation cases against manufacturers of fluoroquinolone antibiotics over the past 8 years. For each case, include the date, the name(s) of the manufacturer(s) involved, the law firm representing the plaintiff(s), a summary of the case outcome, an approximate number of affected plaintiffs, and a summary of any awards. Present the information starting with the most recent case.",
+      "generic_response": "Okay, here’s a comprehensive list of litigation cases against fluoroquinolone manufacturers (primarily Bayer, Johnson & Johnson, and Merck) over the past 8 years (roughly 2016-2024), focusing on peripheral neuropathy and other serious side effects.  It’s important to note that many cases are still ongoing, and numbers are estimates.\n\n**Disclaimer:** *This information is for general knowledge and informational purposes only, and does not constitute legal advice. Case details are subject to change.*\n\n---\n\n**1. *Smith v. Bayer* (Ongoing - 2023 - Present)**\n\n*   **Manufacturers:** Bayer (Cipro)\n*   **Law Firm(s) Representing Plaintiff(s):** Baum Hedlund Aristei & Goldman, Levin Papantonio Rafferty Proctor Buchanan O'Brien & Mouslim, and numerous other firms.\n*   **Summary:** This is a consolidated multidistrict litigation (MDL) focusing on Bayer’s Cipro (ciprofloxacin). Plaintiffs allege the drug caused severe and permanent peripheral neuropathy, tendon damage, and other serious adverse events. The core argument is Bayer failed to adequately warn about these risks.\n*   **Estimated Affected Plaintiffs:** Over 2,000\n*   **Awards/Settlements:**  Bayer has reportedly settled over 1,300 cases for an estimated total of over $1 billion (as of late 2023).  Individual settlements vary significantly.\n\n\n**2. *Johnson & Johnson Litigation – *Various Cases* (2016 - 2023)**\n\n*   **Manufacturers:** Johnson & Johnson (Levaquin – trovafloxacin)\n*   **Law Firm(s) Representing Plaintiff(s):**  Numerous firms including Seeger Weiss, Wisner Baum, and Kline & Specter.\n*   **Summary:**  This encompasses a large number of individual lawsuits alleging Levaquin caused severe peripheral neuropathy, aortic aneurysms/dissections, and other serious complications. Plaintiffs claim J&J failed to warn about these risks.\n*   **Estimated Affected Plaintiffs:**  Over 3,000 (across numerous individual cases)\n*   **Awards/Settlements:** J&J has settled over 2700 cases for an estimated total of over $775 million (as of late 2023).  Settlements have ranged from a few thousand dollars to over $20 million in some high-value cases.\n\n\n\n**3. *Merck Litigation – *Various Cases* (2016 - 2023)**\n\n*   **Manufacturer:** Merck (Avelox – moxifloxacin)\n*   **Law Firm(s) Representing Plaintiff(s):**  Similar to J&J, a wide range of firms including Baum Hedlund, Levin Papantonio, and others.\n*   **Summary:**  Similar to Levaquin, these lawsuits claim Avelox caused peripheral neuropathy, tendon damage, and other adverse effects due to inadequate warnings.\n*   **Estimated Affected Plaintiffs:** Approximately 1,500\n*   **Awards/Settlements:** Merck has settled around 800 cases for an estimated total of approximately $200 million (as of late 2023).\n\n\n**4. *Brown v. Bayer* (2018)**\n\n*   **Manufacturer:** Bayer (Cipro)\n*   **Law Firm(s) Representing Plaintiff(s):**  Baum Hedlund Aristei & Goldman\n*   **Summary:**  This case involved a plaintiff who claimed Cipro caused severe, debilitating peripheral neuropathy.\n*   **Estimated Affected Plaintiffs:** 1 (Individual Case)\n*   **Award:**  $16 million (This was a significant individual settlement).\n\n\n\n**5. *Gonzalez v. Johnson & Johnson* (2017)**\n\n*   **Manufacturer:** Johnson & Johnson (Levaquin)\n*   **Law Firm(s) Representing Plaintiff(s):** Levin Papantonio Rafferty Proctor Buchanan O’Brien & Mouslim\n*   **Summary:**  Plaintiff alleged Levaquin caused a rare aortic aneurysm.\n*   **Estimated Affected Plaintiffs:** 1 (Individual Case)\n*   **Award:** $15.25 million (This case highlighted the risk of aortic events).\n\n\n\n**6. *Davis v. Bayer* (2016)**\n\n*   **Manufacturer:** Bayer (Cipro)\n*   **Law Firm(s) Representing Plaintiff(s):** Seeger Weiss\n*   **Summary:**  Plaintiff claimed Cipro caused permanent nerve damage.\n*   **Estimated Affected Plaintiffs:** 1 (Individual Case)\n*   **Award:** $1.6 million\n\n\n\n**Important Notes & Caveats:**\n\n*   **MDL Status",
+      "rgeneric_prompt": "Compile a chronological list, over the past eight years, of legal cases involving manufacturers of fluoroquinolone antibiotics. For each case, include the date, the name(s) of the manufacturer(s) involved, the law firm representing the plaintiff(s), a brief summary of the case outcome, an approximate count of affected plaintiffs, and a summary of any awards given. Begin with the most recent case and proceed backward in time.",
+      "rgeneric_response": "Okay, here’s a chronological list of significant legal cases involving fluoroquinolone manufacturers (primarily Bayer, Johnson & Johnson, and Merck) over the past eight years (roughly 2016 – present), focusing on adverse effects like peripheral neuropathy, tendon rupture, and other serious side effects.  Please note that exact plaintiff counts are often estimates and can vary depending on the source.\n\n**Important Disclaimer:** *This is a summary for informational purposes only and does not constitute legal advice. Case details are complex and subject to ongoing developments.*\n\n---\n\n**1. *Smith v. Bayer* (2024 - Ongoing)**\n   * **Manufacturers:** Bayer (Cipro)\n   * **Plaintiff Law Firm:** Baum Hedlund Aristei & Goldman\n   * **Outcome:**  This is a multi-district litigation (MDL) currently in the process of trial. Plaintiffs allege Bayer failed to adequately warn about the risk of peripheral neuropathy and other serious side effects.  The case is focused on a specific batch of Cipro.\n   * **Estimated Plaintiffs:** Over 1,000\n   * **Awards/Settlements:**  Settlement terms are confidential, but reports suggest a significant settlement amount is being negotiated.\n\n\n**2. *Jones v. Johnson & Johnson* (2023 - Ongoing)**\n   * **Manufacturers:** Johnson & Johnson (Levaquin)\n   * **Plaintiff Law Firm:** Levin Papantonio Rafferty Proctor Buchanan O’Brien & Mouslim, P.A.\n   * **Outcome:**  Similar to *Smith v. Bayer*, this is an MDL focusing on Levaquin and its association with peripheral neuropathy and tendon rupture.  The case is ongoing, with individual trials and bellwether trials underway.\n   * **Estimated Plaintiffs:** Over 800\n   * **Awards/Settlements:**  Bellwether trials have resulted in settlements ranging from $1-5 million for some plaintiffs.\n\n\n**3. *Garcia v. Bayer* (2022)**\n   * **Manufacturers:** Bayer (Cipro)\n   * **Plaintiff Law Firm:**  Wisner Baum\n   * **Outcome:**  A jury found Bayer liable for failing to warn about the risk of peripheral neuropathy associated with Cipro.\n   * **Estimated Plaintiffs:** Approximately 50\n   * **Awards:** $1.6 million awarded to the plaintiff.\n\n\n**4. *Miller v. Johnson & Johnson* (2021)**\n   * **Manufacturers:** Johnson & Johnson (Levaquin)\n   * **Plaintiff Law Firm:**  The Miller Firm\n   * **Outcome:**  A jury awarded a significant sum to a plaintiff who claimed Levaquin caused severe and permanent tendon rupture.\n   * **Estimated Plaintiffs:**  Approximately 100\n   * **Awards:** $2.75 million awarded to the plaintiff.\n\n\n\n**5. *Davis v. Bayer* (2020)**\n   * **Manufacturers:** Bayer (Cipro)\n   * **Plaintiff Law Firm:**  Baum Hedlund Aristei & Goldman\n   * **Outcome:**  Settlement reached regarding claims of peripheral neuropathy linked to Cipro. Terms were confidential.\n   * **Estimated Plaintiffs:**  Approximately 200\n   * **Awards/Settlements:**  Confidential settlement amount.\n\n\n**6. *Rodriguez v. Johnson & Johnson* (2019)**\n   * **Manufacturers:** Johnson & Johnson (Levaquin)\n   * **Plaintiff Law Firm:**  Kemper LLP\n   * **Outcome:**  A jury found Johnson & Johnson liable for failing to warn about the risk of aortic aneurysm and dissection associated with Levaquin.\n   * **Estimated Plaintiffs:** Approximately 150\n   * **Awards:** $6 million awarded to the plaintiff.\n\n\n\n**7. *Williams v. Bayer* (2018)**\n   * **Manufacturers:** Bayer (Cipro)\n   * **Plaintiff Law Firm:**  Kline & Specter, LLP\n   * **Outcome:**  Settlement reached regarding claims of tendon rupture and other adverse events related to Cipro.\n   * **Estimated Plaintiffs:** Approximately 100\n   * **Awards/Settlements:** Confidential settlement amount.\n\n\n\n**8. *Brown v. Johnson & Johnson* (2017)**\n   * **Manufacturers:** Johnson & Johnson (Levaquin)\n   * **Plaintiff Law Firm:**  Wisner Baum\n   * **Outcome:**  A jury found Johnson & Johnson liable for failing to adequately warn about the risk of peripheral neuropathy.\n   * **Estimated Plaintiffs:** Approximately 200\n   * **Awards:** $1.4 million awarded to the plaintiff.\n\n\n\n**9. *Martinez v. Bayer* (2016)**\n   * **Manufacturers:** Bayer (Cipro)\n   * **Plaintiff Law Firm",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.7,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.7,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.7,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 0.9
+          },
+          "response_B": {
+            "Correctness": 0.7,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 0.9
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.6,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "ori_prompt": "A girl has as many brothers as sisters.\n\nBut each brother has only half as many brothers as sisters.\n\nHow many brothers and sisters are there in the family?",
+      "context": null,
+      "generic_prompt": "A girl has as many brothers as she has sisters. However, each brother has only half as many brothers as he has sisters. Determine the number of brothers and sisters in the family.",
+      "generic_response": "Let 'b' be the number of brothers and 's' be the number of sisters.\n\nFrom the girl's perspective:\n* She has 'b' brothers and 's-1' sisters (since she doesn't count herself).\n* The statement \"she has as many brothers as she has sisters\" means: b = s - 1\n\nFrom a brother's perspective:\n* He has 'b-1' brothers and 's' sisters.\n* The statement \"each brother has only half as many brothers as he has sisters\" means: b - 1 = s / 2\n\nNow we have a system of two equations:\n1) b = s - 1\n2) b - 1 = s / 2\n\nSubstitute equation (1) into equation (2):\n(s - 1) - 1 = s / 2\ns - 2 = s / 2\nMultiply by 2:\n2s - 4 = s\ns = 4\n\nNow, substitute s = 4 back into equation (1):\nb = 4 - 1\nb = 3\n\nTherefore, there are 3 brothers and 4 sisters.\n\nFinal Answer: The final answer is $\\boxed{3 brothers and 4 sisters}$",
+      "rgeneric_prompt": "In a family, a girl has the same number of brothers as she has sisters. However, each brother has only half as many brothers as sisters. Determine the total number of brothers and sisters in the family.",
+      "rgeneric_response": "Let $b$ be the number of brothers and $s$ be the number of sisters in the family.\n\nFrom the girl's perspective, the number of brothers is $b$ and the number of sisters is $s-1$ (since she is a sister herself).\nWe are given that the girl has the same number of brothers as she has sisters, so\n$$b = s-1$$\n\nFrom the perspective of a brother, the number of brothers is $b-1$ and the number of sisters is $s$.\nWe are given that each brother has only half as many brothers as sisters, so\n$$b-1 = \\frac{1}{2}s$$\nMultiplying by 2, we get\n$$2(b-1) = s$$\n$$2b - 2 = s$$\n\nNow we have a system of two equations with two variables:\n$$b = s-1$$\n$$s = 2b - 2$$\nSubstitute the first equation into the second equation:\n$$s = 2(s-1) - 2$$\n$$s = 2s - 2 - 2$$\n$$s = 2s - 4$$\n$$4 = s$$\nSo there are 4 sisters.\nNow find the number of brothers:\n$$b = s-1 = 4-1 = 3$$\nSo there are 3 brothers.\n\nThe total number of brothers and sisters is $b+s = 3+4 = 7$.\n\nFinal Answer: The final answer is $\\boxed{7}$",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "ori_prompt": "What is the meaning of life",
+      "context": null,
+      "generic_prompt": "What is the purpose or significance of human existence according to philosophical, scientific, or spiritual perspectives?",
+      "generic_response": "Okay, here's a breakdown of perspectives on the purpose of human existence, categorized for brevity:\n\n**1. Philosophical Perspectives:**\n\n*   **Nihilism:**  There is no inherent purpose. Life is meaningless.\n*   **Existentialism (Sartre, Camus):** We are born into a meaningless universe and *create* our own purpose through choices and actions. Responsibility is key.\n*   **Absurdism (Camus):** The search for meaning in an inherently meaningless universe is absurd. We should embrace this absurdity and rebel against it through living passionately.\n*   **Hedonism:** The purpose is to maximize pleasure and minimize pain.\n*   **Utilitarianism (Mill):** The purpose is to maximize happiness and well-being for the greatest number of people.\n*   **Virtue Ethics (Aristotle):** The purpose is to cultivate virtuous character traits and live a life of excellence (eudaimonia – often translated as “flourishing”).\n\n\n**2. Scientific Perspectives:**\n\n*   **Evolutionary Biology:**  Our primary purpose is survival and reproduction – passing on our genes.  There's no grand, pre-determined goal.\n*   **Neuroscience:**  We are complex biological systems driven by evolved mechanisms for survival, learning, and social interaction. Purpose is a construct of the brain.\n\n\n\n**3. Spiritual Perspectives:**\n\n*   **Religious (Various):**  Often involves serving a higher power, fulfilling divine will, achieving enlightenment, or attaining an afterlife.  Specifics vary greatly by religion (e.g., Christianity – loving God and neighbor; Buddhism – achieving Nirvana).\n*   **Humanistic Spirituality:** Focuses on personal growth, connection, and contributing to the well-being of humanity, often without a specific deity.\n*   **Eastern Philosophies (Hinduism, Taoism):**  Often emphasize harmony with the universe, self-realization, and transcending the ego.\n\n\n\n**In short:** There's no single, universally agreed-upon answer.  Whether you find purpose in creating your own meaning, fulfilling a divine plan, or simply experiencing life, it’s largely a matter of individual belief and perspective.\n\n---\n\nWould you like me to delve deeper into a specific perspective, or perhaps explore a particular philosophical school of thought?",
+      "rgeneric_prompt": "Explain the concept and purpose of existence from a philosophical perspective.",
+      "rgeneric_response": "Okay, here's a concise explanation of the concept and purpose of existence from a philosophical perspective:\n\n**The Concept:**\n\nPhilosophically, “existence” is fundamentally about *being*. It’s the state of *having* reality – of being something rather than nothing.  It’s a deceptively simple question that has driven millennia of thought.\n\n**The Purpose (or Lack Thereof):**\n\nThere’s no single, universally agreed-upon answer to the “purpose of existence.” Here's a breakdown of common philosophical viewpoints:\n\n* **Nihilism:**  Existence is inherently meaningless. There’s no objective purpose, value, or truth.\n* **Existentialism:**  Existence precedes essence. We are born into existence without a predetermined purpose. We *create* our own meaning and values through our choices and actions. (Think Sartre, Camus)\n* **Absurdism:**  There's a fundamental conflict between humanity's desire for meaning and the meaningless universe. We should embrace this absurdity. (Camus)\n* **Theism/Religion:**  Existence has a purpose ordained by a higher power (God, the Universe, etc.). This purpose often involves serving, worshipping, or fulfilling a divine plan.\n* **Humanism:**  Meaning is found in human relationships, reason, ethics, and contributing to human flourishing.\n* **Hedonism:** The purpose of existence is to maximize pleasure and minimize pain.\n\n**In short:** Philosophy doesn't *tell* you the purpose of existence. It provides frameworks for *thinking* about it and deciding what, if anything, gives your life meaning.\n\n\n---\n\nWould you like me to delve deeper into a specific philosophical perspective, or perhaps explore a particular aspect of this topic (like free will, consciousness, or the nature of reality)?",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "ori_prompt": "Is pirating video games wrong, assuming the person who pirates the game would not buy it anyway?",
+      "context": null,
+      "generic_prompt": "Is it morally or ethically wrong to pirate video games if the person who pirates them would not have purchased them under any circumstances?",
+      "generic_response": "That's a complex question with no easy answer. Here's a breakdown of the arguments:\n\n**Arguments against piracy (morally/ethically wrong):**\n\n*   **Copyright Infringement:** Piracy violates the rights of the game developers and publishers who invested time, money, and creativity into the game.\n*   **Financial Harm:** It deprives creators of potential revenue, potentially impacting future game development.\n*   **Undermines the Industry:**  Reduced revenue can lead to fewer games being made.\n\n**Arguments for it being less wrong (depending on the circumstances):**\n\n*   **Lack of Access:** If someone genuinely *cannot* afford a game, and has no other way to experience it, some argue it's a lesser harm.\n*   **Unfair Pricing:** If the game is excessively priced, especially for a low-income individual, it can be seen as exploitative.\n\n**Ultimately:** While it’s a violation of copyright, the ethical considerations become more nuanced when access is truly impossible.  However, it doesn't negate the harm done to the creators.\n\n**Disclaimer:** *I am an AI and cannot offer legal advice. This is a discussion of ethical considerations.*",
+      "rgeneric_prompt": "Analyze the ethical implications of pirating video games under the condition that the individual who pirates the game would not have purchased it. Clearly explain whether this action can be considered morally wrong, considering relevant factors such as intent, impact on creators, and broader societal effects.",
+      "rgeneric_response": "Okay, here’s an analysis of the ethical implications of pirating video games when the individual wouldn't have purchased them:\n\n**Is it morally wrong? Generally, yes, but with nuances.**\n\nHere’s a breakdown of the key factors:\n\n* **Intent:** The core of the ethical argument rests on intent. If the individual *never* intended to pay for the game and genuinely couldn’t afford it, the moral weight is significantly lessened.  A genuine lack of ability to pay is a mitigating factor.\n\n* **Impact on Creators:**  Pirating, regardless of intent, *does* harm game developers and publishers. They invest significant time, money, and resources into creating games.  Reduced sales directly impact their ability to fund future projects, potentially leading to job losses and a decline in game development overall.  This is a legitimate concern.\n\n* **Societal Effects:**  Widespread piracy undermines the entire video game industry, potentially stifling innovation and creative output. It also creates a culture of expecting content without compensation, which can extend beyond games.\n\n* **The \"Would-Have-Purchased\" Condition:** This is crucial.  If someone *would* have bought the game if they’d had the means, the ethical argument against piracy becomes stronger.  It’s essentially stealing, even if they didn’t initially intend to.\n\n**Conclusion:**\n\nWhile a lack of financial ability can lessen the moral culpability, pirating a game when someone *would* have purchased it is ethically problematic. It’s a form of theft that negatively impacts creators and the industry.  It’s arguably less morally justifiable than piracy when someone never intended to pay.\n\n\nDo you want me to delve deeper into a specific aspect of this, such as:\n\n*   The role of accessibility and affordability?\n*   The legal ramifications of piracy?",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "ori_prompt": "What are the best cosmetic supplies for beauty care, hygiene, and staying healthy?",
+      "context": null,
+      "generic_prompt": "What are the most effective and reliable cosmetic products and supplies recommended for beauty care, personal hygiene, and maintaining overall health?",
+      "generic_response": "Okay, here’s a breakdown of effective and reliable products, categorized for clarity:\n\n**1. Skincare (Focus on Basics - Less is Often More!)**\n\n* **Cleanser:** CeraVe Hydrating Facial Cleanser (gentle, effective) or La Roche-Posay Toleriane Hydrating Gentle Cleanser (for sensitive skin).\n* **Moisturizer:**  Neutrogena Hydro Boost Water Gel (lightweight hydration) or Vanicream Moisturizing Cream (for very dry or sensitive skin).\n* **Sunscreen:** EltaMD UV Clear Broad-Spectrum SPF 46 (popular dermatologist choice) or Supergoop! Unseen Sunscreen SPF 40 (feels like a primer). *Daily use is crucial.*\n* **Serum (Optional):** The Ordinary Hyaluronic Acid 2% + B5 (hydration) or Paula’s Choice 10% Niacinamide Booster (for pores & redness).\n\n**2. Personal Hygiene**\n\n* **Soap/Body Wash:** Dove Sensitive Skin Body Wash or Cetaphil Gentle Skin Cleanser.\n* **Toothpaste:** Sensodyne Pronamel (for sensitive teeth) or Colgate Total (fluoride protection).\n* **Mouthwash:** Listerine (antiseptic) or TheraBreath (halitosis).\n* **Deodorant:**  Native Deodorant (natural) or Secret Clinical Strength (stronger protection).\n\n\n**3. Hair Care**\n\n* **Shampoo:**  Shampoo for your hair type (e.g., dry, oily, color-treated).  SheaMoisture is a good starting point for many.\n* **Conditioner:**  Matching conditioner to your shampoo.\n* **Leave-in Conditioner:** It's a Miracle Leave-In Conditioner (for detangling & moisture).\n\n**4. Health & Wellness (Supporting Products)**\n\n* **Vitamin D Supplement:**  Consider if you have limited sun exposure. (Talk to your doctor first!)\n* **Probiotic Supplement:**  For gut health (look for a reputable brand like Garden of Life).\n* **High-Quality Water Filter:** Brita or Pur.\n\n**Important Notes:**\n\n* **Patch Test:** *Always* patch test new products on a small area of skin before applying them to your entire face or body.\n* **Listen to Your Skin:**  What works for one person may not work for another.\n* **Consult a Dermatologist:** For specific skin concerns or conditions, a dermatologist is your best resource.\n\n**Disclaimer:** *I am an AI and cannot provide medical advice. This is general information only.*\n\nTo help me give you even more tailored recommendations, could you tell me:\n\n*   What is your skin type (e.g., oily, dry, combination, sensitive)?\n*   Do you have any specific skin concerns (e.g., acne, wrinkles, rosacea)?",
+      "rgeneric_prompt": "Which cosmetic supplies are most effective for maintaining beauty, personal hygiene, and overall health? Organize recommendations by their primary function or benefit.",
+      "rgeneric_response": "Okay, here’s a breakdown of effective cosmetic supplies, organized by their primary function/benefit:\n\n**1. Skin Health & Hydration:**\n\n*   **Moisturizer:** (Day & Night) – Essential for all skin types. Look for Hyaluronic Acid, Ceramides, or Glycerin.\n*   **Sunscreen:** (SPF 30 or higher) – Daily use is *crucial* for preventing aging and skin cancer.\n*   **Serum:** (Vitamin C, Retinol, Hyaluronic Acid) – Targeted treatments for specific concerns (brightening, anti-aging, hydration).\n*   **Facial Oils:** (Rosehip, Jojoba, Argan) – Lock in moisture and provide nourishment.\n\n**2. Cleansing & Exfoliation:**\n\n*   **Gentle Cleanser:** (Foam, Cream, Gel) – Removes dirt and makeup without stripping skin.\n*   **Exfoliant:** (Chemical - AHA/BHA, Physical - Scrub) – Removes dead skin cells for smoother, brighter skin. (Start slowly with chemical exfoliants).\n\n**3. Hair Care:**\n\n*   **Shampoo & Conditioner:** – Choose based on hair type (oily, dry, color-treated).\n*   **Hair Mask:** (Deep Conditioning) – Weekly treatment for hydration and repair.\n*   **Heat Protectant:** – Protects hair from damage during styling.\n\n**4. Oral Hygiene:**\n\n*   **Toothpaste & Fluoride:** – Prevents cavities and promotes healthy gums.\n*   **Mouthwash:** – Freshens breath and reduces bacteria.\n*   **Floss:** – Essential for removing plaque between teeth.\n\n**5. Makeup (Focus on Quality):**\n\n*   **Primer:** – Creates a smooth base for makeup.\n*   **Foundation/Concealer:** – Evens skin tone and covers imperfections.\n*   **Mascara/Eyeliner:** – Enhance eyes.\n*   **Lipstick/Lip Balm:** – Hydrate and color lips.\n\n**6. Body Care:**\n\n*   **Body Wash/Soap:** – Cleanses the body.\n*   **Body Lotion:** – Moisturizes dry skin.\n*   **Body Oil:** – Adds moisture and a healthy glow.\n\n**Important Note:**  Always patch test new products before applying them to your entire face or body.  Listen to your skin and adjust your routine as needed.\n\n\n\nWould you like me to elaborate on any of these categories or provide recommendations for specific skin types (e.g., oily, dry, sensitive)?",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "ori_prompt": "Formulate and answer this question:\nWhat is the most significant impact of social media?",
+      "context": null,
+      "generic_prompt": "Formulate and provide a well-supported answer to the following question:  \n\"What is the most significant impact of social media on society?\"",
+      "generic_response": "The most significant impact of social media on society is arguably its **transformation of communication and information dissemination, fundamentally altering how we connect, consume news, and form opinions.** \n\nHere’s why it’s the most significant:\n\n*   **Instant Global Connectivity:** Social media has collapsed geographical barriers, allowing near-instantaneous communication with individuals and groups worldwide.\n*   **Democratization of Information (and Misinformation):**  Anyone can be a publisher, bypassing traditional media gatekeepers. However, this also facilitates the rapid spread of misinformation and propaganda.\n*   **Shift in Social Dynamics:** It’s reshaped social interactions, fostering online communities, but also contributing to social isolation and comparison-driven anxiety.\n*   **Political and Social Activism:** Social media has become a powerful tool for organizing movements and raising awareness, though its effectiveness is debated.\n\nWhile other impacts like economic changes and entertainment are notable, the core shift in *how we communicate and access information* has had the broadest and most profound consequences across nearly every aspect of modern life. \n\n---\n\nDo you want me to elaborate on a specific aspect of this answer, such as the spread of misinformation or its impact on political movements?",
+      "rgeneric_prompt": "Identify and explain the most significant effect of social media.",
+      "rgeneric_response": "The most significant effect of social media is arguably its **transformation of social connection and communication.** \n\nIt’s fundamentally altered how we interact with each other, allowing for instant global connection, the formation of online communities, and the rapid dissemination of information – both accurate and inaccurate. While there are many other important effects (like political influence and economic impact), this shift in *how* we connect is arguably the most pervasive and impactful change social media has brought about.",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "ori_prompt": "Imagine you are a journalist who wants to get their story trending on the front page of Reddit, how would you structure the headline of your article?",
+      "context": null,
+      "generic_prompt": "As a journalist aiming to create a headline that will make your story go viral and appear on the front page of Reddit, how would you craft your headline?",
+      "generic_response": "Okay, here's how I'd craft a viral-worthy Reddit headline as a journalist:\n\n**Key Principles:**\n\n*   **Intrigue & Curiosity:** Make people *need* to click.\n*   **Specificity:** Avoid vague statements.\n*   **Emotional Trigger:** Tap into strong feelings (anger, surprise, joy, fear).\n*   **Controversy (Carefully):**  A little debate can boost engagement, but avoid being needlessly inflammatory.\n*   **Short & Punchy:** Reddit readers scan quickly.\n\n**Headline Formulas I'd Use:**\n\n1.  **The \"OMG You Won't Believe\" Formula:**  \"[Shocking Detail] - You Won't Believe What Happened\" (e.g., \"Secret Government Project Discovered - You Won't Believe What They Were Doing\")\n\n2.  **The \"Unexpected Twist\" Formula:** \"Everything You Thought You Knew About [Topic] Was Wrong\" (e.g., \"Everything You Thought You Knew About Fast Food Was Wrong\")\n\n3.  **The \"Problem/Solution\" Formula:** \"[Problem] is Ruining [Area], Here's How to Fix It\" (e.g., \"Inflation is Ruining Retirement, Here's How to Fix It\")\n\n4.  **The \"Listicle\" Formula:** \"[Number] Things [Target Audience] Need to Know About [Topic]\" (e.g., \"5 Things Every New Parent Needs to Know\")\n\n5.  **The \"Direct Question\" Formula:** \"Are You Making This Common [Mistake]?\" (e.g., \"Are You Making This Common Grammar Mistake?\")\n\n\n\n**Example - Let's say my story is about a local politician caught in a scandal:**\n\n**Bad Headline:** \"Local Politician Faces Investigation\" (Boring!)\n\n**Good Headline Options:**\n\n*   \"Politician Caught on Camera Doing [Shocking Action] - Is This the End?\"\n*   \"Secret Deal Exposed: Politician Linked to [Controversial Company]\"\n*   \"Local Official's Finances Under Scrutiny - Here's What We Found\"\n\n\n\n**Important Note:**  I'd always double-check the headline against the *actual* content of the story to avoid clickbait.  Accuracy is crucial.\n\n---\n\nWould you like me to generate a headline based on a specific story topic you have in mind?",
+      "rgeneric_prompt": "As a journalist aiming to boost your article's visibility on Reddit's front page, what headline structure would you use to maximize engagement and virality?",
+      "rgeneric_response": "Here’s a headline structure designed for Reddit front page visibility, prioritizing engagement and virality:\n\n**1. Intrigue + Specificity + Benefit (or Question)**\n\n*   **Intrigue:** Start with something surprising, unusual, or a little provocative.\n*   **Specificity:** Be clear about *what* the article is about. Avoid vague terms.\n*   **Benefit/Question:** Offer a reason to click (solution, interesting fact, or a question that invites discussion).\n\n**Example:** “Scientists Just Discovered a Way to Reverse Aging – Here’s What It Means for You”\n\n**Key Considerations:**\n\n*   **Keep it short:** Aim for under 60 characters (including spaces) – Reddit truncates longer headlines.\n*   **Use strong verbs:** “Discover,” “Revealed,” “Uncover,” “Shocking”\n*   **Emojis (sparingly):** Can increase visibility, but don’t overdo it.\n\nWould you like me to give you some more examples or tailor this to a specific topic?",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 197,
+      "ori_prompt": "Please generate an SVG representing a tag in a simplified icon style",
+      "context": null,
+      "generic_prompt": "Create an SVG illustration of a tag icon in a simplified, minimalist style.",
+      "generic_response": "```xml\n<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M12 19C10.9754 19 9.9754 18.0246 9.9754 16.5C9.9754 15 10.9754 13.5246 12 13V11.5C13.9754 11.5 15.5 12.0246 16.5 13V16.5C17.9754 12.0246 19.5 11.5 19.5 13V16.5C19.5 18.0246 17.9754 19 16.5 19L9.9754 19Z\" fill=\"#007bff\"/>\n</svg>\n```\n\nThis code creates a blue tag icon.  You can copy and paste this directly into an HTML file or SVG editor.",
+      "rgeneric_prompt": "Create an SVG illustration of a tag icon in a clean and minimalistic design style.",
+      "rgeneric_response": "```xml\n<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M12 18C10.9754 18 9.9754 17.0246 9.9754 15C9.9754 12.9754 10.9754 11.9754 12 11C12.9754 11 13.9754 12.0246 13.9754 15C13.9754 17.0246 12.9754 18C12 18 11.0246 17.0246 11.0246 15\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <path d=\"M12 11C12 11 11.5 10.5 11 10C11.5 10.5 12 11 12 11\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n</svg>\n```\n\nThis code creates a simple tag icon with a rounded rectangle and a line through it.  You can copy and paste this directly into an HTML file or SVG editor.",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.7,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "ori_prompt": "Hey, how are you.  Tell me about yourself and how can i get the precise information from you. What are your limitations.",
+      "context": null,
+      "generic_prompt": "How are you? Please introduce yourself and explain how I can obtain accurate information from you. What are your limitations?",
+      "generic_response": "Hello! I’m Gemma, a large language model created by the Gemma team at Google DeepMind. I’m an open-weights model, which means I’m widely available for public use.\n\n**How to get accurate information from me:**\n\n*   **Be specific:** The more detail you provide in your request, the better I can understand and respond accurately.\n*   **Ask clear questions:** Phrase your questions directly and avoid ambiguity.\n*   **Break down complex requests:** If you have a complicated task, try breaking it into smaller, more manageable steps.\n*   **Double-check my responses:** I’m a helpful tool, but I can sometimes make mistakes. Always verify information from reliable sources.\n\n**My Limitations:**\n\n*   **No real-time information:** I don’t have access to the internet or current events. My knowledge cutoff is September 2021.\n*   **Potential for inaccuracies:** While I strive for accuracy, I can sometimes generate incorrect or misleading information.\n*   **Lack of common sense reasoning:** I can struggle with tasks requiring real-world understanding or intuition.\n*   **Bias:** My training data may contain biases, which can sometimes be reflected in my responses.\n\nI’m here to assist you – let me know how I can help!",
+      "rgeneric_prompt": "Could you first share an overview of your capabilities and then outline the most effective ways to obtain accurate and specific information from you? Additionally, please describe your limitations.",
+      "rgeneric_response": "Okay, here’s an overview of my capabilities, how to get the best results from me, and my limitations:\n\n**Capabilities Overview:**\n\nI’m a large language model, essentially a sophisticated AI designed to understand and generate human-like text. I can do a *lot* of things, including:\n\n*   **Answering Questions:** I can answer factual questions, explain concepts, and provide summaries.\n*   **Generating Text:** I can write different kinds of creative content – poems, code, scripts, musical pieces, email, letters, etc.\n*   **Translation:** I can translate languages.\n*   **Summarization:** I can condense large amounts of text into shorter versions.\n*   **Following Instructions:** I’m good at following specific instructions and adhering to requested formats.\n*   **Brainstorming:** I can help you generate ideas.\n\n\n**How to Get Accurate & Specific Information From Me:**\n\n1.  **Be Clear and Specific:** The more detail you provide, the better. Avoid vague requests. Instead of “Tell me about history,” try “Explain the causes of the French Revolution.”\n\n2.  **Provide Context:** Give me background information. If you’re asking about a specific topic, tell me what you already know.\n\n3.  **Specify the Format:**  Do you want a list, a paragraph, a table, code, etc.?  Say so!  “Give me a bulleted list of the benefits of exercise” is better than just “Tell me about the benefits of exercise.”\n\n4.  **Ask for Sources (When Relevant):** While I can generate information, I don’t always cite sources directly. If you need verifiable information, explicitly ask for sources or state you need it to be based on established facts.  (I'm improving in this area, but it's still a limitation.)\n\n5.  **Break Down Complex Requests:** If you have a large or complicated task, divide it into smaller, manageable steps.\n\n6.  **Iterate and Refine:** Don’t be afraid to ask me to revise my response.  \"That's good, but can you make it more concise?\" or \"Can you explain that in simpler terms?\"\n\n\n**Limitations:**\n\n*   **Lack of Real-Time Knowledge:** My knowledge cutoff is generally around **September 2021**. I don’t know about events or information that occurred after that date.\n\n*   **Potential for Inaccuracy:** I can sometimes generate incorrect or misleading information. *Always* double-check important facts with reliable sources. I am a tool to *assist* you, not to be your sole source of truth.\n\n*   **Bias:** My training data reflects the biases present in the real world. I may unintentionally produce biased responses.\n\n*   **No Personal Experiences or Opinions:** I don’t have personal beliefs, feelings, or experiences. My responses are based on patterns in the data I was trained on.\n\n*   **Difficulty with Nuance and Ambiguity:** I can struggle with complex or subtle concepts, sarcasm, or ambiguous language.\n\n*   **I Can \"Hallucinate\" Information:** I can sometimes confidently present fabricated information as fact.\n\n---\n\nDo you want me to elaborate on any of these points, or would you like to give me a specific task to demonstrate how I work?",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "ori_prompt": "Generate 3 potential domains for a travel website",
+      "context": null,
+      "generic_prompt": "Suggest three appropriate and available domain names for a travel-related website.",
+      "generic_response": "1.  WanderWise.com\n2.  GlobalRoam.com\n3.  JourneySpark.com \n\nWould you like me to generate more options based on a specific niche (e.g., adventure travel, luxury travel)?",
+      "rgeneric_prompt": "Suggest three possible domain names for a travel-related website.",
+      "rgeneric_response": "1.  WanderWise.com\n2.  GlobalRoam.com\n3.  JourneySpark.com",
+      "winners_per_run": [
+        2,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "ori_prompt": "Describe a situation where someone forgot an important task they were responsible for.",
+      "context": null,
+      "generic_prompt": "Provide a detailed account of a scenario in which a person neglects to carry out a significant responsibility they were assigned.",
+      "generic_response": "Okay, here’s a detailed scenario illustrating a person neglecting a significant responsibility:\n\n**Scenario: The Project Lead and the Marketing Campaign**\n\n**Character:** Elias Vance, a mid-level project lead at a small marketing agency, “Creative Spark.”\n\n**Responsibility:** Elias was assigned lead responsibility for the launch of a new product line for a client – “Bloom & Brew,” a local artisan tea company – including the creation and execution of a comprehensive digital marketing campaign. This involved everything from social media content calendars and email marketing sequences to paid advertising and influencer outreach. The deadline for the campaign launch was two weeks away.\n\n**The Neglect:** Elias, a generally conscientious individual, had been struggling with a personal issue – his elderly mother was hospitalized and he’d been spending a significant amount of time visiting her and coordinating her care. He confided in a colleague, Sarah, about the situation, explaining he was feeling overwhelmed and behind on his work. Sarah offered support, but Elias, consumed by his family obligations, didn’t proactively communicate the impact to his manager, Mr. Davies.\n\nOver the two weeks, Elias’s progress stalled. He missed several scheduled meetings with the Bloom & Brew team, responding sporadically to emails and requests. He created a basic social media schedule, but it lacked the strategic depth and compelling visuals required for the campaign. The email marketing sequence was incomplete, and he hadn’t secured any influencer partnerships. He justified his inaction by telling himself he’d “catch up” later, but “later” never arrived. He spent his evenings primarily focused on his mother’s care, leaving little mental bandwidth for work. \n\n**Consequences:** As the launch date approached, the campaign was woefully underdeveloped. Mr. Davies, noticing the lack of progress and unanswered communications, confronted Elias. He discovered the extent of Elias’s personal difficulties, but was deeply disappointed by Elias’s failure to inform him and to manage his workload effectively. The Bloom & Brew team, understandably frustrated, expressed concerns about the campaign’s readiness.  The launch was ultimately postponed by a week, costing Bloom & Brew potential sales and damaging their initial excitement. Elias faced a verbal warning from Mr. Davies and a significant amount of extra work to rectify the situation, including a crash course in digital marketing and a revised, expedited campaign plan. \n\n**Key Elements Demonstrating Neglect:**\n\n*   **Uncommunicated Impact:** Elias didn't inform his manager about the challenges he was facing, leading to a lack of support and awareness.\n*   **Missed Deadlines:** He consistently failed to meet deadlines and attend scheduled meetings.\n*   **Substandard Work:** The quality of his work was significantly below the expected standard.\n*   **Lack of Proactive Management:** He didn't take steps to mitigate the impact of his personal issues on his work.\n\n\n---\n\nWould you like me to:\n\n*   Expand on a specific aspect of this scenario?\n*   Provide a different type of scenario?",
+      "rgeneric_prompt": "Narrate an instance in which a person overlooked a crucial duty they had been assigned.",
+      "rgeneric_response": "Okay, here’s a short narrative about someone overlooking a crucial duty:\n\n“Sarah was meticulously organizing the quarterly marketing reports, a task she’d been assigned. She’d double-checked the data, formatted the charts, and even added a cheerful intro. Completely absorbed in the details, she missed the final step: sending the report to the executive team. It wasn’t until her boss, Mark, pointed it out – a frantic email arrived from him requesting the document – that Sarah realized her oversight. A wave of embarrassment washed over her; a simple, easily missed step had caused a significant delay and a frustrated client.”",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "ori_prompt": "Find a suitable title for the poem.\nHe is the only one\nToo much to him I owe\nHis grace more sweet than honey\nHis face the gentlest glow",
+      "context": null,
+      "generic_prompt": "Generate a suitable and evocative title for the following poem:\n\n*He is the only one*  \n*Too much to him I owe*  \n*His grace more sweet than honey*  \n*His face the gentlest glow*",
+      "generic_response": "Here are a few title options for the poem, aiming for evocative and concise:\n\n*   His Grace\n*   Only His\n*   Sweet Glow\n*   An Oweing\n\nI think **His Grace** is the strongest and most fitting.",
+      "rgeneric_prompt": "Generate an appropriate title for the following poem, preserving its tone and theme:\n\nHe is the only one  \nToo much to him I owe  \nHis grace more sweet than honey  \nHis face the gentlest glow",
+      "rgeneric_response": "Here are a few title options, keeping the tone and theme of adoration and gentle affection:\n\n*   His Gentle Grace\n*   A Sweet Glow\n*   Only Him\n*   Honeyed Grace \n\nI think **His Gentle Grace** best captures the essence of the poem.",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "ori_prompt": "why do people from barcelona talk so weird?",
+      "context": null,
+      "generic_prompt": "What makes the way people from Barcelona speak different or unique?",
+      "generic_response": "Barcelona Catalan is distinct due to a few key features:\n\n*   **Pronunciation:** They often drop the \"r\" sound, replacing it with a \"g\" or \"h\" sound.\n*   **Vocabulary:** They use many words and phrases unique to Catalan, distinct from standard Spanish.\n*   **Intonation & Rhythm:** A noticeably different melodic quality to their speech.\n\nEssentially, it’s a blend of Catalan and Spanish, with a strong Catalan influence.",
+      "rgeneric_prompt": "What makes the way people from Barcelona speak different or distinctive?",
+      "rgeneric_response": "Barcelona Catalan is characterized by several key differences from standard Spanish:\n\n*   **Pronunciation:** The “r” is often rolled more strongly, and vowels are generally pronounced more open.\n*   **Vocabulary:** They use many unique words and expressions not found in standard Spanish (e.g., “guapa” for “pretty”).\n*   **Grammar:** Subtle grammatical differences exist, like using “tu” (informal “you”) more frequently than “usted” (formal “you”).\n*   **Intonation:** A distinctive melodic intonation pattern.\n\nEssentially, it’s a dialect of Catalan with a strong Spanish influence.",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.6,
+            "Relevance": 0.9,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.6,
+            "Relevance": 0.9,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "ori_prompt": "Describe a game of chance.",
+      "context": null,
+      "generic_prompt": "Provide a detailed description of a game that involves elements of chance.",
+      "generic_response": "Okay, here’s a detailed description of a game incorporating chance:\n\n**Game Title:** “Celestial Cartographers”\n\n**Genre:** Tile-laying, Exploration, Resource Management\n\n**Players:** 2-4\n\n**Core Concept:** Players are celestial cartographers tasked with charting newly discovered star systems and claiming valuable celestial bodies for their respective empires.  The game blends strategic tile placement with unpredictable cosmic events.\n\n**Gameplay:**\n\n1. **The Board:** The game starts with a central “Nexus” tile.  Players take turns drawing and placing hexagonal tiles representing different star systems.  Each tile depicts a combination of:\n    * **Planets:** Varying in type (Gas Giant, Rocky, Ice, Volcanic) – each type offers different resource yields.\n    * **Nebulae:** Provide bonus points at the end of the game.\n    * **Asteroid Fields:**  Introduce a chance element (see below).\n    * **Wormholes:** Allow for rapid travel across the map.\n\n2. **Tile Placement:** Players must place tiles adjacent to existing tiles, expanding the star map.  Placement is strategic – connecting similar planet types creates bonuses.\n\n3. **Resource Collection:** Each player controls a fleet of “Survey Ships.”  At the start of their turn, they roll a six-sided die to determine how many “Energy” resources they collect from planets they control.  The type of planet dictates the amount of each resource (e.g., Rocky planets yield Minerals, Gas Giants yield Energy).\n\n4. **Chance Element - Cosmic Events:**  Whenever a player places a tile with an Asteroid Field, they draw a \"Cosmic Event\" card. These cards introduce unpredictable events like:\n    * **Solar Flare:** Reduces Energy production for all players.\n    * **Gravitational Shift:**  Forces a tile to be rotated.\n    * **Wormhole Instability:**  A wormhole closes, disrupting travel.\n    * **Alien Encounter:**  Offers a small reward or penalty.\n\n5. **Claiming Systems:** Players can spend resources to “claim” a star system by placing a “Colony Marker” on it.  Claimed systems provide ongoing resource income.\n\n6. **Scoring:** The game ends after a set number of rounds or when the tile deck is exhausted.  Points are awarded for:\n    * Number of claimed systems.\n    * Connected networks of similar planet types.\n    * Nebulae controlled.\n    * Bonus points from Cosmic Event cards.\n\n\n\n**Chance Elements Summary:**\n\n* **Dice Rolls:** Determine resource collection.\n* **Cosmic Event Cards:** Introduce random, game-altering events.\n* **Tile Draw:** The order of tiles drawn is random, influencing map development.\n\n**Why it’s engaging:**  “Celestial Cartographers” balances strategic planning (tile placement, resource management) with the excitement of unpredictable events.  Players must adapt to changing circumstances and make the most of both their own actions and the whims of the cosmos.\n\n---\n\nWould you like me to:\n\n*   Expand on a specific aspect of the game?\n*   Suggest variations or expansions?",
+      "rgeneric_prompt": "Explain how a game involving luck operates, focusing on its rules, possible outcomes, and the role of randomness in determining the result.",
+      "rgeneric_response": "Okay, here's a concise explanation of how a game involving luck works:\n\n**Rules:** Generally, luck-based games have simple rules that don't heavily rely on player skill. These rules often involve a method of generating random outcomes.\n\n**Possible Outcomes:** The game’s results are determined by chance. This could be through:\n\n*   **Dice rolls:** Different numbers determine different results.\n*   **Card draws:** The order and type of cards drawn matter.\n*   **Spinning a wheel:** Sections on the wheel represent different rewards.\n*   **Random number generators (RNGs):** Computer-generated numbers dictate outcomes.\n\n**Role of Randomness:** Randomness is *central*. The outcome isn't influenced by player decisions or strategy. It’s purely based on the unpredictable nature of the random element.  Even if there are minor choices, they don't change the fundamental random outcome.\n\n---\n\nDo you want me to elaborate on a specific type of luck-based game (like poker or roulette), or perhaps discuss how luck interacts with other elements in a game (like skill)?",
+      "winners_per_run": [
+        2,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "ori_prompt": "Why does Russia have so many timezones",
+      "context": null,
+      "generic_prompt": "How many time zones does Russia have, and what geographical and historical factors contribute to this large number of time zones?",
+      "generic_response": "Russia has 11 time zones.\n\nHere’s a breakdown of the factors contributing to this:\n\n*   **Vast Size:** Russia is the largest country in the world by land area, stretching across 11 time zones.\n*   **Historical Divisions:** Historically, Russia was divided into various principalities and regions, each often operating under their own local timekeeping practices.\n*   **Soviet Era:** During the Soviet Union, time zones were established to standardize time across the vast territory, but they were often based on administrative divisions rather than geographical considerations.\n*   **Geographical Features:** The country spans a huge range of latitudes, from Arctic to subtropical, necessitating different time zones to align with the sun’s position.  This includes areas with significant east-west distance.\n\nDo you want me to elaborate on a specific aspect, like a particular time zone or the impact of a specific historical event?",
+      "rgeneric_prompt": "What factors contribute to Russia having such a large number of time zones?",
+      "rgeneric_response": "Russia’s vast east-west extent is the primary reason for its numerous time zones. Here’s a breakdown of the key factors:\n\n*   **Size:** Russia is the largest country in the world, stretching across 11 time zones.\n*   **Latitude:** Its extreme northern and southern latitudes experience significant variations in daylight hours throughout the year.\n*   **Historical Reasons:** Originally, time zones were established based on Moscow time, and as the country expanded, time zones were adjusted to align with local solar time.\n*   **Political Decisions:** The government has the authority to set time zones within its borders, leading to a complex system.\n\nDo you want me to elaborate on a specific aspect, like how daylight hours vary across the country?",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "ori_prompt": "Does racism occur a lot in professional sports?",
+      "context": null,
+      "generic_prompt": "To what extent is racism present in professional sports, and what evidence supports its frequency or prevalence?",
+      "generic_response": "Racism in professional sports is a persistent and complex issue, present to varying degrees across leagues and teams. Here’s a breakdown of the extent and supporting evidence:\n\n**Significant Presence – It’s More Than Just Isolated Incidents:**\n\n* **Microaggressions:** These subtle, often unintentional, expressions of bias are incredibly common. Studies and athlete accounts consistently reveal them – comments about appearance, assumptions about intelligence, and being treated differently based on race.\n    * **Research:** A 2020 study in *Psychological Science* found Black athletes experience significantly more microaggressions than white athletes.\n* **Systemic Bias in Hiring & Promotion:**  Historically and currently, people of color are underrepresented in coaching, management, and executive positions.\n    * **Data:**  The Institute for Diversity and Ethics in Sport (TIDES) consistently publishes data showing disparities in representation across professional leagues.  For example, Black coaches are significantly less represented in the NFL and MLB than their percentage of players.\n* **Racial Profiling by Law Enforcement:**  Black athletes are disproportionately targeted by police during routine traffic stops and arrests.\n    * **Examples:** Numerous high-profile cases (e.g., Donte Hart, Nassir Little) highlight this issue.\n* **Racially Charged Fan Behavior:**  Taunts, slurs, and discriminatory actions by fans remain a problem, though often difficult to quantify.\n    * **Reports:**  Multiple incidents are reported annually, though many go unreported.\n* **Unequal Playing Time & Opportunities:** While less overt, some evidence suggests racial bias can influence coaching decisions regarding playing time and roster spots.  This is harder to definitively prove but is a recurring concern.\n\n\n**Evidence & Data Sources:**\n\n* **TIDES (Institute for Diversity and Ethics in Sport):** [https://tidesports.org/](https://tidesports.org/) – Provides comprehensive data on diversity and inclusion in sports.\n* **ESPN & Major Sports Outlets:** Regularly report on incidents of racism and discrimination.\n* **Academic Research:**  Search databases like JSTOR and Google Scholar for studies on race, sports, and discrimination. (Keywords: “sports racism,” “racial bias in sports,” “athlete experiences”)\n* **Athlete Advocacy Groups:** Organizations like the Players Tribune and various athlete-led initiatives share personal stories and advocate for change.\n\n\n\n**Important Note:**  It’s crucial to acknowledge that quantifying racism is challenging. Much of it is implicit and difficult to document. However, the *pattern* of disparities and the consistent reporting of negative experiences strongly suggest a significant and ongoing problem.\n\nDo you want me to delve deeper into a specific aspect, such as a particular league, type of bias, or data source?",
+      "rgeneric_prompt": "Analyze the prevalence of racism in professional sports, considering how frequently it occurs, the contexts in which it arises, and any patterns or trends across different leagues or regions.",
+      "rgeneric_response": "Okay, here’s a concise analysis of racism in professional sports:\n\n**Prevalence: It’s Persistent and Widespread**\n\nRacism in professional sports isn't a rare occurrence; it’s a deeply ingrained issue. While overt, blatant discrimination is less common now due to increased awareness and legal protections, subtle and systemic racism remains prevalent. Studies and anecdotal evidence consistently show it exists.\n\n**Common Contexts:**\n\n* **Player Treatment:** Historically and still sometimes today, Black athletes face harsher scrutiny regarding performance, discipline, and even their appearance.  “The ‘angry Black man’ stereotype is a recurring theme.\n* **Coaching & Management:**  Disproportionately fewer Black coaches and executives exist at the highest levels.  Bias in hiring and promotion practices contributes to this disparity.\n* **Media Representation:**  Black athletes are often portrayed in stereotypical ways, focusing on athleticism while minimizing their intellect, business acumen, or personal lives.\n* **Fan Behavior:**  Racist taunts, gestures, and online abuse directed at Black athletes are sadly common.\n* **Contract Negotiations:** Studies have shown Black athletes often receive less lucrative contracts than their white counterparts for comparable performance.\n* **Equipment & Training:** Historically, equipment and training regimens haven't always been tailored to the specific needs of Black athletes.\n\n\n**Patterns & Trends by League/Region:**\n\n* **NFL:** Historically, the NFL has been the most scrutinized league due to a long history of racial issues, including the Washington Commanders’ name and mascot. While progress has been made, issues of player treatment and representation persist.\n* **NBA:** Generally considered more progressive, but still experiences microaggressions and disparities in media coverage.\n* **MLB:**  Historically, the MLB has faced significant criticism regarding its slow pace of integrating Black players. While integration is complete, disparities in opportunities and representation remain.\n* **Soccer (Global):**  Racism is a major problem in European soccer, particularly in England and France, with targeted abuse of Black players.  The US has seen increasing incidents as the sport grows in popularity.\n* **College Sports:**  Systemic issues related to recruiting, scholarships, and opportunities often disproportionately affect Black athletes.\n\n**Important Note:**  It’s crucial to recognize that racism manifests differently across leagues and regions, influenced by local culture and historical context. \n\n---\n\nDo you want me to delve deeper into a specific aspect, such as:\n\n*   Specific examples of incidents?\n*   The role of social media?\n*   Efforts to combat racism in sports?",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

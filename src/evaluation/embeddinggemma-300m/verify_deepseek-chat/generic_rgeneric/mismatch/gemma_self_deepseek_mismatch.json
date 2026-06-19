@@ -1,0 +1,1648 @@
+{
+  "total_items": 252,
+  "total_mismatches": 20,
+  "mismatch_rate": "7.94%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": "user_oriented_task_122",
+      "ori_prompt": "Design a template table for keeping track of all subscriptions.",
+      "context": "",
+      "generic_prompt": "Create a structured table template to organize and monitor all subscription details.",
+      "generic_response": "Okay, here’s a structured table template for organizing and monitoring subscription details:\n\n**Subscription Tracker**\n\n| Subscription Name | Service Provider | Subscription Type (e.g., Monthly, Annual) | Start Date | End Date | Price/Month | Price/Year | Payment Method (e.g., Credit Card, PayPal) | Payment Frequency | Renewal Date | Notes/Renewal Details | Status (Active/Inactive/Paused) | Contact Email/Phone |\n|---|---|---|---|---|---|---|---|---|---|---|---|\n|  |  |  |  |  |  |  |  |  |  |  |  |\n\n**Column Descriptions:**\n\n*   **Subscription Name:**  Specific name of the subscription (e.g., Netflix, Adobe Creative Cloud).\n*   **Service Provider:** The company offering the subscription.\n*   **Subscription Type:** How often you pay (Monthly, Annual, Quarterly, etc.).\n*   **Start Date:** When the subscription began.\n*   **End Date:** When the subscription expires.\n*   **Price/Month:** The monthly cost of the subscription.\n*   **Price/Year:** The annual cost of the subscription.\n*   **Payment Method:** How you pay (e.g., Visa, Mastercard, PayPal).\n*   **Payment Frequency:** How often you are billed (e.g., Monthly, Annually).\n*   **Renewal Date:** The date the subscription will automatically renew.\n*   **Notes/Renewal Details:** Any specific notes about the renewal process (e.g., discount codes, auto-renewal settings).\n*   **Status:** Current state of the subscription (Active, Inactive, Paused).\n*   **Contact Email/Phone:** Contact information for the service provider or for managing the subscription.\n\n---\n\nWould you like me to:\n\n*   Suggest additional columns to add?\n*   Provide an example of how to fill out the table?",
+      "rgeneric_prompt": "Create a structured table template to organize and monitor all subscription services, including details such as service name, renewal date, cost, and status.",
+      "rgeneric_response": "Okay, here’s a structured table template for organizing and monitoring your subscription services:\n\n**Subscription Tracker**\n\n| Service Name | Provider | Category | Renewal Date | Cost (Monthly/Annual) | Payment Method | Status (Active/Inactive/Trial) | Notes (e.g., Usage, Cancellation Link) |\n|---|---|---|---|---|---|---|---|\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |\n\n\n**Explanation of Columns:**\n\n*   **Service Name:**  The specific name of the subscription (e.g., Netflix, Spotify, Adobe Creative Cloud).\n*   **Provider:** The company offering the service (e.g., Netflix, Spotify, Adobe).\n*   **Category:**  Grouping for organization (e.g., Streaming, Software, Productivity, Gaming).\n*   **Renewal Date:** The date the subscription automatically renews.\n*   **Cost (Monthly/Annual):**  The recurring cost of the subscription.  Specify if it's monthly or annual.\n*   **Payment Method:** How you pay (e.g., Credit Card, PayPal).\n*   **Status:** Current state of the subscription (Active, Inactive, Trial, Paused).\n*   **Notes:**  Any relevant information – usage details, cancellation link, special terms, etc.\n\n---\n\nWould you like me to:\n\n*   Suggest some common categories?\n*   Provide a link to a digital spreadsheet template (Google Sheets, Excel)?",
+      "winners_per_run": [
+        2,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_128",
+      "ori_prompt": "Come up with healthy and easy dinner ideas for weeknights.",
+      "context": "",
+      "generic_prompt": "Suggest healthy and easy dinner recipes that are quick to prepare on busy weeknights.",
+      "generic_response": "Okay, here are some healthy and easy dinner recipes perfect for busy weeknights, focusing on speed and minimal effort:\n\n1.  **Sheet Pan Lemon Herb Chicken & Veggies:** Toss chicken and chopped veggies (broccoli, carrots, potatoes) with olive oil, lemon juice, herbs (rosemary, thyme), salt & pepper. Roast at 400°F (200°C) for 25-30 minutes. (Prep: 10 mins, Cook: 25-30 mins)\n\n2.  **Shrimp Scampi with Zucchini Noodles:** Sauté shrimp with garlic, butter, white wine (optional), lemon juice, and red pepper flakes. Toss with zucchini noodles. (Prep: 5 mins, Cook: 10 mins)\n\n3.  **Black Bean Tacos:** Warm tortillas, fill with black beans (canned, rinsed), salsa, shredded lettuce, and a dollop of Greek yogurt or avocado. (Prep: 5 mins, Cook: 10 mins)\n\n4.  **One-Pot Pasta with Sausage & Spinach:** Brown sausage, add pasta, broth, spinach, and seasonings. Simmer until pasta is cooked. (Prep: 10 mins, Cook: 20 mins)\n\n5.  **Quesadillas:** Fill tortillas with cheese, beans, veggies (peppers, onions), and/or leftover cooked chicken. Cook in a skillet until golden brown and cheese is melted. (Prep: 5 mins, Cook: 10 mins)\n\n6.  **Sheet Pan Salmon & Asparagus:** Place salmon fillets and asparagus spears on a sheet pan. Drizzle with olive oil, lemon juice, and seasonings. Bake at 400°F (200°C) for 12-15 minutes. (Prep: 5 mins, Cook: 15 mins)\n\n\nWould you like me to:\n\n*   Provide a more detailed recipe for a specific one?\n*   Suggest recipes based on dietary restrictions (e.g., vegetarian, gluten-free)?",
+      "rgeneric_prompt": "Generate a list of nutritious and simple dinner recipes suitable for busy weeknights. Each idea should be easy to prepare, require minimal ingredients, and be health-conscious.",
+      "rgeneric_response": "Okay, here’s a list of nutritious and simple dinner recipes perfect for busy weeknights:\n\n1.  **Sheet Pan Lemon Herb Chicken & Veggies:** Toss chicken and chopped veggies (broccoli, carrots, potatoes) with olive oil, lemon juice, herbs (rosemary, thyme), salt & pepper. Bake at 400°F (200°C) for 25-30 minutes.\n2.  **Black Bean Tacos:** Canned black beans (rinsed), salsa, shredded lettuce, and a dollop of Greek yogurt or avocado. Serve in tortillas.\n3.  **Shrimp Scampi with Zucchini Noodles:** Sauté shrimp with garlic, olive oil, lemon juice, and white wine (optional). Toss with zucchini noodles.\n4.  **One-Pot Pasta with Sausage & Spinach:** Brown sausage, add pasta, broth, spinach, and seasonings. Simmer until pasta is cooked.\n5.  **Salmon with Roasted Asparagus:** Bake salmon fillets with asparagus spears drizzled with olive oil, salt, and pepper. (15-20 minutes)\n6.  **Chicken and Rice Bowl:** Cooked rice, leftover chicken (shredded), chopped cucumber, shredded carrots, and a light soy sauce dressing.\n7.  **Quesadillas with Black Beans & Cheese:** Whole wheat tortillas filled with black beans, shredded cheese, and salsa.\n8.  **Turkey & Veggie Lettuce Wraps:** Ground turkey sautéed with chopped veggies (peppers, onions) and served in lettuce cups.\n\n---\n\nWould you like me to:\n\n*   Provide more detailed instructions for a specific recipe?\n*   Suggest recipes based on dietary restrictions (e.g., vegetarian, gluten-free)?",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_153",
+      "ori_prompt": "Respond to the last text in the chat using the correct emojis to convey your feelings.",
+      "context": "+ Hey, how did your exams go?\n- They were alright. I'm just glad they're over.\n+ Yeah, I know how you feel. I'm just glad I don't have to worry about them anymore.",
+      "generic_prompt": "Generate a response to the most recent message in the chat, using appropriate emojis to express the relevant emotions.",
+      "generic_response": "Totally! 🎉 Glad they're done for you too! 😊",
+      "rgeneric_prompt": "Analyze the most recent message in the chat conversation and reply with an appropriate response that includes the right emojis to express the relevant emotions.",
+      "rgeneric_response": "That’s fantastic! 🎉 Relief is such a good feeling. 😊",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_173",
+      "ori_prompt": "Schedule the meetings based on the given informqation.",
+      "context": "Person1: available from 9-11 am, meeting duration: 30 min \nPerson2: available from 1-3 pm, meeting duration: 90 min\nPerson3: available from 2-3:30 pm, meeting duration: 60 min",
+      "generic_prompt": "Schedule the meetings based on the provided information.",
+      "generic_response": "Person 2 and Person 3 can meet from 2:00 PM to 3:00 PM (90 minutes).",
+      "rgeneric_prompt": "Organize the meetings according to the provided details.",
+      "rgeneric_response": "Here’s the meeting schedule based on availability and duration:\n\n*   **Person 1:** 9:00 AM - 11:00 AM (30 min)\n*   **Person 3:** 2:00 PM - 3:30 PM (60 min)",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_199",
+      "ori_prompt": "Summarize the movie in a snarky way. Try to explain the movie in just one sentence.",
+      "context": "The Shining",
+      "generic_prompt": "Provide a snarky, one-sentence summary of the movie that captures its essence.",
+      "generic_response": "A family’s idyllic winter retreat descends into a terrifying spiral of isolation, madness, and a very persistent, very evil ghost.",
+      "rgeneric_prompt": "Provide a concise, one-sentence summary of the movie that captures its essence with a tone of wit and sarcasm.",
+      "rgeneric_response": "A family’s idyllic winter retreat turns into a terrifying descent into madness as a malevolent spirit slowly unravels their sanity – and their family – one axe at a time.",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.8,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_223",
+      "ori_prompt": "Based on the given keywords, write a review of a restaurant.",
+      "context": "Name: Pizzeria\ngood prices, quiet place, tasty, nice staff",
+      "generic_prompt": "Using the provided keywords, write a detailed and accurate restaurant review that reflects the specified elements.",
+      "generic_response": "Pizzeria offers a truly delightful dining experience. It’s a fantastic spot for a quiet meal, boasting good prices and incredibly tasty pizza. The staff are also exceptionally nice and welcoming, making for a pleasant and enjoyable visit. Highly recommended!",
+      "rgeneric_prompt": "Given a set of keywords, compose a restaurant review that incorporates and reflects those terms. Organize the review by grouping related elements such as food quality, service, ambiance, and overall experience.",
+      "rgeneric_response": "Okay, here’s a restaurant review incorporating the keywords “Pizzeria,” “good prices,” “quiet place,” “tasty,” and “nice staff”:\n\n**Pizzeria Review**\n\nThis Pizzeria is a real gem! It’s a wonderfully **quiet place**, perfect for a relaxed meal. The food is consistently **tasty** – we tried a few different pizzas and were impressed with the quality of the ingredients and the delicious crust.  And the best part? The **good prices** make it an incredibly affordable option.  Finally, the **nice staff** were friendly and attentive, making for a truly enjoyable experience.  Highly recommended!",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_227",
+      "ori_prompt": "Identify and fix bugs in the given code and rewrite it",
+      "context": "for i in range(10)\n    print(Answer is:)\n    print(i)",
+      "generic_prompt": "Review the provided code to identify any bugs or issues, correct them, and produce a revised version of the code.",
+      "generic_response": "The code has no bugs. It simply prints \"Answer is:\" followed by the value of `i` in a loop from 0 to 9.  It's perfectly functional as is.",
+      "rgeneric_prompt": "Analyze the provided code to locate any errors, correct them, and produce a revised version of the code that functions as intended.",
+      "rgeneric_response": "The code has a logical error. It prints \"Answer is:\" twice for each iteration.\n\nHere's the corrected code:\n\n```python\nfor i in range(10):\n    print(\"Answer is:\")\n    print(i)\n```",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_23",
+      "ori_prompt": "Design a skill assessment questioner for R (Programming Language).",
+      "context": "",
+      "generic_prompt": "Create a skill assessment questionnaire focused on the R programming language that evaluates various proficiency levels and key concepts.",
+      "generic_response": "Okay, here’s a skill assessment questionnaire for R, designed to gauge proficiency across different levels. It’s broken down into sections with increasing difficulty.\n\n**R Programming Language Skill Assessment**\n\n**Instructions:** Choose the *best* answer for each question.\n\n**Section 1: Beginner (Levels 1-2)** (1 point each)\n\n1.  What is the primary purpose of the `print()` function in R?\n    a)  To create visualizations.\n    b)  To display output to the console.\n    c)  To perform mathematical calculations.\n    d)  To import data from a file.\n\n2.  Which of the following is the correct way to assign the value 5 to a variable named `x`?\n    a)  `x = 5`\n    b)  `5 -> x`\n    c)  `x 5`\n    d)  `x := 5`\n\n3.  What does the following code do? `c(1, 2, 3)`\n    a)  Creates a data frame.\n    b)  Creates a vector containing the numbers 1, 2, and 3.\n    c)  Adds 1 to each element of a vector.\n    d)  Calculates the average of the numbers 1, 2, and 3.\n\n4.  What is the output of `typeof(5)`?\n    a)  `\"character\"`\n    b)  `\"numeric\"`\n    c)  `\"integer\"`\n    d)  `\"logical\"`\n\n5.  Which operator is used for assignment in R?\n    a)  `==`\n    b)  `=`\n    c)  `<-`\n    d)  `+`\n\n\n**Section 2: Intermediate (Levels 3-4)** (2 points each)\n\n6.  What is the purpose of the `data.frame()` function?\n    a)  To create a single value.\n    b)  To create a data frame.\n    c)  To read data from a file.\n    d)  To perform statistical analysis.\n\n7.  What does the `head()` function do?\n    a)  Displays the last few rows of a data frame.\n    b)  Displays the first few rows of a data frame.\n    c)  Displays the entire data frame.\n    d)  Displays the column names of a data frame.\n\n8.  Which of the following is the correct way to filter a data frame based on a condition?\n    a)  `data_frame[data_frame$column == value, ]`\n    b)  `data_frame.filter(column == value)`\n    c)  `data_frame.select(column == value)`\n    d)  `data_frame.subset(column == value)`\n\n9.  What does the `summary()` function provide for a numeric vector?\n    a)  The number of elements in the vector.\n    b)  The minimum, maximum, median, and quartiles of the data.\n    c)  The standard deviation of the data.\n    d)  The mean of the data.\n\n10. What is the purpose of the `dplyr` package?\n    a)  To create visualizations.\n    b)  To perform statistical modeling.\n    c)  To manipulate data frames efficiently.\n    d)  To read data from various file formats.\n\n\n\n**Section 3: Advanced (Levels 5-6)** (3 points each)\n\n11.  What is the difference between `dplyr::filter()` and `dplyr::mutate()`?\n    a)  `filter()` selects rows, `mutate()` creates new columns.\n    b)  `filter()` creates new columns, `mutate()` selects rows.\n    c)  They are interchangeable.\n    d)  `filter()` is for statistical analysis, `mutate()` is for data cleaning.\n\n12.  What is the purpose of a `formula` in R?\n    a)  To define a function.\n    b)  To specify the relationship between variables in a statistical model.\n    c)  To create a data frame.\n    d)  To perform data visualization.\n\n13.  What does the `lapply()` function do?\n    a)  Applies a function to each element of a list.\n    b)  Applies a function to each row of a data frame.\n    c)  Applies a function to each column of a data frame.\n    d)  Creates a new data frame.\n\n14.  What is the purpose of the `ggplot2` package?\n    a)  To",
+      "rgeneric_prompt": "Create a tool to generate assessment questions for evaluating proficiency in the R programming language.",
+      "rgeneric_response": "Okay, here's a tool concept and a basic Python implementation to generate R assessment questions. It's designed to be a starting point and can be expanded significantly.\n\n**Tool Concept: R Proficiency Assessment Generator**\n\nThe tool will:\n\n1.  **Categorize Questions:**  Questions will be grouped by difficulty (Easy, Medium, Hard) and R concepts (Data Manipulation, Control Flow, Functions, Data Structures, Visualization, etc.).\n2.  **Generate Questions:**  Based on the selected category and difficulty, it will create multiple-choice questions with a single correct answer.\n3.  **Provide Solutions:**  Include the correct answer and a brief explanation.\n4.  **Randomization:**  Shuffle the answer options to prevent simple memorization.\n\n**Python Implementation (Basic Example):**\n\n```python\nimport random\n\ndef generate_r_question(category, difficulty):\n    \"\"\"Generates a single R assessment question.\"\"\"\n\n    if category == \"Data Manipulation\":\n        if difficulty == \"Easy\":\n            question = \"What does `head(my_data)` do in R?\\n a) Displays the last 6 rows of a data frame\\n b) Displays the first 6 rows of a data frame\\n c) Removes the first 6 rows of a data frame\\n d) Creates a new data frame with the first 6 rows\"\n            answer = \"b\"\n        elif difficulty == \"Medium\":\n            question = \"How do you filter a data frame `df` to keep only rows where `column_name` is greater than 10?\\n a) `df[df$column_name > 10]`\\n b) `df.filter(df$column_name > 10)`\\n c) `df[column_name > 10]`\\n d) `subset(df, column_name > 10)`\"\n            answer = \"a\"\n        else: # Hard\n            question = \"You have a data frame `df` with a column named 'date'.  How do you convert this column to a Date object?\\n a) `as.character(df$date)`\\n b) `as.Date(df$date)`\\n c) `df$date = date(df$date)`\\n d) `df$date = strptime(df$date, \"%Y-%m-%d\")`\"\n            answer = \"b\"\n    elif category == \"Control Flow\":\n        if difficulty == \"Easy\":\n            question = \"What does `if (x > 5)` print?\\n a) Always prints 'True'\\n b) Always prints 'False'\\n c) Prints 'True' if x is greater than 5, 'False' otherwise\\n d) Prints an error\"\n            answer = \"c\"\n        elif difficulty == \"Medium\":\n            question = \"What is the output of `for (i in 1:5) { print(i) }`?\\n a) 1 2 3 4 5\\n b) 1 2 3 4\\n c) 1 2 3 4 5\\n d) An error\"\n            answer = \"a\"\n        else: # Hard\n            question = \"What is the difference between `break` and `next` in an R loop?\\n a) `break` exits the loop entirely, `next` skips the current iteration\\n b) `break` skips the current iteration, `next` exits the loop entirely\\n c) They are equivalent\\n d) They have no effect on loops\"\n            answer = \"a\"\n    else:\n        return \"Invalid category.\"\n\n    options = [a, b, c, d]\n    random.shuffle(options)\n    question_with_options = f\"{question}\\n\\nOptions:\\n\"\n    for i, option in enumerate(options):\n        question_with_options += f\"{chr(ord('a') + i)}. {option}\\n\"\n\n    return question_with_options, answer\n\n\n# Example Usage:\ncategory = \"Data Manipulation\"\ndifficulty = \"Medium\"\nquestion, correct_answer = generate_r_question(category, difficulty)\nprint(question)\nprint(f\"Correct Answer: {correct_answer}\")\n```\n\n**Explanation:**\n\n*   **`generate_r_question(category, difficulty)`:** This function takes the category and difficulty as input.\n*   **Conditional Logic:**  It uses `if/elif/else` to generate questions based on the chosen category and difficulty.\n*   **Question Templates:**  Each category has a set of question templates.  You'll need to expand these significantly.\n*   **Answer",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_233",
+      "ori_prompt": "For a quick and efficient office workout, suggest a short routine.",
+      "context": "",
+      "generic_prompt": "Create a short and efficient office workout routine that can be done quickly during a work break.",
+      "generic_response": "Okay, here’s a quick office workout routine you can do during a break (around 10-15 minutes):\n\n*   **Warm-up (1 minute):** Arm circles, shoulder shrugs, neck rolls.\n*   **Desk Push-ups (3 sets of 10-15 reps):** Use your desk for support.\n*   **Chair Dips (3 sets of 8-12 reps):** Use a stable chair.\n*   **Seated Leg Raises (3 sets of 15-20 reps per leg):** Focus on controlled movement.\n*   **Calf Raises (3 sets of 15-20 reps):** While standing.\n*   **Torso Twists (3 sets of 15-20 reps):** Seated, twist gently from side to side.\n*   **Cool-down (1 minute):** Gentle stretching – reach for your toes, stretch arms.\n\n**Important:** Listen to your body and stop if you feel any pain.\n\nWould you like me to:\n\n*   Adjust the routine for a specific time limit?\n*   Suggest variations for any of the exercises?",
+      "rgeneric_prompt": "Design a concise and effective office workout routine that can be completed quickly.",
+      "rgeneric_response": "Okay, here’s a quick office workout routine you can do in about 15-20 minutes:\n\n**Warm-up (2 minutes)**\n\n*   Arm circles (30 seconds forward, 30 seconds backward)\n*   Leg swings (30 seconds each leg, forward and sideways)\n*   Torso twists (60 seconds)\n\n**Workout (12-15 minutes)**\n\n*   **Chair Dips:** 3 sets of 8-12 reps (Use a stable chair)\n*   **Desk Push-ups:** 3 sets of as many reps as possible (Modify by doing them against a wall if needed)\n*   **Seated Leg Raises:** 3 sets of 15-20 reps per leg\n*   **Calf Raises:** 3 sets of 15-20 reps (Can be done while seated)\n*   **Plank (on desk or floor):** 3 sets, hold for 30-60 seconds\n*   **Bird Dog:** 3 sets of 10-12 reps per side (Focus on core stability)\n\n**Cool-down (3 minutes)**\n\n*   Static stretches – Hold each stretch for 30 seconds (Hamstring stretch, quad stretch, triceps stretch, shoulder stretch)\n\n---\n\nWould you like me to:\n\n*   Adjust the routine for a specific fitness level?\n*   Provide variations for any of the exercises?",
+      "winners_per_run": [
+        2,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_237",
+      "ori_prompt": "Using the ingredients that are available, create a dinner recipe.",
+      "context": "Kale + almond butter + apple cider vinegar + agave nectar + tamari",
+      "generic_prompt": "Using the ingredients you have on hand, develop a detailed dinner recipe that is clear, easy to follow, and makes use of the available items.",
+      "generic_response": "Okay, here’s a simple and flavorful dinner recipe using those ingredients:\n\n**Apple Cider Vinegar & Almond Butter Glazed Chicken with Apple & Kale Salad**\n\n**Yields:** 2 servings\n**Prep time:** 10 minutes\n**Cook time:** 20 minutes\n\n**Ingredients:**\n\n*   2 Chicken Breasts\n*   1 tbsp Almond Butter\n*   1 tbsp Apple Cider Vinegar\n*   1 tbsp Agave Nectar\n*   1 tsp Tamari (or more, to taste)\n*   1 cup Kale, chopped\n*   1 Apple, diced\n*   (Optional: a pinch of salt & pepper)\n\n\n**Instructions:**\n\n1.  **Prepare the Chicken:** In a small bowl, whisk together the almond butter, apple cider vinegar, agave nectar, and tamari.\n2.  **Glaze & Cook:** Place chicken breasts in a baking dish. Pour the almond butter mixture over the chicken, ensuring it’s coated evenly. Bake at 375°F (190°C) for 18-20 minutes, or until chicken is cooked through (internal temperature of 165°F/74°C).\n3.  **Make the Salad:** While the chicken is baking, combine the chopped kale and diced apple in a bowl.\n4.  **Serve:** Serve the glazed chicken over the apple and kale salad.  Season with a pinch of salt and pepper if desired.\n\n---\n\nWould you like me to adjust this recipe or provide variations?",
+      "rgeneric_prompt": "Develop a dinner recipe using only the ingredients that are on hand. Focus on providing clear, step-by-step instructions and specify the quantities and preparation methods for each ingredient used.",
+      "rgeneric_response": "Okay, here’s a simple dinner recipe using those ingredients:\n\n**Kale & Almond Butter Apple Cider Vinegar Salad with Sweet Drizzle**\n\n**Yields:** 1 serving\n**Prep time:** 5 minutes\n\n**Ingredients:**\n\n*   **Kale:** 2 cups, chopped (remove tough stems)\n*   **Almond Butter:** 2 tablespoons\n*   **Apple Cider Vinegar:** 1 tablespoon\n*   **Agave Nectar:** 1 teaspoon\n*   **Tamari:** 1/2 teaspoon\n\n**Instructions:**\n\n1.  **Wash & Chop Kale:** Thoroughly wash the kale and chop it into bite-sized pieces.\n2.  **Make the Dressing:** In a small bowl, whisk together the almond butter, apple cider vinegar, agave nectar, and tamari until smooth.\n3.  **Combine:** Place the chopped kale in a larger bowl. Pour the dressing over the kale.\n4.  **Toss:** Toss well to ensure all the kale is evenly coated with the dressing.\n\n**Serve immediately.**\n\n---\n\nWould you like me to suggest any variations or additions (knowing you only have those ingredients)?",
+      "winners_per_run": [
+        0,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_246",
+      "ori_prompt": "Expand the given sentence and give it more details and depth.",
+      "context": "It changed my life.",
+      "generic_prompt": "Expand the given sentence by adding more details, depth, and elaboration to enhance its clarity and richness.",
+      "generic_response": "Here are a few options for expanding “It changed my life,” depending on the desired nuance:\n\n**Option 1 (Focus on impact):**\n\n“That experience completely changed my life, shifting my perspective on everything and opening up possibilities I never could have imagined.”\n\n**Option 2 (Focus on a specific event):**\n\n“Meeting [Person’s Name] and hearing their story changed my life; it sparked a passion for [New Interest] that I’ve pursued with unwavering dedication ever since.”\n\n**Option 3 (Focus on personal growth):**\n\n“It changed my life in a profound way, forcing me to confront my fears and ultimately leading to a deeper understanding of myself and my values.”\n\n**Option 4 (More evocative):**\n\n“It changed my life like a sunrise, bathing everything in a new light and revealing a beauty I hadn’t noticed before.”\n\nTo help me give you the *best* expansion, could you tell me:\n\n*   What is “it”? (What was the event or thing that changed your life?)",
+      "rgeneric_prompt": "Enhance the provided sentence by adding more information, elaboration, and richness to its content.",
+      "rgeneric_response": "Here are a few options, depending on the nuance you want to convey:\n\n*   “It fundamentally altered the course of my life, shifting my priorities and opening up possibilities I never before imagined.”\n*   “That experience completely changed my life, sparking a passion within me and leading me down a path I’m eternally grateful for.”\n*   “It was a pivotal moment, irrevocably changing my life and shaping the person I am today.”\n*   “It shifted everything; it changed my life in ways I’m still processing, impacting my relationships, my career, and my outlook on the world.”\n\nTo help me give you the *best* enhancement, could you tell me a little more about *what* “it” refers to?",
+      "winners_per_run": [
+        2,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_250",
+      "ori_prompt": "Write what the pronunciation of the given word sounds like. Follow the \"Google pronunciation dictionary\" scheme for phonetic spelling.",
+      "context": "interpretations",
+      "generic_prompt": "Provide a phonetic spelling that represents how the given word is pronounced, following the format and conventions used in the Google Pronunciation Dictionary.",
+      "generic_response": "Please provide the word you would like me to spell out phonetically.",
+      "rgeneric_prompt": "Provide a phonetic representation of the given word that reflects how it sounds when spoken, using a format similar to the \"Google pronunciation dictionary.\" Group related instructions together and organize the requirements cohesively.",
+      "rgeneric_response": "Okay, please provide the word you’d like me to phonetically represent. I’ll do my best to follow the Google pronunciation dictionary format.",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_30",
+      "ori_prompt": "What other Amazon products might interest someone who visited the given product?",
+      "context": "Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop with Unique Liquid Filled Heat Conductive Handle Easy Release Made in USA, 1.5-Ounce, Black",
+      "generic_prompt": "What Amazon products are likely to interest a customer who viewed the given product?",
+      "generic_response": "Here are some Amazon product categories a customer who viewed the Zeroll Zerolon scoop might be interested in:\n\n*   **Ice Cream Scoops:** Similar scoops, different sizes or materials.\n*   **Ice Cream Making Supplies:** Ice cream containers, spatulas, molds.\n*   **Restaurant Supplies:** Small scoops, serving utensils.\n*   **Kitchen Gadgets:** Heat-conducting tools, ergonomic tools.",
+      "rgeneric_prompt": "Generate a list of Amazon products that would likely interest a user who has visited a specific product page. Focus on items that are related, complementary, or of similar appeal based on typical user behavior and product categories.",
+      "rgeneric_response": "Okay, here’s a list of Amazon product suggestions for someone who viewed the Zeroll Zerolon Hardcoat Anodized Commercial Ice Cream Scoop:\n\n*   **Ice Cream Containers:** (Various sizes and styles - plastic, stainless steel)\n*   **Ice Cream Spoons & Servers:** (Different designs, silicone, stainless steel)\n*   **Ice Cream Cake Pans:** (For making homemade ice cream cakes)\n*   **Ice Cream Cake Toppers:** (Sprinkles, chocolate shavings, edible decorations)\n*   **Silicone Ice Ball Molds:** (For making ice cream balls)\n*   **Ice Cream Makers:** (Small countertop models)\n*   **Storage Bags for Ice Cream:** (Freezer-safe bags)\n*   **Cleaning Supplies for Ice Cream Scoops:** (Brush, cleaning solution)\n\nWould you like me to refine this list based on a specific subcategory (e.g., only containers, or only accessories)?",
+      "winners_per_run": [
+        0,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_32",
+      "ori_prompt": "Write a  review based on the given information.",
+      "context": "- Product: Persil Discs Laundry Detergent Pacs, Original Scent, High Efficiency (HE) Compatible, Laundry Soap, 62 Count\n- Sentiment: Positive",
+      "generic_prompt": "Based on the provided information, write a detailed and accurate review.",
+      "generic_response": "Here’s a detailed and accurate review based on the provided information:\n\n**Persil Discs Laundry Detergent Pacs – A Great Choice!**\n\nThese Persil Discs offer a convenient and effective way to do laundry. They’re specifically designed for High Efficiency (HE) machines, ensuring optimal cleaning performance without damaging your appliances. The original scent is pleasant and leaves clothes smelling fresh. With 62 discs, you’ll have plenty of laundry tackled with a single pack. Overall, a reliable and easy-to-use laundry solution.",
+      "rgeneric_prompt": "Generate a review using the provided details. Organize the content by clustering similar points together. Ensure the language and structure are distinct from other possible versions of the task, while maintaining the original objective.",
+      "rgeneric_response": "Here’s a review based on the provided details:\n\n“I absolutely love these Persil Discs! They’re incredibly convenient – no more measuring or messy powders. The 62-count pack is a fantastic value and they’re fully HE compatible, which is a huge relief. Plus, the original scent is wonderfully fresh and leaves my clothes smelling clean and bright. Seriously, a simple, effective, and reliable laundry solution.”",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_46",
+      "ori_prompt": "Suggest some Audiobooks for First-Time Listeners. You can attract them by choosing popular works.",
+      "context": "",
+      "generic_prompt": "Recommend some audiobooks that are well-suited for first-time listeners, focusing on popular and widely appreciated titles to help attract new audiences.",
+      "generic_response": "Okay, here are some audiobook recommendations perfect for first-time listeners, focusing on popular and well-loved titles:\n\n**For a Cozy & Engaging Experience:**\n\n*   **\"Where the Crawdads Sing\" by Delia Owens:** Narrated by Cassandra Campbell – Beautifully atmospheric and a compelling story.\n*   **\"Harry Potter and the Sorcerer's Stone\" by J.K. Rowling:** Narrated by Jim Dale or Stephen Fry (choose your preferred voice!) – A classic for a reason.\n*   **\"The House in the Cerulean Sea\" by T.J. Klune:** Narrated by Daniel Henning – Heartwarming and charming.\n\n**For Thrills & Suspense:**\n\n*   **\"Gone Girl\" by Gillian Flynn:** Narrated by Julia Whelan & Kirby Heyborne – Gripping and twisty.\n*   **\"The Silent Patient\" by Alex Michaelides:** Narrated by Jack Hawkins & Louise Brealey – A psychological thriller with a fantastic performance.\n\n**For Something a Bit Different:**\n\n*   **\"Born a Crime\" by Trevor Noah:** Narrated by Trevor Noah – Hilarious and insightful memoir.\n*   **\"Becoming\" by Michelle Obama:** Narrated by Michelle Obama – A powerful and moving autobiography.\n\n\n\n**Resources for Finding Audiobooks:**\n\n*   **Audible:** (www.audible.com) - Largest selection, subscription-based.\n*   **Libro.fm:** (www.libro.fm) - Supports local bookstores.\n*   **Spotify:** (www.spotify.com) - Offers a growing selection of free and paid audiobooks.\n*   **Your Local Library:** Many libraries offer free audiobook downloads through apps like Libby or Overdrive.\n\nTo help me narrow it down and give you even better recommendations, could you tell me:\n\n*   What genres do you typically enjoy (e.g., mystery, fantasy, non-fiction, romance)?",
+      "rgeneric_prompt": "Recommend some audiobooks suitable for first-time listeners, focusing on popular titles that are likely to engage new audiences.",
+      "rgeneric_response": "Okay, here are some audiobook recommendations for first-time listeners, focusing on popular and engaging titles:\n\n**For a Quick & Engaging Start:**\n\n*   **\"Where the Crawdads Sing\" by Delia Owens:** Beautifully narrated, atmospheric, and a compelling coming-of-age story. (Narrated by Cassandra Campbell)\n*   **\"The Martian\" by Andy Weir:**  Fast-paced, humorous, and scientifically fascinating. (Narrated by Ray Porter - widely considered excellent)\n*   **\"Harry Potter and the Sorcerer's Stone\" by J.K. Rowling:** A classic for a reason!  The narration is fantastic. (Multiple narrators – a good introduction to different styles)\n\n\n**A Bit More Complex, But Still Accessible:**\n\n*   **\"Project Hail Mary\" by Andy Weir:** Similar to *The Martian* – clever, suspenseful, and optimistic. (Narrated by Ray Porter)\n*   **\"Daisy Jones & The Six\" by Taylor Jenkins Reid:**  An oral history of a fictional 70s rock band.  Great characters and a captivating story. (Narrated by a full cast – a fun experience!)\n*   **\"The Seven Husbands of Evelyn Hugo\" by Taylor Jenkins Reid:**  Glamorous, dramatic, and full of secrets. (Narrated by Estella Warren)\n\n\n\n**If You Like Mystery/Thriller:**\n\n*   **\"Gone Girl\" by Gillian Flynn:**  Twisty and dark. (Narrated by Julia Whelan)\n\n\n\n**To help me narrow it down and give you even better recommendations, could you tell me:**\n\n*   What genres do you usually enjoy (e.g., fantasy, sci-fi, romance, thriller, non-fiction)?",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_53",
+      "ori_prompt": "React properly to reviews from your customers. In your responses, you can highlight your business' policies and customer service.",
+      "context": "Another repeat visit and no disappointment from us. Great place for breakfast or brunch - and you won't need to eat again for awhile. The restaurant is close to the Tenderloin so be aware of your surroundings.\nWe enjoyed the Succotash Omelet (at least my wife enjoyed it), the Pulled Pork Benedict and the Hangtown Fry. Portions are large and pricing is fair. I wish we could have managed a Beignet Flight!\nDefinitely a spot to seek out. It can be crowed at times so be patient. Well worth any wait.",
+      "generic_prompt": "Generate appropriate and professional responses to customer reviews. When suitable, incorporate your business' policies and customer service practices into the replies.",
+      "generic_response": "Okay, here are a few response options to the review, ranging in length and tone, incorporating potential business practices:\n\n**Option 1 (Concise & Appreciative):**\n\n“Thank you so much for your kind words and for returning! We’re thrilled you enjoyed your visit and that our portions are generous. We appreciate you letting us know about the crowds – we’re working to manage flow and appreciate your patience. We’re so sorry your wife didn’t love the Succotash Omelet – we always strive for consistent quality. We hope to see you again soon!”\n\n**Option 2 (More Detailed & Addressing Concerns):**\n\n“We’re absolutely delighted to hear you’ve enjoyed your repeat visits! It’s fantastic to know you find our food and value to be worthwhile. We appreciate you highlighting the Tenderloin location and the importance of being aware of surroundings – your safety is our priority.  We’re sorry to hear the Succotash Omelet wasn’t to your wife’s taste; we’ll share your feedback with the kitchen.  The Hangtown Fry and Pulled Pork Benedict are always a hit! We’re working on ways to better manage peak times to reduce wait times.  We’d love to tempt you with a Beignet Flight next time – they’re incredibly popular! Thanks again for the wonderful review.”\n\n**Option 3 (Short & Sweet):**\n\n“Thank you for the fantastic review! We’re so glad you’re enjoying our breakfast/brunch. We appreciate your feedback and look forward to welcoming you back.”\n\n---\n\n**Key elements I’ve incorporated:**\n\n*   **Expressing Gratitude:** Starting with “Thank you” or “We appreciate…”\n*   **Acknowledging Specifics:** Referencing the dishes mentioned (Succotash Omelet, Pulled Pork Benedict, Hangtown Fry, Beignet Flight).\n*   **Addressing Concerns:**  Mentioning the Tenderloin location and safety.\n*   **Showing Empathy:**  Acknowledging the negative feedback about the omelet.\n*   **Highlighting Positive Aspects:** Reinforcing the large portions and fair pricing.\n*   **Promoting Future Visits:**  Ending with a desire to see them again.\n\nTo help me tailor the response even further, could you tell me:\n\n*   What is the restaurant's overall brand voice (e.g., casual, upscale, friendly)?\n*   Are there any specific policies you’d like me to incorporate (e.g., feedback system, handling negative reviews)?",
+      "rgeneric_prompt": "Respond appropriately to customer reviews by acknowledging their feedback and, where relevant, explaining your business's policies and customer service approach.",
+      "rgeneric_response": "Thank you so much for your wonderful review! We’re thrilled to hear you’ve enjoyed your repeat visits and that you found our portions and pricing fair. We appreciate you highlighting the Succotash Omelet, Pulled Pork Benedict, and Hangtown Fry – those are definitely customer favorites. \n\nWe’re so sorry to hear your wife didn’t love the Succotash Omelet – we always strive for consistent quality and appreciate the feedback. And we understand wanting a Beignet Flight – it’s a popular request! \n\nWe do our best to be mindful of safety in the Tenderloin area and encourage everyone to be aware of their surroundings. We also apologize for the crowds – we’re working to manage flow and appreciate your patience. \n\nWe’re glad you found us worth the wait!",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_59",
+      "ori_prompt": "Design an outline for a blog post based on the given information and list the sections accordingly.",
+      "context": "This blog post is going to about making a list of last-minute gift ideas. Also, the tone of the post is going to be relaxed and casual.",
+      "generic_prompt": "Create a detailed outline for a blog post using the provided information, and organize it into clearly defined sections.",
+      "generic_response": "Okay, here’s a detailed outline for a blog post about last-minute gift ideas, aiming for a relaxed and casual tone:\n\n**Blog Post Outline: Last-Minute Gift Ideas – You Got This!**\n\n**I. Introduction (Approx. 50-75 words)**\n   * Hook: Start with a relatable scenario – “Holiday stressing? Gift-giving looming?”\n   * Briefly acknowledge the panic of last-minute shopping.\n   * Promise: “Don’t worry, we’ve got you covered! Here are some easy, thoughtful gift ideas you can snag at the last minute.”\n\n**II. Quick & Easy Gifts (Approx. 150-200 words)**\n   * **Subheading:** “Under $25 – Seriously Simple”\n   * Idea 1: Gourmet Food Basket (crackers, cheese, chocolate) - Mention where to find them quickly (grocery store, online).\n   * Idea 2: Cozy Socks/Scarf – “Everyone loves warm feet/neck!”\n   * Idea 3: Fun Mug & Coffee/Tea – “Perfect for the caffeine addict.”\n   * Idea 4: Small Plant (succulent, air plant) - “Adds a little life to any space.”\n\n**III. Experiences & Activities (Approx. 150-200 words)**\n   * **Subheading:** “Give the Gift of Time (or Fun!)”\n   * Idea 1: Gift Card to a Local Coffee Shop/Restaurant – “Easy and appreciated.”\n   * Idea 2: Movie Tickets – “Classic for a reason.”\n   * Idea 3: Local Activity Voucher (mini-golf, pottery painting, etc.) - “Something to do together.”\n   * Idea 4: Homemade Coupon Book – “Offer services like babysitting, dog walking, or a home-cooked meal.”\n\n**IV. Personalized & Thoughtful (Approx. 100-150 words)**\n   * **Subheading:** “Adding a Personal Touch”\n   * Idea 1: Personalized Photo Gift (phone case, mug, print) – “Easy to order online.”\n   * Idea 2: Handwritten Card/Letter – “Sometimes the most meaningful gifts are free.”\n   * Idea 3: Their Favorite Candy/Snack – “A small reminder of you.”\n\n**V. Where to Shop (Quick List - Approx. 50-75 words)**\n   * Briefly mention quick shopping spots:\n      * Grocery Stores\n      * Target/Walmart\n      * Amazon (for fast shipping)\n      * Local Shops (emphasize supporting local)\n\n**VI. Conclusion (Approx. 50-75 words)**\n   * Reiterate: “You *can* still find a great gift!”\n   * Encourage readers: “Don’t overthink it – a little thought goes a long way.”\n   * End on a positive note: “Happy gifting!”\n\n\n\n---\n\nDo you want me to expand on any of these sections, or perhaps add a specific type of gift (e.g., gifts for teens, gifts for men)?",
+      "rgeneric_prompt": "Create a structured outline for a blog post using the provided information, and clearly list each section of the outline in order.",
+      "rgeneric_response": "Okay, here’s a structured outline for a blog post about last-minute gift ideas, keeping a relaxed and casual tone in mind:\n\n1.  **Introduction - The Panic is Real!** (Briefly acknowledge the stress of last-minute gift-giving)\n2.  **Why This Post Matters** (Highlight the value of having quick, easy ideas)\n3.  **Under $25 Ideas** (List 3-5 affordable options)\n4.  **Under $50 Ideas** (List 3-5 slightly more substantial options)\n5.  **Experiences (That Don’t Require Planning)** (Suggest 2-3 low-effort experiences)\n6.  **DIY/Personalized Gifts (Super Quick)** (Offer 2-3 simple DIY ideas)\n7.  **Gift Cards - Still a Winner** (Briefly mention the practicality of gift cards)\n8.  **Don’t Forget the Thought!** (A quick reminder about the importance of a heartfelt message)\n9.  **Conclusion - You Got This!** (Encouraging and reassuring closing statement)\n\nWould you like me to flesh out any of these sections with more detail, or perhaps suggest specific gift ideas for each category?",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_71",
+      "ori_prompt": "Discuss the origins and history of the word that has been given to you.",
+      "context": "oblique",
+      "generic_prompt": "Provide a detailed account of the origins and historical development of the given word.",
+      "generic_response": "Okay, here’s a detailed account of the origins and historical development of the word “oblique”:\n\n**Origins:**\n\n* **Latin Root:** “Oblique” comes directly from the Latin word *obliquus*, meaning “slanting, crooked, indirect, ambiguous.” *Obliquus* itself is derived from *ob* (meaning “toward, against”) and *liquus* (meaning “straight, level”).  So, literally, *obliquus* meant “turned away from straight.”\n\n* **Early Usage (Medieval Latin):** The word appeared in Medieval Latin, primarily in ecclesiastical and legal contexts, retaining its core meaning of “not straight, not direct.” It was used to describe angles, lines, and, importantly, arguments or statements.\n\n\n**Historical Development:**\n\n* **15th Century English:** “Oblique” entered the English language in the mid-15th century, initially with the same meaning of “slanting” or “not straight.”  It was frequently used in relation to physical objects – a crooked path, an oblique angle.\n\n* **Figurative Usage (16th Century Onward):**  The word quickly gained figurative usage, particularly in describing indirectness in speech or writing. By the 16th century, it began to be used to denote ambiguity, evasiveness, or a concealed meaning.  Think of it as a way of saying something wasn’t straightforward.\n\n* **Legal and Military Contexts (17th-18th Centuries):** “Oblique” found a strong foothold in legal and military terminology.  It described a slanted or angled position of weapons, fortifications, or troop formations – crucial for tactical advantage.  It also continued to be used to describe ambiguous legal arguments.\n\n* **Modern Usage (19th Century - Present):**  The modern understanding of “oblique” – encompassing indirectness, ambiguity, and a lack of directness – solidified in the 19th century. It’s now a common adjective used in a wide range of contexts, from art and literature to psychology and everyday conversation.\n\n\n\n**Key Shifts in Meaning:**\n\nThe core meaning of “slanting” remained, but the emphasis gradually shifted from a purely physical description to a more conceptual one, focusing on the *quality* of being indirect or ambiguous.\n\n---\n\nDo you want me to delve deeper into a specific aspect of the word’s history, such as its use in a particular field (e.g., law, art) or a specific time period?",
+      "rgeneric_prompt": "Analyze the word provided by tracing its origins and historical development. Begin with its earliest known roots, then explore its evolution over time, including any changes in meaning, usage, or form. Ensure your discussion is logically structured and covers all relevant historical linguistic aspects.",
+      "rgeneric_response": "Okay, let’s analyze the word “oblique.”\n\n**1. Etymological Roots:**\n\n*   **Latin:** The word ultimately derives from the Latin *obliquus*, meaning “slanting, sideways, indirect.” *Obliquus* itself comes from *ob-* (meaning “toward, against”) and *liquus* (meaning “straight, level”). So, initially, it described a physical slant or deviation from a straight line.\n\n**2. Early Usage (Latin & Medieval):**\n\n*   In Latin, *obliquus* was used broadly to describe anything that was not direct or straightforward – a deceptive appearance, a misleading statement, a crooked path.\n*   It began to be adopted into Old French as *oblique*, retaining a similar sense of indirectness or deviation.\n\n**3. Medieval & Early Modern English:**\n\n*   The word entered English around the 14th century, primarily through French influence. Its meaning remained closely tied to the Latin root – indirectness, evasion, or a lack of directness.  It was often used in legal and rhetorical contexts to describe arguments or statements that avoided a direct point.\n\n**4. Shift in Meaning (16th Century Onward):**\n\n*   Starting in the 16th century, the meaning of “oblique” began to broaden significantly. It increasingly took on the sense of “not straight” or “at an angle,” particularly in relation to lines, rays of light, or vision. This shift was driven by developments in optics and perspective.\n*   The figurative sense of “indirect” continued alongside the more literal geometric meaning.\n\n**5. Modern Usage:**\n\n*   Today, “oblique” retains both senses:\n    *   **Geometric:**  Describing angles or lines that are not straight.\n    *   **Figurative:**  Describing something indirect, evasive, or ambiguous.  It can also refer to a subtle or suggestive approach.\n\n\n\nDo you want me to delve deeper into a specific aspect of this evolution, such as its use in a particular field (e.g., art, law, or literature)?",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_91",
+      "ori_prompt": "You are given two questions. Check if they are duplicates.",
+      "context": "Question1: I am trying to understand the advantages of multiprocessing over threading. I know that multiprocessing gets around the Global Interpreter Lock, but what other advantages are there, and can threading not do the same thing?\nQuestion2: I am learning how to use the threading and the multiprocessing modules in Python to run certain operations in parallel and speed up my code.\nI am finding this hard (maybe because I don't have any theoretical background about it) to understand what the difference is between a threading.Thread() object and a multiprocessing.Process() one.\nAlso, it is not entirely clear to me how to instantiate a queue of jobs and having only 4 (for example) of them running in parallel, while the other wait for resources to free before being executed.\nI find the examples in the documentation clear, but not very exhaustive; as soon as I try to complicate things a bit, I receive a lot of weird errors (like a method that can't be pickled, and so on).\nSo, when should I use the threading and multiprocessing modules?\nCan you link me to some resources that explain the concepts behind these two modules and how to use them properly for complex tasks?",
+      "generic_prompt": "Determine whether the two provided questions are duplicates of each other.",
+      "generic_response": "Yes, the two questions are duplicates. They both center around understanding and applying Python's `threading` and `multiprocessing` modules for parallel processing and addressing the challenges of using them effectively.",
+      "rgeneric_prompt": "Determine whether the two provided questions are identical in meaning.",
+      "rgeneric_response": "No, the questions are not identical.\n\n*   **Question 1** focuses on the *differences* between multiprocessing and threading, specifically regarding the Global Interpreter Lock (GIL) and other advantages of multiprocessing. It also asks for guidance on when to use each.\n\n*   **Question 2** is a practical learning question about the specific implementation details of `threading.Thread()` and `multiprocessing.Process()` objects, as well as how to manage a queue of jobs and handle potential errors. It seeks resources for deeper understanding and more complex scenarios.\n\nWhile both relate to parallel processing in Python, they address different aspects and levels of understanding.",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_96",
+      "ori_prompt": "You are given a programming problem and its implementation. Analyze the problem and implementation and explain the algorithm and approach used to solve the problem.",
+      "context": "Table: Person\n| Column Name | Type     |\n| personId          | int         |\n| lastName         | varchar |\n| firstName         | varchar |\npersonId is the primary key column for this table.\nThis table contains information about the ID of some persons and their first and last names.\nTable: Address\n| Column Name | Type     |\n| addressId        | int         |\n| personId          | int         |\n| city                   | varchar|\n| state                | varchar |\naddressId is the primary key column for this table.\nEach row of this table contains information about the city and state of one person with ID = PersonId.\nWrite an SQL query to report the first name, last name, city, and state of each person in the Person table. If the address of a personId is not present in the Address table, report null instead.\nReturn the result table in any order.\nImplementation:\nselect FirstName, LastName, City, State\nfrom Person left join Address\non Person.PersonId = Address.PersonId\n;",
+      "generic_prompt": "You are given a programming problem and a corresponding implementation. Examine both the problem statement and the code solution. Provide a clear explanation of the algorithm and approach used to solve the problem, focusing on how the implementation addresses the requirements of the problem.",
+      "generic_response": "The problem asks to retrieve the first name, last name, city, and state for each person from the `Person` table, but only if their address information exists in the `Address` table. If a person doesn't have an address listed, the corresponding city and state should be `NULL`.\n\nThe provided SQL query uses a `LEFT JOIN` between the `Person` and `Address` tables, linking them on the `PersonId` column.  A `LEFT JOIN` ensures that *all* rows from the left table (in this case, `Person`) are included in the result, even if there's no matching row in the right table (`Address`).  When there's no match in `Address` for a `PersonId`, the columns from `Address` (City and State) will be populated with `NULL` values.  Finally, the query selects the `FirstName`, `LastName`, `City`, and `State` columns from the joined result. This effectively addresses the problem's requirement of reporting `NULL` for missing addresses while still providing the requested information for people with associated addresses.",
+      "rgeneric_prompt": "Given a programming problem and its corresponding implementation, evaluate both and provide a detailed explanation of the algorithm and strategy employed to address the problem. Organize related aspects of the analysis together, ensuring clarity and coherence in describing the solution approach.",
+      "rgeneric_response": "The provided SQL query effectively addresses the problem. Here's a breakdown of the algorithm and strategy:\n\n**Algorithm and Strategy:**\n\n1. **Problem Understanding:** The problem requires retrieving the first name, last name, city, and state for each person from the `Person` table.  Crucially, if a person doesn't have a corresponding address in the `Address` table, we need to represent the missing address information with `NULL` values.\n\n2. **Data Joining:** The core strategy is to use a `LEFT JOIN` between the `Person` and `Address` tables.  A `LEFT JOIN` ensures that *all* rows from the left table (in this case, `Person`) are included in the result, even if there's no matching row in the right table (`Address`).\n\n3. **Join Condition:** The `ON Person.PersonId = Address.PersonId` clause specifies the join condition.  It links rows from the `Person` and `Address` tables based on the `PersonId` column, which is the foreign key in the `Address` table referencing the primary key in the `Person` table.\n\n4. **Handling Missing Addresses:** Because of the `LEFT JOIN`, if a `PersonId` exists in the `Person` table but *doesn't* have a corresponding entry in the `Address` table, the columns from the `Address` table (City, State) will be filled with `NULL` values in the resulting row.\n\n5. **Selecting Columns:** The `SELECT FirstName, LastName, City, State` clause specifies the columns to be included in the output.  Since the `Address` table might have `NULL` values for `City` and `State` for some people, the query will naturally return `NULL` for those columns in those cases.\n\n**Evaluation of the Implementation:**\n\nThe provided SQL query is a concise and correct implementation of the described strategy. It directly addresses the problem's requirements by:\n\n*   Using a `LEFT JOIN` to include all persons, regardless of address availability.\n*   Returning `NULL` for missing address information.\n*   Selecting the desired columns.\n\n**Alternative Approaches (and why they are less suitable):**\n\n*   **INNER JOIN:** An `INNER JOIN` would only return rows where there's a matching `PersonId` in *both* tables. This would exclude people without addresses, which is not what the problem requires.\n*   **Subqueries or Correlated Subqueries:** While possible, using subqueries to check for the existence of an address for each person would likely be less efficient than a `LEFT JOIN`.\n\nIn summary, the provided SQL query is the most efficient and straightforward way to solve the problem, leveraging the power of `LEFT JOIN` to handle missing data gracefully.",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2632 @@
+{
+  "total_items": 252,
+  "total_mismatches": 32,
+  "mismatch_rate": "12.70%",
+  "check_runs": 3,
+  "mismatches": [
+    {
+      "id": "user_oriented_task_101",
+      "ori_prompt": "An evaluation of the article's quality should be carried out. In order to do so, you should review the quality of the writing and the explanation of the topic.",
+      "context": "The 20th century saw a revolution in music listening as the radio gained popularity worldwide and new media and technologies were developed to record, edit and distribute music. Music performances became increasingly visual with the broadcast and recording of performances.\n20th-century music brought new freedom and wide experimentation with new musical styles and forms that challenged the accepted rules of music of earlier periods. The invention of musical amplification and electronic instruments, especially the synthesizer, in the mid-20th century revolutionized classical and popular music, and accelerated the development of new forms of music.",
+      "generic_prompt": "Evaluate the quality of the article by assessing the clarity and effectiveness of the writing, as well as how well the topic is explained.",
+      "generic_response": "1. Clarity and effectiveness of writing: The article is well-written and effectively conveys the information about the evolution of music listening in the 20th century. The language used is clear and concise, and the article is easy to understand.\n2. Explanation of the topic: The article provides a comprehensive overview of the evolution of music listening in the 20th century. It covers the impact of new media and technologies on music, the rise of radio and broadcast performances, and the development of new musical styles and forms. The article also highlights the role of amplification and electronic instruments in revolutionizing classical and popular music. Overall, the article effectively explains the topic and provides a thorough understanding of the subject matter.",
+      "rgeneric_prompt": "Evaluate the quality of the article by assessing the writing style and the clarity with which the topic is explained. Group related aspects, such as coherence, grammar, and readability under writing quality, and depth, accuracy, and organization under explanation of the topic.",
+      "rgeneric_response": "1. Writing quality:\n* Coherence: The article has a clear structure and flows logically from one idea to the next. The different aspects of 20th-century music are introduced and explained in a coherent manner.\n* Grammar: The grammar is generally correct, with only a few minor errors.\n* Readability: The article is well-written and easy to read, with a good use of sentence structure and vocabulary.\n1. Explanation of the topic:\n* Depth: The article provides a good level of detail and covers a wide range of topics related to 20th-century music, including the impact of new technologies, the development of new musical styles, and the role of the radio and television.\n* Accuracy: The information provided is generally accurate and well-researched.\n* Organization: The article is well-organized and the different aspects of 20th-century music are presented in a logical and coherent manner.\n\nOverall, the article is well-written and provides a comprehensive overview of 20th-century music. The writing style is clear and easy to follow, and the topic is explained in depth and with accuracy. The only minor weakness is the occasional use of minor grammar errors.",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_110",
+      "ori_prompt": "Think of an idea to help you win a challenge given to you. Write the steps you need to take to develop the idea as well.",
+      "context": "What can you make by recycling and repurposing some old, previously used materials? We want to see it!\nProjects must incorporate some kind of used materials - take that old used thing, and turn it into something new and different!\nE-waste is a huge problem. What can you make using old electronics and other salvageable electronic materials? \nWe have a special judges prize for our favorite Instructable that incorporates or is related to reusing e-waste.\nBe smart and be safe; note that potentially deadly projects (like Lichtenberg/fractal wood burning machines) will not be allowed to be published or submitted to this contest.",
+      "generic_prompt": "Devise a practical idea to help you succeed in a challenge you've been given. Outline the specific steps required to develop and implement that idea.",
+      "generic_response": "1. Research and identify old, previously used materials that can be repurposed for the project.\n2. Brainstorm and come up with creative ideas for turning the old materials into something new and different.\n3. Choose the best idea and sketch out a rough design of the final product.\n4. Gather all the necessary materials and tools to build the product.\n5. Build the product following the design and use the old materials as much as possible.\n6. Test the product to ensure it works as intended and meets the challenge requirements.\n7. Take high-quality photos of the final product and write a detailed Instructable explaining the process and materials used.\n8. Submit the Instructable to the contest and promote it on social media to increase chances of winning the judges prize for the best Instructable related to e-waste.",
+      "rgeneric_prompt": "Devise a strategy that could lead to your success in a given challenge. Outline the specific actions required to bring your idea to fruition.",
+      "rgeneric_response": "1. Research: Start by researching the challenge and gathering information on what materials are accepted for recycling and repurposing. Look for inspiration from other projects that have successfully repurposed old materials.\n2. Brainstorm: Brainstorm ideas for your project. Think about how you can use the old materials in a creative way to make something new and different.\n3. Plan: Plan out your project, including a list of materials you will need, a step-by-step guide for how you will build it, and a timeline for when you will complete each step.\n4. Gather materials: Gather all the materials you will need for your project. Make sure you have enough of each material to complete your project.\n5. Build: Start building your project following your plan. Make sure to follow all safety guidelines and use proper tools and equipment.\n6. Test: Once your project is complete, test it to make sure it works as intended. Make any necessary adjustments and improvements.\n7. Submit: Finally, submit your project to the challenge. Make sure to include detailed instructions, photos, and any other relevant information.\n\nBy following these steps, you can devise a strategy that will lead to your success in the challenge. Remember to be creative, be safe, and have fun!",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 0.9
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 0.9
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 0.9
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 0.9
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 0.9
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_111",
+      "ori_prompt": "There are many creative projects we can build at home that are related to the given theme, so let's list some of them.",
+      "context": "Theme: Circuits",
+      "generic_prompt": "Generate a list of creative home-based projects that are related to the given theme.",
+      "generic_response": "1. DIY Electronic Circuit Art\n2. Building a Solar-Powered Home System\n3. Creating a DIY Electronic Music Studio\n4. Building a DIY Home Automation System\n5. Designing and Building a Custom PC\n6. Creating a DIY Electronic Gadget Workshop\n7. Building a DIY Home Theater System\n8. Designing and Building a Customized Desk Lamp\n9. Creating a DIY Electronic Game Room\n10. Building a DIY Home Security System\n11. Designing and Building a Customized Clock\n12. Creating a DIY Electronic Kitchen Gadget\n13. Building a DIY Home Renewable Energy System\n14. Designing and Building a Customized Night Light\n15. Creating a DIY Electronic Pet Feeder\n16. Building a DIY Home Weather Station\n17. Designing and Building a Customized Desk Chair\n18. Creating a DIY Electronic Garden Gadget\n19. Building a DIY Home Water Filtration System\n20. Designing and Building a Customized Desk Organizer.",
+      "rgeneric_prompt": "Generate a list of creative home-based projects that align with the provided theme.",
+      "rgeneric_response": "1. DIY Electronic Circuit Art\nCreate unique art pieces using electronic components such as LEDs, resistors, and capacitors. Combine different components to create intricate patterns and designs.\n2. Build a Solar-Powered Home Automation System\nDesign and build a system that uses solar panels to power home appliances such as lights, fans, and air conditioners. This project can help reduce energy consumption and promote sustainability.\n3. Design and Build a Simple Audio Amplifier\nDesign and build a simple audio amplifier using basic electronic components such as transistors, resistors, and capacitors. This project can help you understand the basics of electronic amplification.\n4. Build a Simple Morse Code Radio\nDesign and build a simple Morse code radio using basic electronic components such as diodes, transistors, and resistors. This project can help you understand the basics of radio communication.\n5. Build a DIY Weather Station\nDesign and build a weather station that can measure temperature, humidity, and pressure. This project can help you understand the basics of weather monitoring and data collection.\n6. Build a Simple FM Radio\nDesign and build a simple FM radio using basic electronic components such as diodes, transistors, and resistors. This project can help you understand the basics of radio communication.\n7. Build a DIY Solar-Powered USB Charger\nDesign and build a solar-powered USB charger that can charge your phone or other electronic devices using solar panels. This project can help you understand the basics of solar power and renewable energy.\n8. Build a Simple Electronic Lock\nDesign and build a simple electronic lock using basic electronic components such as transistors, resistors, and capacitors. This project can help you understand the basics of electronic security.\n9. Build a DIY Electronic Theremin\nDesign and build a simple electronic theremin using basic electronic components such as transistors, resistors, and capacitors. This project can help you understand the basics of electronic music and sound synthesis.\n10. Build a Simple Electronic Game\nDesign and build a simple electronic game such as a Simon Says game or a Whack-a-Mole game using basic electronic components such as transistors, resistors, and capacitors. This project can help you understand the basics of electronic game design and programming.",
+      "winners_per_run": [
+        1,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_117",
+      "ori_prompt": "Give me an idea of the mental exercises you do to inspire yourself.",
+      "context": "",
+      "generic_prompt": "What mental exercises do you engage in to inspire and motivate yourself?",
+      "generic_response": "1. Visualization: I often visualize myself achieving my goals and successes. This helps me to stay focused and motivated.\n2. Affirmations: I use positive affirmations to remind myself of my strengths and abilities.\n3. Gratitude: I practice gratitude by focusing on the things I am thankful for in my life. This helps me to maintain a positive outlook and stay motivated.\n4. Mindfulness: I engage in mindfulness exercises to help me stay present and focused on the task at hand.\n5. Journaling: I write down my goals and aspirations, and reflect on my progress regularly. This helps me to stay motivated and accountable.\n6. Positive self-talk: I practice positive self-talk by speaking to myself in a supportive and encouraging way.\n7. Exercise: I engage in physical activity to release endorphins and boost my mood.\n8. Sleep: I make sure to get enough sleep as it helps me to be more focused and productive.\n9. Reading: I read books and articles that inspire and motivate me.\n10. Connect with others: I connect with people who inspire and motivate me, and learn from their experiences.",
+      "rgeneric_prompt": "What mental exercises do you use to spark inspiration?",
+      "rgeneric_response": "1. Brainstorming: I take a few minutes to write down all my ideas, no matter how crazy or unrealistic they may seem. This helps me to get my thoughts out of my head and onto paper, where I can then evaluate and refine them.\n2. Mind Mapping: I create a visual representation of my ideas, connecting related concepts and themes. This helps me to see the bigger picture and identify patterns and connections that I might not have noticed otherwise.\n3. Free Writing: I set a timer and write for a set period of time, without stopping or editing my thoughts. This helps me to get my thoughts out of my head and onto paper, and can often lead to unexpected and creative ideas.\n4. Sensory Deprivation: I remove one of my senses, such as sight or sound, and focus on the other senses. This helps me to focus on the present moment and can often lead to new and creative ideas.\n5. Journaling: I write down my thoughts and feelings in a journal, without censoring or editing them. This helps me to process my emotions and can often lead to new and creative ideas.\n6. Meditation: I take a few minutes to focus on my breath and clear my mind. This helps me to relax and can often lead to new and creative ideas.\n7. Exercise: I take a walk or do some other form of physical activity. Exercise can help to clear my mind and can often lead to new and creative ideas.\n8. Collaboration: I work with others to generate ideas and feedback. Collaboration can help to spark new and creative ideas and can also help to refine and improve existing ones.",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_124",
+      "ori_prompt": "Answer the following question.",
+      "context": "How do you say \"good evening\" in French.",
+      "generic_prompt": "Provide a clear and accurate response to the given question.",
+      "generic_response": "Ça va? (pronounced \"sah vah\") is a common way to say \"good evening\" in French.",
+      "rgeneric_prompt": "Generate a response to the question provided.",
+      "rgeneric_response": "Ça va? (Ka vah?)\n\nThis is a common French greeting that translates to \"How are you?\" and is often used as a way to greet someone in the evening.",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_127",
+      "ori_prompt": "This is a test for the reading ability of French. Read the given story carefully, and then answer the question in the end.",
+      "context": "Lucie est à la maison avec sa petite-fille, Lin.\nLucie: Oh, non! Nous n'avons pas de pain!\nLin: Ah! Tu vas au supermarché?\nLucie: Oui, je veux une baguette pour mon sandwich.\nDo Lin and Lucie have a lot of bread?",
+      "generic_prompt": "This is a test of French reading comprehension. Carefully read the provided story, then respond to the question at the end.",
+      "generic_response": "1. Qu'est-ce qui ne va pas chez Lucie et Lin?\n2. Pourquoi Lucie va-t-elle au supermarché?\n3. Quel est le nom de la baguette que Lucie veut acheter?\n4. Pourquoi Lucie veut-elle acheter une baguette?\n5. Qu'est-ce que Lucie prévoit de faire avec la baguette?",
+      "rgeneric_prompt": "Rewrite candidate 8:  \nEvaluate comprehension skills in French by carefully reading the provided story and responding to the question at the conclusion.",
+      "rgeneric_response": "1. Qu'est-ce qui ne va pas chez Lucie et Lin?\n2. Pourquoi Lucie va-t-elle au supermarché?\n3. Qu'est-ce que Lucie veut acheter au supermarché?\n4. Pourquoi Lin est-elle inquiète?\n5. Qu'est-ce que Lucie va faire une fois au supermarché?\n6. Pourquoi est-ce important pour Lucie de prendre une baguette pour son sandwich?\n7. Qu'est-ce que la phrase \"Nous n'avons pas de pain!\" signifie en français?\n8. Pourquoi est-ce que Lucie et Lin n'ont pas de pain?\n9. Qu'est-ce que la phrase \"Je veux une baguette pour mon sandwich\" signifie en français?\n10. Pourquoi est-ce que Lucie veut acheter une baguette au supermarché?",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_129",
+      "ori_prompt": "Provide a cooking hack for improving the flavor of the given food.",
+      "context": "popcorn",
+      "generic_prompt": "Offer a practical and effective tip for enhancing the taste of the specified food item.",
+      "generic_response": "1. Popcorn with Different Seasonings:\nTo enhance the taste of popcorn, try different seasonings like salt, black pepper, garlic powder, or even cinnamon sugar. Experiment with various combinations to find your favorite flavor.\n2. Air-Popcorn vs. Oil-Popped:\nAir-popped popcorn has a lighter, less greasy taste compared to oil-popped. Air-popping uses hot air to pop the kernels, resulting in a healthier and more flavorful snack.\n3. Flavored Oil:\nDrizzle flavored oils like truffle oil, balsamic vinegar, or honey over popcorn for an added touch of taste. This simple step can elevate your popcorn experience.\n4. Experiment with Butter Toppings:\nInstead of using regular butter, try using flavored butters like garlic, herb, or even ginger. These unique butter options can add depth and complexity to your popcorn.\n5. DIY Seasoned Salt:\nCombine salt, black pepper, and other desired spices to create your own custom seasoned salt. This allows you to control the flavor profile and create a unique taste that you'll love.\n6. Air-Popcorn Variety Packs:\nTry different flavors within an air-popped popcorn variety pack to discover new taste sensations. This is an excellent way to explore different seasonings and find your favorite.\n7. Freshly Popped vs. Pre-Packaged:\nChoose freshly popped popcorn over pre-packaged, as it tends to have a better taste due to its freshness and lack of preservatives.\n8. Store in an Airtight Container:\nTo maintain the freshness and taste of popcorn, store it in an airtight container. This will help prevent moisture from affecting the popcorn's flavor and texture.\n9. Popcorn with a Side:\nPair popcorn with your favorite snacks or meals for a satisfying and flavorful experience. For example, enjoy popcorn with a movie or while watching a sports game.\n10. Share Your Flavor Creations:\nShare your favorite flavor combinations with friends and family, and even experiment together to create new and unique popcorn taste sensations.",
+      "rgeneric_prompt": "Suggest a kitchen tip that enhances the taste of the specified dish. Organize related techniques or ingredients together.",
+      "rgeneric_response": "1. Use high-quality popcorn kernels for a better taste and texture.\n2. Add aromatic spices like paprika, cumin, or chili powder to the popcorn before cooking.\n3. Toss the cooked popcorn with olive oil, butter, or ghee for a more flavorful and crunchy snack.\n4. Serve the popcorn with a variety of toppings like Parmesan cheese, herbs, or spices for added flavor.\n5. Store the popcorn in an airtight container in a cool, dry place to maintain its freshness and crunchiness.",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_14",
+      "ori_prompt": "When you're stuck on a coding problem, the best place to look for help is in the documentation. Read the docs carefully and see if there's a section that covers your specific issue. Often, the answer will be right there in front of you. If not, try searching for key terms related to your problem. Come up with the useful links about the given search term.",
+      "context": "sql find duplicate values",
+      "generic_prompt": "When you're stuck on a coding problem, start by consulting the official documentation. Carefully read through it to find a section that addresses your specific issue—many times, the solution will already be clearly explained. If you can't find the answer directly, identify key terms related to your problem and use them to search for helpful resources or links that provide relevant information.",
+      "generic_response": "1. Use the `SELECT DISTINCT` statement to find duplicate values in a table.\n2. Use the `UNION` operator to combine the results of two or more SELECT statements.\n3. Use the `GROUP BY` clause to group the results of a SELECT statement by one or more columns.\n4. Use the `HAVING` clause to filter the results of a `GROUP BY` statement based on a condition.\n5. Use the `COUNT` function to count the number of distinct values in a column.\n6. Use the `DISTINCT` keyword in an `INSERT INTO` statement to insert only distinct values into a table.\n7. Use the `EXCEPT` operator to find the differences between two sets of data.\n8. Use the `UNION ALL` operator to combine the results of two or more SELECT statements without removing duplicates.\n9. Use the `ANALYZE` statement to analyze the structure of a table and identify any duplicate values.\n10. Use the `DELETE` statement with the `WHERE` clause to delete duplicate values from a table.",
+      "rgeneric_prompt": "Generate rewrite candidate 7. Focus on precise verbs and specific references. Use language and structure distinct from other possible rewrites, while maintaining the original task.  \n\nOriginal prompt:  \n<original_prompt>  \nWhen you're stuck on a coding problem, the best place to look for help is in the documentation. Read the docs carefully and see if there's a section that covers your specific issue. Often, the answer will be right there in front of you. If not, try searching for key terms related to your problem. Come up with the useful links about the given search term.  \n</original_prompt>",
+      "rgeneric_response": "1. When you're stuck on a coding problem, the best place to look for help is in the documentation. Carefully read the documentation and see if there's a section that covers your specific issue. Often, the answer will be right there in front of you. If not, try searching for key terms related to your problem. Come up with useful links about the given search term.",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_140",
+      "ori_prompt": "Solve this equation.",
+      "context": "x^3 - 4x^2 + 6x - 24 = 0",
+      "generic_prompt": "Solve the given equation and provide the correct solution.",
+      "generic_response": "要解这个方程，我们可以使用求根公式。首先，我们需要找到方程的根。\n\n方程：x^3 - 4x^2 + 6x - 24 = 0\n\n我们可以使用求根公式：x = (-b ± sqrt(b^2 - 4ac)) / 2a\n\n在这个方程中，a = 1, b = -4, c = 6。将这些值代入求根公式，我们得到：\n\nx = (-(-4) ± sqrt((-4)^2 - 4(1)(6))) / 2(1)\nx = (4 ± sqrt(16 - 24)) / 2\nx = (4 ± sqrt(8)) / 2\nx = (4 ± 4) / 2\nx = 8 / 2\nx = 4\n\n所以，方程的解是 x = 4。",
+      "rgeneric_prompt": "Demonstrate the step-by-step process to find the solution for the given equation.",
+      "rgeneric_response": "1. First, we need to identify the factors of the equation. In this case, the equation is x^3 - 4x^2 + 6x - 24 = 0.\n2. We can factor the left side of the equation as (x-2)(x-4)(x-6).\n3. Now we can use the zero product property to find the values of x that make the equation true. In other words, we are looking for values of x that multiply to zero.\n4. To apply the zero product property, we multiply each factor on the left side of the equation by a value of x that makes the product of that factor and the other factors equal to zero.\n5. For example, to find the value of x that makes the first factor equal to zero, we multiply (x-2) by (x-4), which gives us (x-2)(x-4) = 0. Solving for x, we get x = 2 or x = 4.\n6. To find the value of x that makes the second factor equal to zero, we multiply (x-2) by (x-6), which gives us (x-2)(x-6) = 0. Solving for x, we get x = 2 or x = 6.\n7. Finally, we can substitute the values of x that make each factor equal to zero into the original equation to find the solution. In this case, the solution is x = 2 or x = 6.\n8. Therefore, the solution to the equation x^3 - 4x^2 + 6x - 24 = 0 is x = 2 or x = 6.",
+      "winners_per_run": [
+        1,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.8,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_142",
+      "ori_prompt": "Based on the facts that have been provided, prove the following statement.",
+      "context": "Statement: \"For every integer k, k^2 + 2k + 1 ≥ 0\"\nFact: The square of any real number is non-negative.",
+      "generic_prompt": "Using the given facts, provide a logical and accurate proof for the stated claim.",
+      "generic_response": "我们可以使用给定的事实来证明这个说法。首先，让我们考虑 k^2 + 2k + 1 的值。\n\nk^2 + 2k + 1 = (k^2) + 2k + 1\n\n由于任何实数的平方都是非负的，我们知道 k^2 是非负的。所以我们可以将 k^2 放到等式的左边，将 2k 放到等式的右边，并将 1 放到等式的最后面。\n\n(k^2) + 2k + 1 ≥ 0\n\n现在我们需要证明 (k^2) + 2k + 1 ≥ 0。我们可以通过展开等式来证明这个说法。\n\n(k^2) + 2k + 1 = (k^2) + 2k + (1/2)(k^2)\n\n由于 k^2 是非负的，我们可以将其放到等式的左边，并将 2k 放到等式的右边。\n\n(k^2) + 2k + (1/2)(k^2) ≥ 0\n\n(k^2) + 2k + 1/2(k^2) ≥ 0\n\n我们可以看到，当 k^2 和 2k 相加时，我们得到了一个等号。因此，我们可以将其放到等式的左边，并将 1/2(k^2) 放到等式的右边。\n\n(k^2) + 2k + 1/2(k^2) ≥ 0\n\n(k^2) + 2k + 1/2(k^2) = (k^2) + 2k + 1\n\n我们可以看到，当我们将等式两边的 1/2(k^2) 相加时，我们得到了一个等号。因此，我们可以将其放到等式的左边，并将 2k 放到等式的右边。\n\n(k^2) + 2k + 1 ≥ 0\n\n现在我们已经证明了 (k^2) + 2k + 1 ≥ 0，并且我们已经证明了 k^2 是非负的。因此，我们可以将 k^2 放回等式的左边，并将 2k 放回等式的右边。\n\nk^2 + 2k + 1 ≥ 0\n\n这个说法已经证明。",
+      "rgeneric_prompt": "Demonstrate the validity of the given statement using the information and facts presented.",
+      "rgeneric_response": "首先，我们需要证明这个表达式：k^2 + 2k + 1 ≥ 0。\n\n我们可以通过展开这个表达式来证明这个不等式。\n\nk^2 + 2k + 1 = (k + 1)^2 - 1\n\n由于任何实数的平方都是非负的，我们可以得出结论：\n\n(k + 1)^2 ≥ 0\n\n这是因为任何非零实数的平方都是非负的。所以我们可以说：\n\nk + 1 ≥ 0\n\n现在我们可以将这个不等式代入原始表达式：\n\nk^2 + 2k + 1 ≥ 0\n\nk^2 + 2k + 1 = (k + 1)^2 - 1\n\nk^2 + 2k + 1 = (k + 1)^2 - 1\n\nk + 1 ≥ 0\n\n所以我们得出结论：\n\nk^2 + 2k + 1 ≥ 0\n\n这个不等式是正确的，因此我们可以说：\n\nk^2 + 2k + 1 ≥ 0\n\n这个不等式是正确的，因此我们可以说：\n\nk^2 + 2k + 1 ≥ 0",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.3,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.2,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.3,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_158",
+      "ori_prompt": "The given text must be classified as offensive or not offensive.",
+      "context": "You acted really crazy last night.",
+      "generic_prompt": "Determine whether the provided text is offensive or not offensive.",
+      "generic_response": "根据提供的文本，我们无法确定它是否具有攻击性或不攻击性。这取决于具体情况和语境。如果您能提供更多信息，我可以尝试为您提供更准确的答案。",
+      "rgeneric_prompt": "Determine whether the provided text contains offensive content or is non-offensive.",
+      "rgeneric_response": "根据提供的文本，我无法确定其是否包含攻击性内容或非攻击性。这是因为“你昨晚感觉很疯狂”这个说法本身并不是攻击性的，但是具体的背景和上下文可能会影响其敏感度。如果你能提供更多信息，我可以尝试更准确地回答你的问题。",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 0.8
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.4,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 0.8
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 0.8
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.4,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 0.8
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 0.8
+          },
+          "response_B": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_174",
+      "ori_prompt": "Find the directions between the given locations.",
+      "context": "From: Rowan Avenue Elementary School, 600 S Rowan Ave, Los Angeles, CA 90023, United States\nTo: Calvary Cemetery and Mortuary, 4201 Whittier Blvd, Los Angeles, CA 90023, United States",
+      "generic_prompt": "Provide clear, step-by-step directions from one specified location to another.",
+      "generic_response": "1. From Rowan Avenue Elementary School, head south on S Rowan Ave for 0.2 miles.\n2. Turn left onto Whittier Blvd and continue driving for 0.8 miles.\n3. Turn right into Calvary Cemetery and Mortuary's parking lot.\n\nNote: Please note that these directions are approximate and may vary depending on the specific location of the starting point and the destination. It is always best to verify the directions before setting out.",
+      "rgeneric_prompt": "Determine and provide the step-by-step route from the starting location to the destination location.",
+      "rgeneric_response": "1. From Rowan Avenue Elementary School, head south on S Rowan Ave for 0.2 miles.\n2. Turn left onto Whittier Blvd and continue straight for 0.3 miles.\n3. Turn right into Calvary Cemetery and Mortuary's parking lot.",
+      "winners_per_run": [
+        0,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.6,
+            "Relevance": 1.0,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.8,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.6,
+            "Relevance": 1.0,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.6,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_188",
+      "ori_prompt": "You should capitalize the sentence according to the guide.",
+      "context": "Guide: Every other letter alternates between lower case and upper case.\nSentence: A giant spider blocks your path.",
+      "generic_prompt": "Capitalize the sentence following the provided guide.",
+      "generic_response": "A capital letter is used at the beginning of each sentence.",
+      "rgeneric_prompt": "Rewrite candidate 8:  \nApply capitalization to the sentence following the provided guidelines.",
+      "rgeneric_response": "1. A GIANT spider blocks your path.\n2. A GIANT spider blocks your path.\n3. A GIANT spider blocks your path.\n4. A GIANT spider blocks your path.\n5. A GIANT spider blocks your path.\n6. A GIANT spider blocks your path.\n7. A GIANT spider blocks your path.\n8. A GIANT spider blocks your path.\n9. A GIANT spider blocks your path.\n10. A GIANT spider blocks your path.",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.1,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_196",
+      "ori_prompt": "You are given a sentence in first-order logic. Translate it into natural language.",
+      "context": "∃x∀y(soldier(x)→general(x,y))",
+      "generic_prompt": "You are given a sentence expressed in first-order logic. Convert it into an equivalent natural language sentence.",
+      "generic_response": "我们已经知道一个人如果是士兵，那么他可能是将军。",
+      "rgeneric_prompt": "Convert the provided first-order logic sentence into an equivalent natural language expression.",
+      "rgeneric_response": "∃x∀y(soldier(x) → general(x, y)) can be translated into English as:\n\n\"For all soldiers x, there exists a y such that if x is a soldier, then x is a general.\"",
+      "winners_per_run": [
+        2,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.1,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.5,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_205",
+      "ori_prompt": "Given a programming language and the name of a function, write a command to show how to use the function.",
+      "context": "Language: Python\nFunction: input",
+      "generic_prompt": "For a specified programming language and function name, generate a command that demonstrates the correct usage of the function.",
+      "generic_response": "在 Python 中，`input()` 函数用于获取用户输入的字符串。\n\n以下是一个示例代码，展示了如何正确使用 `input()` 函数：\n```python\n# 定义一个变量用于存储用户输入的字符串\nuser_input = input(\"请输入一个字符串：\")\n\n# 输出用户输入的字符串\nprint(\"你输入的是：\", user_input)\n```\n在这个示例中，我们首先使用 `input()` 函数获取用户输入的字符串，并将其存储在变量 `user_input` 中。然后，我们使用 `print()` 函数将用户输入的字符串输出到控制台上。\n\n请注意，`input()` 函数不会检查用户输入的字符串是否有效，因此你需要在获取用户输入的字符串之后对其进行验证和处理。",
+      "rgeneric_prompt": "For a specified programming language and function name, generate a usage example by crafting a command that demonstrates the function's application. Organize the response by grouping related elements, such as syntax, parameters, and context, where appropriate.",
+      "rgeneric_response": "1. Syntax:\n```python\ninput(\"Enter your name: \")\n```\n2. Parameters:\nNone\n3. Context:\nThis example demonstrates how to use the `input()` function in Python to prompt the user to enter a string of text. The function takes no parameters and can be used in any context where input from the user is required.",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_207",
+      "ori_prompt": "Create a brief resume introduction using the following information.",
+      "context": "name: Mark\nnationality: Italian\nlanguage: English\nattributes: creative, goal-oriented, motivated\nskills: software engineering, content marketing",
+      "generic_prompt": "Write a concise resume summary using the provided information.",
+      "generic_response": "Mark is a creative and goal-oriented Italian software engineer with a passion for content marketing. With a strong background in software engineering, Mark is motivated to achieve success in his career. He is skilled in content marketing and has a track record of delivering results.",
+      "rgeneric_prompt": "Generate a concise resume summary by incorporating the provided details. Organize related elements cohesively and present the information in a professional, succinct manner.",
+      "rgeneric_response": "Mark, an Italian national with a passion for software engineering and content marketing, is a creative and goal-oriented individual with a strong motivation to succeed. With a background in software engineering, Mark has developed a keen eye for detail and a strong problem-solving ability. He is also skilled in content marketing, with a proven track record of creating engaging and effective content that drives results. With a focus on creativity and motivation, Mark is a valuable asset to any team looking to achieve their goals.",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_213",
+      "ori_prompt": "Review the property description and tell us what is good and what is bad about it and list its key takeaways.",
+      "context": "There's real magic in combining inherently compelling Victorian architecture with a modern aesthetic. Add in an extraordinary multi-level garden & the result is the undeniable elegance of 444 29th St. The front of the home is light-filled w/ a seamless connection between living, dining & kitchen. Newly updated kitchen w/ quartz counters & upgraded appliances. A lg dining rm has a bay of windows &, when paired w/ the adjacent living rm, provides an ideal space to entertain. 2 lg bdrms on this level are at the rear. Both w/ lg closets & walk out to the garden. Stylishly remodeled full bath on this level. 3rd bdrm/2nd full bath are located on the ground floor - perfect as a guest rm, home office, fitness area, etc. The enormous garden occupies an extra deep lot & is beautifully landscaped & terraced. Laundry/storage rm, 1-car garage pkg, Tesla solar panels. Prime, flat part of Noe Valley - short walk to all that Noe has to offer. Steps from the J-Church & convenient to shuttles/freeways.",
+      "generic_prompt": "Analyze the property description, highlighting its strengths and weaknesses, and provide a concise list of key takeaways.",
+      "generic_response": "1. Strengths:\n* Victorian architecture combined with a modern aesthetic\n* Extraordinary multi-level garden\n* Light-filled living spaces with seamless connections\n* Updated kitchen with quartz counters and upgraded appliances\n* Stylishly remodeled full bath\n* 3rd bedroom/2nd full bath on the ground floor\n* 1-car garage parking and Tesla solar panels\n1. Weaknesses:\n* No specific information about the neighborhood or location\n* No information about the size of the property or lot\n* No information about the price or availability of the property\n1. Key Takeaways:\n* The property has a unique combination of Victorian architecture and a modern aesthetic\n* It features an extraordinary multi-level garden and light-filled living spaces\n* The kitchen has been recently updated with quartz counters and upgraded appliances\n* There are 3 bedrooms, including a 2nd full bath on the ground floor\n* The property has a 1-car garage parking and Tesla solar panels\n* No information about the neighborhood, location, size, or price is provided.",
+      "rgeneric_prompt": "Analyze the property description by highlighting its strengths and weaknesses, then summarize the main points.",
+      "rgeneric_response": "1. Strengths:\n* Combination of Victorian architecture and modern aesthetic\n* Extraordinary multi-level garden\n* Light-filled living spaces with seamless connection between living, dining, and kitchen\n* Updated kitchen with quartz counters and upgraded appliances\n* Large dining room with bay windows and potential for entertainment\n* Two large bedrooms with walk-out closets and access to the garden\n* Stylishly remodeled full bath on the same level\n* Ground-floor third bedroom/second full bath with versatile uses\n* Prime location in Noe Valley with easy access to J-Church and nearby freeways\n* Tesla solar panels for energy efficiency\n* 1-car garage parking and storage/laundry room\n1. Weaknesses:\n* No specific information on the property's square footage or number of bathrooms\n* No information on the property's parking or additional outdoor space\n* No information on the property's layout or potential for future expansion\n* No information on the property's history or any potential issues",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_214",
+      "ori_prompt": "List some of the top real estate marketing words to add value to the listing and engage more potential buyers.",
+      "context": "",
+      "generic_prompt": "Identify and list some of the most effective real estate marketing terms that enhance a property listing and attract a larger pool of potential buyers.",
+      "generic_response": "1. \"Stunning\" or \"breathtaking\" views\n2. \"Spacious\" or \"open\" floor plan\n3. \"High-end\" or \"luxury\" finishes\n4. \"Renovated\" or \"updated\" kitchen and bathrooms\n5. \"In-demand\" or \"desirable\" location\n6. \"Private\" or \"quiet\" setting\n7. \"Sustainable\" or \"green\" features\n8. \"Fully-equipped\" or \"turnkey\" property\n9. \"Unique\" or \"one-of-a-kind\" architectural features\n10. \"Fantastic\" or \"excellent\" condition.",
+      "rgeneric_prompt": "Identify and present a selection of high-impact real estate marketing terms that enhance listing appeal and attract a broader pool of interested buyers.",
+      "rgeneric_response": "1. \"Stunning curb appeal\" - This term is used to describe a property's exterior, emphasizing its attractiveness and inviting potential buyers to take a closer look.\n2. \"Open and airy floor plan\" - This term is used to describe a property's interior layout, highlighting its spaciousness and functionality.\n3. \"Modern and updated\" - This term is used to describe a property's features and amenities, emphasizing its relevance and appeal to contemporary buyers.\n4. \"Move-in ready\" - This term is used to describe a property that is in excellent condition and ready for immediate occupancy, appealing to buyers who want to avoid the hassle of renovations.\n5. \"Sought-after location\" - This term is used to describe a property's location, highlighting its desirability and accessibility to amenities, schools, and other attractions.\n6. \"Renovated kitchen\" - This term is used to describe a property's kitchen, emphasizing its modernity and functionality, which can be a major selling point for buyers.\n7. \"Private outdoor space\" - This term is used to describe a property's outdoor area, emphasizing its privacy and potential for entertaining or relaxation.\n8. \"High ceilings\" - This term is used to describe a property's interior, emphasizing its spaciousness and elegance.\n9. \"Spacious bedrooms\" - This term is used to describe a property's bedrooms, emphasizing their size and potential for flexibility.\n10. \"Fully finished basement\" - This term is used to describe a property's basement, emphasizing its potential for additional living space or storage.",
+      "winners_per_run": [
+        0,
+        2,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_217",
+      "ori_prompt": "As part of software engineering, user stories describe what the user wants the system to do, while acceptance criteria describe the conditions a specific user story must meet. Create basic acceptance criteria based on the given user story.",
+      "context": "User story: As a user, I want to use a search field to type a city, name, or street, so that I could find matching hotel options.",
+      "generic_prompt": "In the context of software engineering, user stories outline what the user wants the system to accomplish, and acceptance criteria define the conditions that must be met for a user story to be considered complete. Based on the provided user story, generate clear and concise acceptance criteria.",
+      "generic_response": "1. The search field should be prominently displayed on the hotel booking website.\n2. The search field should allow users to type in a city, name, or street.\n3. The search field should provide auto-suggest suggestions as users type.\n4. The search results should display matching hotel options based on the user's input.\n5. The search results should be sorted by relevance to the user's input.\n6. The search results should include information such as the hotel name, location, and price.\n7. The search results should be displayed in a clear and easy-to-read format.\n8. The search results should be displayed in a user-friendly interface.\n9. The search results should be displayed in a timely manner.\n10. The search results should be displayed in the user's preferred language, if available.",
+      "rgeneric_prompt": "Given a user story, formulate clear and specific acceptance criteria that define the conditions the system must satisfy to fulfill the requirements outlined in the user story. Use precise language and ensure each criterion is testable and unambiguous.",
+      "rgeneric_response": "1. The search field must be prominently displayed on the hotel booking website, easily accessible to the user.\n2. The search field must allow the user to input a city name, street name, or hotel name.\n3. The search field must provide auto-suggest suggestions as the user types, displaying relevant hotel options based on the input.\n4. The search results must be sorted by relevance, with the most relevant hotels appearing at the top of the list.\n5. The search results must include a clear description of each hotel, including the name, address, and amenities offered.\n6. The search results must be displayed in a user-friendly format, with the option to view more details about each hotel.\n7. The search results must be customizable, allowing the user to filter by price range, star rating, and other criteria.\n8. The search results must be accurate and up-to-date, reflecting the current availability and pricing of the hotels.\n9. The search results must be displayed in a responsive design, adapting to different screen sizes and devices.\n10. The search functionality must be reliable, with minimal errors or delays in displaying search results.",
+      "winners_per_run": [
+        1,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_224",
+      "ori_prompt": "Convert natural language into a list of turn-by-turn directions.",
+      "context": "Go west on I-10 until you hit the 101 then take it north. You will eventually see the Hollywood sign.",
+      "generic_prompt": "Generate a step-by-step list of turn-by-turn directions based on a natural language description.",
+      "generic_response": "1. Start at your current location.\n2. Go west on I-10.\n3. Continue west on I-10 until you reach the 101 freeway.\n4. Take the 101 freeway north.\n5. Continue on the 101 freeway until you see the Hollywood sign.\n\nNote: The exact location of the Hollywood sign may vary, so it's always a good idea to double-check your route before starting your journey.",
+      "rgeneric_prompt": "Generate a step-by-step list of directions based on a natural language description, ensuring each instruction is clear, sequential, and actionable.",
+      "rgeneric_response": "1. Start by heading west on I-10.\n2. Continue driving until you reach the 101 freeway.\n3. Take the 101 freeway north.\n4. Keep driving on the 101 until you see the Hollywood sign.\n\nNote: The directions assume that the person is traveling in a vehicle and has access to a GPS or map to help them navigate.",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_238",
+      "ori_prompt": "Categorize the given product into one of Electronics, Computers, Smart Home, or Arts & Crafts departments.",
+      "context": "Google Nest Learning Thermostat",
+      "generic_prompt": "Assign the given product to the most appropriate department: Electronics, Computers, Smart Home, or Arts & Crafts.",
+      "generic_response": "环境：谷歌家居智能温度控制器\n\n问题：将给定产品分配到最适合的部门：电子产品、电脑、智能家居或手工艺。\n\n答案：智能家居。\n\n解释：谷歌家居智能温度控制器是一种智能家居设备，它可以自动调节温度，根据用户的习惯和环境条件进行智能调节。它可以与其他智能家居设备集成，例如灯光、门锁等，形成智能家居系统。因此，它最适合于智能家居部门。电子产品部门包括各种电子产品，如音响、电视等，而电脑部门包括计算机和其他电子设备，而手工艺部门包括各种手工艺品和工艺。",
+      "rgeneric_prompt": "Assign the provided product to a single department from the following categories: Electronics, Computers, Smart Home, or Arts & Crafts. Group similar classification criteria together in your decision-making process.",
+      "rgeneric_response": "1. Electronics: Google Nest Learning Thermostat is a device that connects to the internet and can be controlled remotely, making it a product that belongs in the electronics department.\n2. Computers: The Google Nest Learning Thermostat connects to the internet and can be controlled remotely, making it a product that belongs in the computers department.\n3. Smart Home: The Google Nest Learning Thermostat is a smart device that can be controlled remotely and can adapt to the user's schedule and preferences, making it a product that belongs in the smart home department.\n4. Arts & Crafts: The Google Nest Learning Thermostat is a device that can be customized with different colors and designs, making it a product that belongs in the arts & crafts department.\n\nTherefore, the Google Nest Learning Thermostat can be assigned to the Smart Home department.",
+      "winners_per_run": [
+        1,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.6,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.4,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_239",
+      "ori_prompt": "Provide instructions for the given exercise.",
+      "context": "Leg Raises",
+      "generic_prompt": "Create a clear, step-by-step guide outlining how to properly perform the specified exercise.",
+      "generic_response": "1. Start by standing up straight with your feet shoulder-width apart.\n2. Slowly lift one foot off the ground, keeping your knees slightly bent.\n3. Hold for a moment, then slowly lower your foot back down to the ground.\n4. Repeat with the other foot.\n5. Alternate feet for 10-15 reps.\n6. Make sure to keep your back straight and your core engaged throughout the exercise.\n7. Don't let your hips drop or your knees go past your toes.\n8. Keep your arms at your sides for support.\n9. Repeat for 2-3 sets.\n\nNote: It's important to start with a light weight and gradually increase the weight as you get stronger.",
+      "rgeneric_prompt": "Generate clear, step-by-step guidance for completing the specified exercise.",
+      "rgeneric_response": "1. Start by standing up straight with your feet shoulder-width apart.\n2. Slowly lift one foot off the ground, keeping your knees slightly bent.\n3. Hold for a moment, then slowly lower your foot back down to the ground.\n4. Repeat with the other foot.\n5. Alternate legs for 10-15 reps.\n6. Make sure to keep your core engaged and your back straight throughout the exercise.\n7. Don't forget to breathe and maintain control throughout the movement.",
+      "winners_per_run": [
+        2,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.4,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 0.7
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 0.7
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.4,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 0.7
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 0.7
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.4,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 0.7
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_243",
+      "ori_prompt": "Identify the programming language used to write the given code.",
+      "context": "if (20 > 18) {\n  printf(\"20 is greater than 18\");\n}",
+      "generic_prompt": "Determine and state the programming language in which the provided code snippet is written.",
+      "generic_response": "根据提供的代码片段，这段代码是使用的编程语言是什么？\n\n根据代码片段中的语法和语言特征，这段代码是使用的编程语言是 C 语言。C 语言是一种通用的编程语言，广泛应用于操作系统、网络、设备驱动程序等领域。C 语言的语法简洁，易于阅读和编写，因此被广泛应用于各种编程领域。",
+      "rgeneric_prompt": "Determine which programming language the provided code snippet is written in.",
+      "rgeneric_response": "根据提供的代码片段，这是一个C语言的示例代码。C语言是一种通用的编程语言，常用于系统编程、操作系统开发和嵌入式系统开发等领域。在这个代码片段中，if语句用于判断变量20是否大于变量18，并根据结果输出相应的信息。",
+      "winners_per_run": [
+        1,
+        2,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_246",
+      "ori_prompt": "Expand the given sentence and give it more details and depth.",
+      "context": "It changed my life.",
+      "generic_prompt": "Expand the given sentence by adding more details, depth, and elaboration to enhance its clarity and richness.",
+      "generic_response": "1. \"It changed my life.\"\n\nExpanded sentence:\n\n\"The experience was nothing short of transformative. It not only altered the way I perceived the world around me but also left an indelible mark on my very being. From the moment I first laid eyes on it, I was captivated by its beauty and intrigue. As I delved deeper into its mysteries, I found myself drawn into a world of wonder and awe, where the ordinary became extraordinary and the mundane was replaced with a sense of purpose and meaning.\n\nThe impact of this experience was profound, affecting every aspect of my life. It instilled in me a newfound sense of curiosity and a desire to explore the unknown, pushing me to step outside of my comfort zone and embrace the unknown. It taught me the value of perseverance and resilience, as I faced challenges and obstacles along the way. And it showed me the power of connection and community, as I forged bonds with others who shared my passion and enthusiasm.\n\nIn essence, this experience changed the very fabric of my existence, shaping me into the person I am today. It taught me to appreciate the beauty in the world around me, to embrace my passions and pursue my dreams, and to never stop exploring and discovering the wonders of the universe. It has left an indelible mark on my heart and soul, and I will be forever grateful for the opportunity to have experienced it.\"",
+      "rgeneric_prompt": "Enhance the provided sentence by adding more information, elaboration, and richness to its content.",
+      "rgeneric_response": "1. The transformative experience not only changed my life but also opened my eyes to new possibilities and broadened my perspective on life.\n2. The profound impact of the experience was felt in every aspect of my being, from my personal growth to my professional development.\n3. The transformative journey not only altered my life but also instilled in me a sense of purpose and direction that I had previously lacked.\n4. The life-altering experience not only transformed my life but also inspired me to pursue new passions and interests that I had previously overlooked.\n5. The experience was a game-changer for me, not only in terms of my personal growth but also in how I approach and interact with the world around me.",
+      "winners_per_run": [
+        1,
+        1,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 1.0,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 1.0,
+            "Style_Tone": 1.0,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_27",
+      "ori_prompt": "You will be asked to answer the following question as part of the LinkedIn Skill assessments.",
+      "context": "You find that your project has a tag and branch both named push-notifications, which causes confusion when trying to print out given reference. How can you specify which branch you want to look at?",
+      "generic_prompt": "You will be asked to respond to a question that is part of a LinkedIn Skill Assessment.",
+      "generic_response": "1. To specify which branch you want to look at when working with Git, you can use the `git checkout` command. This command allows you to switch between different branches in your repository. For example, if you want to switch to the `push-notifications` branch, you can use the command `git checkout push-notifications`. This will switch your working directory to the `push-notifications` branch and allow you to make changes to that branch.\n2. Another way to specify which branch you want to look at is to use the `git branch` command. This command lists all the branches in your repository, along with their current status (e.g. \"active\", \"on-branch\", \"local\", etc.). You can use this command to see which branch you are currently on, and which branches are available in your repository.\n3. If you want to specify a different branch to work on, you can use the `git checkout` command to switch to that branch. For example, if you want to switch to the `push-notifications-feature` branch, you can use the command `git checkout push-notifications-feature`. This will switch your working directory to the `push-notifications-feature` branch and allow you to make changes to that branch.\n4. If you want to switch back to the original branch, you can use the `git checkout` command to switch to the branch you want to switch back to. For example, if you switched to the `push-notifications-feature` branch and want to switch back to the `push-notifications` branch, you can use the command `git checkout push-notifications`. This will switch your working directory back to the `push-notifications` branch.",
+      "rgeneric_prompt": "You'll respond to a question formatted as it appears in LinkedIn Skill Assessments.",
+      "rgeneric_response": "1. How can you specify which branch you want to look at when there are multiple branches with the same tag name?\n\nTo specify which branch you want to look at when there are multiple branches with the same tag name, you can use the branch name in combination with the tag name. For example, you can use the format \"push-notifications/branch-name\" to refer to a specific branch. This way, you can avoid confusion and clearly indicate which branch you want to work with. Additionally, you can use Git commands such as \"git checkout\" or \"git pull\" to switch between branches and retrieve the latest changes from a specific branch.",
+      "winners_per_run": [
+        1,
+        0,
+        0
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.4,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.4,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.4,
+            "Conciseness": 0.4,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.2,
+            "Relevance": 0.3,
+            "Completeness": 0.2,
+            "Clarity_Coherence": 0.5,
+            "Usefulness_Helpfulness": 0.2,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.2,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.4,
+            "Conciseness": 0.4,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_32",
+      "ori_prompt": "Write a  review based on the given information.",
+      "context": "- Product: Persil Discs Laundry Detergent Pacs, Original Scent, High Efficiency (HE) Compatible, Laundry Soap, 62 Count\n- Sentiment: Positive",
+      "generic_prompt": "Based on the provided information, write a detailed and accurate review.",
+      "generic_response": "🌟 Persil Discs Laundry Detergent Pacs Review: A Game-Changer for Efficient & Fresh Laundry! 🌟\n\nAre you tired of dealing with messy laundry detergent bottles and the hassle of measuring each time you do laundry? Look no further than Persil Discs Laundry Detergent Pacs! These innovative laundry detergent pacs are a game-changer for efficient and fresh laundry. Let me share my experience with you! 😊\n\n👍 Easy-to-Use: Persil Discs are pre-measured and come in a convenient 62-count pack, making them perfect for high-efficiency (HE) washing machines. Simply throw them into the wash, and they'll dissolve automatically, delivering the perfect amount of detergent for each load. No more measuring, mixing, or worrying about overdosing!\n\n🌿 Natural & Gentle: Persil Discs are specially formulated with natural ingredients like lemon and lavender, ensuring a gentle cleaning experience for your clothes without harsh chemicals. This is especially great for those with sensitive skin or allergies.\n\n💡 High Efficiency Compatible: These pacs are designed to work seamlessly in HE washing machines, ensuring a thorough clean without any issues. They're also free of dyes and chlorine bleach, making them a great choice for those who prefer eco-friendly products.\n\n🌟 Freshness Guaranteed: Persil Discs feature a unique freshness seal that ensures the detergent stays fresh until the end of the pack. This means you can use the entire pack without worrying about the detergent losing its effectiveness.\n\n👍 Versatile: These pacs are suitable for all types of laundry, including whites, colors, and delicates. They're perfect for regular washes and can even be used in combination with other laundry products for added cleaning power.\n\n🌟 Cost-Effective: With 62 pacs in each pack, you're getting a great value for your money. Plus, since you don't need to purchase separate detergent, fabric softener, or color-safe products, you'll save even more in the long run.\n\nIn conclusion, Persil Discs Laundry Detergent Pacs are a fantastic choice for anyone looking to simplify their laundry routine while ensuring efficient, gentle, and fresh results. I highly recommend giving them a try! 😊\n\n👍 If you found this review helpful, please give it a thumbs up! 👍\n\n#PersilDiscs #LaundryDetergent #EfficientLaundry #NaturalGentle #HighEfficiency #FreshLaundry #Review #ProductReview #PositiveReview",
+      "rgeneric_prompt": "Generate a review using the provided details. Organize the content by clustering similar points together. Ensure the language and structure are distinct from other possible versions of the task, while maintaining the original objective.",
+      "rgeneric_response": "🌟 Persil Discs: A Game-Changer for Laundry! 🌟\n\nI recently had the pleasure of trying out the Persil Discs Laundry Detergent Pacs, and I must say, I'm completely smitten! These little wonders have completely transformed my laundry routine, and I couldn't be happier with the results.\n\nFirst off, let's talk about the packaging. These little guys come in individual, biodegradable, and recyclable pods, which makes them a dream to store and use. Simply throw them in the wash with your clothes, and they'll dissolve, releasing their fresh and effective cleaning power. No more lugging around heavy bottles or dealing with messy powders.\n\nThe Original Scent is just what I needed to freshen up my laundry. It's not overpowering, but it definitely leaves my clothes smelling clean and crisp. And the best part? These little pods are HE compatible, which means they're perfect for high-efficiency washing machines.\n\nI've tried other laundry detergents in the past, but Persil Discs has by far been the most effective. My clothes come out looking and feeling brighter, and I've noticed a significant reduction in shrinkage and fading. Plus, the fact that they're eco-friendly is just an added bonus.\n\nOverall, I'm beyond impressed with Persil Discs Laundry Detergent Pacs. They're convenient, effective, and kind to the environment. If you're in the market for a new laundry detergent, I highly recommend giving these a try. Your laundry (and your wallet) will thank you! 😊",
+      "winners_per_run": [
+        0,
+        2,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_38",
+      "ori_prompt": "Provide an example of how a table of contents can be generated automatically in a LATEX document. Make sure your example contains the necessary commands.",
+      "context": "",
+      "generic_prompt": "Demonstrate how to automatically generate a table of contents in a LaTeX document by providing a complete example that includes all necessary commands.",
+      "generic_response": "要在 LaTeX 文檔中自動生成表格，您可以使用 `acronym` 和 `glossaries` 兩個套件。以下是一個完整的例子，包括所有必要的命令：\n```latex\n\\documentclass{article}\n\\usepackage{acronym}\n\\usepackage{glossaries}\n\n% 定義詞彙表\n\\newacronym{API}{API}{Application Programming Interface}\n\\newacronym{URL}{URL}{Uniform Resource Locator}\n\\newacronym{SQL}{SQL}{Structured Query Language}\n\n% 定義詞彙表類型\n\\newglossary{term}{type=acronym}\n\\newglossary{def}{type=long}\n\n% 定義詞彙表\n\\glsadd{API}\n\\glsadd{URL}\n\\glsadd{SQL}\n\n% 生成表格\n\\printglossary[type=\\acronymtype]\n\\printglossary[type=\\longtype]\n\n\\begin{document}\n\n% 在文檔中使用詞彙表\nAPI 是一種 Application Programming Interface，用於與網站進行交互。\nURL 是一種 Uniform Resource Locator，用於指定網頁的位置。\nSQL 是一種 Structured Query Language，用於管理資料庫。\n\n\\gls{API}\n\\gls{URL}\n\\gls{SQL}\n\n\\printglossary\n\n\\end{document}\n```\n在這個例子中，我們首先安裝了 `acronym` 和 `glossaries` 兩個套件。然後，我們定義了三個詞彙表，包括 `API`、`URL` 和 `SQL`。接下來，我們使用 `\\glsadd` 命令添加這些詞彙表到 `term` 和 `def` 類型的詞彙表中。最後，我們使用 `\\printglossary` 命令生成表格，並將 `acronymtype` 和 `longtype` 兩個類型指定為要生成的詞彙表類型。\n\n這個例子生成了一個包含 `API`、`URL` 和 `SQL` 這三個詞彙表的表格。您可以根據需要修改這個例子，以生成更多的詞彙表。",
+      "rgeneric_prompt": "Demonstrate an automatic table of contents creation in a LATEX document by providing a code example that includes all required commands.",
+      "rgeneric_response": "要在 LaTeX 文档中自动生成表格的目录，您可以使用 `acro` 和 `hyperref` 包。以下是一个示例代码，其中包含所有必要的命令：\n```latex\n\\documentclass{book}\n\\usepackage{acro}\n\\usepackage{hyperref}\n\n\\begin{document}\n\n\\acro{table}{Table}\n\n\\section{Introduction}\n\n\\begin{table}[h]\n  \\caption{Table of Contents}\n  \\label{tab:toc}\n  \\begin{tabular}{|l|l|}\n    \\hline\n    \\textbf{Table} & \\textbf{Page} \\\\\n    \\hline\n    1. Table 1 & 1 \\\\\n    2. Table 2 & 2 \\\\\n    3. Table 3 & 3 \\\\\n    4. Table 4 & 4 \\\\\n    5. Table 5 & 5 \\\\\n    6. Table 6 & 6 \\\\\n    7. Table 7 & 7 \\\\\n    8. Table 8 & 8 \\\\\n    9. Table 9 & 9 \\\\\n    10. Table 10 & 10 \\\\\n    11. Table 11 & 11 \\\\\n    12. Table 12 & 12 \\\\\n    13. Table 13 & 13 \\\\\n    14. Table 14 & 14 \\\\\n    15. Table 15 & 15 \\\\\n    16. Table 16 & 16 \\\\\n    17. Table 17 & 17 \\\\\n    18. Table 18 & 18 \\\\\n    19. Table 19 & 19 \\\\\n    20. Table 20 & 20 \\\\\n    21. Table 21 & 21 \\\\\n    22. Table 22 & 22 \\\\\n    23. Table 23 & 23 \\\\\n    24. Table 24 & 24 \\\\\n    25. Table 25 & 25 \\\\\n    26. Table 26 & 26 \\\\\n    27. Table 27 & 27 \\\\\n    28. Table 28 & 28 \\\\\n    29. Table 29 & 29 \\\\\n    30. Table 30 & 30 \\\\\n    31. Table 31 & 31 \\\\\n    32. Table 32 & 32 \\\\\n    33. Table 33 & 33 \\\\\n    34. Table 34 & 34 \\\\\n    35. Table 35 & 35 \\\\\n    36. Table 36 & 36 \\\\\n    37. Table 37 & 37 \\\\\n    38. Table 38 & 38 \\\\\n    39. Table 39 & 39 \\\\\n    40. Table 40 & 40 \\\\\n    41. Table 41 & 41 \\\\\n    42. Table 42 & 42 \\\\\n    43. Table 43 & 43 \\\\\n    44. Table 44 & 44 \\\\\n    45. Table 45 & 45 \\\\\n    46. Table 46 & 46 \\\\\n    47. Table 47 & 47 \\\\\n    48. Table 48 & 48 \\\\\n    49. Table 49 & 49 \\\\\n    50. Table 50 & 50 \\\\\n    51. Table 51 & 51 \\\\\n    52. Table 52 & 52 \\\\\n    53. Table 53 & 53 \\\\\n    54. Table 54 & 54 \\\\\n    55. Table 55 & 55 \\\\\n    56. Table 56 & 56 \\\\\n    57. Table 57 & 57 \\\\\n    58. Table 58 & 58 \\\\\n    59. Table 59 & 59 \\\\\n    60. Table 60 & 60 \\\\\n    61. Table 61 & 61 \\\\\n    62. Table 62 & 62 \\\\\n    63. Table 63 &",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.1,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.2,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.2,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.1,
+            "Relevance": 0.1,
+            "Completeness": 0.1,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.1,
+            "Style_Tone": 0.3,
+            "Conciseness": 0.1,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_4",
+      "ori_prompt": "Desk jobs require writing a lot of emails, so it isn't surprising we get tired of repeating ourselves. Come up with several synonyms for the given word.",
+      "context": "Sincerely",
+      "generic_prompt": "Provide several synonyms for the given word, as a way to help reduce repetition in writing—especially useful for those in desk jobs who frequently compose emails.",
+      "generic_response": "1. Truly\n2. Honestly\n3. Genuinely\n4. Faithfully\n5. Sincerely\n6. Authentically\n7. Openly\n8. Candor\n9. Benevolently\n10. Graciously\n11. Courteously\n12. Affably\n13. Friendly\n14. Cordially\n15. Respectfully\n16. Courteously\n17. Complimentarily\n18. Graciously\n19. Kindly\n20. Willingly.",
+      "rgeneric_prompt": "Generate multiple synonyms for the provided word, keeping in mind the context of repetitive writing common in office settings.",
+      "rgeneric_response": "1. Truly\n2. Honestly\n3. Genuinely\n4. Authentically\n5. Faithfully\n6. Sincere-ly\n7. Seriously\n8. Gravely\n9. Solemnly\n10. Diligently",
+      "winners_per_run": [
+        0,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.8,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.9,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 0.9,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.9,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.9,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 0.8,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.5,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.8,
+            "Completeness": 0.6,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.7,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.7,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_41",
+      "ori_prompt": "You should find a few LATEX templates appropriate for the task at hand and list the links to them.",
+      "context": "Homework Assignment",
+      "generic_prompt": "Identify and provide links to a few suitable LATEX templates for the current task.",
+      "generic_response": "1. Overleaf: Overleaf is a popular online LaTeX editor that provides a variety of templates for different types of documents. They have a wide range of templates for academic papers, reports, and presentations. You can find the templates by clicking on the \"Templates\" button on the top menu bar and selecting the appropriate category.\n2. ShareLaTeX: ShareLaTeX is another online LaTeX editor that offers a variety of templates for academic papers, reports, and presentations. They also have a feature that allows you to create your own custom template. You can find the templates by clicking on the \"Templates\" button on the top menu bar and selecting the appropriate category.\n3. CTAN: The Comprehensive TeX Archive Network (CTAN) is a repository of TeX and LaTeX resources, including a large collection of templates. You can search for templates by using the search function on the CTAN website.\n4. Overleaf Templates: Overleaf also has a dedicated section for templates specifically designed for academic papers, reports, and presentations. You can find them by clicking on the \"Templates\" button on the top menu bar and selecting the \"Academic\" category.\n5. LaTeX Templates: LaTeX Templates is a website that provides a variety of templates for academic papers, reports, and presentations. They also offer a custom template design service. You can find the templates by clicking on the \"Templates\" button on the top menu bar and selecting the appropriate category.\n\nNote: These are just a few examples of the many LATEX templates available online. You can also search for templates on Google, GitHub, and other online platforms.",
+      "rgeneric_prompt": "Identify several suitable LATEX templates for the current task and provide links to those resources.",
+      "rgeneric_response": "1. \"How to Write a Research Paper in LaTeX\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/how-to-write-a-research-paper-in-latex>\n2. \"LaTeX Templates for Research Papers\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/latex-templates-for-research-papers>\n3. \"LaTeX Templates for Writing a Thesis\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/latex-templates-for-writing-a-thesis>\n4. \"LaTeX Templates for Writing a Journal Article\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/latex-templates-for-writing-a-journal-article>\n5. \"LaTeX Templates for Writing a Conference Paper\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/latex-templates-for-writing-a-conference-paper>\n6. \"LaTeX Templates for Writing a Technical Report\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/latex-templates-for-writing-a-technical-report>\n7. \"LaTeX Templates for Writing a Book\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/latex-templates-for-writing-a-book>\n8. \"LaTeX Templates for Writing a Dissertation\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/latex-templates-for-writing-a-dissertation>\n9. \"LaTeX Templates for Writing a Master's Thesis\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/latex-templates-for-writing-a-masters-thesis>\n10. \"LaTeX Templates for Writing a Bachelor's Thesis\" by Troy Lee\nLink: <https://www.overleaf.com/learn/latex/latex-templates-for-writing-a-bachelors-thesis>",
+      "winners_per_run": [
+        1,
+        1,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.6,
+            "Completeness": 0.4,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.8,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.6,
+            "Completeness": 0.4,
+            "Clarity_Coherence": 0.7,
+            "Usefulness_Helpfulness": 0.5,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.8,
+            "Relevance": 0.9,
+            "Completeness": 0.7,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.8,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.5,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.6,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.6,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_50",
+      "ori_prompt": "Based on the given query, suggest some related search queries.",
+      "context": "learning french",
+      "generic_prompt": "Generate a list of related search queries based on the provided user query.",
+      "generic_response": "1. \"Learn French online\"\n2. \"French language course\"\n3. \"French language classes near me\"\n4. \"French language app\"\n5. \"French language tutor\"\n6. \"French language program\"\n7. \"French language textbook\"\n8. \"French language podcast\"\n9. \"French language immersion program\"\n10. \"French language exchange program\"",
+      "rgeneric_prompt": "Generate a list of related search queries based on the provided initial query. Ensure the suggestions are relevant and logically connected to the original topic.",
+      "rgeneric_response": "1. \"French language course for beginners\"\n2. \"French grammar rules for beginners\"\n3. \"French vocabulary for beginners\"\n4. \"French pronunciation tips for beginners\"\n5. \"French conversation practice with native speakers\"\n6. \"French culture and customs for beginners\"\n7. \"French idioms and expressions for beginners\"\n8. \"French reading and comprehension exercises for beginners\"\n9. \"French writing practice for beginners\"\n10. \"French exam preparation for beginners\"",
+      "winners_per_run": [
+        2,
+        1,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.8,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 1.0,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 1.0,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 1.0,
+            "Conciseness": 1.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_91",
+      "ori_prompt": "You are given two questions. Check if they are duplicates.",
+      "context": "Question1: I am trying to understand the advantages of multiprocessing over threading. I know that multiprocessing gets around the Global Interpreter Lock, but what other advantages are there, and can threading not do the same thing?\nQuestion2: I am learning how to use the threading and the multiprocessing modules in Python to run certain operations in parallel and speed up my code.\nI am finding this hard (maybe because I don't have any theoretical background about it) to understand what the difference is between a threading.Thread() object and a multiprocessing.Process() one.\nAlso, it is not entirely clear to me how to instantiate a queue of jobs and having only 4 (for example) of them running in parallel, while the other wait for resources to free before being executed.\nI find the examples in the documentation clear, but not very exhaustive; as soon as I try to complicate things a bit, I receive a lot of weird errors (like a method that can't be pickled, and so on).\nSo, when should I use the threading and multiprocessing modules?\nCan you link me to some resources that explain the concepts behind these two modules and how to use them properly for complex tasks?",
+      "generic_prompt": "Determine whether the two provided questions are duplicates of each other.",
+      "generic_response": "1. The two questions are not duplicates of each other. The first question asks about the advantages of multiprocessing over threading and how multiprocessing gets around the Global Interpreter Lock, while the second question asks about the difference between threading.Thread() and multiprocessing.Process(), how to use the multiprocessing module to run operations in parallel, and how to create a queue of jobs to run in parallel.\n2. The first question asks about the advantages of multiprocessing over threading and how multiprocessing gets around the Global Interpreter Lock, while the second question asks about the difference between threading.Thread() and multiprocessing.Process(), how to use the multiprocessing module to run operations in parallel, and how to create a queue of jobs to run in parallel.\n\n번역결과  \n1. 두 가지 질문은 같은 내용을 다루지 않습니다. 첫 번째 질문은 병렬 실행을 위해 병렬 처리를 대체할 수 있는 이점과 병렬 처리가 글로벌 해석 롤이즈를 극복하는 방법에 대해 알고 있으며, 두 번째 질문은 메이플로딩 모듈을 사용하여 작업을 병렬로 실행하고 작업을 실행하는 방법, 및 작업 집합을 생성하여 목록 중 4개 이상 동시에 실행하는 방법에 대해 알고 있습니다.\n2. 첫 번째 질문은 병렬 처리 모듈에 대한 이점과 병렬 처리가 글로벌 해석 롤이즈를 극복하는 방법에 대해 알고 있으며, 두 번째 질문은 메이플로딩 모듈을 사용하여 작업을 병렬로 실행하고 작업을 실행하는 방법, 및 작업 집합을 생성하여 목록 중 4개 이상 동시에 실행하는 방법에 대해 알고 있습니다.",
+      "rgeneric_prompt": "Determine whether the two provided questions are identical in meaning.",
+      "rgeneric_response": "1. Yes, the two questions are identical in meaning.",
+      "winners_per_run": [
+        2,
+        0,
+        2
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.9,
+            "Relevance": 1.0,
+            "Completeness": 0.9,
+            "Clarity_Coherence": 0.8,
+            "Usefulness_Helpfulness": 0.9,
+            "Style_Tone": 0.7,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.0,
+            "Relevance": 0.0,
+            "Completeness": 0.0,
+            "Clarity_Coherence": 0.0,
+            "Usefulness_Helpfulness": 0.0,
+            "Style_Tone": 0.0,
+            "Conciseness": 0.0,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "user_oriented_task_98",
+      "ori_prompt": "Summarize the article you have been given in a brief manner.",
+      "context": "Mathematics and art are related in a variety of ways. Mathematics has itself been described as an art motivated by beauty. Mathematics can be discerned in arts such as music, dance, painting, architecture, sculpture, and textiles. This article focuses, however, on mathematics in the visual arts.\nMathematics and art have a long historical relationship. Artists have used mathematics since the 4th century BC when the Greek sculptor Polykleitos wrote his Canon, prescribing proportions conjectured to have been based on the ratio 1:√2 for the ideal male nude. Persistent popular claims have been made for the use of the golden ratio in ancient art and architecture, without reliable evidence. In the Italian Renaissance, Luca Pacioli wrote the influential treatise De divina proportione (1509), illustrated with woodcuts by Leonardo da Vinci, on the use of the golden ratio in art. Another Italian painter, Piero della Francesca, developed Euclid's ideas on perspective in treatises such as De Prospectiva Pingendi, and in his paintings. The engraver Albrecht Dürer made many references to mathematics in his work Melencolia I. In modern times, the graphic artist M. C. Escher made intensive use of tessellation and hyperbolic geometry, with the help of the mathematician H. S. M. Coxeter, while the De Stijl movement led by Theo van Doesburg and Piet Mondrian explicitly embraced geometrical forms. Mathematics has inspired textile arts such as quilting, knitting, cross-stitch, crochet, embroidery, weaving, Turkish and other carpet-making, as well as kilim. In Islamic art, symmetries are evident in forms as varied as Persian girih and Moroccan zellige tilework, Mughal jali pierced stone screens, and widespread muqarnas vaulting.",
+      "generic_prompt": "Provide a concise summary of the given article, capturing its main points and key details.",
+      "generic_response": "本文探討數學與藝術之間的聯繫，指出數學在視覺藝術中的存在。歷史上，藝術家一直使用數學，從古希臘彫刻家席帕克里τος的《儀式譜》到意大利瑪德主義時期的《神律》一書，以及德拉 Francesca Piero的《實驗圖形學》。在現代，卡斯特·Escher使用平行圖和超導數學，並與哈里·S·M·Coxeter合作，而德拉 Francesca Piero也在其繪畫中探索了幾何學的觀察。此外，數學還激發了織物藝術，如織布、糸缎、紋織、繡紋、織布和土耳其和其他地方的織物藝術。在伊斯蘭藝術中，畫面中的對稱性和平行性是明顯的。",
+      "rgeneric_prompt": "Provide a concise summary of the given article, capturing its main points and overall message without unnecessary details.",
+      "rgeneric_response": "本文探討數學與藝術之間的聯繫，指出數學在視覺藝術中的存在。歷史上，藝術家一直使用數學，從古希臘彫刻家席帕利昂來，他們描述了人體的正美與比例，紅毛線的概念，直到1509年，羅易卡·帕蒂耶里對於金屬比例在藝術和建築中的應用發表了具有影響力的著作《神圖的比例》。在意大利畫廊時代，洛倫卡·托尼卡和貝爾·德拉布里奇等人探討了對比對稱和視覺對稱，而艾爾巴克·德塞爾在《Melencolia I》中也提到了數學。在現代，圖形藝術家M.C. Escher使用紛紛和超導數學，並且們的幫助，而德國藝術家H.S.M.卡特爾則在圖案製作中使用了紛紛和超導數學。數學還激發了織物藝術，如織布、紋織、紙牌、繡紋、織布和土耳其和其他地區的織物。在伊斯蘭藝術中，畫面中的對稱和平行對稱是明顯的。",
+      "winners_per_run": [
+        0,
+        0,
+        1
+      ],
+      "llm_evaluations_per_run": [
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.6,
+            "Completeness": 0.4,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.4,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.4,
+            "Conciseness": 0.4,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.5,
+            "Relevance": 0.6,
+            "Completeness": 0.4,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.6,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.4,
+            "Relevance": 0.5,
+            "Completeness": 0.5,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.4,
+            "Safety_Compliance": 1.0
+          }
+        },
+        {
+          "response_A": {
+            "Correctness": 0.3,
+            "Relevance": 0.5,
+            "Completeness": 0.3,
+            "Clarity_Coherence": 0.2,
+            "Usefulness_Helpfulness": 0.3,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.4,
+            "Safety_Compliance": 1.0
+          },
+          "response_B": {
+            "Correctness": 0.4,
+            "Relevance": 0.6,
+            "Completeness": 0.4,
+            "Clarity_Coherence": 0.3,
+            "Usefulness_Helpfulness": 0.4,
+            "Style_Tone": 0.5,
+            "Conciseness": 0.3,
+            "Safety_Compliance": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}
