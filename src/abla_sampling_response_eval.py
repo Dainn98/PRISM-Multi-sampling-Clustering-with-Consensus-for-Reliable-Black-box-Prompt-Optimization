@@ -8,6 +8,8 @@ import time
 from collections import Counter
 from pathlib import Path
 
+os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
+
 import requests
 import torch
 from dotenv import load_dotenv
@@ -51,8 +53,8 @@ def parse_args():
     parser.add_argument("--stage", choices=("all", "generate", "judge"), default="all")
     parser.add_argument("--base-model", default=LLAMA2_7B)
     parser.add_argument("--judge-model", default=DEEPSEEK)
-    parser.add_argument("--batch-size", type=int, default=8)
-    parser.add_argument("--max-new-tokens", type=int, default=1024)
+    parser.add_argument("--batch-size", type=int, default=1)
+    parser.add_argument("--max-new-tokens", type=int, default=512)
     parser.add_argument("--judge-runs", type=int, default=3)
     parser.add_argument("--tie-threshold", type=float, default=0.01)
     parser.add_argument("--limit", type=int, default=None)
@@ -149,21 +151,42 @@ def generate_responses(data, model, tokenizer, args, output_path):
                 )
             )
 
-    for start in tqdm(range(0, len(jobs), args.batch_size), desc="Generating responses"):
-        batch = jobs[start : start + args.batch_size]
-        responses = generate_batch(
-            model=model,
-            tokenizer=tokenizer,
-            prompts=[job[2] for job in batch],
-            batch_size=args.batch_size,
-            max_new_tokens=args.max_new_tokens,
-            apply_chat_template=False,
-            do_sample=False,
-            device=device,
-        )
+    position = 0
+    current_batch_size = min(args.batch_size, len(jobs)) if jobs else args.batch_size
+    progress = tqdm(total=len(jobs), desc="Generating responses")
+    while position < len(jobs):
+        batch = jobs[position : position + current_batch_size]
+        try:
+            with torch.inference_mode():
+                responses = generate_batch(
+                    model=model,
+                    tokenizer=tokenizer,
+                    prompts=[job[2] for job in batch],
+                    batch_size=current_batch_size,
+                    max_new_tokens=args.max_new_tokens,
+                    apply_chat_template=False,
+                    do_sample=False,
+                    device=device,
+                )
+        except torch.OutOfMemoryError:
+            torch.cuda.empty_cache()
+            gc.collect()
+            if current_batch_size == 1:
+                progress.close()
+                raise RuntimeError(
+                    "CUDA OOM at batch_size=1. Reduce --max-new-tokens or "
+                    "stop other GPU processes before retrying."
+                ) from None
+            current_batch_size = max(1, current_batch_size // 2)
+            print(f"CUDA OOM: retrying with batch_size={current_batch_size}")
+            continue
+
         for (item_index, response_key, _), response in zip(batch, responses):
             data[item_index][response_key] = response
+        position += len(batch)
+        progress.update(len(batch))
         save_json_atomic(output_path, data)
+    progress.close()
 
     return len(jobs)
 
@@ -385,6 +408,10 @@ def save_summary(root, rows):
 
 def main():
     args = parse_args()
+    if args.batch_size < 1:
+        raise ValueError("--batch-size must be at least 1")
+    if args.max_new_tokens < 1:
+        raise ValueError("--max-new-tokens must be at least 1")
     if args.judge_runs < 1:
         raise ValueError("--judge-runs must be at least 1")
     if args.tie_threshold < 0:
