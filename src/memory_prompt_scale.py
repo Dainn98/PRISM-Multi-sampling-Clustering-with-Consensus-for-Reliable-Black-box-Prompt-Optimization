@@ -49,7 +49,7 @@ def parse_args() -> argparse.Namespace:
         "--m-values",
         nargs="+",
         type=int,
-        default=[100, 200, 500, 1000],
+        default=[2,5,10,20,50,100, 200, 500, 1000],
         help="Candidate sizes to benchmark",
     )
     parser.add_argument(
