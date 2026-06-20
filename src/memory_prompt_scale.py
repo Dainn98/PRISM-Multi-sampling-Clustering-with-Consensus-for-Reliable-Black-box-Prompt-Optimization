@@ -16,6 +16,8 @@ import json
 import os
 import platform
 import statistics
+import subprocess
+import sys
 import threading
 import time
 from pathlib import Path
@@ -47,7 +49,7 @@ def parse_args() -> argparse.Namespace:
         "--m-values",
         nargs="+",
         type=int,
-        default=[2, 5, 10, 15, 20, 25, 30, 40, 50],
+        default=[100, 200, 500, 1000],
         help="Candidate sizes to benchmark",
     )
     parser.add_argument(
@@ -59,7 +61,7 @@ def parse_args() -> argparse.Namespace:
             "cycle existing candidates for a synthetic scalability test, or fail"
         ),
     )
-    parser.add_argument("--num-prompts", type=int, default=2)
+    parser.add_argument("--num-prompts", type=int, default=5)
     parser.add_argument("--repeats", type=int, default=3)
     parser.add_argument("--warmup-runs", type=int, default=1)
     parser.add_argument("--seed", type=int, default=42)
@@ -80,6 +82,7 @@ def parse_args() -> argparse.Namespace:
         "--output-dir",
         default="src/extra_results/memory_prompt_scale",
     )
+    parser.add_argument("--isolated-child", action="store_true", help=argparse.SUPPRESS)
     return parser.parse_args()
 
 
@@ -275,14 +278,18 @@ def summarize(raw_rows: Sequence[dict]) -> list[dict]:
     return rows
 
 
-def main() -> int:
-    args = parse_args()
+def validate_args(args: argparse.Namespace) -> None:
     if args.num_prompts < 1 or args.repeats < 1 or args.warmup_runs < 0:
         raise SystemExit("num-prompts/repeats must be positive; warmup-runs >= 0")
     if any(m < 2 for m in args.m_values):
         raise SystemExit("Every m value must be at least 2 for clustering")
     if args.poll_interval_ms <= 0:
         raise SystemExit("poll-interval-ms must be positive")
+
+
+def run_benchmark(args: argparse.Namespace) -> int:
+    """Run one process-local benchmark (normally for exactly one value of m)."""
+    validate_args(args)
 
     set_global_seed(args.seed)
     with Path(args.dataset).open("r", encoding="utf-8") as handle:
@@ -322,8 +329,14 @@ def main() -> int:
         args.embedding_model, device=device, cache_folder=MODEL_CACHE_PATH
     )
 
-    warmup_m = min(args.m_values)
-    print(f"Warm-up: {args.warmup_runs} run(s), excluded from measurements")
+    # Use the same tiny warm-up in every isolated process. Warming up with the
+    # target m could leave a target-sized CPU allocator pool in the baseline
+    # and hide exactly the incremental memory that this experiment measures.
+    warmup_m = 2
+    print(
+        f"Warm-up: {args.warmup_runs} run(s) at m={warmup_m}, "
+        "excluded from measurements"
+    )
     for _ in range(args.warmup_runs):
         run_prism_selection(
             usable[0], args.candidate_key, model, warmup_m, threshold
@@ -363,8 +376,9 @@ def main() -> int:
 
     summary_rows = summarize(raw_rows)
     output_dir = Path(args.output_dir)
-    write_csv(output_dir / "memory_raw.csv", raw_rows)
-    write_csv(output_dir / "memory_summary.csv", summary_rows)
+    suffix = f"_m{args.m_values[0]}" if args.isolated_child else ""
+    write_csv(output_dir / f"memory_raw{suffix}.csv", raw_rows)
+    write_csv(output_dir / f"memory_summary{suffix}.csv", summary_rows)
     metadata = {
         "dataset": str(Path(args.dataset).resolve()),
         "candidate_key": args.candidate_key,
@@ -381,9 +395,10 @@ def main() -> int:
         "gpu": torch.cuda.get_device_name() if torch.cuda.is_available() else None,
         "python": platform.python_version(),
         "torch": torch.__version__,
+        "isolated_process": args.isolated_child,
     }
     output_dir.mkdir(parents=True, exist_ok=True)
-    with (output_dir / "metadata.json").open("w", encoding="utf-8") as handle:
+    with (output_dir / f"metadata{suffix}.json").open("w", encoding="utf-8") as handle:
         json.dump(metadata, handle, ensure_ascii=False, indent=2)
 
     print("\nMean incremental peak memory across prompts and repeats:")
@@ -397,6 +412,104 @@ def main() -> int:
         )
     print(f"Saved results to {output_dir.resolve()}")
     return 0
+
+
+def child_command(args: argparse.Namespace, m: int) -> list[str]:
+    command = [
+        sys.executable,
+        str(Path(__file__).resolve()),
+        "--dataset",
+        args.dataset,
+        "--candidate-key",
+        args.candidate_key,
+        "--m-values",
+        str(m),
+        "--candidate-expansion",
+        args.candidate_expansion,
+        "--num-prompts",
+        str(args.num_prompts),
+        "--repeats",
+        str(args.repeats),
+        "--warmup-runs",
+        str(args.warmup_runs),
+        "--seed",
+        str(args.seed),
+        "--embedding-model",
+        args.embedding_model,
+        "--poll-interval-ms",
+        str(args.poll_interval_ms),
+        "--output-dir",
+        args.output_dir,
+        "--isolated-child",
+    ]
+    if args.distance_threshold is not None:
+        command.extend(["--distance-threshold", str(args.distance_threshold)])
+    return command
+
+
+def read_csv(path: Path) -> list[dict]:
+    with path.open("r", encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+def run_isolated(args: argparse.Namespace) -> int:
+    """Run every candidate size in a fresh process, then merge its results."""
+    validate_args(args)
+    m_values = sorted(set(args.m_values))
+    output_dir = Path(args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    all_rows: list[dict] = []
+
+    for m in m_values:
+        print(
+            f"\n{'=' * 18} independent process: m={m} {'=' * 18}",
+            flush=True,
+        )
+        subprocess.run(child_command(args, m), check=True)
+        all_rows.extend(read_csv(output_dir / f"memory_raw_m{m}.csv"))
+
+    summary_rows = summarize(all_rows)
+    write_csv(output_dir / "memory_raw.csv", all_rows)
+    write_csv(output_dir / "memory_summary.csv", summary_rows)
+    metadata = {
+        "dataset": str(Path(args.dataset).resolve()),
+        "candidate_key": args.candidate_key,
+        "candidate_expansion_policy": args.candidate_expansion,
+        "m_values": m_values,
+        "num_prompts": args.num_prompts,
+        "repeats": args.repeats,
+        "warmup_runs_per_process": args.warmup_runs,
+        "embedding_model": args.embedding_model,
+        "distance_threshold": args.distance_threshold,
+        "independent_process_per_m": True,
+        "note": (
+            "Each m was measured in a fresh subprocess. Memory/cache from one "
+            "candidate size cannot become the baseline of another candidate size."
+        ),
+    }
+    with (output_dir / "metadata.json").open("w", encoding="utf-8") as handle:
+        json.dump(metadata, handle, ensure_ascii=False, indent=2)
+
+    print("\nIndependent-process mean incremental peak memory:")
+    for row in summary_rows:
+        print(
+            f"  m={int(row['m']):4d}: "
+            f"CPU {float(row['cpu_peak_delta_mib_mean']):.2f} +/- "
+            f"{float(row['cpu_peak_delta_mib_std']):.2f} MiB; "
+            f"GPU {float(row['gpu_peak_allocated_delta_mib_mean']):.2f} +/- "
+            f"{float(row['gpu_peak_allocated_delta_mib_std']):.2f} MiB"
+        )
+    print(f"Merged results saved to {output_dir.resolve()}")
+    return 0
+
+
+def main() -> int:
+    args = parse_args()
+    if args.isolated_child:
+        if len(set(args.m_values)) != 1:
+            raise SystemExit("An isolated child must receive exactly one m value")
+        return run_benchmark(args)
+    return run_isolated(args)
 
 
 if __name__ == "__main__":
