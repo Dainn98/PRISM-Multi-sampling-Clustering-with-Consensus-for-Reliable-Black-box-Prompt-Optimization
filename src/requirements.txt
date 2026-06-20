@@ -8,6 +8,7 @@ accelerate
 openai
 sentencepiece
 protobuf
+psutil
 python-dotenv
 requests
 datasets
