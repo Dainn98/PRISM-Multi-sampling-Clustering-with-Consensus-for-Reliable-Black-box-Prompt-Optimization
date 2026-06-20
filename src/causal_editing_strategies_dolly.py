@@ -21,6 +21,7 @@ import json
 import os
 import random
 import re
+import shutil
 import statistics
 import subprocess
 import sys
@@ -88,6 +89,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--api-timeout", type=int, default=120)
     parser.add_argument("--api-retries", type=int, default=5)
     parser.add_argument(
+        "--keep-model-cache",
+        action="store_true",
+        help="Keep MODEL_CACHE_PATH after each phase instead of deleting it",
+    )
+    parser.add_argument(
         "--phase",
         choices=("candidates", "select", "responses", "evaluate"),
         help=argparse.SUPPRESS,
@@ -121,6 +127,25 @@ def cleanup_memory(*objects: object) -> None:
             torch.cuda.ipc_collect()
     except Exception:
         pass
+
+
+def remove_model_cache(config: dict, phase: str) -> None:
+    """Delete downloaded model files after a model-backed phase."""
+    if config.get("keep_model_cache", False):
+        print(f"Keeping model cache after phase '{phase}'.")
+        return
+
+    from config import MODEL_CACHE_PATH
+
+    cache_path = Path(MODEL_CACHE_PATH).resolve()
+    workspace = Path.cwd().resolve()
+    if cache_path == workspace or workspace not in cache_path.parents:
+        raise RuntimeError(
+            f"Refusing to delete unsafe MODEL_CACHE_PATH: {cache_path}"
+        )
+    if cache_path.exists():
+        print(f"Removing model cache after phase '{phase}': {cache_path}")
+        shutil.rmtree(cache_path, ignore_errors=True)
 
 
 def artifact(config: dict, name: str) -> Path:
@@ -310,6 +335,7 @@ def phase_candidates(config: dict) -> None:
     finally:
         model = tokenizer = None
         cleanup_memory()
+        remove_model_cache(config, "candidates")
 
 
 def phase_select(config: dict) -> None:
@@ -380,6 +406,7 @@ def phase_select(config: dict) -> None:
     finally:
         embed_model = None
         cleanup_memory()
+        remove_model_cache(config, "select")
 
 
 def format_llama_prompt(tokenizer, prompt: str, context: str | None) -> str:
@@ -438,6 +465,7 @@ def phase_responses(config: dict) -> None:
     finally:
         model = tokenizer = None
         cleanup_memory()
+        remove_model_cache(config, "responses")
 
 
 def evaluation_prompt(
