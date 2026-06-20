@@ -201,6 +201,14 @@ def load_causal_lm(model_name: str):
         device_map="auto",
         low_cpu_mem_usage=True,
     ).eval()
+    # Some prompt-optimization checkpoints (including older BPO configs) store
+    # ``return_dict=false``. Newer Transformers LlamaForCausalLM implementations
+    # access ``outputs.last_hidden_state`` unconditionally, so tuple output from
+    # the backbone crashes during generation. Keep the backbone/model contract
+    # explicit and consistent across Transformers versions.
+    model.config.return_dict = True
+    if hasattr(model, "model") and hasattr(model.model, "config"):
+        model.model.config.return_dict = True
     model.config.pad_token_id = tokenizer.pad_token_id
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
