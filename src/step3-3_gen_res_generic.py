@@ -12,6 +12,7 @@ from config import MODEL_CACHE_PATH, prompt_template_vicuna
 from helper import (
     DOLLY_EVAL,
     GEMMA_EMBEDDING_MODEL,
+    GENERIC_LLM_REWRITER,
     SELF_INSTRUCT_EVAL,
     VICUNA_7B,
     base_llm_models,
@@ -42,12 +43,16 @@ hf_token = os.getenv("HF_TOKEN")
 # embedding_models = [GEMMA_EMBEDDING_MODEL, MINI]
 
 PROMPT_RESPONSE_KEYS = [
-    ("ori_prompt", "ori_response"),
+    # ("ori_prompt", "ori_response"),
     ("bpo_prompt", "bpo_response"),
     ("rbpo_prompt", "rbpo_response"),
-    # ("generic_prompt", "generic_response"),
-    # ("rgeneric_prompt", "rgeneric_response"),
+    ("generic_prompt", "generic_response"),
+    ("rgeneric_prompt", "rgeneric_response"),
+    ("mepo_prompt", "mepo_response"),
+    ("rmepo_prompt", "rmepo_response")
 ]
+    
+base_llm_models = [GENERIC_LLM_REWRITER]
 
 
 def save_json(path, data):
