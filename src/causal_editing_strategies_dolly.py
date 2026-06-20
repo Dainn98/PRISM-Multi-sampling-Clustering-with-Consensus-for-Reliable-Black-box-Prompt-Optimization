@@ -80,8 +80,8 @@ def parse_args() -> argparse.Namespace:
         "--embedding-model", default="sentence-transformers/all-MiniLM-L12-v2"
     )
     parser.add_argument("--distance-threshold", type=float, default=0.05)
-    parser.add_argument("--candidate-batch-size", type=int, default=1)
-    parser.add_argument("--response-batch-size", type=int, default=1)
+    parser.add_argument("--candidate-batch-size", type=int, default=32)
+    parser.add_argument("--response-batch-size", type=int, default=4)
     parser.add_argument("--candidate-max-new-tokens", type=int, default=512)
     parser.add_argument("--response-max-new-tokens", type=int, default=1024)
     parser.add_argument("--eval-repeats", type=int, default=3)
