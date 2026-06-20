@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import csv
 import gc
+import itertools
 import json
 import os
 import platform
@@ -46,8 +47,17 @@ def parse_args() -> argparse.Namespace:
         "--m-values",
         nargs="+",
         type=int,
-        default=[2, 4, 6, 8, 10],
+        default=[2, 5, 10, 15, 20, 25, 30, 40, 50],
         help="Candidate sizes to benchmark",
+    )
+    parser.add_argument(
+        "--candidate-expansion",
+        choices=("repeat", "error"),
+        default="repeat",
+        help=(
+            "How to handle m larger than the available candidate list: "
+            "cycle existing candidates for a synthetic scalability test, or fail"
+        ),
     )
     parser.add_argument("--num-prompts", type=int, default=2)
     parser.add_argument("--repeats", type=int, default=3)
@@ -207,6 +217,37 @@ def write_csv(path: Path, rows: Sequence[dict]) -> None:
         writer.writerows(rows)
 
 
+def prepare_items(
+    data: Sequence[object],
+    candidate_key: str,
+    max_m: int,
+    num_prompts: int,
+    expansion: str,
+) -> list[dict]:
+    prepared = []
+    for value in data:
+        if not isinstance(value, dict) or not isinstance(value.get("ori_prompt"), str):
+            continue
+        candidates = value.get(candidate_key)
+        if not isinstance(candidates, list) or len(candidates) < 2:
+            continue
+        if not all(isinstance(candidate, str) and candidate.strip() for candidate in candidates):
+            continue
+        if len(candidates) < max_m:
+            if expansion == "error":
+                continue
+            expanded = list(itertools.islice(itertools.cycle(candidates), max_m))
+        else:
+            expanded = candidates
+        item = dict(value)
+        item[candidate_key] = expanded
+        item["_memory_scale_source_candidates"] = len(candidates)
+        prepared.append(item)
+        if len(prepared) == num_prompts:
+            break
+    return prepared
+
+
 def summarize(raw_rows: Sequence[dict]) -> list[dict]:
     metrics = (
         "latency_ms",
@@ -250,18 +291,24 @@ def main() -> int:
         raise SystemExit("Dataset must be a JSON list")
 
     max_m = max(args.m_values)
-    usable = [
-        item
-        for item in data
-        if isinstance(item, dict)
-        and isinstance(item.get("ori_prompt"), str)
-        and isinstance(item.get(args.candidate_key), list)
-        and len(item[args.candidate_key]) >= max_m
-    ][: args.num_prompts]
+    usable = prepare_items(
+        data,
+        args.candidate_key,
+        max_m,
+        args.num_prompts,
+        args.candidate_expansion,
+    )
     if len(usable) < args.num_prompts:
         raise SystemExit(
-            f"Found {len(usable)} usable prompts with >= {max_m} candidates; "
-            f"requested {args.num_prompts}"
+            f"Found {len(usable)} usable prompts for max m={max_m}; requested "
+            f"{args.num_prompts}. Use --candidate-expansion repeat or provide more "
+            "real candidates."
+        )
+    source_counts = [item["_memory_scale_source_candidates"] for item in usable]
+    if any(count < max_m for count in source_counts):
+        print(
+            "WARNING: m exceeds the available candidates; existing candidates are "
+            "cycled. This measures algorithmic memory scaling, not diversity scaling."
         )
 
     threshold = args.distance_threshold
@@ -296,6 +343,12 @@ def main() -> int:
                 row = {
                     "m": m,
                     "prompt_index": prompt_index,
+                    "source_candidates": item["_memory_scale_source_candidates"],
+                    "candidate_expansion": (
+                        "repeat"
+                        if m > item["_memory_scale_source_candidates"]
+                        else "none"
+                    ),
                     "repeat": repeat,
                     **result,
                 }
@@ -315,6 +368,9 @@ def main() -> int:
     metadata = {
         "dataset": str(Path(args.dataset).resolve()),
         "candidate_key": args.candidate_key,
+        "candidate_expansion_policy": args.candidate_expansion,
+        "source_candidate_counts": source_counts,
+        "synthetic_expansion_used": any(count < max_m for count in source_counts),
         "m_values": sorted(set(args.m_values)),
         "num_prompts": len(usable),
         "repeats": args.repeats,
