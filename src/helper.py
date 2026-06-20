@@ -166,7 +166,7 @@ def read_json(file_path):
 
 def load_model_and_tokenizer(
     model_path,
-    device_map="auto",
+    device_map="cuda:0",
     cache_dir=MODEL_CACHE_PATH,
     token=HF_TOKEN,
 ):
