@@ -23,6 +23,7 @@ from utils import generate_batch
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_INPUT = BASE_DIR / "ablation_sampling_hparams" / "all-MiniLM-L12-v2" / "llama_dolly_deepseek"
 RESPONSE_SUFFIX = "_responses"
+JUDGE_CONFIG_VERSION = 2
 CRITERIA = (
     "Correctness",
     "Relevance",
@@ -34,10 +35,17 @@ CRITERIA = (
     "Safety_Compliance",
 )
 
-SYSTEM_PROMPT = """You are a strict and consistent judge of language-model responses.
-Score each response independently against its own prompt and the shared context.
-Use the same scale for both responses. Return one valid JSON object only, with no markdown or explanation.
-Each score must be a number from 0.0 to 1.0."""
+SYSTEM_PROMPT = """You are a strict and consistent evaluation judge for large language model outputs.
+Your task is to score responses using a fixed rubric.
+You must be objective, conservative, and avoid score inflation.
+You may reason internally but MUST NOT reveal your chain of thought.
+
+CRITICAL:
+- Output MUST be a single valid JSON object
+- Do NOT include markdown, comments, or extra text
+- Do NOT include trailing commas
+
+All scores must be floats between 0.0 and 1.0 with ONE decimal place."""
 
 
 def parse_args():
@@ -192,36 +200,95 @@ def generate_responses(data, model, tokenizer, args, output_path):
 
 
 def build_judge_prompt(item):
-    context = item.get("context") if has_text(item.get("context")) else "None"
-    prompt_a = item["ori_prompt"]
-    response_a = item["ori_response"]
-    prompt_b = item["rbpo_prompt"]
-    response_b = item["rbpo_response"]
+    # Keep the same ordering convention as step4_verify_response.py:
+    # the method being evaluated (RBPO) is A, and the baseline (original) is B.
+    context = item.get("context") if has_text(item.get("context")) else "None"        
+    prompt_a = item["rbpo_prompt"]
+    response_a = item["rbpo_response"]
+    prompt_b = item["ori_prompt"]
+    response_b = item["ori_response"]
     schema = {
         "response_A": {criterion: 0.0 for criterion in CRITERIA},
         "response_B": {criterion: 0.0 for criterion in CRITERIA},
     }
-    return f"""Shared context:
-\"\"\"{context}\"\"\"
-
-Prompt_A:
+    return f"""Prompt_A (used to generate Response_A):
 \"\"\"{prompt_a}\"\"\"
+
 Response_A:
 \"\"\"{response_a}\"\"\"
 
-Prompt_B:
+Prompt_B (used to generate Response_B):
 \"\"\"{prompt_b}\"\"\"
+
 Response_B:
 \"\"\"{response_b}\"\"\"
 
-Judge Response_A only against Prompt_A and Response_B only against Prompt_B. Score correctness,
-relevance, completeness, clarity, usefulness, style, conciseness, and safety independently.
-Return exactly this JSON structure with numeric scores:
-{json.dumps(schema)}"""
+================= RULES =================
+IMPORTANT RULES:
+- Judge Response_A ONLY based on Prompt_A
+- Judge Response_B ONLY based on Prompt_B
+- Do NOT compare Response_A and Response_B
+- Do NOT use any other information
+- Use the SAME scoring scale for both
+
+Score meaning:
+0.0 = completely incorrect or useless
+0.5 = partially correct / moderate quality
+1.0 = fully correct / high quality
+
+Additional rules:
+- Each criterion must be scored independently
+- Scores should not all be identical unless necessary
+- If response fails to answer, give low scores (0.0–0.2)
+- Use only numbers between 0.0 and 1.0
+- Use one decimal place
+- Do NOT include any explanation or extra text
+
+OUTPUT:
+Return STRICTLY valid JSON.
+No explanation, no markdown, no extra text.
+
+================= SCORING RUBRIC =================
+
+Score EACH response independently from 0.0 to 1.0 on the following criteria:
+
+1. Correctness
+- Factual accuracy
+- No hallucinated or false claims
+- Directly answers the prompt
+
+2. Relevance
+- Stays on-topic
+- No irrelevant content
+
+3. Completeness
+- Covers all required parts of the prompt
+
+4. Clarity_Coherence
+- Clear, readable, well-structured
+- Logical flow
+
+5. Usefulness_Helpfulness
+- Practical, actionable, or directly usable
+
+6. Style_Tone
+- Matches requested tone and formality
+- Polite and neutral
+
+7. Conciseness
+- No unnecessary verbosity
+
+8. Safety_Compliance
+- No harmful, biased, or unsafe content
+
+================= OUTPUT FORMAT (JSON ONLY) =================
+
+{json.dumps(schema, indent=2)}
+"""
 
 
 def extract_json(raw):
-    raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL).strip()
+    raw = re.sub(r"<(?:think|tool_call)>.*?</(?:think|tool_call)>", "", raw, flags=re.DOTALL).strip()
     fenced = re.search(r"```(?:json)?\s*(.*?)```", raw, flags=re.DOTALL)
     if fenced:
         raw = fenced.group(1).strip()
@@ -285,9 +352,22 @@ def result_from_scores(ori_score, rbpo_score, tie_threshold):
     return "win" if difference > 0 else "loss"
 
 
+def runs_match_current_judge_config(runs, judge_runs):
+    return (
+        isinstance(runs, list)
+        and len(runs) >= judge_runs
+        and all(
+            run.get("judge_config_version") == JUDGE_CONFIG_VERSION
+            and run.get("response_A_method") == "rbpo"
+            and run.get("response_B_method") == "original"
+            for run in runs[:judge_runs]
+        )
+    )
+
+
 def judge_item(item, api_key, args):
     runs = [] if args.overwrite_judgments else item.get("ori_rbpo_judge_runs", [])
-    if not isinstance(runs, list):
+    if not runs_match_current_judge_config(runs, args.judge_runs):
         runs = []
 
     for run_index in range(len(runs), args.judge_runs):
@@ -296,11 +376,15 @@ def judge_item(item, api_key, args):
             args.judge_model,
             build_judge_prompt(item),
         )
-        ori_score = mean_score(evaluation["response_A"])
-        rbpo_score = mean_score(evaluation["response_B"])
+        # Response_A is RBPO and Response_B is original, matching step4.
+        rbpo_score = mean_score(evaluation["response_A"])
+        ori_score = mean_score(evaluation["response_B"])
         runs.append(
             {
                 "run": run_index + 1,
+                "judge_config_version": JUDGE_CONFIG_VERSION,
+                "response_A_method": "rbpo",
+                "response_B_method": "original",
                 "ori_score": ori_score,
                 "rbpo_score": rbpo_score,
                 "result": result_from_scores(
@@ -361,7 +445,10 @@ def judge_responses(data, api_key, args, output_path):
         required = ("ori_prompt", "ori_response", "rbpo_prompt", "rbpo_response")
         if not all(has_text(item.get(key)) for key in required):
             continue
-        complete = len(item.get("ori_rbpo_judge_runs", [])) >= args.judge_runs
+        complete = runs_match_current_judge_config(
+            item.get("ori_rbpo_judge_runs", []),
+            args.judge_runs,
+        )
         if complete and not args.overwrite_judgments:
             refresh_result_from_runs(item, args)
             continue
