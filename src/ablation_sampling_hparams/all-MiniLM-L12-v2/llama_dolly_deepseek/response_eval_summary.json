@@ -5,12 +5,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p0_top_p_0p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 35,
-    "tie": 97,
-    "loss": 68,
-    "win_rate": 0.175,
-    "tie_rate": 0.485,
-    "loss_rate": 0.34
+    "win": 59,
+    "tie": 78,
+    "loss": 63,
+    "win_rate": 0.295,
+    "tie_rate": 0.39,
+    "loss_rate": 0.315
   },
   {
     "config": "temp_0p0_top_p_0p1",
@@ -18,12 +18,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p0_top_p_0p1/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 35,
-    "tie": 97,
-    "loss": 68,
-    "win_rate": 0.175,
-    "tie_rate": 0.485,
-    "loss_rate": 0.34
+    "win": 60,
+    "tie": 76,
+    "loss": 64,
+    "win_rate": 0.3,
+    "tie_rate": 0.38,
+    "loss_rate": 0.32
   },
   {
     "config": "temp_0p0_top_p_0p5",
@@ -31,12 +31,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p0_top_p_0p5/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 37,
-    "tie": 95,
-    "loss": 68,
-    "win_rate": 0.185,
-    "tie_rate": 0.475,
-    "loss_rate": 0.34
+    "win": 63,
+    "tie": 79,
+    "loss": 58,
+    "win_rate": 0.315,
+    "tie_rate": 0.395,
+    "loss_rate": 0.29
   },
   {
     "config": "temp_0p0_top_p_0p9",
@@ -44,11 +44,11 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p0_top_p_0p9/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 38,
-    "tie": 96,
+    "win": 58,
+    "tie": 76,
     "loss": 66,
-    "win_rate": 0.19,
-    "tie_rate": 0.48,
+    "win_rate": 0.29,
+    "tie_rate": 0.38,
     "loss_rate": 0.33
   },
   {
@@ -57,12 +57,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p0_top_p_1p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 37,
-    "tie": 95,
-    "loss": 68,
-    "win_rate": 0.185,
-    "tie_rate": 0.475,
-    "loss_rate": 0.34
+    "win": 57,
+    "tie": 79,
+    "loss": 64,
+    "win_rate": 0.285,
+    "tie_rate": 0.395,
+    "loss_rate": 0.32
   },
   {
     "config": "temp_0p1_top_p_0p0",
@@ -70,12 +70,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p1_top_p_0p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 38,
-    "tie": 96,
-    "loss": 66,
-    "win_rate": 0.19,
-    "tie_rate": 0.48,
-    "loss_rate": 0.33
+    "win": 61,
+    "tie": 76,
+    "loss": 63,
+    "win_rate": 0.305,
+    "tie_rate": 0.38,
+    "loss_rate": 0.315
   },
   {
     "config": "temp_0p1_top_p_0p1",
@@ -83,12 +83,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p1_top_p_0p1/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 38,
-    "tie": 94,
-    "loss": 68,
-    "win_rate": 0.19,
-    "tie_rate": 0.47,
-    "loss_rate": 0.34
+    "win": 58,
+    "tie": 79,
+    "loss": 63,
+    "win_rate": 0.29,
+    "tie_rate": 0.395,
+    "loss_rate": 0.315
   },
   {
     "config": "temp_0p1_top_p_0p5",
@@ -96,12 +96,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p1_top_p_0p5/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 36,
-    "tie": 94,
-    "loss": 70,
-    "win_rate": 0.18,
-    "tie_rate": 0.47,
-    "loss_rate": 0.35
+    "win": 59,
+    "tie": 79,
+    "loss": 62,
+    "win_rate": 0.295,
+    "tie_rate": 0.395,
+    "loss_rate": 0.31
   },
   {
     "config": "temp_0p1_top_p_0p9",
@@ -109,12 +109,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p1_top_p_0p9/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 39,
-    "tie": 93,
-    "loss": 68,
-    "win_rate": 0.195,
-    "tie_rate": 0.465,
-    "loss_rate": 0.34
+    "win": 57,
+    "tie": 78,
+    "loss": 65,
+    "win_rate": 0.285,
+    "tie_rate": 0.39,
+    "loss_rate": 0.325
   },
   {
     "config": "temp_0p1_top_p_1p0",
@@ -122,12 +122,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p1_top_p_1p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 40,
-    "tie": 98,
-    "loss": 62,
-    "win_rate": 0.2,
-    "tie_rate": 0.49,
-    "loss_rate": 0.31
+    "win": 57,
+    "tie": 75,
+    "loss": 68,
+    "win_rate": 0.285,
+    "tie_rate": 0.375,
+    "loss_rate": 0.34
   },
   {
     "config": "temp_0p5_top_p_0p0",
@@ -135,12 +135,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p5_top_p_0p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 37,
-    "tie": 95,
-    "loss": 68,
-    "win_rate": 0.185,
-    "tie_rate": 0.475,
-    "loss_rate": 0.34
+    "win": 60,
+    "tie": 77,
+    "loss": 63,
+    "win_rate": 0.3,
+    "tie_rate": 0.385,
+    "loss_rate": 0.315
   },
   {
     "config": "temp_0p5_top_p_0p1",
@@ -148,12 +148,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p5_top_p_0p1/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 36,
-    "tie": 98,
-    "loss": 66,
-    "win_rate": 0.18,
-    "tie_rate": 0.49,
-    "loss_rate": 0.33
+    "win": 59,
+    "tie": 77,
+    "loss": 64,
+    "win_rate": 0.295,
+    "tie_rate": 0.385,
+    "loss_rate": 0.32
   },
   {
     "config": "temp_0p5_top_p_0p5",
@@ -161,12 +161,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p5_top_p_0p5/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 35,
-    "tie": 96,
-    "loss": 69,
-    "win_rate": 0.175,
-    "tie_rate": 0.48,
-    "loss_rate": 0.345
+    "win": 60,
+    "tie": 77,
+    "loss": 63,
+    "win_rate": 0.3,
+    "tie_rate": 0.385,
+    "loss_rate": 0.315
   },
   {
     "config": "temp_0p5_top_p_0p9",
@@ -174,12 +174,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p5_top_p_0p9/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 48,
-    "tie": 78,
-    "loss": 74,
-    "win_rate": 0.24,
-    "tie_rate": 0.39,
-    "loss_rate": 0.37
+    "win": 62,
+    "tie": 70,
+    "loss": 68,
+    "win_rate": 0.31,
+    "tie_rate": 0.35,
+    "loss_rate": 0.34
   },
   {
     "config": "temp_0p5_top_p_1p0",
@@ -187,12 +187,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p5_top_p_1p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 39,
-    "tie": 80,
-    "loss": 81,
-    "win_rate": 0.195,
-    "tie_rate": 0.4,
-    "loss_rate": 0.405
+    "win": 67,
+    "tie": 65,
+    "loss": 68,
+    "win_rate": 0.335,
+    "tie_rate": 0.325,
+    "loss_rate": 0.34
   },
   {
     "config": "temp_0p9_top_p_0p0",
@@ -200,12 +200,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p9_top_p_0p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 37,
-    "tie": 93,
-    "loss": 70,
-    "win_rate": 0.185,
-    "tie_rate": 0.465,
-    "loss_rate": 0.35
+    "win": 60,
+    "tie": 78,
+    "loss": 62,
+    "win_rate": 0.3,
+    "tie_rate": 0.39,
+    "loss_rate": 0.31
   },
   {
     "config": "temp_0p9_top_p_0p1",
@@ -213,12 +213,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p9_top_p_0p1/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 37,
-    "tie": 96,
-    "loss": 67,
-    "win_rate": 0.185,
-    "tie_rate": 0.48,
-    "loss_rate": 0.335
+    "win": 60,
+    "tie": 79,
+    "loss": 61,
+    "win_rate": 0.3,
+    "tie_rate": 0.395,
+    "loss_rate": 0.305
   },
   {
     "config": "temp_0p9_top_p_0p5",
@@ -226,12 +226,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p9_top_p_0p5/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 35,
-    "tie": 96,
-    "loss": 69,
-    "win_rate": 0.175,
-    "tie_rate": 0.48,
-    "loss_rate": 0.345
+    "win": 56,
+    "tie": 79,
+    "loss": 65,
+    "win_rate": 0.28,
+    "tie_rate": 0.395,
+    "loss_rate": 0.325
   },
   {
     "config": "temp_0p9_top_p_0p9",
@@ -239,12 +239,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p9_top_p_0p9/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 36,
-    "tie": 77,
-    "loss": 87,
-    "win_rate": 0.18,
-    "tie_rate": 0.385,
-    "loss_rate": 0.435
+    "win": 63,
+    "tie": 60,
+    "loss": 77,
+    "win_rate": 0.315,
+    "tie_rate": 0.3,
+    "loss_rate": 0.385
   },
   {
     "config": "temp_0p9_top_p_1p0",
@@ -252,12 +252,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_0p9_top_p_1p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 50,
-    "tie": 75,
-    "loss": 75,
-    "win_rate": 0.25,
-    "tie_rate": 0.375,
-    "loss_rate": 0.375
+    "win": 67,
+    "tie": 63,
+    "loss": 70,
+    "win_rate": 0.335,
+    "tie_rate": 0.315,
+    "loss_rate": 0.35
   },
   {
     "config": "temp_1p0_top_p_0p0",
@@ -265,12 +265,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_1p0_top_p_0p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 34,
-    "tie": 95,
-    "loss": 71,
-    "win_rate": 0.17,
-    "tie_rate": 0.475,
-    "loss_rate": 0.355
+    "win": 58,
+    "tie": 80,
+    "loss": 62,
+    "win_rate": 0.29,
+    "tie_rate": 0.4,
+    "loss_rate": 0.31
   },
   {
     "config": "temp_1p0_top_p_0p1",
@@ -278,12 +278,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_1p0_top_p_0p1/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 37,
-    "tie": 97,
-    "loss": 66,
-    "win_rate": 0.185,
-    "tie_rate": 0.485,
-    "loss_rate": 0.33
+    "win": 60,
+    "tie": 76,
+    "loss": 64,
+    "win_rate": 0.3,
+    "tie_rate": 0.38,
+    "loss_rate": 0.32
   },
   {
     "config": "temp_1p0_top_p_0p5",
@@ -291,12 +291,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_1p0_top_p_0p5/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 44,
-    "tie": 91,
-    "loss": 65,
-    "win_rate": 0.22,
-    "tie_rate": 0.455,
-    "loss_rate": 0.325
+    "win": 64,
+    "tie": 80,
+    "loss": 56,
+    "win_rate": 0.32,
+    "tie_rate": 0.4,
+    "loss_rate": 0.28
   },
   {
     "config": "temp_1p0_top_p_0p9",
@@ -304,12 +304,12 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_1p0_top_p_0p9/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 49,
-    "tie": 75,
-    "loss": 76,
-    "win_rate": 0.245,
-    "tie_rate": 0.375,
-    "loss_rate": 0.38
+    "win": 72,
+    "tie": 58,
+    "loss": 70,
+    "win_rate": 0.36,
+    "tie_rate": 0.29,
+    "loss_rate": 0.35
   },
   {
     "config": "temp_1p0_top_p_1p0",
@@ -317,11 +317,11 @@
     "output_path": "/home/mcuong/PAA-PRISM/PRISM/src/ablation_sampling_hparams/all-MiniLM-L12-v2/llama_dolly_deepseek/temp_1p0_top_p_1p0/llama_dolly_deepseek_responses.json",
     "num_items": 200,
     "num_evaluated": 200,
-    "win": 44,
-    "tie": 77,
-    "loss": 79,
-    "win_rate": 0.22,
-    "tie_rate": 0.385,
-    "loss_rate": 0.395
+    "win": 61,
+    "tie": 68,
+    "loss": 71,
+    "win_rate": 0.305,
+    "tie_rate": 0.34,
+    "loss_rate": 0.355
   }
 ]
