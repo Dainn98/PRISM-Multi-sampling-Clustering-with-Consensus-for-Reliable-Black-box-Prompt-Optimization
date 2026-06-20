@@ -16,6 +16,7 @@ src/hf-cache/model
 *.jsonl
 
 # *.json
+*.csv
 
 trick.txt
 
