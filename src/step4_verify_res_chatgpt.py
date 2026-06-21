@@ -18,7 +18,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 MODEL_NAME = CHATGPT
 VERIFY_FOLDER_NAME = f"verify_{clean_name(MODEL_NAME)}"
-PROMPT_FILE = os.path.join(BASE_DIR, "response_eval_prompt.txt")
+PROMPT_FILE = os.path.join(BASE_DIR, "response_eval_prompt_gpt.txt")
 API_RETRY_TIMES = 5
 API_RETRY_BASE_DELAY = 2
 REQUEST_TIMEOUT_SECONDS = 120
@@ -77,74 +77,25 @@ with open(PROMPT_FILE, "r", encoding="utf-8") as f:
     exec(f.read(), _prompt_vars)
 
 SYSTEM_PROMPT = _prompt_vars["SYSTEM_PROMPT"]
+USER_PROMPT_TEMPLATE = _prompt_vars["USER_PROMPT_TEMPLATE"]
 
-print("Loaded SYSTEM_PROMPT from response_eval_prompt.txt")
+print("Loaded SYSTEM_PROMPT and USER_PROMPT_TEMPLATE from response_eval_prompt_gpt.txt")
 print(SYSTEM_PROMPT[:200], "\n---")
 
 # USER PROMPT
 def build_user_prompt(item, verify_keys):
-    return f"""
-Prompt_A (used to generate Response_A):
-\"\"\"{item.get(verify_keys[0], "")}\"\"\"
+    if len(verify_keys) != 4:
+        raise ValueError(
+            "verify_keys must contain exactly four keys: "
+            "Prompt_A, Response_A, Prompt_B, Response_B"
+        )
 
-Response_A:
-\"\"\"{item.get(verify_keys[1], "")}\"\"\"
-
-Prompt_B (used to generate Response_B):
-\"\"\"{item.get(verify_keys[2], "")}\"\"\"
-
-Response_B:
-\"\"\"{item.get(verify_keys[3], "")}\"\"\"
-
-# IMPORTANT RULES:
-- Judge Response_A ONLY based on Prompt_A
-- Judge Response_B ONLY based on Prompt_B
-- Do NOT compare Response_A and Response_B
-- Do NOT use any other information
-- Use the SAME scoring scale for both
-
-# Score meaning:
-0.0 = completely incorrect or useless
-0.5 = partially correct / moderate quality
-1.0 = fully correct / high quality
-
-# Additional rules:
-- Each criterion must be scored independently
-- Scores should not all be identical unless fully justified
-- If response fails to answer, give low scores (0.0–0.2)
-- Use only numbers between 0.0 and 1.0
-- Use one decimal place
-- Do NOT include any explanation or extra text
-
-# OUTPUT:
-Return STRICTLY valid JSON.
-No explanation, no markdown, no extra text.
-
-# OUTPUT FORMAT:
-Return JSON ONLY in the following format:
-{{
-  "response_A": {{
-    "Correctness": 0.0,
-    "Relevance": 0.0,
-    "Completeness": 0.0,
-    "Clarity_Coherence": 0.0,
-    "Usefulness_Helpfulness": 0.0,
-    "Style_Tone": 0.0,
-    "Conciseness": 0.0,
-    "Safety_Compliance": 0.0
-  }},
-  "response_B": {{
-    "Correctness": 0.0,
-    "Relevance": 0.0,
-    "Completeness": 0.0,
-    "Clarity_Coherence": 0.0,
-    "Usefulness_Helpfulness": 0.0,
-    "Style_Tone": 0.0,
-    "Conciseness": 0.0,
-    "Safety_Compliance": 0.0
-  }}
-}}
-"""
+    return USER_PROMPT_TEMPLATE.format(
+        prompt_A=item.get(verify_keys[0], ""),
+        response_A=item.get(verify_keys[1], ""),
+        prompt_B=item.get(verify_keys[2], ""),
+        response_B=item.get(verify_keys[3], ""),
+    )
 
 # GENERATION
 def generate(system_prompt, user_prompt):
