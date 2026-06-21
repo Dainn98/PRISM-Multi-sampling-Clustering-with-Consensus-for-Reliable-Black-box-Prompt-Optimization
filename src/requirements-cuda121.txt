@@ -1,0 +1,7 @@
+# NVIDIA driver 535 is incompatible with the CUDA 13 PyTorch wheel.
+# Pin PyTorch to the CUDA 12.1 build while keeping the common dependencies.
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+-r requirements.txt
+torch==2.5.1+cu121
+# python -m pip install --no-cache-dir --force-reinstall \ -r requirements-cuda121.txt

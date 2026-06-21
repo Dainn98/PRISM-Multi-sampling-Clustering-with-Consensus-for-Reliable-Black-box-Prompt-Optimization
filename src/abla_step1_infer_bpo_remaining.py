@@ -1,6 +1,7 @@
 import gc
 import json
 import os
+import shutil
 from pathlib import Path
 
 import torch
@@ -14,9 +15,14 @@ from helper import (
     LLAMA2_7B,
     SELF_INSTRUCT_EVAL,
     VICUNA_7B,
+    clean_name,
     create_combined_name,
     device,
     load_model_and_tokenizer,
+    evaluation_datasets,
+    evaluator_models,
+    base_llm_models,
+    embedding_models
 )
 from utils import generate_batch
 
@@ -24,12 +30,12 @@ from utils import generate_batch
 print("===== ABLATION: Generate remaining BPO/RBPO responses =====")
 
 BASE_DIR = Path(__file__).resolve().parent
-ABLATION_DIR = BASE_DIR / "ablation"
+ABLATION_DIR = BASE_DIR / "evaluation"
 BATCH_SIZE = int(os.getenv("BPO_RESPONSE_BATCH_SIZE", "8"))
 
-evaluation_datasets = [DOLLY_EVAL, SELF_INSTRUCT_EVAL]
-evaluator_models = [DEEPSEEK]
-base_llm_models = [LLAMA2_7B]
+# evaluation_datasets = [DOLLY_EVAL, SELF_INSTRUCT_EVAL]
+# evaluator_models = [DEEPSEEK]
+# base_llm_models = [LLAMA2_7B]
 
 PROMPT_RESPONSE_KEYS = [
     ("bpo_prompt", "bpo_response"),
@@ -65,13 +71,15 @@ def load_json(path):
 def collect_available_files(base_model):
     available_files = []
     for data_path in evaluation_datasets:
-        for evaluator in evaluator_models:
-            file_name = create_combined_name(base_model, data_path, evaluator)
-            input_path = ABLATION_DIR / f"{file_name}.json"
-            if input_path.exists():
-                available_files.append((data_path, evaluator, input_path))
-            else:
-                print(f"Skipping missing file: {input_path}")
+        for embedding_model in embedding_models:
+            for evaluator in evaluator_models:
+                file_name = create_combined_name(base_model, data_path, evaluator)
+                embed_name = clean_name(embedding_model)
+                input_path = ABLATION_DIR / f"{embed_name}/{file_name}.json"
+                if input_path.exists():
+                    available_files.append((data_path, evaluator, input_path))
+                else:
+                    print(f"Skipping missing file: {input_path}")
     return available_files
 
 
@@ -220,6 +228,9 @@ def main():
             del tokenizer
             torch.cuda.empty_cache()
             gc.collect()
+            if os.path.exists(MODEL_CACHE_PATH):
+                print(f"Removing model cache after {base_model}: {MODEL_CACHE_PATH}")
+                shutil.rmtree(MODEL_CACHE_PATH, ignore_errors=True)
 
 
 if __name__ == "__main__":

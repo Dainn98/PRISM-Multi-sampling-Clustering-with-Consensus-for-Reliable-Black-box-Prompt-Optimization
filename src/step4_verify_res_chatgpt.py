@@ -628,7 +628,12 @@ def check_verify_consistency(verify_key,verify_methods, check_runs=5):
                 
 BATCH_SIZE = 1
 VERIFY_TIMES = 3
-embedding_models = [GEMMA_EMBEDDING_MODEL, MINILM_EMBEDDING_MODEL]
+embedding_models = [
+    GEMMA_EMBEDDING_MODEL,
+    MINILM_EMBEDDING_MODEL
+    ]
+# base_llm_models = [GEMMA3]
+# evaluation_datasets = [DOLLY_EVAL]
 
 verify_keys_method = {
     "rbpo_bpo": ['rbpo_prompt', 'rbpo_response', 'bpo_prompt', 'bpo_response'], # đánh giá RBPO vs BPO
