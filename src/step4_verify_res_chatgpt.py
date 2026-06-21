@@ -446,6 +446,7 @@ def check_verify_consistency(verify_key,verify_methods, check_runs=5):
                     
                     mismatches = []
                     consistencies = []
+                    all_items = []
                     
                     num_items = len(data[0])
                     print(f"Checking {num_items} items across {len(data)} runs...")
@@ -463,12 +464,28 @@ def check_verify_consistency(verify_key,verify_methods, check_runs=5):
                             "winners_per_run": winners,
                             "llm_evaluations_per_run": [run[idx][f"{verify_key}_llm_evaluation"] for run in data if idx < len(run)]
                         }
+                        all_items.append(item_data)
                         
                         if len(set(winners)) > 1:  # Có sự khác biệt
                             mismatches.append(item_data)
                         else:  # Ổn định (tất cả winner giống nhau)
                             consistencies.append(item_data)
                     
+                    def resolve_final_winner(winners):
+                        """Majority vote; a tied highest vote is resolved as draw (2)."""
+                        from collections import Counter
+
+                        if not winners:
+                            return 2
+
+                        counts = Counter(winners)
+                        highest_count = max(counts.values())
+                        top_winners = [
+                            winner for winner, count in counts.items()
+                            if count == highest_count
+                        ]
+                        return top_winners[0] if len(top_winners) == 1 else 2
+
                     def count_winner_distribution(items, exclude_ids):
                         winner_counts = {2: 0, 0: 0, 1: 0}  # 2=draw, 0=A_win, 1=B_win
                         excluded_count = 0
@@ -480,16 +497,14 @@ def check_verify_consistency(verify_key,verify_methods, check_runs=5):
                                 excluded_count += 1
                                 continue
                             
-                            winners = item.get("winners_per_run", [])
-                            if winners:
-                                if len(set(winners)) == 1:
-                                    winner = winners[0]
-                                else:
-                                    from collections import Counter
-                                    winner = Counter(winners).most_common(1)[0][0]
-                                
-                                if winner in winner_counts:
-                                    winner_counts[winner] += 1
+                            winner = item.get(f"{verify_key}_winner")
+                            if winner is None:
+                                winner = resolve_final_winner(
+                                    item.get("winners_per_run", [])
+                                )
+
+                            if winner in winner_counts:
+                                winner_counts[winner] += 1
                         
                         total = sum(winner_counts.values())
                         if total == 0:
@@ -530,12 +545,14 @@ def check_verify_consistency(verify_key,verify_methods, check_runs=5):
                         print(f"Found {len(mismatches)}/{num_items} mismatches ({mismatch_result['mismatch_rate']})")
                         print(f"Saved: {mismatch_path}")
                     
+                    consistency_winner_dist = count_winner_distribution(
+                        consistencies, exclude_ids
+                    )
+
                     # Lưu file _consistency.json
                     if consistencies:
                         consistency_path = f"{eval_folder_name}/{clean_name(embed_model)}/{VERIFY_FOLDER_NAME}/{verify_key}/{consistency_folder_name}/{file_name}_consistency.json"
                         os.makedirs(os.path.dirname(consistency_path), exist_ok=True)
-                        
-                        consistency_winner_dist = count_winner_distribution(consistencies, exclude_ids)
                         
                         consistency_result = {
                             "total_items": num_items,
@@ -553,6 +570,55 @@ def check_verify_consistency(verify_key,verify_methods, check_runs=5):
                         print(f"Found {len(consistencies)}/{num_items} consistent items ({consistency_result['consistency_rate']})")
                         print(f"Winner (excluding IDs {', '.join(map(str, sorted(exclude_ids)))}): A={consistency_winner_dist['response_A_win']} ({consistency_winner_dist['response_A_win_rate']}) | B={consistency_winner_dist['response_B_win']} ({consistency_winner_dist['response_B_win_rate']}) | Draw={consistency_winner_dist['draw']} ({consistency_winner_dist['draw_rate']}) [Excluded: {consistency_winner_dist.get('excluded_count', 0)}]")
                         print(f"Saved: {consistency_path}")
+
+                    # Gộp consistency và mismatch thành kết quả final.
+                    final_items = []
+                    for item in all_items:
+                        final_item = dict(item)
+                        winners = item.get("winners_per_run", [])
+                        final_winner = resolve_final_winner(winners)
+                        final_item[f"{verify_key}_winner"] = final_winner
+                        if len(set(winners)) <= 1:
+                            final_item["final_decision"] = "consistency"
+                        elif winners.count(final_winner) > len(winners) / 2:
+                            final_item["final_decision"] = "majority_vote"
+                        else:
+                            final_item["final_decision"] = "tie"
+                        final_items.append(final_item)
+
+                    final_winner_dist = count_winner_distribution(
+                        final_items, exclude_ids
+                    )
+                    final_path = f"{eval_folder_name}/{clean_name(embed_model)}/{VERIFY_FOLDER_NAME}/{verify_key}/final/{file_name}_final.json"
+                    final_result = {
+                        "total_items": len(final_items),
+                        "check_runs": len(data),
+                        "winner_distribution": final_winner_dist,
+                        "note": f"Excluded ID {', '.join(map(str, sorted(exclude_ids)))} (aggregated results)" if exclude_ids else "No exclusions",
+                        "final_items": final_items,
+                    }
+                    save_json_atomic(final_path, final_result)
+
+                    print(
+                        "Consistency winner distribution: "
+                        f"A={consistency_winner_dist['response_A_win']} "
+                        f"({consistency_winner_dist['response_A_win_rate']}) | "
+                        f"B={consistency_winner_dist['response_B_win']} "
+                        f"({consistency_winner_dist['response_B_win_rate']}) | "
+                        f"Draw={consistency_winner_dist['draw']} "
+                        f"({consistency_winner_dist['draw_rate']})"
+                    )
+                    print(
+                        "Final winner distribution: "
+                        f"A={final_winner_dist['response_A_win']} "
+                        f"({final_winner_dist['response_A_win_rate']}) | "
+                        f"B={final_winner_dist['response_B_win']} "
+                        f"({final_winner_dist['response_B_win_rate']}) | "
+                        f"Draw={final_winner_dist['draw']} "
+                        f"({final_winner_dist['draw_rate']}) | "
+                        f"Excluded={final_winner_dist.get('excluded_count', 0)}"
+                    )
+                    print(f"Saved final: {final_path}")
                     
                     # Summary
                     if not mismatches and not consistencies:
