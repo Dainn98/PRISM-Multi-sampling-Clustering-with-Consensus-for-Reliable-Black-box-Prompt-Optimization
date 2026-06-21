@@ -1,3 +1,9 @@
+"""Generate missing BPO/RBPO responses from prompts selected in earlier steps.
+
+This script does not infer or optimize prompts. It loads each configured base LLM
+and fills only empty ``bpo_response`` and ``rbpo_response`` fields.
+"""
+
 import gc
 import json
 import os
@@ -10,9 +16,7 @@ from tqdm import tqdm
 
 from config import MODEL_CACHE_PATH, prompt_template_vicuna
 from helper import (
-    DEEPSEEK,
     DOLLY_EVAL,
-    LLAMA2_7B,
     SELF_INSTRUCT_EVAL,
     VICUNA_7B,
     clean_name,
@@ -32,10 +36,6 @@ print("===== ABLATION: Generate remaining BPO/RBPO responses =====")
 BASE_DIR = Path(__file__).resolve().parent
 ABLATION_DIR = BASE_DIR / "evaluation"
 BATCH_SIZE = int(os.getenv("BPO_RESPONSE_BATCH_SIZE", "8"))
-
-# evaluation_datasets = [DOLLY_EVAL, SELF_INSTRUCT_EVAL]
-# evaluator_models = [DEEPSEEK]
-# base_llm_models = [LLAMA2_7B]
 
 PROMPT_RESPONSE_KEYS = [
     ("bpo_prompt", "bpo_response"),
