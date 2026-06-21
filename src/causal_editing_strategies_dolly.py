@@ -10,6 +10,13 @@ The public entry point launches every GPU-heavy phase in a fresh subprocess:
 Intermediate JSON files are checkpoints, so an interrupted experiment can be
 resumed without repeating completed samples.  Process isolation ensures model
 memory is returned to the OS between phases and substantially reduces OOM risk.
+
+from PRISM/
+
+python src/causal_editing_strategies_dolly.py --phase candidates
+python src/causal_editing_strategies_dolly.py --phase select
+python src/causal_editing_strategies_dolly.py --phase responses
+python src/causal_editing_strategies_dolly.py --phase evaluate
 """
 
 from __future__ import annotations
@@ -45,21 +52,26 @@ CRITERIA = (
 
 STRATEGY_INSTRUCTIONS = {
     "ae": """Rewrite the original prompt using ASPECT EXPANSION ONLY.
-Add relevant dimensions, details, constraints, or considerations that make the
-request more complete and useful. Preserve the original intent. Do not add a
-role, step-by-step procedure, explicit output template, or meta-instructions.
+Add relevant aspects, details, constraints, or considerations to make the request
+more complete and useful. Preserve the original intent. Do not add a role,
+step-by-step reasoning, explicit output format, or meta-instructions.
 Return only the rewritten prompt, with no analysis or label.""",
+
     "if": """Rewrite the original prompt using INSTRUCTIONAL FRAMING ONLY.
-Improve how the task is instructed through an appropriate role, explicit
-directions, reasoning guidance, or a clear output format. Preserve the original
-intent and do not introduce new substantive topics, requirements, facts, or
-aspects. Return only the rewritten prompt, with no analysis or label.""",
-    "ae_if": """Rewrite the original prompt using BOTH ASPECT EXPANSION AND
-INSTRUCTIONAL FRAMING. Add relevant dimensions, details, constraints, or
-considerations, and also provide an appropriate role, explicit directions,
-reasoning guidance, or clear output format. Preserve the original intent.
-Return only the rewritten prompt, with no analysis or label.""",
+Make the task clearer by adding an appropriate role, explicit directions,
+reasoning guidance, chain-of-thought style thinking when useful, or a clear
+output format. Preserve the original intent. Do not add new substantive aspects,
+requirements, facts, or topics. Return only the rewritten prompt, with no
+analysis or label.""",
+
+    "ae_if": """Rewrite the original prompt using both ASPECT EXPANSION and
+INSTRUCTIONAL FRAMING. Add relevant aspects, details, constraints, or
+considerations, and also make the task clearer through a role, explicit
+directions, reasoning guidance, chain-of-thought style thinking when useful, or
+a clear output format. Preserve the original intent. Return only the rewritten
+prompt, with no analysis or label.""",
 }
+
 
 
 def parse_args() -> argparse.Namespace:
@@ -96,9 +108,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--phase",
         choices=("candidates", "select", "responses", "evaluate"),
-        help=argparse.SUPPRESS,
+        help=(
+            "Run only one phase. The first invocation creates experiment_config.json; "
+            "later phases reuse it from --output-dir."
+        ),
     )
-    parser.add_argument("--config-json", help=argparse.SUPPRESS)
+    parser.add_argument(
+        "--config-json",
+        help="Use an explicit experiment config when running a single phase.",
+    )
     return parser.parse_args()
 
 
@@ -471,23 +489,51 @@ def phase_responses(config: dict) -> None:
 def evaluation_prompt(
     prompt_a: str, response_a: str, prompt_b: str, response_b: str
 ) -> str:
-    criteria = ",\n".join(f'    "{criterion}": 0.0' for criterion in CRITERIA)
-    return f"""Score two responses independently. Judge each response only against
-its own prompt; do not reward or punish it merely for being longer. Use the same
-scale: 0.0 is unusable, 0.5 is moderate, and 1.0 is excellent. Each score must
-be a number from 0.0 to 1.0.
+    return f"""Prompt_A (used to generate Response_A):
+\"\"\"{prompt_a}\"\"\"
 
-Prompt_A:\n{prompt_a}\n\nResponse_A:\n{response_a}
+Response_A:
+\"\"\"{response_a}\"\"\"
 
-Prompt_B:\n{prompt_b}\n\nResponse_B:\n{response_b}
+Prompt_B (used to generate Response_B):
+\"\"\"{prompt_b}\"\"\"
 
-Return JSON only with exactly this structure:
+Response_B:
+\"\"\"{response_b}\"\"\"
+
+# IMPORTANT RULES:
+- Judge Response_A ONLY based on Prompt_A and the shared context, if provided
+- Judge Response_B ONLY based on Prompt_B and the shared context, if provided
+- Do NOT compare Response_A and Response_B directly
+- Use the SAME scoring scale for both
+- Score each criterion independently
+- If a response fails to answer, give low scores (0.0 to 0.2)
+- Use only numbers between 0.0 and 1.0
+- Use one decimal place
+- Do NOT include explanations or extra text
+
+# OUTPUT:
+Return STRICTLY valid JSON using this exact structure:
 {{
   "response_A": {{
-{criteria}
+    "Correctness": 0.0,
+    "Relevance": 0.0,
+    "Completeness": 0.0,
+    "Clarity_Coherence": 0.0,
+    "Usefulness_Helpfulness": 0.0,
+    "Style_Tone": 0.0,
+    "Conciseness": 0.0,
+    "Safety_Compliance": 0.0
   }},
   "response_B": {{
-{criteria}
+    "Correctness": 0.0,
+    "Relevance": 0.0,
+    "Completeness": 0.0,
+    "Clarity_Coherence": 0.0,
+    "Usefulness_Helpfulness": 0.0,
+    "Style_Tone": 0.0,
+    "Conciseness": 0.0,
+    "Safety_Compliance": 0.0
   }}
 }}
 """
@@ -777,12 +823,30 @@ def validate_config(config: dict) -> None:
 def main() -> int:
     args = parse_args()
     if args.phase:
-        if not args.config_json:
-            raise SystemExit("Internal --phase requires --config-json")
-        config = load_json(Path(args.config_json))
-        if not isinstance(config, dict):
-            raise SystemExit("Invalid config JSON")
+        if args.config_json:
+            config_path = Path(args.config_json).resolve()
+            config = load_json(config_path)
+            if not isinstance(config, dict):
+                raise SystemExit("Invalid config JSON")
+        else:
+            output_dir = Path(args.output_dir).resolve()
+            config_path = output_dir / "experiment_config.json"
+            if config_path.exists():
+                config = load_json(config_path)
+                if not isinstance(config, dict):
+                    raise SystemExit("Invalid experiment_config.json")
+                print(f"Reusing config: {config_path}")
+            else:
+                config = config_from_args(args)
+                validate_config(config)
+                output_dir.mkdir(parents=True, exist_ok=True)
+                atomic_write_json(config_path, config)
+                print(f"Created config: {config_path}")
+
+        validate_config(config)
+        print(f"Running only phase: {args.phase.upper()}")
         run_phase(args.phase, config)
+        print(f"Completed phase: {args.phase.upper()}")
         return 0
 
     config = config_from_args(args)
