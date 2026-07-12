@@ -10,7 +10,6 @@ from helper import device, MEPO_MODEL, OPTIM_PROMPT_INSTRUCTION_PATH
 
 load_dotenv()
 mepo_hf = os.environ.get("HF_TOKEN")
-print(mepo_hf)
 
 
 
@@ -44,12 +43,12 @@ class MePOModel:
         device_map="auto",
         cache_dir=OPT_PROMPT_MODEL_CACHE_PATH,
         token=mepo_hf,
-        inference_precision= os.getenv("INFERENCE_PRECISION")
+        inference_precision=None
     ):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
         
-        infer_precision = inference_precision.lower().strip()
+        infer_precision = (inference_precision or os.getenv("INFERENCE_PRECISION") or "fp16").lower().strip()
         if infer_precision not in ["fp16", "4bit"]:
             raise ValueError("Inference precision must be either 'fp16' or '4bit'")
         
@@ -102,7 +101,7 @@ class MePOModel:
         print(f"Loading base LLM")
         print("="*80)
         print(f"Loaded model: {model_path}")
-        print(f"Precision mode: {inference_precision}")
+        print(f"Precision mode: {infer_precision}")
         
         return model_, tokenizer_
     
