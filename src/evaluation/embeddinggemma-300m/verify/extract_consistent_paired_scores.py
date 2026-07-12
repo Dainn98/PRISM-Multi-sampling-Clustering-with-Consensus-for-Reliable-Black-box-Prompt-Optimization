@@ -1,19 +1,20 @@
-"""Export item-level paired scores from consistent PRISM comparisons.
+"""Export final item-level scores from consistency and resolved mismatches.
 
 Run this file from any working directory. Output CSV files are written to
-verify/paired_scores/ and can be opened directly in Excel.
+verify/paired_scores_final_ttest/ and can be opened directly in Excel.
 """
 
 import csv
 import json
 import statistics
+from collections import Counter
 from pathlib import Path
 
 from scipy import stats
 
 
 VERIFY_DIR = Path(__file__).resolve().parent
-OUTPUT_DIR = VERIFY_DIR / "paired_scores_ttest"
+OUTPUT_DIR = VERIFY_DIR / "paired_scores_final_ttest"
 
 CRITERIA = (
     "Correctness",
@@ -27,13 +28,13 @@ CRITERIA = (
 )
 
 COMPARISONS = {
-    "rbpo_bpo": (VERIFY_DIR / "rbpo_bpo" / "consistency", "PRISM(BPO)", "BPO", False),
-    "rbpo_mepo": (VERIFY_DIR / "rbpo_mepo" / "consistency", "PRISM(BPO)", "MePO", False),
-    "rmepo_mepo": (VERIFY_DIR / "rmepo_mepo" / "consistency", "PRISM(MePO)", "MePO", False),
+    "rbpo_bpo": (VERIFY_DIR / "rbpo_bpo", "PRISM(BPO)", "BPO", False),
+    "rbpo_mepo": (VERIFY_DIR / "rbpo_mepo", "PRISM(BPO)", "MePO", False),
+    "rmepo_mepo": (VERIFY_DIR / "rmepo_mepo", "PRISM(MePO)", "MePO", False),
     # Source order is Generic (response_A) vs RGeneric (response_B). Swap it in
     # the export so method_A is consistently the PRISM method.
     "generic_rgeneric": (
-        VERIFY_DIR.parent / "verify_deepseek-chat" / "generic_rgeneric" / "consistency",
+        VERIFY_DIR.parent / "verify_deepseek-chat" / "generic_rgeneric",
         "PRISM(Generic)",
         "Generic",
         True,
@@ -42,8 +43,10 @@ COMPARISONS = {
 
 
 def experiment_name(path: Path) -> str:
-    suffix = "_deepseek_consistency"
-    return path.stem[: -len(suffix)] if path.stem.endswith(suffix) else path.stem
+    for suffix in ("_deepseek_consistency", "_deepseek_mismatch", "_deepseek_final"):
+        if path.stem.endswith(suffix):
+            return path.stem[: -len(suffix)]
+    return path.stem
 
 
 def split_experiment(name: str) -> tuple[str, str]:
@@ -58,8 +61,40 @@ def mean_score(scores: dict, path: Path, item_id: object, side: str) -> float:
     return statistics.fmean(float(scores[criterion]) for criterion in CRITERIA)
 
 
+def majority_winner(winners: list[int]) -> int:
+    counts = Counter(winners)
+    highest = max(counts.values())
+    leaders = [winner for winner, count in counts.items() if count == highest]
+    return leaders[0] if len(leaders) == 1 else 2
+
+
+def final_winner_map(case_dir: Path, mismatch_path: Path) -> dict:
+    experiment = experiment_name(mismatch_path)
+    final_path = case_dir / "final" / f"{experiment}_deepseek_final.json"
+    if not final_path.exists():
+        return {}
+    with final_path.open("r", encoding="utf-8") as file:
+        final_data = json.load(file)
+    return {
+        item["id"]: int(item["final_winner"])
+        for item in final_data.get("mismatches", [])
+    }
+
+
+def export_winner(winner: int, swap_responses: bool) -> int:
+    if swap_responses and winner in (0, 1):
+        return 1 - winner
+    return winner
+
+
 def extract_file(
-    path: Path, comparison: str, method_a: str, method_b: str, swap_responses: bool
+    path: Path,
+    case_dir: Path,
+    comparison: str,
+    method_a: str,
+    method_b: str,
+    swap_responses: bool,
+    source_split: str,
 ) -> list[dict]:
     with path.open("r", encoding="utf-8") as file:
         data = json.load(file)
@@ -69,7 +104,10 @@ def extract_file(
     target_model, dataset = split_experiment(experiment)
     rows = []
 
-    for item in data.get("consistent_items", []):
+    item_key = "consistent_items" if source_split == "consistency" else "mismatches"
+    resolved_winners = final_winner_map(case_dir, path) if source_split == "mismatch" else {}
+
+    for item in data.get(item_key, []):
         item_id = item.get("id")
         if item_id in excluded_ids:
             continue
@@ -78,14 +116,39 @@ def extract_file(
         if not evaluations:
             raise ValueError(f"{path}: item {item_id} has no judge evaluation")
 
-        # Consistent items have equivalent judge runs, so use judge run 1 only.
-        first_evaluation = evaluations[0]
-        scores_a = first_evaluation["response_A"]
-        scores_b = first_evaluation["response_B"]
+        # One run is sufficient for consistent items. Mismatch items use the
+        # mean over all judge runs and the separately resolved final winner.
+        selected_evaluations = evaluations[:1] if source_split == "consistency" else evaluations
+        scores_a = {
+            criterion: statistics.fmean(
+                float(evaluation["response_A"][criterion])
+                for evaluation in selected_evaluations
+            )
+            for criterion in CRITERIA
+        }
+        scores_b = {
+            criterion: statistics.fmean(
+                float(evaluation["response_B"][criterion])
+                for evaluation in selected_evaluations
+            )
+            for criterion in CRITERIA
+        }
         if swap_responses:
             scores_a, scores_b = scores_b, scores_a
         score_a = mean_score(scores_a, path, item_id, "response_A")
         score_b = mean_score(scores_b, path, item_id, "response_B")
+
+        raw_winners = [int(winner) for winner in item.get("winners_per_run", [])]
+        if source_split == "consistency":
+            raw_final_winner = raw_winners[0] if raw_winners else 2
+            winner_source = "consistent_judges"
+        elif item_id in resolved_winners:
+            raw_final_winner = resolved_winners[item_id]
+            winner_source = "final_file"
+        else:
+            raw_final_winner = majority_winner(raw_winners)
+            winner_source = "derived_majority_vote"
+        final_winner = export_winner(raw_final_winner, swap_responses)
 
         row = {
             "embedding": VERIFY_DIR.parent.name,
@@ -94,7 +157,16 @@ def extract_file(
             "target_model": target_model,
             "dataset": dataset,
             "item_id": item_id,
-            "judge_run": 1,
+            "source_split": source_split,
+            "score_aggregation": (
+                "first_judge_run" if source_split == "consistency" else "mean_all_judge_runs"
+            ),
+            "judge_runs_used": len(selected_evaluations),
+            "final_winner": final_winner,
+            "final_winner_label": (
+                method_a if final_winner == 0 else method_b if final_winner == 1 else "Tie"
+            ),
+            "final_winner_source": winner_source,
             "method_A": method_a,
             "method_B": method_b,
         }
@@ -228,12 +300,26 @@ def main() -> None:
     all_rows = []
     overall_rows = []
 
-    for comparison, (consistency_dir, method_a, method_b, swap_responses) in COMPARISONS.items():
+    for comparison, (case_dir, method_a, method_b, swap_responses) in COMPARISONS.items():
         comparison_rows = []
-        for path in sorted(consistency_dir.glob("*_consistency.json")):
-            comparison_rows.extend(
-                extract_file(path, comparison, method_a, method_b, swap_responses)
+        consistent_count = 0
+        mismatch_count = 0
+        for path in sorted((case_dir / "consistency").glob("*_consistency.json")):
+            rows = extract_file(
+                path, case_dir, comparison, method_a, method_b, swap_responses, "consistency"
             )
+            consistent_count += len(rows)
+            comparison_rows.extend(rows)
+        for path in sorted((case_dir / "mismatch").glob("*_mismatch.json")):
+            rows = extract_file(
+                path, case_dir, comparison, method_a, method_b, swap_responses, "mismatch"
+            )
+            mismatch_count += len(rows)
+            comparison_rows.extend(rows)
+
+        keys = [(row["experiment"], row["item_id"]) for row in comparison_rows]
+        if len(keys) != len(set(keys)):
+            raise ValueError(f"{comparison}: duplicate experiment/item_id after final merge")
 
         write_csv(OUTPUT_DIR / f"{comparison}_paired_scores.csv", comparison_rows)
         if comparison_rows:
@@ -241,7 +327,10 @@ def main() -> None:
             write_csv(OUTPUT_DIR / f"{comparison}_overall_ttest.csv", [overall])
             overall_rows.append(overall)
         all_rows.extend(comparison_rows)
-        print(f"{comparison}: exported {len(comparison_rows)} paired items")
+        print(
+            f"{comparison}: {consistent_count} consistency + {mismatch_count} mismatch "
+            f"= {len(comparison_rows)} final paired items"
+        )
 
     write_csv(OUTPUT_DIR / "all_paired_scores.csv", all_rows)
     write_csv(OUTPUT_DIR / "summary_ttest.csv", summary_rows(all_rows))
