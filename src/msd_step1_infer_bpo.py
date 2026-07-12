@@ -1,6 +1,7 @@
 import gc
 
 import torch, os, shutil
+from tqdm import tqdm
 
 from config import MODEL_CACHE_PATH, prompt_template_optimize
 from helper import BPO_MODEL, HF_TOKEN, M, clean_name, device, load_model_and_tokenizer
@@ -36,12 +37,19 @@ def run_seed(seed, args):
             )
             print(f"Processing {path}")
 
-            for item in data:
+            progress = tqdm(
+                data,
+                desc=f"BPO/RBPO seed={seed} {experiment_name}",
+                unit="item",
+            )
+            for item in progress:
                 ori_prompt = item.get("ori_prompt", "")
                 if not ori_prompt:
                     continue
 
+                changed = False
                 if args.force or not item.get("bpo_prompt"):
+                    progress.set_postfix(stage="bpo")
                     item["bpo_prompt"] = generate(
                         model,
                         tokenizer,
@@ -51,8 +59,10 @@ def run_seed(seed, args):
                         apply_chat_template=False,
                         device=device,
                     )
+                    changed = True
 
                 if args.force or len(item.get("rbpo_paraphrases", [])) < M:
+                    progress.set_postfix(stage="rbpo", candidates=M)
                     prompts = [prompt_template_optimize.format(ori_prompt) for _ in range(M)]
                     item["rbpo_paraphrases"] = generate_batch(
                         model,
@@ -63,6 +73,10 @@ def run_seed(seed, args):
                         apply_chat_template=False,
                         device=device,
                     )
+                    changed = True
+
+                if changed:
+                    save_json(path, data)
 
             save_json(path, data)
 

@@ -5,6 +5,7 @@ from collections import Counter, defaultdict
 
 import requests
 from dotenv import load_dotenv
+from tqdm import tqdm
 
 from helper import (
     DEEPSEEK,
@@ -270,7 +271,16 @@ def run_verification(args):
                                     continue
 
                                 results = []
-                                for item in data:
+                                progress = tqdm(
+                                    data,
+                                    desc=(
+                                        f"Verify seed={seed} "
+                                        f"{clean_name(embedding_model_name)} "
+                                        f"{experiment_name} {verify_key} run={run_idx}"
+                                    ),
+                                    unit="item",
+                                )
+                                for item in progress:
                                     results.append(verify_item(item, verify_key, methods))
                                     if len(results) % args.batch_size == 0:
                                         save_json(output_path, results)
@@ -308,7 +318,7 @@ def aggregate(args):
     per_run_rows = []
     per_seed_values = defaultdict(lambda: defaultdict(list))
 
-    for seed in args.seed_values:
+    for seed in tqdm(args.seed_values, desc="Aggregate seeds", unit="seed"):
         for embedding_model_name in MSD_EMBEDDING_MODELS:
             for base_model in base_llm_models:
                 for dataset in evaluation_datasets:

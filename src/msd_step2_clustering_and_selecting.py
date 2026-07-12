@@ -130,8 +130,14 @@ def run_seed(seed, args):
                 embedding_model_name=embedding_model_name,
             )
             data = json.loads(json.dumps(source_data, ensure_ascii=False))
-            for item in tqdm(data, desc=f"{clean_name(embedding_model_name)} {experiment_name}"):
+            progress = tqdm(
+                data,
+                desc=f"Cluster seed={seed} {clean_name(embedding_model_name)} {experiment_name}",
+                unit="item",
+            )
+            for item in progress:
                 for source_key, output_key in METHOD_KEYS.items():
+                    progress.set_postfix(method=output_key)
                     apply_selection(
                         item,
                         source_key,

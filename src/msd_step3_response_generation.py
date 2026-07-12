@@ -3,6 +3,7 @@ import os
 import shutil
 
 import torch
+from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from config import MODEL_CACHE_PATH, prompt_template_vicuna
@@ -126,7 +127,12 @@ def run_seed(seed, args):
                         f"embed={clean_name(embedding_model_name)}, "
                         f"experiment={experiment_name}, n={len(data)}"
                     )
-                    for item in data:
+                    progress = tqdm(
+                        data,
+                        desc=f"Responses seed={seed} {clean_name(embedding_model_name)} {experiment_name}",
+                        unit="item",
+                    )
+                    for item in progress:
                         generate_item_responses(
                             model,
                             tokenizer,

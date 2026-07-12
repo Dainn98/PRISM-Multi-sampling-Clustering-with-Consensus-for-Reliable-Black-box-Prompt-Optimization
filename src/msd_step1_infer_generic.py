@@ -108,12 +108,18 @@ def run_seed(seed, args):
             )
             print(f"Processing {path}")
 
-            for item in tqdm(data, desc=f"generic {experiment_name}"):
+            progress = tqdm(
+                data,
+                desc=f"Generic seed={seed} {experiment_name}",
+                unit="item",
+            )
+            for item in progress:
                 original_prompt = item.get("ori_prompt", "")
                 if not original_prompt:
                     continue
 
                 if args.force or not item.get("generic_prompt"):
+                    progress.set_postfix(stage="generic")
                     item["generic_prompt"] = rewrite_prompt(model, tokenizer, original_prompt)
                     save_json(path, data)
 
@@ -121,6 +127,10 @@ def run_seed(seed, args):
                 if args.force or len(paraphrases) < M:
                     paraphrases = [] if args.force else paraphrases
                     while len(paraphrases) < M:
+                        progress.set_postfix(
+                            stage="generic_paraphrases",
+                            candidates=f"{len(paraphrases) + 1}/{M}",
+                        )
                         paraphrases.append(
                             rewrite_prompt(
                                 model,

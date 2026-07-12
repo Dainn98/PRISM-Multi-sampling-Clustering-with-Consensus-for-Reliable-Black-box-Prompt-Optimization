@@ -43,7 +43,12 @@ def run_seed(seed, args):
                     pending_prompts.append(model.po_prompt_ins.replace("S_P", ori_prompt))
                     pending_indices.append(index)
 
-            for start in tqdm(range(0, len(pending_prompts), batch_size), desc="mepo_prompt"):
+            mepo_batches = range(0, len(pending_prompts), batch_size)
+            for start in tqdm(
+                mepo_batches,
+                desc=f"MePO seed={seed} {experiment_name}",
+                unit="batch",
+            ):
                 outputs = model.generate_batch(pending_prompts[start : start + batch_size])
                 for item_index, output in zip(
                     pending_indices[start : start + batch_size],
@@ -64,7 +69,8 @@ def run_seed(seed, args):
             grouped = defaultdict(list)
             for start in tqdm(
                 range(0, len(paraphrase_prompts), batch_size),
-                desc="rmepo_paraphrases",
+                desc=f"RMePO seed={seed} {experiment_name}",
+                unit="batch",
             ):
                 outputs = model.generate_paraphrase_batch(
                     paraphrase_prompts[start : start + batch_size]
