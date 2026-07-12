@@ -7,8 +7,14 @@ import torch
 from tqdm import tqdm
 
 from config import MODEL_CACHE_PATH
-from helper import GENERIC_LLM_REWRITER, M, load_model_and_tokenizer
-from msd_config import ensure_seed_input, parse_seed_args, save_json, set_seed
+from helper import GENERIC_LLM_REWRITER, M, clean_name, load_model_and_tokenizer
+from msd_config import (
+    MSD_EMBEDDING_MODELS,
+    ensure_seed_input,
+    parse_seed_args,
+    save_json,
+    set_seed,
+)
 
 
 SYSTEM_PROMPT = """
@@ -91,42 +97,49 @@ def run_seed(seed, args):
         cache_dir=MODEL_CACHE_PATH,
     )
 
-    for experiment_name in args.experiment_names:
-        path, data = ensure_seed_input(seed, experiment_name, args.output_root)
-        print(f"Processing {path}")
+    for embedding_model_name in MSD_EMBEDDING_MODELS:
+        print(f"Writing Step 1-Generic outputs under {clean_name(embedding_model_name)}")
+        for experiment_name in args.experiment_names:
+            path, data = ensure_seed_input(
+                seed,
+                experiment_name,
+                args.output_root,
+                embedding_model_name=embedding_model_name,
+            )
+            print(f"Processing {path}")
 
-        for item in tqdm(data, desc=f"generic {experiment_name}"):
-            original_prompt = item.get("ori_prompt", "")
-            if not original_prompt:
-                continue
+            for item in tqdm(data, desc=f"generic {experiment_name}"):
+                original_prompt = item.get("ori_prompt", "")
+                if not original_prompt:
+                    continue
 
-            if args.force or not item.get("generic_prompt"):
-                item["generic_prompt"] = rewrite_prompt(model, tokenizer, original_prompt)
-                save_json(path, data)
-
-            paraphrases = item.get("generic_paraphrases", [])
-            if args.force or len(paraphrases) < M:
-                paraphrases = [] if args.force else paraphrases
-                while len(paraphrases) < M:
-                    paraphrases.append(
-                        rewrite_prompt(
-                            model,
-                            tokenizer,
-                            original_prompt,
-                            variation_index=len(paraphrases),
-                        )
-                    )
-                    item["generic_paraphrases"] = paraphrases
+                if args.force or not item.get("generic_prompt"):
+                    item["generic_prompt"] = rewrite_prompt(model, tokenizer, original_prompt)
                     save_json(path, data)
 
-        save_json(path, data)
+                paraphrases = item.get("generic_paraphrases", [])
+                if args.force or len(paraphrases) < M:
+                    paraphrases = [] if args.force else paraphrases
+                    while len(paraphrases) < M:
+                        paraphrases.append(
+                            rewrite_prompt(
+                                model,
+                                tokenizer,
+                                original_prompt,
+                                variation_index=len(paraphrases),
+                            )
+                        )
+                        item["generic_paraphrases"] = paraphrases
+                        save_json(path, data)
+
+            save_json(path, data)
 
     del model
     del tokenizer
     torch.cuda.empty_cache()
     gc.collect()
     if os.path.exists(MODEL_CACHE_PATH):
-            shutil.rmtree(MODEL_CACHE_PATH, ignore_errors=True)
+        shutil.rmtree(MODEL_CACHE_PATH, ignore_errors=True)
 
 
 def main():

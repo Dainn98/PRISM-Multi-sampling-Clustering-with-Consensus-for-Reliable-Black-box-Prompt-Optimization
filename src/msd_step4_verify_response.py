@@ -11,12 +11,12 @@ from helper import (
     base_llm_models,
     clean_name,
     create_combined_name,
-    embedding_models,
     evaluation_datasets,
     evaluator_models,
 )
 from msd_config import (
     BASE_DIR,
+    MSD_EMBEDDING_MODELS,
     embedded_json_path,
     load_json,
     mean_std_ci,
@@ -232,7 +232,7 @@ def run_verification(args):
     for seed in args.seed_values:
         set_seed(seed)
         print(f"\n===== MSD STEP 4 verify | seed={seed} =====")
-        for embedding_model_name in embedding_models:
+        for embedding_model_name in MSD_EMBEDDING_MODELS:
             for base_model in base_llm_models:
                 for dataset in evaluation_datasets:
                     for evaluator in evaluator_models:
@@ -309,7 +309,7 @@ def aggregate(args):
     per_seed_values = defaultdict(lambda: defaultdict(list))
 
     for seed in args.seed_values:
-        for embedding_model_name in embedding_models:
+        for embedding_model_name in MSD_EMBEDDING_MODELS:
             for base_model in base_llm_models:
                 for dataset in evaluation_datasets:
                     for evaluator in evaluator_models:

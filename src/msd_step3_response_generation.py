@@ -15,11 +15,17 @@ from helper import (
     clean_name,
     create_combined_name,
     device,
-    embedding_models,
     evaluation_datasets,
     evaluator_models,
 )
-from msd_config import embedded_json_path, load_json, parse_seed_args, save_json, set_seed
+from msd_config import (
+    MSD_EMBEDDING_MODELS,
+    embedded_json_path,
+    load_json,
+    parse_seed_args,
+    save_json,
+    set_seed,
+)
 from utils import generate_batch
 
 
@@ -75,7 +81,7 @@ def run_seed(seed, args):
     set_seed(seed)
     print(f"\n===== MSD STEP 3 | seed={seed} =====")
 
-    for embedding_model_name in embedding_models:
+    for embedding_model_name in MSD_EMBEDDING_MODELS:
         for base_model in base_llm_models:
             torch.cuda.empty_cache()
             gc.collect()

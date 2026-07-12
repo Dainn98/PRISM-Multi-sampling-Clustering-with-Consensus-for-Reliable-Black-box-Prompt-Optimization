@@ -11,6 +11,7 @@ import torch
 
 from config import SEED
 from helper import (
+    MINILM_EMBEDDING_MODEL,
     clean_name,
     create_combined_name,
     eval_folder_name,
@@ -26,6 +27,7 @@ DEFAULT_SEEDS = [SEED + offset for offset in range(5)]
 MSD_ROOT_NAME = "evaluation_msd"
 MSD_ROOT = BASE_DIR / MSD_ROOT_NAME
 EXPERIMENT_FILE = BASE_DIR / experiment_file_name
+MSD_EMBEDDING_MODELS = [MINILM_EMBEDDING_MODEL]
 
 
 def set_seed(seed):
@@ -71,13 +73,20 @@ def source_json_path(experiment_name):
         return legacy_path
 
     _, dataset, _ = source_dataset_for_experiment(experiment_name)
-    dataset_path = BASE_DIR / dataset
-    if dataset_path.exists():
-        return dataset_path
+    candidates = [
+        BASE_DIR / dataset,
+        BASE_DIR / "testset" / dataset,
+        BASE_DIR.parent / dataset,
+        BASE_DIR.parent / "testset" / dataset,
+    ]
+    for dataset_path in candidates:
+        if dataset_path.exists():
+            return dataset_path
 
     raise FileNotFoundError(
         f"Cannot find source JSON for {experiment_name}. "
-        f"Expected {legacy_path} or {dataset_path}."
+        f"Checked: {legacy_path}, "
+        + ", ".join(str(path) for path in candidates)
     )
 
 
@@ -119,8 +128,20 @@ def save_json(path, data):
     os.replace(tmp_path, path)
 
 
-def ensure_seed_input(seed, experiment_name, output_root=MSD_ROOT, force=False):
-    output_path = seed_dir(seed, output_root) / f"{experiment_name}.json"
+def ensure_seed_input(
+    seed,
+    experiment_name,
+    output_root=MSD_ROOT,
+    force=False,
+    embedding_model_name=None,
+):
+    embedding_model_name = embedding_model_name or MSD_EMBEDDING_MODELS[0]
+    output_path = embedded_json_path(
+        seed,
+        embedding_model_name,
+        experiment_name,
+        output_root,
+    )
     if output_path.exists() and not force:
         return output_path, load_json(output_path)
 

@@ -9,8 +9,9 @@ from sklearn.cluster import AgglomerativeClustering
 from tqdm import tqdm
 
 from config import MODEL_CACHE_PATH
-from helper import IMP_ENC, M, clean_name, device, distance_thresholds, embedding_models
+from helper import IMP_ENC, M, clean_name, device, distance_thresholds
 from msd_config import (
+    MSD_EMBEDDING_MODELS,
     embedded_json_path,
     ensure_seed_input,
     parse_seed_args,
@@ -106,7 +107,7 @@ def apply_selection(item, source_key, output_key, embedding_model, distance_thre
 def run_seed(seed, args):
     set_seed(seed)
     print(f"\n===== MSD STEP 2 | seed={seed} =====")
-    for embedding_model_name in embedding_models:
+    for embedding_model_name in MSD_EMBEDDING_MODELS:
         distance_threshold = distance_thresholds.get(embedding_model_name)
         if distance_threshold is None:
             raise ValueError(f"No distance threshold for {embedding_model_name}")
@@ -122,7 +123,12 @@ def run_seed(seed, args):
         )
 
         for experiment_name in args.experiment_names:
-            _, source_data = ensure_seed_input(seed, experiment_name, args.output_root)
+            _, source_data = ensure_seed_input(
+                seed,
+                experiment_name,
+                args.output_root,
+                embedding_model_name=embedding_model_name,
+            )
             data = json.loads(json.dumps(source_data, ensure_ascii=False))
             for item in tqdm(data, desc=f"{clean_name(embedding_model_name)} {experiment_name}"):
                 for source_key, output_key in METHOD_KEYS.items():
