@@ -40,14 +40,15 @@ PROMPT_KEYS = [
 ]
 
 
-def generate_item_responses(model, tokenizer, item, is_vicuna, needs_context):
+def generate_item_responses(model, tokenizer, item, is_vicuna, needs_context, force=False):
     available_keys = [
         key
         for key in PROMPT_KEYS
         if isinstance(item.get(key), str) and item[key].strip()
+        and (force or not item.get(f"{key[: -len('_prompt')]}_response"))
     ]
     if not available_keys:
-        return
+        return False
 
     unique_prompts = []
     prompt_to_index = {}
@@ -76,6 +77,7 @@ def generate_item_responses(model, tokenizer, item, is_vicuna, needs_context):
     for key in available_keys:
         method = key[: -len("_prompt")]
         item[f"{method}_response"] = unique_responses[key_to_unique[key]]
+    return True
 
 
 def run_seed(seed, args):
@@ -133,13 +135,16 @@ def run_seed(seed, args):
                         unit="item",
                     )
                     for item in progress:
-                        generate_item_responses(
+                        changed = generate_item_responses(
                             model,
                             tokenizer,
                             item,
                             is_vicuna,
                             needs_context,
+                            force=args.force,
                         )
+                        if changed:
+                            save_json(path, data)
                     save_json(path, data)
                     print(f"Saved {path}")
 

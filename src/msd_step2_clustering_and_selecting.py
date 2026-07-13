@@ -27,6 +27,21 @@ METHOD_KEYS = {
 }
 
 
+SELECTION_FIELDS = [
+    "clusters",
+    "cluster_representatives",
+    "consensus_scores",
+    "prompt",
+]
+
+
+def selection_complete(item, output_key, expected_count):
+    if not all(item.get(f"{output_key}_{field}") for field in SELECTION_FIELDS):
+        return False
+    clustered_count = sum(len(cluster) for cluster in item.get(f"{output_key}_clusters", []))
+    return clustered_count == expected_count
+
+
 def cluster_prompts(prompts, embedding_model, distance_threshold):
     embeddings = embedding_model.encode(prompts, convert_to_tensor=True)
     labels = AgglomerativeClustering(
@@ -74,16 +89,21 @@ def consensus_scores(representatives, embeddings, original_embedding):
     return scores
 
 
-def apply_selection(item, source_key, output_key, embedding_model, distance_threshold):
+def apply_selection(item, source_key, output_key, embedding_model, distance_threshold, force=False):
     samples = item.get(source_key, [])[:M]
+    if len(samples) < M:
+        return False
+    if not force and selection_complete(item, output_key, len(samples)):
+        return False
+
     if not samples:
-        return
+        return False
     if len(samples) == 1:
         item[f"{output_key}_clusters"] = [[samples[0]]]
         item[f"{output_key}_cluster_representatives"] = [samples[0]]
         item[f"{output_key}_consensus_scores"] = [0.0]
         item[f"{output_key}_prompt"] = samples[0]
-        return
+        return True
 
     clusters, embeddings = cluster_prompts(samples, embedding_model, distance_threshold)
     representatives, original_embedding = select_representatives(
@@ -102,6 +122,7 @@ def apply_selection(item, source_key, output_key, embedding_model, distance_thre
     item[f"{output_key}_consensus_scores"] = scores
     item[f"{output_key}_selected_idx"] = best_idx
     item[f"{output_key}_prompt"] = samples[best_idx]
+    return True
 
 
 def run_seed(seed, args):
@@ -130,30 +151,35 @@ def run_seed(seed, args):
                 embedding_model_name=embedding_model_name,
             )
             data = json.loads(json.dumps(source_data, ensure_ascii=False))
-            progress = tqdm(
-                data,
-                desc=f"Cluster seed={seed} {clean_name(embedding_model_name)} {experiment_name}",
-                unit="item",
-            )
-            for item in progress:
-                for source_key, output_key in METHOD_KEYS.items():
-                    progress.set_postfix(method=output_key)
-                    apply_selection(
-                        item,
-                        source_key,
-                        output_key,
-                        embedding_model,
-                        distance_threshold,
-                    )
-                for key in ["bpo", "rbpo", "mepo", "rmepo", "generic", "rgeneric"]:
-                    item.pop(f"{key}_response", None)
-
             output_path = embedded_json_path(
                 seed,
                 embedding_model_name,
                 experiment_name,
                 args.output_root,
             )
+            progress = tqdm(
+                data,
+                desc=f"Cluster seed={seed} {clean_name(embedding_model_name)} {experiment_name}",
+                unit="item",
+            )
+            for item in progress:
+                item_changed = False
+                for source_key, output_key in METHOD_KEYS.items():
+                    progress.set_postfix(method=output_key)
+                    changed = apply_selection(
+                        item,
+                        source_key,
+                        output_key,
+                        embedding_model,
+                        distance_threshold,
+                        force=args.force,
+                    )
+                    if changed:
+                        item.pop(f"{output_key}_response", None)
+                        item_changed = True
+                if item_changed:
+                    save_json(output_path, data)
+
             save_json(output_path, data)
             print(f"Saved {output_path}")
 

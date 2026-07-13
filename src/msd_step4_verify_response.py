@@ -220,6 +220,10 @@ def verify_item(item, verify_key, verify_methods, attempts=3):
     }
 
 
+def result_id(item):
+    return item.get("id")
+
+
 def verify_output_path(seed, embedding_model_name, verify_key, experiment_name, run_idx, output_root):
     return (
         embedded_json_path(seed, embedding_model_name, experiment_name, output_root).parent
@@ -266,11 +270,27 @@ def run_verification(args):
                                     run_idx,
                                     args.output_root,
                                 )
+                                existing_results = []
+                                done_ids = set()
                                 if output_path.exists() and not args.force:
-                                    print(f"Exists, skipping: {output_path}")
-                                    continue
+                                    existing_results = load_json(output_path)
+                                    done_ids = {
+                                        result_id(item)
+                                        for item in existing_results
+                                        if result_id(item) is not None
+                                        and f"{verify_key}_winner" in item
+                                        and f"{verify_key}_llm_evaluation" in item
+                                    }
+                                    required_ids = {
+                                        result_id(item)
+                                        for item in data
+                                        if result_id(item) is not None
+                                    }
+                                    if len(required_ids) == len(data) and required_ids <= done_ids:
+                                        print(f"Complete, skipping: {output_path}")
+                                        continue
 
-                                results = []
+                                results = [] if args.force else existing_results
                                 progress = tqdm(
                                     data,
                                     desc=(
@@ -281,7 +301,12 @@ def run_verification(args):
                                     unit="item",
                                 )
                                 for item in progress:
+                                    item_id = result_id(item)
+                                    if item_id is not None and item_id in done_ids:
+                                        continue
                                     results.append(verify_item(item, verify_key, methods))
+                                    if item_id is not None:
+                                        done_ids.add(item_id)
                                     if len(results) % args.batch_size == 0:
                                         save_json(output_path, results)
                                 save_json(output_path, results)

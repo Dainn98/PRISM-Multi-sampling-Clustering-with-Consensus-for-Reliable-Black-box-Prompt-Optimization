@@ -61,10 +61,18 @@ def run_seed(seed, args):
                     )
                     changed = True
 
-                if args.force or len(item.get("rbpo_paraphrases", [])) < M:
-                    progress.set_postfix(stage="rbpo", candidates=M)
-                    prompts = [prompt_template_optimize.format(ori_prompt) for _ in range(M)]
-                    item["rbpo_paraphrases"] = generate_batch(
+                rbpo_paraphrases = item.get("rbpo_paraphrases", [])
+                if not isinstance(rbpo_paraphrases, list):
+                    rbpo_paraphrases = []
+
+                missing_rbpo = M if args.force else M - len(rbpo_paraphrases)
+                if missing_rbpo > 0:
+                    progress.set_postfix(stage="rbpo", missing=missing_rbpo)
+                    prompts = [
+                        prompt_template_optimize.format(ori_prompt)
+                        for _ in range(missing_rbpo)
+                    ]
+                    generated_paraphrases = generate_batch(
                         model,
                         tokenizer,
                         prompts,
@@ -73,6 +81,10 @@ def run_seed(seed, args):
                         apply_chat_template=False,
                         device=device,
                     )
+                    if args.force:
+                        item["rbpo_paraphrases"] = generated_paraphrases
+                    else:
+                        item["rbpo_paraphrases"] = rbpo_paraphrases + generated_paraphrases
                     changed = True
 
                 if changed:

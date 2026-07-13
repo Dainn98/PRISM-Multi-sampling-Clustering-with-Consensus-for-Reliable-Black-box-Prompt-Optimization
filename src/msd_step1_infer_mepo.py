@@ -1,5 +1,4 @@
 import gc
-from collections import defaultdict
 import os
 import shutil
 
@@ -57,29 +56,33 @@ def run_seed(seed, args):
                     data[item_index]["mepo_prompt"] = output
                 save_json(path, data)
 
-            paraphrase_prompts = []
-            mapping = []
             for index, item in enumerate(data):
-                if args.force or len(item.get("rmepo_paraphrases", [])) < M:
-                    ori_prompt = item.get("ori_prompt", "")
-                    for _ in range(M):
-                        paraphrase_prompts.append(model.po_prompt_ins.replace("S_P", ori_prompt))
-                        mapping.append(index)
+                existing = item.get("rmepo_paraphrases", [])
+                if not isinstance(existing, list):
+                    existing = []
+                missing = M if args.force else M - len(existing)
+                if missing <= 0:
+                    continue
 
-            grouped = defaultdict(list)
-            for start in tqdm(
-                range(0, len(paraphrase_prompts), batch_size),
-                desc=f"RMePO seed={seed} {experiment_name}",
-                unit="batch",
-            ):
-                outputs = model.generate_paraphrase_batch(
-                    paraphrase_prompts[start : start + batch_size]
-                )
-                for item_index, output in zip(mapping[start : start + batch_size], outputs):
-                    grouped[item_index].append(output)
-
-            for item_index, outputs in grouped.items():
-                data[item_index]["rmepo_paraphrases"] = outputs
+                item["rmepo_paraphrases"] = [] if args.force else existing
+                ori_prompt = item.get("ori_prompt", "")
+                paraphrase_prompts = [
+                    model.po_prompt_ins.replace("S_P", ori_prompt)
+                    for _ in range(missing)
+                ]
+                for start in tqdm(
+                    range(0, len(paraphrase_prompts), batch_size),
+                    desc=(
+                        f"RMePO seed={seed} {experiment_name} "
+                        f"item={index + 1}/{len(data)}"
+                    ),
+                    unit="batch",
+                ):
+                    outputs = model.generate_paraphrase_batch(
+                        paraphrase_prompts[start : start + batch_size]
+                    )
+                    item["rmepo_paraphrases"].extend(outputs)
+                    save_json(path, data)
 
             save_json(path, data)
 
