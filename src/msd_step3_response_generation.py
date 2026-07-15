@@ -1,6 +1,7 @@
 import gc
 import os
 import shutil
+from collections import Counter
 
 import torch
 from tqdm import tqdm
@@ -41,14 +42,28 @@ PROMPT_KEYS = [
 
 
 def generate_item_responses(model, tokenizer, item, is_vicuna, needs_context, force=False):
-    available_keys = [
-        key
-        for key in PROMPT_KEYS
-        if isinstance(item.get(key), str) and item[key].strip()
-        and (force or not item.get(f"{key[: -len('_prompt')]}_response"))
-    ]
+    stats = Counter()
+    available_keys = []
+    for key in PROMPT_KEYS:
+        if key not in item:
+            stats["missing_prompt_field"] += 1
+            continue
+
+        prompt = item.get(key)
+        if not isinstance(prompt, str) or not prompt.strip():
+            stats["empty_prompt"] += 1
+            continue
+
+        response_key = f"{key[: -len('_prompt')]}_response"
+        if not force and item.get(response_key):
+            stats["already_has_response"] += 1
+            continue
+
+        available_keys.append(key)
+
     if not available_keys:
-        return False
+        stats["items_without_generation"] += 1
+        return stats
 
     unique_prompts = []
     prompt_to_index = {}
@@ -77,12 +92,33 @@ def generate_item_responses(model, tokenizer, item, is_vicuna, needs_context, fo
     for key in available_keys:
         method = key[: -len("_prompt")]
         item[f"{method}_response"] = unique_responses[key_to_unique[key]]
-    return True
+    stats["items_changed"] += 1
+    stats["generated_responses"] += len(available_keys)
+    stats["unique_prompts_generated"] += len(unique_prompts)
+    return stats
+
+
+def print_generation_stats(experiment_name, stats, total_items):
+    total_prompt_fields = total_items * len(PROMPT_KEYS)
+    skipped_fields = total_prompt_fields - stats["generated_responses"]
+    print(
+        f"Stats for {experiment_name}: "
+        f"items={total_items}, prompt_fields={total_prompt_fields}, "
+        f"items_changed={stats['items_changed']}, "
+        f"items_without_generation={stats['items_without_generation']}, "
+        f"generated_responses={stats['generated_responses']}, "
+        f"unique_prompts_generated={stats['unique_prompts_generated']}, "
+        f"skipped_fields={skipped_fields}, "
+        f"missing_prompt_field={stats['missing_prompt_field']}, "
+        f"empty_prompt={stats['empty_prompt']}, "
+        f"already_has_response={stats['already_has_response']}"
+    )
 
 
 def run_seed(seed, args):
     set_seed(seed)
     print(f"\n===== MSD STEP 3 | seed={seed} =====")
+    seed_stats = Counter()
 
     for embedding_model_name in MSD_EMBEDDING_MODELS:
         for base_model in base_llm_models:
@@ -134,8 +170,9 @@ def run_seed(seed, args):
                         desc=f"Responses seed={seed} {clean_name(embedding_model_name)} {experiment_name}",
                         unit="item",
                     )
+                    experiment_stats = Counter()
                     for item in progress:
-                        changed = generate_item_responses(
+                        item_stats = generate_item_responses(
                             model,
                             tokenizer,
                             item,
@@ -143,10 +180,13 @@ def run_seed(seed, args):
                             needs_context,
                             force=args.force,
                         )
-                        if changed:
+                        experiment_stats.update(item_stats)
+                        if item_stats["items_changed"]:
                             save_json(path, data)
                     save_json(path, data)
                     print(f"Saved {path}")
+                    print_generation_stats(experiment_name, experiment_stats, len(data))
+                    seed_stats.update(experiment_stats)
 
             del model
             del tokenizer
@@ -155,11 +195,34 @@ def run_seed(seed, args):
             if os.path.exists(MODEL_CACHE_PATH):
                 shutil.rmtree(MODEL_CACHE_PATH, ignore_errors=True)
 
+    print(
+        f"\nMSD STEP 3 summary | seed={seed}: "
+        f"items_changed={seed_stats['items_changed']}, "
+        f"items_without_generation={seed_stats['items_without_generation']}, "
+        f"generated_responses={seed_stats['generated_responses']}, "
+        f"unique_prompts_generated={seed_stats['unique_prompts_generated']}, "
+        f"missing_prompt_field={seed_stats['missing_prompt_field']}, "
+        f"empty_prompt={seed_stats['empty_prompt']}, "
+        f"already_has_response={seed_stats['already_has_response']}"
+    )
+    return seed_stats
+
 
 def main():
     args = parse_seed_args("Generate downstream responses for MSD seed outputs.")
+    all_stats = Counter()
     for seed in args.seed_values:
-        run_seed(seed, args)
+        all_stats.update(run_seed(seed, args))
+    print(
+        f"\nMSD STEP 3 final summary: "
+        f"items_changed={all_stats['items_changed']}, "
+        f"items_without_generation={all_stats['items_without_generation']}, "
+        f"generated_responses={all_stats['generated_responses']}, "
+        f"unique_prompts_generated={all_stats['unique_prompts_generated']}, "
+        f"missing_prompt_field={all_stats['missing_prompt_field']}, "
+        f"empty_prompt={all_stats['empty_prompt']}, "
+        f"already_has_response={all_stats['already_has_response']}"
+    )
 
 
 if __name__ == "__main__":
