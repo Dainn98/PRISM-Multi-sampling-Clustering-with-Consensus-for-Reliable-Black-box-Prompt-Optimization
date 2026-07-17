@@ -19,7 +19,11 @@ from helper import (
     device,
     evaluation_datasets,
     evaluator_models,
+    LLAMA2_7B,
+    GEMMA3,
 )
+# base_llm_models = [LLAMA2_7B]
+
 from msd_config import (
     MSD_MERGE_ROOT,
     MSD_EMBEDDING_MODELS,
@@ -41,61 +45,149 @@ PROMPT_KEYS = [
     "rgeneric_prompt",
 ]
 
+def has_text(value):
+    return isinstance(value, str) and bool(value.strip())
 
-def generate_item_responses(model, tokenizer, item, is_vicuna, needs_context, force=False):
-    stats = Counter()
-    available_keys = []
-    for key in PROMPT_KEYS:
-        if key not in item:
-            stats["missing_prompt_field"] += 1
-            continue
 
-        prompt = item.get(key)
-        if not isinstance(prompt, str) or not prompt.strip():
-            stats["empty_prompt"] += 1
-            continue
+def prompt_with_context(prompt, context):
+    if has_text(context):
+        return f"""Context:
+{context}
 
-        response_key = f"{key[: -len('_prompt')]}_response"
-        if not force and item.get(response_key):
-            stats["already_has_response"] += 1
-            continue
+Question:
+{prompt}
+"""
+    return prompt
 
-        available_keys.append(key)
 
-    if not available_keys:
-        stats["items_without_generation"] += 1
-        return stats
-
-    unique_prompts = []
-    prompt_to_index = {}
-    key_to_unique = {}
-    for key in available_keys:
-        prompt = item[key]
-        if prompt not in prompt_to_index:
-            prompt_to_index[prompt] = len(unique_prompts)
-            unique_prompts.append(prompt)
-        key_to_unique[key] = prompt_to_index[prompt]
-
-    generation_prompts = unique_prompts
+def format_generation_prompt(tokenizer, prompt, context, is_vicuna):
+    user_prompt = prompt_with_context(prompt, context)
     if is_vicuna:
-        generation_prompts = [prompt_template_vicuna.format(prompt) for prompt in unique_prompts]
+        return prompt_template_vicuna.format(user_prompt)
 
-    unique_responses = generate_batch(
-        model=model,
-        tokenizer=tokenizer,
-        prompts=generation_prompts,
-        context=item.get("context") if needs_context else None,
-        do_sample=False,
-        apply_chat_template=not is_vicuna,
-        device=device,
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are a helpful and concise assistant. "
+                "Please reply in English only."
+            ),
+        },
+        {"role": "user", "content": user_prompt},
+    ]
+    return tokenizer.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True,
     )
 
-    for key in available_keys:
-        method = key[: -len("_prompt")]
-        item[f"{method}_response"] = unique_responses[key_to_unique[key]]
-    stats["items_changed"] += 1
-    stats["generated_responses"] += len(available_keys)
-    stats["unique_prompts_generated"] += len(unique_prompts)
+
+def collect_generation_jobs(data, tokenizer, is_vicuna, needs_context, force=False):
+    stats = Counter()
+    jobs = []
+    unique_prompts = []
+    prompt_to_index = {}
+
+    for item_index, item in enumerate(data):
+        item_has_generation = False
+        context = item.get("context") if needs_context else None
+
+        for key in PROMPT_KEYS:
+            if key not in item:
+                stats["missing_prompt_field"] += 1
+                continue
+
+            prompt = item.get(key)
+            if not has_text(prompt):
+                stats["empty_prompt"] += 1
+                continue
+
+            method = key[: -len("_prompt")]
+            response_key = f"{method}_response"
+            if not force and has_text(item.get(response_key)):
+                stats["already_has_response"] += 1
+                continue
+
+            formatted_prompt = format_generation_prompt(
+                tokenizer,
+                prompt,
+                context,
+                is_vicuna,
+            )
+            if formatted_prompt not in prompt_to_index:
+                prompt_to_index[formatted_prompt] = len(unique_prompts)
+                unique_prompts.append(formatted_prompt)
+
+            jobs.append((item_index, response_key, prompt_to_index[formatted_prompt]))
+            item_has_generation = True
+
+        if item_has_generation:
+            stats["items_changed"] += 1
+        else:
+            stats["items_without_generation"] += 1
+
+    stats["generated_responses"] = len(jobs)
+    stats["unique_prompts_generated"] = len(unique_prompts)
+    return jobs, unique_prompts, stats
+
+
+def generate_file_responses(model, tokenizer, data, is_vicuna, needs_context, batch_size, force=False):
+    jobs, unique_prompts, stats = collect_generation_jobs(
+        data,
+        tokenizer,
+        is_vicuna,
+        needs_context,
+        force=force,
+    )
+    if not jobs:
+        return stats
+
+    unique_responses = [None] * len(unique_prompts)
+    position = 0
+    current_batch_size = min(batch_size, len(unique_prompts))
+    progress = tqdm(
+        total=len(unique_prompts),
+        desc="Generating unique prompts",
+        unit="prompt",
+    )
+
+    while position < len(unique_prompts):
+        batch_prompts = unique_prompts[position : position + current_batch_size]
+        try:
+            with torch.inference_mode():
+                batch_responses = generate_batch(
+                    model=model,
+                    tokenizer=tokenizer,
+                    prompts=batch_prompts,
+                    batch_size=current_batch_size,
+                    do_sample=False,
+                    apply_chat_template=False,
+                    device=device,
+                )
+        except torch.OutOfMemoryError:
+            torch.cuda.empty_cache()
+            gc.collect()
+            if current_batch_size == 1:
+                progress.close()
+                raise RuntimeError(
+                    "CUDA OOM at batch_size=1. Reduce --batch-size workload "
+                    "or stop other GPU processes before retrying."
+                ) from None
+            current_batch_size = max(1, current_batch_size // 2)
+            print(f"CUDA OOM: retrying with batch_size={current_batch_size}")
+            continue
+
+        for offset, response in enumerate(batch_responses):
+            unique_responses[position + offset] = response
+
+        position += len(batch_responses)
+        progress.update(len(batch_responses))
+
+    progress.close()
+
+    for item_index, response_key, unique_index in jobs:
+        data[item_index][response_key] = unique_responses[unique_index]
+
     return stats
 
 
@@ -166,24 +258,15 @@ def run_seed(seed, args):
                         f"embed={clean_name(embedding_model_name)}, "
                         f"experiment={experiment_name}, n={len(data)}"
                     )
-                    progress = tqdm(
+                    experiment_stats = generate_file_responses(
+                        model,
+                        tokenizer,
                         data,
-                        desc=f"Responses seed={seed} {clean_name(embedding_model_name)} {experiment_name}",
-                        unit="item",
+                        is_vicuna,
+                        needs_context,
+                        batch_size=args.batch_size,
+                        force=args.force,
                     )
-                    experiment_stats = Counter()
-                    for item in progress:
-                        item_stats = generate_item_responses(
-                            model,
-                            tokenizer,
-                            item,
-                            is_vicuna,
-                            needs_context,
-                            force=args.force,
-                        )
-                        experiment_stats.update(item_stats)
-                        if item_stats["items_changed"]:
-                            save_json(path, data)
                     save_json(path, data)
                     print(f"Saved {path}")
                     print_generation_stats(experiment_name, experiment_stats, len(data))
@@ -214,6 +297,9 @@ def main():
         "Generate downstream responses for MSD seed outputs.",
         default_output_root=MSD_MERGE_ROOT,
     )
+    if args.batch_size < 1:
+        raise ValueError("--batch-size must be at least 1")
+
     all_stats = Counter()
     for seed in args.seed_values:
         all_stats.update(run_seed(seed, args))
