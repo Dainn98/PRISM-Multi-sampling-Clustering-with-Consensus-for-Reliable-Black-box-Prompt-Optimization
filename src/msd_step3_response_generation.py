@@ -21,6 +21,7 @@ from helper import (
     evaluator_models,
 )
 from msd_config import (
+    MSD_MERGE_ROOT,
     MSD_EMBEDDING_MODELS,
     embedded_json_path,
     load_json,
@@ -209,7 +210,10 @@ def run_seed(seed, args):
 
 
 def main():
-    args = parse_seed_args("Generate downstream responses for MSD seed outputs.")
+    args = parse_seed_args(
+        "Generate downstream responses for MSD seed outputs.",
+        default_output_root=MSD_MERGE_ROOT,
+    )
     all_stats = Counter()
     for seed in args.seed_values:
         all_stats.update(run_seed(seed, args))

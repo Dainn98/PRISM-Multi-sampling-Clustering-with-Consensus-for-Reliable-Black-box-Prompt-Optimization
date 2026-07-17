@@ -12,9 +12,10 @@ from tqdm import tqdm
 from config import MODEL_CACHE_PATH
 from helper import IMP_ENC, M, clean_name, device, distance_thresholds
 from msd_config import (
+    MSD_MERGE_ROOT,
     MSD_EMBEDDING_MODELS,
     embedded_json_path,
-    ensure_seed_input,
+    load_json,
     parse_seed_args,
     save_json,
     set_seed,
@@ -167,19 +168,18 @@ def run_seed(seed, args):
         )
 
         for experiment_name in args.experiment_names:
-            _, source_data = ensure_seed_input(
-                seed,
-                experiment_name,
-                args.output_root,
-                embedding_model_name=embedding_model_name,
-            )
-            data = json.loads(json.dumps(source_data, ensure_ascii=False))
             output_path = embedded_json_path(
                 seed,
                 embedding_model_name,
                 experiment_name,
                 args.output_root,
             )
+            if not output_path.exists():
+                print(f"Missing merged file, skipping: {output_path}")
+                continue
+
+            source_data = load_json(output_path)
+            data = json.loads(json.dumps(source_data, ensure_ascii=False))
             progress = tqdm(
                 data,
                 desc=f"Cluster seed={seed} {clean_name(embedding_model_name)} {experiment_name}",
@@ -228,7 +228,10 @@ def run_seed(seed, args):
 
 
 def main():
-    args = parse_seed_args("Cluster and select PRISM prompts for MSD seeds.")
+    args = parse_seed_args(
+        "Cluster and select PRISM prompts for MSD seeds.",
+        default_output_root=MSD_MERGE_ROOT,
+    )
     all_stats = Counter()
     for seed in args.seed_values:
         all_stats.update(run_seed(seed, args))

@@ -26,6 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_SEEDS = [SEED + offset for offset in range(5)]
 MSD_ROOT_NAME = "evaluation_msd"
 MSD_ROOT = BASE_DIR / MSD_ROOT_NAME
+MSD_MERGE_ROOT = MSD_ROOT / "merge"
 EXPERIMENT_FILE = BASE_DIR / experiment_file_name
 MSD_EMBEDDING_MODELS = [MINILM_EMBEDDING_MODEL]
 
@@ -151,12 +152,12 @@ def ensure_seed_input(
     return output_path, data
 
 
-def parse_seed_args(description, include_force=True):
+def parse_seed_args(description, include_force=True, default_output_root=MSD_ROOT):
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--seeds", type=int, nargs="+", default=None)
     parser.add_argument("--all-seeds", action="store_true")
-    parser.add_argument("--output-root", default=str(MSD_ROOT))
+    parser.add_argument("--output-root", default=str(default_output_root))
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--experiments", nargs="+", default=None)
     parser.add_argument("--batch-size", type=int, default=1)

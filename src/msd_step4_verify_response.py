@@ -17,6 +17,7 @@ from helper import (
 )
 from msd_config import (
     BASE_DIR,
+    MSD_MERGE_ROOT,
     MSD_EMBEDDING_MODELS,
     embedded_json_path,
     load_json,
@@ -422,7 +423,10 @@ def aggregate(args):
 
 
 def main():
-    args = parse_seed_args("Verify responses and aggregate MSD seed variance/CI.")
+    args = parse_seed_args(
+        "Verify responses and aggregate MSD seed variance/CI.",
+        default_output_root=MSD_MERGE_ROOT,
+    )
     if not args.aggregate_only:
         run_verification(args)
     aggregate(args)
