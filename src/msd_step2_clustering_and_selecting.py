@@ -1,7 +1,5 @@
 import gc
 import json
-import os
-import shutil
 from collections import Counter
 
 import torch
@@ -213,8 +211,8 @@ def run_seed(seed, args):
         del embedding_model
         torch.cuda.empty_cache()
         gc.collect()
-        if os.path.exists(MODEL_CACHE_PATH):
-            shutil.rmtree(MODEL_CACHE_PATH, ignore_errors=True)
+        # if os.path.exists(MODEL_CACHE_PATH):
+        #     shutil.rmtree(MODEL_CACHE_PATH, ignore_errors=True)
 
     print(
         f"\nMSD STEP 2 summary | seed={seed}: "
