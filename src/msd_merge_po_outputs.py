@@ -89,10 +89,6 @@ def merged_json_path(root, seed, embedding_model_name, experiment_name):
     )
 
 
-def item_id(item, fallback_index):
-    return item.get("id") or fallback_index
-
-
 def copy_common_fields(target, source):
     for key in COMMON_KEYS:
         if key in source and key not in target:
@@ -108,14 +104,14 @@ def copy_po_fields(target, source, po_model):
             target[key] = deepcopy(value)
 
 
-def validate_common_fields(target, source, stats, path, sample_id):
+def validate_common_fields(target, source, stats, path, sample_key):
     for key in ("ori_prompt", "expected_response"):
         if key not in target or key not in source:
             continue
         if target[key] != source[key]:
             stats[f"{key}_mismatch"] += 1
             print(
-                f"Warning: {key} mismatch for id={sample_id} in {path}. "
+                f"Warning: {key} mismatch for sample={sample_key} in {path}. "
                 "Keeping the first value."
             )
 
@@ -155,14 +151,14 @@ def merge_experiment(seed, embedding_model_name, experiment_name, args):
             continue
 
         for index, source_item in enumerate(data, start=1):
-            sample_id = item_id(source_item, index)
-            if sample_id not in merged_by_id:
-                merged_by_id[sample_id] = {}
-                id_order.append(sample_id)
+            sample_key = index
+            if sample_key not in merged_by_id:
+                merged_by_id[sample_key] = {}
+                id_order.append(sample_key)
 
-            target_item = merged_by_id[sample_id]
+            target_item = merged_by_id[sample_key]
             copy_common_fields(target_item, source_item)
-            validate_common_fields(target_item, source_item, stats, path, sample_id)
+            validate_common_fields(target_item, source_item, stats, path, sample_key)
             copy_po_fields(target_item, source_item, po_model)
 
         stats[f"loaded_{po_model}_files"] += 1
