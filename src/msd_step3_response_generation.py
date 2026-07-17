@@ -131,7 +131,16 @@ def collect_generation_jobs(data, tokenizer, is_vicuna, needs_context, force=Fal
     return jobs, unique_prompts, stats
 
 
-def generate_file_responses(model, tokenizer, data, is_vicuna, needs_context, batch_size, force=False):
+def generate_file_responses(
+    model,
+    tokenizer,
+    data,
+    is_vicuna,
+    needs_context,
+    batch_size,
+    max_new_tokens,
+    force=False,
+):
     jobs, unique_prompts, stats = collect_generation_jobs(
         data,
         tokenizer,
@@ -160,6 +169,7 @@ def generate_file_responses(model, tokenizer, data, is_vicuna, needs_context, ba
                     tokenizer=tokenizer,
                     prompts=batch_prompts,
                     batch_size=current_batch_size,
+                    max_new_tokens=max_new_tokens,
                     do_sample=False,
                     apply_chat_template=False,
                     device=device,
@@ -256,7 +266,9 @@ def run_seed(seed, args):
                     print(
                         f"Generating responses for seed={seed}, "
                         f"embed={clean_name(embedding_model_name)}, "
-                        f"experiment={experiment_name}, n={len(data)}"
+                        f"experiment={experiment_name}, n={len(data)}, "
+                        f"batch_size={args.batch_size}, "
+                        f"max_new_tokens={args.max_new_tokens}"
                     )
                     experiment_stats = generate_file_responses(
                         model,
@@ -265,6 +277,7 @@ def run_seed(seed, args):
                         is_vicuna,
                         needs_context,
                         batch_size=args.batch_size,
+                        max_new_tokens=args.max_new_tokens,
                         force=args.force,
                     )
                     save_json(path, data)
@@ -299,6 +312,8 @@ def main():
     )
     if args.batch_size < 1:
         raise ValueError("--batch-size must be at least 1")
+    if args.max_new_tokens < 1:
+        raise ValueError("--max-new-tokens must be at least 1")
 
     all_stats = Counter()
     for seed in args.seed_values:

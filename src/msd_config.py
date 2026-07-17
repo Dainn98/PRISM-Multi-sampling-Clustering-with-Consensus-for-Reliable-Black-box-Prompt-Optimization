@@ -160,7 +160,8 @@ def parse_seed_args(description, include_force=True, default_output_root=MSD_ROO
     parser.add_argument("--output-root", default=str(default_output_root))
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--experiments", nargs="+", default=None)
-    parser.add_argument("--batch-size", type=int, default=1)
+    parser.add_argument("--batch-size", type=int, default=32)
+    parser.add_argument("--max-new-tokens", type=int, default=1024)
     parser.add_argument("--verify-times", type=int, default=3)
     parser.add_argument("--aggregate-only", action="store_true")
     if include_force:
