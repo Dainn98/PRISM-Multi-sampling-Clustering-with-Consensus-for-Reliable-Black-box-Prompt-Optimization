@@ -201,6 +201,21 @@ def generate_file_responses(
     return stats
 
 
+def describe_runtime_device(model):
+    model_device = next(model.parameters()).device
+    if not torch.cuda.is_available():
+        return f"torch_cuda_available=False, configured_device={device}, model_device={model_device}"
+
+    gpu_name = torch.cuda.get_device_name(0)
+    allocated_gb = torch.cuda.memory_allocated(0) / 1024**3
+    reserved_gb = torch.cuda.memory_reserved(0) / 1024**3
+    return (
+        f"torch_cuda_available=True, configured_device={device}, "
+        f"model_device={model_device}, gpu={gpu_name}, "
+        f"allocated={allocated_gb:.2f}GB, reserved={reserved_gb:.2f}GB"
+    )
+
+
 def print_generation_stats(experiment_name, stats, total_items):
     total_prompt_fields = total_items * len(PROMPT_KEYS)
     skipped_fields = total_prompt_fields - stats["generated_responses"]
@@ -235,6 +250,7 @@ def run_seed(seed, args):
                 token=HF_TOKEN,
                 torch_dtype="auto",
             ).eval().to(device)
+            print(f"Runtime device: {describe_runtime_device(model)}")
             tokenizer = AutoTokenizer.from_pretrained(
                 base_model,
                 cache_dir=MODEL_CACHE_PATH,
@@ -309,6 +325,8 @@ def main():
     args = parse_seed_args(
         "Generate downstream responses for MSD seed outputs.",
         default_output_root=MSD_MERGE_ROOT,
+        default_batch_size=8,
+        default_max_new_tokens=256,
     )
     if args.batch_size < 1:
         raise ValueError("--batch-size must be at least 1")
