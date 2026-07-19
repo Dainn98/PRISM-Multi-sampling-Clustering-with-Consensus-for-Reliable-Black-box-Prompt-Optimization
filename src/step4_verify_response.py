@@ -42,8 +42,9 @@ with open(PROMPT_FILE, "r", encoding="utf-8") as f:
     exec(f.read(), _prompt_vars)
 
 SYSTEM_PROMPT = _prompt_vars["SYSTEM_PROMPT"]
+USER_PROMPT_TEMPLATE = _prompt_vars["USER_PROMPT_TEMPLATE"]
 
-print("Loaded SYSTEM_PROMPT from response_eval_prompt.txt")
+print("Loaded SYSTEM_PROMPT and USER_PROMPT_TEMPLATE from response_eval_prompt.txt")
 print(SYSTEM_PROMPT[:200], "\n---")
 
 # USER PROMPT
@@ -110,6 +111,25 @@ Return JSON ONLY in the following format:
   }}
 }}
 """
+
+def format_user_prompt(prompt_a, response_a, prompt_b, response_b):
+    return (
+        USER_PROMPT_TEMPLATE
+        .replace("{prompt_A}", prompt_a or "")
+        .replace("{response_A}", response_a or "")
+        .replace("{prompt_B}", prompt_b or "")
+        .replace("{response_B}", response_b or "")
+    )
+
+
+def build_user_prompt(item, verify_keys):
+    return format_user_prompt(
+        item.get(verify_keys[0], ""),
+        item.get(verify_keys[1], ""),
+        item.get(verify_keys[2], ""),
+        item.get(verify_keys[3], ""),
+    )
+
 
 # GENERATION
 def generate(system_prompt, user_prompt):

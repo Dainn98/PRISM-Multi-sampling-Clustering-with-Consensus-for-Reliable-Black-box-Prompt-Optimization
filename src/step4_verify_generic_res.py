@@ -122,17 +122,17 @@ VERIFY_KEYS_METHOD = {
 }
 
 
-def load_system_prompt():
+def load_prompts():
     if not PROMPT_FILE.exists():
         raise FileNotFoundError(f"Prompt file not found: {PROMPT_FILE}")
 
     prompt_vars = {}
     with PROMPT_FILE.open("r", encoding="utf-8") as f:
         exec(f.read(), prompt_vars)
-    return prompt_vars["SYSTEM_PROMPT"]
+    return prompt_vars["SYSTEM_PROMPT"], prompt_vars["USER_PROMPT_TEMPLATE"]
 
 
-SYSTEM_PROMPT = load_system_prompt()
+SYSTEM_PROMPT, USER_PROMPT_TEMPLATE = load_prompts()
 
 
 def has_text(value):
@@ -143,63 +143,26 @@ def has_complete_pair(item, verify_methods):
     return all(has_text(item.get(key)) for key in verify_methods)
 
 
+def format_user_prompt(prompt_a, response_a, prompt_b, response_b):
+    return (
+        USER_PROMPT_TEMPLATE
+        .replace("{prompt_A}", prompt_a or "")
+        .replace("{response_A}", response_a or "")
+        .replace("{prompt_B}", prompt_b or "")
+        .replace("{response_B}", response_b or "")
+    )
+
+
 def build_user_prompt(item, verify_methods):
     prompt_a, response_a, prompt_b, response_b = verify_methods
     context = item.get("context")
-    context_section = (
-        f'Shared context for both prompts:\n"""{context}"""\n\n'
-        if has_text(context)
-        else ""
+    context_prefix = f'Shared context:\n"""{context}"""\n\n' if has_text(context) else ""
+    return format_user_prompt(
+        context_prefix + item[prompt_a],
+        item[response_a],
+        context_prefix + item[prompt_b],
+        item[response_b],
     )
-    return f"""
-{context_section}Prompt_A (used to generate Response_A):
-\"\"\"{item[prompt_a]}\"\"\"
-
-Response_A:
-\"\"\"{item[response_a]}\"\"\"
-
-Prompt_B (used to generate Response_B):
-\"\"\"{item[prompt_b]}\"\"\"
-
-Response_B:
-\"\"\"{item[response_b]}\"\"\"
-
-# IMPORTANT RULES:
-- Judge Response_A ONLY based on Prompt_A and the shared context, if provided
-- Judge Response_B ONLY based on Prompt_B and the shared context, if provided
-- Do NOT compare Response_A and Response_B directly
-- Use the SAME scoring scale for both
-- Score each criterion independently
-- If a response fails to answer, give low scores (0.0 to 0.2)
-- Use only numbers between 0.0 and 1.0
-- Use one decimal place
-- Do NOT include explanations or extra text
-
-# OUTPUT:
-Return STRICTLY valid JSON using this exact structure:
-{{
-  "response_A": {{
-    "Correctness": 0.0,
-    "Relevance": 0.0,
-    "Completeness": 0.0,
-    "Clarity_Coherence": 0.0,
-    "Usefulness_Helpfulness": 0.0,
-    "Style_Tone": 0.0,
-    "Conciseness": 0.0,
-    "Safety_Compliance": 0.0
-  }},
-  "response_B": {{
-    "Correctness": 0.0,
-    "Relevance": 0.0,
-    "Completeness": 0.0,
-    "Clarity_Coherence": 0.0,
-    "Usefulness_Helpfulness": 0.0,
-    "Style_Tone": 0.0,
-    "Conciseness": 0.0,
-    "Safety_Compliance": 0.0
-  }}
-}}
-"""
 
 
 def generate(system_prompt, user_prompt):

@@ -61,44 +61,42 @@ VERIFY_KEYS_METHOD = {
     "rbpo_bpo": ["rbpo_prompt", "rbpo_response", "bpo_prompt", "bpo_response"],
     "rbpo_mepo": ["rbpo_prompt", "rbpo_response", "mepo_prompt", "mepo_response"],
     "rmepo_mepo": ["rmepo_prompt", "rmepo_response", "mepo_prompt", "mepo_response"],
-    "rgeneric_generic": [
-        "rgeneric_prompt",
-        "rgeneric_response",
-        "generic_prompt",
-        "generic_response",
-    ],
+    # "rgeneric_generic": [
+    #     "rgeneric_prompt",
+    #     "rgeneric_response",
+    #     "generic_prompt",
+    #     "generic_response",
+    # ],
 }
 
 
-def load_system_prompt():
+def load_prompts():
     namespace = {}
     with PROMPT_FILE.open("r", encoding="utf-8") as f:
         exec(f.read(), namespace)
-    return namespace["SYSTEM_PROMPT"]
+    return namespace["SYSTEM_PROMPT"], namespace["USER_PROMPT_TEMPLATE"]
 
 
-SYSTEM_PROMPT = load_system_prompt()
+SYSTEM_PROMPT, USER_PROMPT_TEMPLATE = load_prompts()
+
+
+def format_user_prompt(prompt_a, response_a, prompt_b, response_b):
+    return (
+        USER_PROMPT_TEMPLATE
+        .replace("{prompt_A}", prompt_a or "")
+        .replace("{response_A}", response_a or "")
+        .replace("{prompt_B}", prompt_b or "")
+        .replace("{response_B}", response_b or "")
+    )
 
 
 def build_user_prompt(item, verify_methods):
-    return f"""
-Prompt_A:
-\"\"\"{item.get(verify_methods[0], "")}\"\"\"
-
-Response_A:
-\"\"\"{item.get(verify_methods[1], "")}\"\"\"
-
-Prompt_B:
-\"\"\"{item.get(verify_methods[2], "")}\"\"\"
-
-Response_B:
-\"\"\"{item.get(verify_methods[3], "")}\"\"\"
-
-Judge Response_A only against Prompt_A and Response_B only against Prompt_B.
-Return strict JSON with response_A and response_B scores for these criteria:
-{", ".join(EXPECTED_CRITERIA)}.
-Scores must be numbers from 0.0 to 1.0.
-"""
+    return format_user_prompt(
+        item.get(verify_methods[0], ""),
+        item.get(verify_methods[1], ""),
+        item.get(verify_methods[2], ""),
+        item.get(verify_methods[3], ""),
+    )
 
 
 def call_judge(system_prompt, user_prompt):
