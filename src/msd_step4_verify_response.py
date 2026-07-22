@@ -1,3 +1,5 @@
+# python .\src\msd_step4_verify_response.py --seed 42 --limit 1
+# python .\src\msd_step4_verify_response.py --all-seeds
 import json
 import os
 import re
@@ -141,6 +143,33 @@ def extract_json(raw):
     return match.group(0).strip() if match else raw.strip()
 
 
+def parse_json_response(raw):
+    raw = re.sub(r"<think>.*?</think>", "", raw or "", flags=re.DOTALL).strip()
+    candidates = [raw]
+    candidates.extend(
+        match.group(1).strip()
+        for match in re.finditer(r"```(?:json)?\s*(.*?)```", raw, flags=re.DOTALL)
+    )
+    first_object = re.search(r"[\{\[]", raw)
+    if first_object:
+        candidates.append(raw[first_object.start():].strip())
+
+    decoder = json.JSONDecoder()
+    last_error = None
+    for candidate in candidates:
+        if not candidate:
+            continue
+        try:
+            parsed, _ = decoder.raw_decode(candidate)
+            return parsed
+        except json.JSONDecodeError as error:
+            last_error = error
+            continue
+    if last_error:
+        raise last_error
+    raise ValueError("Judge response did not contain JSON.")
+
+
 def map_to_schema(raw_scores):
     mapped = {criteria: None for criteria in EXPECTED_CRITERIA}
     for model_key, value in (raw_scores or {}).items():
@@ -192,11 +221,39 @@ def decide_winner(scores, threshold=0.01):
     return 0 if diff > 0 else 1
 
 
+def is_zero_eval(candidate):
+    if not is_complete(candidate):
+        return False
+    return all(
+        float(candidate[side][criteria]) == 0.0
+        for side in ["response_A", "response_B"]
+        for criteria in EXPECTED_CRITERIA
+    )
+
+
+def is_retryable_failed_result(item, verify_key, verify_methods):
+    response_keys = verify_methods[1::2]
+    return (
+        item.get(f"{verify_key}_winner") == 2
+        and is_zero_eval(item.get(f"{verify_key}_llm_evaluation"))
+        and any(key not in item or not item.get(key) for key in response_keys)
+    )
+
+
+def is_complete_result(item, verify_key, verify_methods):
+    return (
+        result_id(item) is not None
+        and f"{verify_key}_winner" in item
+        and f"{verify_key}_llm_evaluation" in item
+        and not is_retryable_failed_result(item, verify_key, verify_methods)
+    )
+
+
 def verify_item(item, verify_key, verify_methods, attempts=3):
     for attempt in range(attempts):
         try:
             raw = call_judge(SYSTEM_PROMPT, build_user_prompt(item, verify_methods))
-            parsed = normalize_eval(json.loads(extract_json(raw)))
+            parsed = normalize_eval(parse_json_response(raw))
             return {
                 "id": item.get("id"),
                 "ori_prompt": item.get("ori_prompt"),
@@ -276,9 +333,7 @@ def run_verification(args):
                                     done_ids = {
                                         result_id(item)
                                         for item in existing_results
-                                        if result_id(item) is not None
-                                        and f"{verify_key}_winner" in item
-                                        and f"{verify_key}_llm_evaluation" in item
+                                        if is_complete_result(item, verify_key, methods)
                                     }
                                     required_ids = {
                                         result_id(item)
@@ -289,7 +344,15 @@ def run_verification(args):
                                         print(f"Complete, skipping: {output_path}")
                                         continue
 
-                                results = [] if args.force else existing_results
+                                results = (
+                                    []
+                                    if args.force
+                                    else [
+                                        item
+                                        for item in existing_results
+                                        if is_complete_result(item, verify_key, methods)
+                                    ]
+                                )
                                 progress = tqdm(
                                     data,
                                     desc=(
